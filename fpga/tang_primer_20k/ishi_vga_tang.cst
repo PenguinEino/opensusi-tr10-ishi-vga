@@ -1,0 +1,21 @@
+// Tang Primer 20K Dock J5. Pin numbers below are FPGA package balls.
+// J5 schematic numbers are odd/even, not generic Pmod cable numbering.
+// RGB LCD must be disconnected. See docs/FPGA_BRINGUP.md.
+IO_LOC "clk_27m" H11;
+IO_PORT "clk_27m" IO_TYPE=LVCMOS33;
+
+IO_LOC "r" L9;             // J5.5 -> 300 ohm -> VGA.1
+IO_LOC "g" N8;             // J5.6 -> 300 ohm -> VGA.2
+IO_LOC "b" N9;             // J5.7 -> 300 ohm -> VGA.3
+IO_LOC "vsync" N7;         // J5.8 -> VGA.14
+IO_LOC "hsync" B11;        // J5.12 -> VGA.13
+IO_PORT "r" IO_TYPE=LVCMOS33 DRIVE=16;
+IO_PORT "g" IO_TYPE=LVCMOS33 DRIVE=16;
+IO_PORT "b" IO_TYPE=LVCMOS33 DRIVE=16;
+IO_PORT "hsync" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "vsync" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "pll_lock_mon" N6;  // J5.9, optional probe only; NOT connected to VGA
+IO_LOC "clk_315_mon" D11;  // J5.10, optional probe only; NOT an ASIC clock source
+IO_PORT "pll_lock_mon" IO_TYPE=LVCMOS33 DRIVE=4;
+IO_PORT "clk_315_mon" IO_TYPE=LVCMOS33 DRIVE=4;

@@ -12,7 +12,7 @@ ISHI会ロゴをVGAに出力する固定映像回路です。
 | PDK | [TR-1um](https://github.com/OpenSUSI/TR-1um) dev / `f408d3b` に固定 |
 | スタンダードセル | 岡村氏の[APRtools](https://github.com/jun1okamura/TR-1um_APRtools) / `v59_4` |
 
-[提出物](submission/README.md) · [仕様・端子](submission/SPEC.md) · [GDS](submission/ishi_vga.gds) · [再検証方法](submission/REPRODUCE.md)
+[提出物](submission/README.md) · [仕様・端子](submission/SPEC.md) · [GDS](submission/ishi_vga.gds) · [再検証方法](submission/REPRODUCE.md) · [FPGA試験](docs/FPGA_BRINGUP.md)
 
 フレーム未統合のコアです。検証結果と残件は仕様書に記載しています。
 
