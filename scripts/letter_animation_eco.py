@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Place a separately mapped letter highlight and idle-stage circuit into verified static filler sites.
 
-Pinned standard cells are unchanged. The only old data net rerouted is R.D;
+Pinned standard cells are unchanged. The old data inputs rerouted are G.D/B.D;
 new input branches attach to existing count/decode/colour nets. All geometry
 must subsequently pass independent connectivity, official DRC and strict LVS.
 """

@@ -88,13 +88,13 @@ Load pins
  _401_/CK input (DFF) 59.64
  _402_/CK input (DFF) 59.64
  _403_/CK input (DFF) 59.64
- anim_56_/CK input (DFF) 59.64
- anim_57_/CK input (DFF) 59.64
- anim_58_/CK input (DFF) 59.64
- anim_59_/CK input (DFF) 59.64
- anim_60_/CK input (DFF) 59.64
- anim_61_/CK input (DFF) 59.64
- anim_62_/CK input (DFF) 59.64
+ anim_44_/CK input (DFF) 59.64
+ anim_45_/CK input (DFF) 59.64
+ anim_46_/CK input (DFF) 59.64
+ anim_47_/CK input (DFF) 59.64
+ anim_48_/CK input (DFF) 59.64
+ anim_49_/CK input (DFF) 59.64
+ anim_50_/CK input (DFF) 59.64
 
 Clock clk
 6.952933 source latency _400_/CK ^
@@ -177,9 +177,9 @@ ISHI_STA_GATE_BEGIN
 ISHI_STA_CLOCKS 1
 ISHI_STA_REG_CLOCKS 29
 ISHI_STA_REG_DATA 29
-ISHI_STA_SETUP 274.527252
+ISHI_STA_SETUP 274.740723
 Startpoint: _414_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: anim_62_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _408_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: max
 
@@ -191,32 +191,32 @@ Fanout         Cap        Slew       Delay        Time   Description
      4  234.891998    1.441383    4.025539    4.025539 ^ u_bufth_clk/Y (BUFTH)
      6  357.822021    1.086881    2.394499    6.420038 ^ u_clk_row0/Y (BUF_X2)
                       1.086881    0.000000    6.420038 ^ _414_/CK (DFF)
-     7  628.927002    3.476142   11.029173   17.449211 ^ _414_/Q (DFF)
-     2  114.642006    3.184584    3.455678   20.904888 v _219_/Y (NAND3)
-     8  499.643036    6.930039    5.803745   26.708633 ^ _347_/Y (NOR3)
-     7  485.000000    5.897283    5.579534   32.288166 v _352_/Y (NAND2)
-     2  117.538002    1.803417    1.543960   33.832127 ^ anim_30_/Y (INV_X1)
-     4  292.135986    7.706583    6.669805   40.501930 v anim_35_/Y (NAND4)
-     2  113.686996    3.341160    3.654414   44.156345 ^ anim_49_/Y (NOR3)
-     2   91.630005    0.921913    3.053128   47.209473 ^ anim_51_/Y (AND2_X1)
-     1   39.680000    0.687674    1.959883   49.169357 ^ anim_55_/Y (MUX2)
-                      0.687674    0.000000   49.169357 ^ anim_62_/D (DFF)
-                                             49.169357   data arrival time
+     7  625.777954    3.461426   11.000538   17.420576 ^ _414_/Q (DFF)
+     2  114.642006    3.183713    3.452764   20.873339 v _219_/Y (NAND3)
+     8  499.643036    6.930039    5.803694   26.677032 ^ _347_/Y (NOR3)
+     3  240.893005    5.278807    6.061604   32.738636 v _354_/Y (NAND3)
+     4  306.299988    3.516423    3.584098   36.322735 ^ _359_/Y (NOR2)
+     4  306.798981    3.840074    4.016666   40.339401 v _365_/Y (NAND2)
+     2  191.238998    2.490765    2.576389   42.915791 ^ _376_/Y (NOR2)
+     1  131.082993    2.061369    2.417970   45.333759 v _379_/Y (NAND2)
+     1   39.680000    1.806178    2.519720   47.853481 v _380_/Y (XNOR2)
+                      1.806178    0.000000   47.853481 v _408_/D (DFF)
+                                             47.853481   data arrival time
 
                                 317.460327  317.460327   clock clk (rise edge)
                                   0.000000  317.460327   clock source latency
      1   63.517002    1.200000    0.000000  317.460327 ^ clk (in)
      4  234.891998    1.441383    4.025537  321.485870 ^ u_bufth_clk/Y (BUFTH)
-    12  715.643921    1.737535    2.927408  324.413269 ^ u_clk_row3/Y (BUF_X2)
-                      1.737535    0.000000  324.413269 ^ anim_62_/CK (DFF)
-                                  0.000000  324.413269   clock reconvergence pessimism
-                                 -0.716655  323.696625   library setup time
-                                            323.696625   data required time
+     7  417.459015    1.194815    2.490054  323.975922 ^ u_clk_row2/Y (BUF_X2)
+                      1.194815    0.000000  323.975922 ^ _408_/CK (DFF)
+                                  0.000000  323.975922   clock reconvergence pessimism
+                                 -1.381693  322.594238   library setup time
+                                            322.594238   data required time
 ---------------------------------------------------------------------------------------------
-                                            323.696625   data required time
-                                            -49.169357   data arrival time
+                                            322.594238   data required time
+                                            -47.853481   data arrival time
 ---------------------------------------------------------------------------------------------
-                                            274.527252   slack (MET)
+                                            274.740723   slack (MET)
 
 
 ISHI_STA_HOLD 6.686719
@@ -286,5 +286,5 @@ Fanout         Cap        Slew       Delay        Time   Description
 
 ISHI_STA_ELECTRICAL_BEGIN
 ISHI_STA_ELECTRICAL_END
-clk period_min = 42.93 fmax = 23.29
+clk period_min = 42.72 fmax = 23.41
 ISHI_STA_GATE_END

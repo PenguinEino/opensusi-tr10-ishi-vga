@@ -1,13 +1,13 @@
 {
   "mode": "M1/M2/V1 only",
-  "input": "build/letter_animation_core_final_replay/build/candidate.gds",
+  "input": "build/letter_long_idle_final_replay/build/candidate.gds",
   "top": "ishi_vga_core",
   "dbu_um": 0.001,
   "nets_in_route_maps": 0,
   "route_map_shapes": 0,
   "placement_instances_matched_to_actual_gds": 314,
   "placement_instances_missing_from_gds": [],
-  "actual_pin_shapes_labeled": 817,
+  "actual_pin_shapes_labeled": 802,
   "missing_actual_pin_count": 0,
   "missing_actual_pin_examples": [],
   "actual_pin_map": {
@@ -607,12 +607,6 @@
         104.6
       ],
       [
-        "anim_40_",
-        "A",
-        407.7,
-        104.5
-      ],
-      [
         "_413_",
         "Q",
         639.9,
@@ -641,6 +635,12 @@
         "A",
         1520.1,
         104.6
+      ],
+      [
+        "anim_33_",
+        "B",
+        483.3,
+        368.4
       ]
     ],
     "_141_": [
@@ -661,46 +661,6 @@
         "B",
         1617.3,
         104.6
-      ]
-    ],
-    "anim_phase_4_": [
-      [
-        "anim_40_",
-        "B",
-        413.1,
-        104.5
-      ],
-      [
-        "anim_60_",
-        "Q",
-        342.9,
-        836.8
-      ],
-      [
-        "anim_47_",
-        "A",
-        369.9,
-        836.8
-      ],
-      [
-        "anim_48_",
-        "A",
-        402.3,
-        836.9
-      ]
-    ],
-    "anim__11_": [
-      [
-        "anim_40_",
-        "Y",
-        423.9,
-        104.5
-      ],
-      [
-        "anim_41_",
-        "D",
-        488.7,
-        368.5
       ]
     ],
     "clk_buf": [
@@ -833,7 +793,7 @@
         104.6
       ],
       [
-        "anim_39_",
+        "anim_32_",
         "B",
         510.3,
         368.4
@@ -1699,12 +1659,6 @@
         368.5
       ],
       [
-        "anim_29_",
-        "A",
-        1293.3,
-        368.4
-      ],
-      [
         "_352_",
         "Y",
         40.5,
@@ -1717,12 +1671,6 @@
         648.6
       ],
       [
-        "anim_30_",
-        "A",
-        1304.1,
-        648.6
-      ],
-      [
         "_356_",
         "A",
         29.7,
@@ -1732,6 +1680,18 @@
         "_362_",
         "A",
         105.3,
+        836.9
+      ],
+      [
+        "anim_23_",
+        "A",
+        1174.5,
+        836.8
+      ],
+      [
+        "anim_24_",
+        "A",
+        1260.9,
         836.9
       ]
     ],
@@ -2189,98 +2149,90 @@
         368.5
       ]
     ],
-    "_011_": [
+    "anim_phase_4_": [
       [
-        "anim_41_",
+        "anim_33_",
         "A",
-        472.5,
-        368.5
-      ],
-      [
-        "_340_",
-        "Y",
-        1579.5,
-        648.6
-      ],
-      [
-        "anim_43_",
-        "A",
-        558.9,
-        836.9
-      ]
-    ],
-    "anim__09_": [
-      [
-        "anim_41_",
-        "B",
         477.9,
-        368.5
+        368.4
       ],
       [
-        "anim_38_",
-        "Y",
-        407.7,
-        648.6
+        "anim_39_",
+        "B",
+        234.9,
+        836.8
+      ],
+      [
+        "anim_40_",
+        "A",
+        261.9,
+        836.9
+      ],
+      [
+        "anim_44_",
+        "Q",
+        342.9,
+        836.8
+      ],
+      [
+        "anim_42_",
+        "A",
+        375.3,
+        836.9
       ]
     ],
     "anim__10_": [
       [
-        "anim_41_",
-        "C",
-        483.3,
-        368.5
-      ],
-      [
-        "anim_39_",
-        "Y",
-        521.1,
-        368.4
-      ]
-    ],
-    "anim__12_": [
-      [
-        "anim_41_",
+        "anim_33_",
         "Y",
         494.1,
-        368.5
+        368.4
       ],
       [
-        "anim_42_",
+        "anim_34_",
         "B",
-        477.9,
+        402.3,
         648.6
-      ],
-      [
-        "anim_43_",
-        "B",
-        564.3,
-        836.9
       ]
     ],
     "anim_phase_5_": [
       [
-        "anim_39_",
+        "anim_32_",
         "A",
         504.9,
         368.4
       ],
       [
-        "anim_61_",
-        "Q",
-        278.1,
+        "anim_41_",
+        "A",
+        353.7,
         836.8
       ],
       [
-        "anim_50_",
-        "A",
-        413.1,
+        "anim_42_",
+        "C",
+        386.1,
         836.9
       ],
       [
-        "anim_51_",
+        "anim_45_",
+        "Q",
+        531.9,
+        836.8
+      ]
+    ],
+    "anim__09_": [
+      [
+        "anim_32_",
+        "Y",
+        521.1,
+        368.4
+      ],
+      [
+        "anim_34_",
         "A",
-        494.1,
-        836.9
+        396.9,
+        648.6
       ]
     ],
     "v[7]": [
@@ -2987,86 +2939,6 @@
         368.5
       ]
     ],
-    "anim_phase_0_": [
-      [
-        "anim_29_",
-        "B",
-        1298.7,
-        368.4
-      ],
-      [
-        "anim_31_",
-        "B",
-        1363.5,
-        368.5
-      ],
-      [
-        "anim_56_",
-        "Q",
-        1293.3,
-        836.8
-      ],
-      [
-        "anim_35_",
-        "C",
-        1368.9,
-        836.9
-      ]
-    ],
-    "anim__00__0_": [
-      [
-        "anim_29_",
-        "Y",
-        1309.5,
-        368.4
-      ],
-      [
-        "anim_56_",
-        "D",
-        1244.7,
-        836.8
-      ]
-    ],
-    "anim__04_": [
-      [
-        "anim_31_",
-        "A",
-        1358.1,
-        368.5
-      ],
-      [
-        "anim_30_",
-        "Y",
-        1309.5,
-        648.6
-      ],
-      [
-        "anim_35_",
-        "A",
-        1358.1,
-        836.9
-      ]
-    ],
-    "anim__05_": [
-      [
-        "anim_31_",
-        "Y",
-        1374.3,
-        368.5
-      ],
-      [
-        "anim_33_",
-        "B",
-        1304.1,
-        836.9
-      ],
-      [
-        "anim_32_",
-        "B",
-        1487.7,
-        836.8
-      ]
-    ],
     "_181_": [
       [
         "_247_",
@@ -3581,7 +3453,7 @@
         648.5
       ],
       [
-        "anim_42_",
+        "anim_36_",
         "Y",
         488.7,
         648.6
@@ -3673,45 +3545,55 @@
         648.6
       ]
     ],
-    "anim__08_": [
+    "anim__11_": [
       [
-        "anim_38_",
-        "A",
-        396.9,
+        "anim_34_",
+        "Y",
+        407.7,
         648.6
       ],
       [
-        "anim_44_",
-        "A",
-        348.3,
+        "anim_35_",
+        "D",
+        618.3,
         836.9
+      ]
+    ],
+    "_010_": [
+      [
+        "anim_36_",
+        "A",
+        472.5,
+        648.6
       ],
       [
-        "anim_52_",
-        "A",
-        537.3,
-        836.9
+        "_335_",
+        "Y",
+        1617.3,
+        648.6
+      ]
+    ],
+    "anim__12_": [
+      [
+        "anim_36_",
+        "B",
+        477.9,
+        648.6
       ],
       [
-        "anim_55_",
-        "S",
+        "anim_35_",
+        "Y",
         623.7,
-        815.2
+        836.9
       ],
       [
         "anim_37_",
-        "Y",
-        1228.5,
+        "B",
+        634.5,
         836.9
       ]
     ],
     "_009_": [
-      [
-        "anim_38_",
-        "B",
-        402.3,
-        648.6
-      ],
       [
         "_394_",
         "D",
@@ -3723,20 +3605,12 @@
         "Y",
         1595.7,
         648.6
-      ]
-    ],
-    "_010_": [
-      [
-        "anim_42_",
-        "A",
-        472.5,
-        648.6
       ],
       [
-        "_335_",
-        "Y",
-        1617.3,
-        648.6
+        "anim_31_",
+        "A",
+        1093.5,
+        836.9
       ]
     ],
     "r": [
@@ -3763,9 +3637,9 @@
         648.5
       ],
       [
-        "anim_43_",
+        "anim_37_",
         "Y",
-        575.1,
+        645.3,
         836.9
       ]
     ],
@@ -4577,6 +4451,26 @@
         648.6
       ]
     ],
+    "_011_": [
+      [
+        "_340_",
+        "Y",
+        1579.5,
+        648.6
+      ],
+      [
+        "anim_35_",
+        "B",
+        607.5,
+        836.9
+      ],
+      [
+        "anim_37_",
+        "A",
+        629.1,
+        836.9
+      ]
+    ],
     "_102_": [
       [
         "_333_",
@@ -4801,17 +4695,143 @@
         836.9
       ]
     ],
+    "anim__16__0_": [
+      [
+        "anim_39_",
+        "A",
+        213.3,
+        836.8
+      ],
+      [
+        "anim_44_",
+        "QB",
+        337.5,
+        836.8
+      ]
+    ],
+    "anim__13_": [
+      [
+        "anim_39_",
+        "S",
+        229.5,
+        815.2
+      ],
+      [
+        "anim_38_",
+        "Y",
+        256.5,
+        836.9
+      ]
+    ],
+    "anim__01_": [
+      [
+        "anim_39_",
+        "Y",
+        240.3,
+        836.8
+      ],
+      [
+        "anim_44_",
+        "D",
+        294.3,
+        836.8
+      ]
+    ],
+    "anim_phase_3_": [
+      [
+        "anim_38_",
+        "A",
+        245.7,
+        836.9
+      ],
+      [
+        "anim_40_",
+        "B",
+        267.3,
+        836.9
+      ],
+      [
+        "anim_42_",
+        "B",
+        380.7,
+        836.9
+      ],
+      [
+        "anim_30_",
+        "A",
+        656.1,
+        836.8
+      ],
+      [
+        "anim_50_",
+        "Q",
+        1163.7,
+        836.8
+      ]
+    ],
+    "anim__07_": [
+      [
+        "anim_38_",
+        "B",
+        251.1,
+        836.9
+      ],
+      [
+        "anim_40_",
+        "C",
+        272.7,
+        836.9
+      ],
+      [
+        "anim_42_",
+        "D",
+        391.5,
+        836.9
+      ],
+      [
+        "anim_30_",
+        "B",
+        661.5,
+        836.8
+      ],
+      [
+        "anim_29_",
+        "Y",
+        1385.1,
+        836.9
+      ]
+    ],
+    "anim__14_": [
+      [
+        "anim_40_",
+        "Y",
+        278.1,
+        836.9
+      ],
+      [
+        "anim_41_",
+        "B",
+        359.1,
+        836.8
+      ]
+    ],
     "clk_row3": [
       [
-        "anim_61_",
+        "anim_44_",
         "CK",
-        224.1,
+        288.9,
         859.8
       ],
       [
-        "anim_60_",
+        "anim_45_",
         "CK",
-        288.9,
+        477.9,
+        859.8
+      ],
+      [
+        "anim_46_",
+        "CK",
+        542.7,
         859.8
       ],
       [
@@ -4845,31 +4865,25 @@
         859.8
       ],
       [
-        "anim_59_",
+        "anim_50_",
         "CK",
-        1098.9,
+        1109.7,
         859.8
       ],
       [
-        "anim_62_",
+        "anim_47_",
         "CK",
-        1163.7,
+        1201.5,
         859.8
       ],
       [
-        "anim_56_",
-        "CK",
-        1239.3,
-        859.8
-      ],
-      [
-        "anim_58_",
+        "anim_48_",
         "CK",
         1417.5,
         859.8
       ],
       [
-        "anim_57_",
+        "anim_49_",
         "CK",
         1509.3,
         859.8
@@ -4883,287 +4897,107 @@
     ],
     "anim__02_": [
       [
-        "anim_61_",
+        "anim_41_",
+        "Y",
+        369.9,
+        836.8
+      ],
+      [
+        "anim_45_",
         "D",
-        229.5,
-        836.8
-      ],
-      [
-        "anim_53_",
-        "Y",
-        488.7,
-        836.9
-      ]
-    ],
-    "anim__24_": [
-      [
-        "anim_61_",
-        "QB",
-        272.7,
-        836.8
-      ]
-    ],
-    "anim__01_": [
-      [
-        "anim_60_",
-        "D",
-        294.3,
-        836.8
-      ],
-      [
-        "anim_47_",
-        "Y",
-        396.9,
-        836.8
-      ]
-    ],
-    "anim__22__0_": [
-      [
-        "anim_60_",
-        "QB",
-        337.5,
-        836.8
-      ],
-      [
-        "anim_44_",
-        "B",
-        353.7,
-        836.9
-      ]
-    ],
-    "anim__13_": [
-      [
-        "anim_44_",
-        "Y",
-        364.5,
-        836.9
-      ],
-      [
-        "anim_47_",
-        "B",
-        391.5,
+        483.3,
         836.8
       ]
     ],
     "anim__15_": [
       [
-        "anim_47_",
-        "S",
-        386.1,
-        815.2
-      ],
-      [
-        "anim_54_",
-        "A",
-        580.5,
-        836.9
-      ],
-      [
-        "anim_46_",
+        "anim_42_",
         "Y",
-        602.1,
-        836.9
-      ]
-    ],
-    "anim__16_": [
-      [
-        "anim_48_",
-        "Y",
-        407.7,
+        396.9,
         836.9
       ],
       [
-        "anim_49_",
+        "anim_43_",
         "B",
-        521.1,
-        836.9
-      ]
-    ],
-    "anim__17_": [
-      [
-        "anim_50_",
-        "B",
-        418.5,
-        836.9
-      ],
-      [
-        "anim_51_",
-        "B",
-        499.5,
-        836.9
-      ],
-      [
-        "anim_49_",
-        "Y",
-        531.9,
-        836.9
-      ]
-    ],
-    "anim__18_": [
-      [
-        "anim_50_",
-        "Y",
-        423.9,
-        836.9
-      ],
-      [
-        "anim_53_",
-        "A",
-        472.5,
-        836.9
-      ]
-    ],
-    "anim__19_": [
-      [
-        "anim_53_",
-        "B",
-        477.9,
-        836.9
-      ],
-      [
-        "anim_51_",
-        "Y",
-        510.3,
-        836.9
-      ],
-      [
-        "anim_55_",
-        "B",
-        629.1,
+        413.1,
         836.8
       ]
     ],
-    "anim__20_": [
+    "anim_phase_6_": [
       [
-        "anim_53_",
-        "C",
-        483.3,
-        836.9
-      ],
-      [
-        "anim_52_",
-        "Y",
-        553.5,
-        836.9
-      ]
-    ],
-    "anim__14_": [
-      [
-        "anim_49_",
+        "anim_43_",
         "A",
-        515.7,
-        836.9
-      ],
-      [
-        "anim_52_",
-        "B",
-        542.7,
-        836.9
+        407.7,
+        836.8
       ],
       [
         "anim_46_",
-        "A",
-        591.3,
-        836.9
-      ],
-      [
-        "anim_45_",
-        "Y",
-        645.3,
-        836.9
-      ]
-    ],
-    "anim__07_": [
-      [
-        "anim_49_",
-        "C",
-        526.5,
-        836.9
-      ],
-      [
-        "anim_52_",
-        "C",
-        548.1,
-        836.9
-      ],
-      [
-        "anim_46_",
-        "B",
+        "Q",
         596.7,
-        836.9
-      ],
-      [
-        "anim_36_",
-        "B",
-        661.5,
         836.8
       ],
       [
         "anim_35_",
-        "Y",
-        1379.7,
+        "C",
+        612.9,
         836.9
-      ]
-    ],
-    "anim__21_": [
-      [
-        "anim_54_",
-        "Y",
-        585.9,
-        836.9
-      ],
-      [
-        "anim_55_",
-        "A",
-        607.5,
-        836.8
       ]
     ],
     "anim__03_": [
       [
-        "anim_55_",
+        "anim_43_",
         "Y",
-        634.5,
+        423.9,
         836.8
       ],
       [
-        "anim_62_",
+        "anim_46_",
         "D",
-        1169.1,
+        548.1,
         836.8
       ]
     ],
-    "anim_phase_3_": [
+    "anim__18_": [
       [
         "anim_45_",
+        "QB",
+        526.5,
+        836.8
+      ]
+    ],
+    "anim__19_": [
+      [
+        "anim_46_",
+        "QB",
+        591.3,
+        836.8
+      ]
+    ],
+    "anim__08_": [
+      [
+        "anim_35_",
         "A",
-        639.9,
+        602.1,
         836.9
       ],
       [
-        "anim_36_",
-        "A",
-        656.1,
-        836.8
-      ],
-      [
-        "anim_59_",
-        "Q",
-        1152.9,
-        836.8
+        "anim_31_",
+        "Y",
+        1098.9,
+        836.9
       ]
     ],
     "anim__00__3_": [
       [
-        "anim_36_",
+        "anim_30_",
         "Y",
         672.3,
         836.8
       ],
       [
-        "anim_59_",
+        "anim_50_",
         "D",
-        1104.3,
+        1115.1,
         836.8
       ]
     ],
@@ -5303,65 +5137,163 @@
         836.9
       ]
     ],
-    "anim__25_": [
+    "anim__17_": [
       [
-        "anim_59_",
+        "anim_50_",
         "QB",
-        1147.5,
+        1158.3,
         836.8
       ]
     ],
-    "anim_phase_6_": [
+    "anim_phase_0_": [
       [
-        "anim_62_",
-        "Q",
-        1217.7,
+        "anim_23_",
+        "B",
+        1179.9,
         836.8
       ],
       [
-        "anim_37_",
-        "A",
-        1223.1,
+        "anim_47_",
+        "Q",
+        1255.5,
+        836.8
+      ],
+      [
+        "anim_25_",
+        "B",
+        1304.1,
+        836.9
+      ],
+      [
+        "anim_29_",
+        "C",
+        1368.9,
+        836.9
+      ],
+      [
+        "anim_27_",
+        "C",
+        1401.3,
         836.9
       ]
     ],
-    "anim__23_": [
+    "anim__00__0_": [
       [
-        "anim_62_",
-        "QB",
-        1212.3,
+        "anim_23_",
+        "Y",
+        1190.7,
+        836.8
+      ],
+      [
+        "anim_47_",
+        "D",
+        1206.9,
         836.8
       ]
     ],
-    "anim__26_": [
+    "anim__20_": [
       [
-        "anim_56_",
+        "anim_47_",
         "QB",
-        1287.9,
+        1250.1,
         836.8
       ]
     ],
-    "anim_phase_1_": [
+    "anim__04_": [
       [
-        "anim_33_",
+        "anim_24_",
+        "Y",
+        1266.3,
+        836.9
+      ],
+      [
+        "anim_25_",
         "A",
         1298.7,
         836.9
       ],
       [
-        "anim_35_",
+        "anim_29_",
+        "A",
+        1358.1,
+        836.9
+      ],
+      [
+        "anim_27_",
+        "A",
+        1390.5,
+        836.9
+      ]
+    ],
+    "anim_phase_1_": [
+      [
+        "anim_26_",
+        "A",
+        1277.1,
+        836.8
+      ],
+      [
+        "anim_29_",
         "B",
         1363.5,
         836.9
       ],
       [
-        "anim_32_",
+        "anim_27_",
+        "B",
+        1395.9,
+        836.9
+      ],
+      [
+        "anim_48_",
+        "Q",
+        1471.5,
+        836.8
+      ]
+    ],
+    "anim__05_": [
+      [
+        "anim_26_",
+        "B",
+        1282.5,
+        836.8
+      ],
+      [
+        "anim_25_",
+        "Y",
+        1309.5,
+        836.9
+      ]
+    ],
+    "anim__00__1_": [
+      [
+        "anim_26_",
+        "Y",
+        1293.3,
+        836.8
+      ],
+      [
+        "anim_48_",
+        "D",
+        1422.9,
+        836.8
+      ]
+    ],
+    "anim_phase_2_": [
+      [
+        "anim_29_",
+        "D",
+        1374.3,
+        836.9
+      ],
+      [
+        "anim_28_",
         "A",
         1482.3,
         836.8
       ],
       [
-        "anim_57_",
+        "anim_49_",
         "Q",
         1563.3,
         836.8
@@ -5369,77 +5301,43 @@
     ],
     "anim__06_": [
       [
-        "anim_33_",
-        "Y",
-        1309.5,
-        836.9
-      ],
-      [
-        "anim_34_",
-        "B",
-        1395.9,
-        836.8
-      ]
-    ],
-    "anim_phase_2_": [
-      [
-        "anim_35_",
-        "D",
-        1374.3,
-        836.9
-      ],
-      [
-        "anim_34_",
-        "A",
-        1390.5,
-        836.8
-      ],
-      [
-        "anim_58_",
-        "Q",
-        1471.5,
-        836.8
-      ]
-    ],
-    "anim__00__2_": [
-      [
-        "anim_34_",
+        "anim_27_",
         "Y",
         1406.7,
-        836.8
+        836.9
       ],
       [
-        "anim_58_",
-        "D",
-        1422.9,
+        "anim_28_",
+        "B",
+        1487.7,
         836.8
       ]
     ],
-    "anim__28_": [
+    "anim__21_": [
       [
-        "anim_58_",
+        "anim_48_",
         "QB",
         1466.1,
         836.8
       ]
     ],
-    "anim__00__1_": [
+    "anim__00__2_": [
       [
-        "anim_32_",
+        "anim_28_",
         "Y",
         1498.5,
         836.8
       ],
       [
-        "anim_57_",
+        "anim_49_",
         "D",
         1514.7,
         836.8
       ]
     ],
-    "anim__27_": [
+    "anim__22_": [
       [
-        "anim_57_",
+        "anim_49_",
         "QB",
         1557.9,
         836.8
@@ -5468,25 +5366,25 @@
       ]
     ]
   },
-  "placement_signal_pin_count": 817,
-  "unique_source_pin_map_keys": 817,
+  "placement_signal_pin_count": 802,
+  "unique_source_pin_map_keys": 802,
   "duplicated_source_pin_entries": 0,
   "placement_signal_pins_missing_from_source_map": 0,
   "open_net_count": 0,
   "open_nets": {},
   "map_pin_anchor_classifications": {
-    "inside_actual_LEF_pin_rect": 817
+    "inside_actual_LEF_pin_rect": 802
   },
-  "map_pin_inside_actual_lef_rect_count": 817,
+  "map_pin_inside_actual_lef_rect_count": 802,
   "map_pin_on_same_pin_component_count": 0,
   "map_pin_outside_all_actual_lef_rects_count": 0,
   "map_pin_nearest_lef_rect_over_15um_count": 0,
   "map_pin_nearest_lef_rect_over_15um_examples": [],
   "map_pin_anchor_class_examples": [],
   "physical_components": {
-    "M1": 1495,
-    "M2": 925,
-    "V1": 1854
+    "M1": 1461,
+    "M2": 897,
+    "V1": 1801
   },
   "actual_short_component_count": 0,
   "actual_short_net_pair_count": 0,
@@ -5495,77 +5393,80 @@
   "map_shape_unlocated_count": 0,
   "map_shape_unlocated_examples": [],
   "gds_owner_shape_counts": {
-    "M1:ishi_vga_core": 609,
-    "M1:FILL3": 246,
+    "M1:ishi_vga_core": 553,
+    "M1:FILL3": 264,
     "M1:TAP2": 40,
-    "M1:NAND2": 504,
+    "M1:NAND2": 518,
     "M1:XNOR2": 192,
     "M1:BUF_X1": 8,
-    "M1:INV_X1": 153,
-    "M1:NAND3": 108,
-    "M1:NOR3": 234,
-    "M1:NOR2": 650,
+    "M1:INV_X1": 117,
+    "M1:NAND3": 126,
+    "M1:NOR3": 207,
+    "M1:NOR2": 624,
     "M1:NAND4": 55,
     "M1:NOR4": 55,
     "M1:OR3": 36,
-    "M1:AND2_X1": 117,
+    "M1:AND2_X1": 90,
     "M1:OR4": 48,
+    "M1:FILL2": 30,
     "M1:via_1$2": 839,
-    "M1:XOR2": 22,
+    "M1:AND4_X1": 16,
     "M1:DFF": 609,
+    "M1:INV_X2": 18,
     "M1:OR2": 192,
-    "M1:BUF_X2": 63,
-    "M1:MUX2": 96,
     "M1:FILL1": 8,
-    "M1:FILL2": 12,
+    "M1:BUF_X2": 63,
+    "M1:MUX2": 80,
+    "M1:XOR2": 44,
     "M1:BUFTH": 13,
-    "M1:INV_X2": 12,
     "M1:AND3_X1": 12,
-    "M2:ishi_vga_core": 1317,
+    "M2:ishi_vga_core": 1255,
     "M2:TAP2": 40,
-    "M2:NAND2": 108,
+    "M2:NAND2": 111,
     "M2:XNOR2": 176,
     "M2:BUF_X1": 2,
-    "M2:INV_X1": 34,
-    "M2:NAND3": 48,
-    "M2:NOR3": 104,
-    "M2:NOR2": 150,
+    "M2:INV_X1": 26,
+    "M2:NAND3": 56,
+    "M2:NOR3": 92,
+    "M2:NOR2": 144,
     "M2:NAND4": 25,
     "M2:NOR4": 25,
     "M2:OR3": 8,
-    "M2:AND2_X1": 39,
+    "M2:AND2_X1": 30,
     "M2:OR4": 20,
     "M2:via_1$2": 839,
-    "M2:XOR2": 22,
+    "M2:AND4_X1": 5,
     "M2:DFF": 116,
+    "M2:INV_X2": 6,
     "M2:OR2": 48,
     "M2:BUF_X2": 14,
-    "M2:MUX2": 72,
+    "M2:MUX2": 60,
+    "M2:XOR2": 44,
     "M2:BUFTH": 2,
-    "M2:INV_X2": 4,
     "M2:AND3_X1": 4,
-    "V1:ishi_vga_core": 188,
+    "V1:ishi_vga_core": 150,
     "V1:TAP2": 40,
-    "V1:NAND2": 108,
+    "V1:NAND2": 111,
     "V1:XNOR2": 176,
     "V1:BUF_X1": 2,
-    "V1:INV_X1": 34,
-    "V1:NAND3": 48,
-    "V1:NOR3": 104,
-    "V1:NOR2": 150,
+    "V1:INV_X1": 26,
+    "V1:NAND3": 56,
+    "V1:NOR3": 92,
+    "V1:NOR2": 144,
     "V1:NAND4": 25,
     "V1:NOR4": 25,
     "V1:OR3": 8,
-    "V1:AND2_X1": 39,
+    "V1:AND2_X1": 30,
     "V1:OR4": 20,
     "V1:via_1$2": 839,
-    "V1:XOR2": 22,
+    "V1:AND4_X1": 5,
     "V1:DFF": 116,
+    "V1:INV_X2": 6,
     "V1:OR2": 48,
     "V1:BUF_X2": 14,
-    "V1:MUX2": 72,
+    "V1:MUX2": 60,
+    "V1:XOR2": 44,
     "V1:BUFTH": 2,
-    "V1:INV_X2": 4,
     "V1:AND3_X1": 4
   },
   "gds_cell_geometry_samples": [
@@ -5578,7 +5479,7 @@
         885.6,
         133.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5589,7 +5490,7 @@
         885.6,
         78.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5600,7 +5501,7 @@
         884.6,
         94.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5611,7 +5512,7 @@
         873.0,
         111.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5622,7 +5523,7 @@
         873.0,
         130.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5633,7 +5534,7 @@
         884.6,
         130.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5644,7 +5545,7 @@
         896.4,
         133.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5655,7 +5556,7 @@
         896.4,
         81.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5666,7 +5567,7 @@
         885.6,
         397.1
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5677,7 +5578,7 @@
         885.6,
         342.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5688,7 +5589,7 @@
         884.6,
         357.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5699,7 +5600,7 @@
         873.0,
         374.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5710,7 +5611,7 @@
         873.0,
         394.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5721,7 +5622,7 @@
         884.6,
         394.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5732,7 +5633,7 @@
         896.4,
         397.1
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5743,7 +5644,7 @@
         896.4,
         345.1
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5754,7 +5655,7 @@
         885.6,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5765,7 +5666,7 @@
         885.6,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5776,7 +5677,7 @@
         884.6,
         638.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5787,7 +5688,7 @@
         873.0,
         655.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5798,7 +5699,7 @@
         873.0,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5809,7 +5710,7 @@
         884.6,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5820,7 +5721,7 @@
         896.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5831,7 +5732,7 @@
         896.4,
         625.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5842,7 +5743,7 @@
         885.6,
         865.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5853,7 +5754,7 @@
         885.6,
         810.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5864,7 +5765,7 @@
         884.6,
         826.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5875,7 +5776,7 @@
         873.0,
         843.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5886,7 +5787,7 @@
         873.0,
         862.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5897,7 +5798,7 @@
         884.6,
         862.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5908,7 +5809,7 @@
         896.4,
         865.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5919,7 +5820,7 @@
         896.4,
         813.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5930,7 +5831,7 @@
         1328.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5941,7 +5842,7 @@
         1328.4,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5952,7 +5853,7 @@
         1327.4,
         638.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5963,7 +5864,7 @@
         1315.8,
         655.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -5974,7 +5875,7 @@
         1315.8,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -5985,7 +5886,7 @@
         1327.4,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -5996,7 +5897,7 @@
         1339.2,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6007,7 +5908,7 @@
         1339.2,
         625.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6018,7 +5919,7 @@
         1328.4,
         865.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6029,7 +5930,7 @@
         1328.4,
         810.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6040,7 +5941,7 @@
         1327.4,
         826.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6051,7 +5952,7 @@
         1315.8,
         843.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6062,7 +5963,7 @@
         1315.8,
         862.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6073,7 +5974,7 @@
         1327.4,
         862.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6084,7 +5985,7 @@
         1339.2,
         865.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6095,7 +5996,7 @@
         1339.2,
         813.5
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6106,7 +6007,7 @@
         1111.4,
         660.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6117,7 +6018,7 @@
         1112.4,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6128,7 +6029,7 @@
         1106.3,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6139,7 +6040,7 @@
         1111.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6150,7 +6051,7 @@
         1107.5,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6161,7 +6062,7 @@
         1104.1,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6172,7 +6073,7 @@
         1100.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6183,7 +6084,7 @@
         1099.8,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6194,7 +6095,7 @@
         1100.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6205,7 +6106,7 @@
         1106.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6216,7 +6117,7 @@
         1106.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6227,7 +6128,7 @@
         1103.5,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6238,7 +6139,7 @@
         1112.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6249,7 +6150,7 @@
         1099.5,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6260,7 +6161,7 @@
         1127.6,
         660.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6271,7 +6172,7 @@
         1128.6,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6282,7 +6183,7 @@
         1122.5,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6293,7 +6194,7 @@
         1127.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6304,7 +6205,7 @@
         1123.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6315,7 +6216,7 @@
         1120.3,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6326,7 +6227,7 @@
         1116.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6337,7 +6238,7 @@
         1116.0,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6348,7 +6249,7 @@
         1116.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6359,7 +6260,7 @@
         1122.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6370,7 +6271,7 @@
         1122.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6381,7 +6282,7 @@
         1119.7,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6392,7 +6293,7 @@
         1128.6,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6403,7 +6304,7 @@
         1115.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6414,7 +6315,7 @@
         1140.9,
         670.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6425,7 +6326,7 @@
         1154.6,
         661.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6436,7 +6337,7 @@
         1154.1,
         670.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6447,7 +6348,7 @@
         1154.1,
         632.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6458,7 +6359,7 @@
         1138.4,
         650.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6469,7 +6370,7 @@
         1143.8,
         654.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6480,7 +6381,7 @@
         1131.9,
         629.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6491,7 +6392,7 @@
         1150.1,
         629.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6502,7 +6403,7 @@
         1135.9,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6513,7 +6414,7 @@
         1147.9,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6524,7 +6425,7 @@
         1155.6,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6535,7 +6436,7 @@
         1155.6,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6546,7 +6447,7 @@
         1160.0,
         653.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6557,7 +6458,7 @@
         1163.9,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6568,7 +6469,7 @@
         1170.8,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6579,7 +6480,7 @@
         1171.8,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6590,7 +6491,7 @@
         1164.3,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6601,7 +6502,7 @@
         1171.8,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6612,7 +6513,7 @@
         1162.9,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6623,7 +6524,7 @@
         1165.7,
         653.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6634,7 +6535,7 @@
         1187.0,
         660.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6645,7 +6546,7 @@
         1188.0,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6656,7 +6557,7 @@
         1181.9,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6667,7 +6568,7 @@
         1187.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6678,7 +6579,7 @@
         1183.1,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6689,7 +6590,7 @@
         1179.7,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6700,7 +6601,7 @@
         1176.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6711,7 +6612,7 @@
         1175.4,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6722,7 +6623,7 @@
         1176.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6733,7 +6634,7 @@
         1181.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6744,7 +6645,7 @@
         1181.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6755,7 +6656,7 @@
         1179.1,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6766,7 +6667,7 @@
         1188.0,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6777,7 +6678,7 @@
         1175.1,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6788,7 +6689,7 @@
         1197.8,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6799,7 +6700,7 @@
         1198.8,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6810,7 +6711,7 @@
         1191.3,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6821,7 +6722,7 @@
         1198.8,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6832,7 +6733,7 @@
         1192.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6843,7 +6744,7 @@
         1191.6,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6854,7 +6755,7 @@
         1192.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6865,7 +6766,7 @@
         1192.7,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6876,7 +6777,7 @@
         1197.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6887,7 +6788,7 @@
         1203.2,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6898,7 +6799,7 @@
         1208.9,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6909,7 +6810,7 @@
         1214.3,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6920,7 +6821,7 @@
         1219.4,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6931,7 +6832,7 @@
         1220.4,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6942,7 +6843,7 @@
         1206.7,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6953,7 +6854,7 @@
         1202.1,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -6964,7 +6865,7 @@
         1210.1,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6975,7 +6876,7 @@
         1220.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -6986,7 +6887,7 @@
         1224.8,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -6997,7 +6898,7 @@
         1235.9,
         655.9
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7008,7 +6909,7 @@
         1230.5,
         656.0
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7019,7 +6920,7 @@
         1241.0,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7030,7 +6931,7 @@
         1223.7,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7041,7 +6942,7 @@
         1231.7,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7052,7 +6953,7 @@
         1223.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7063,7 +6964,7 @@
         1242.0,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7074,7 +6975,7 @@
         1242.0,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7085,7 +6986,7 @@
         1257.2,
         660.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7096,7 +6997,7 @@
         1258.2,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7107,7 +7008,7 @@
         1252.1,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7118,7 +7019,7 @@
         1257.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7129,7 +7030,7 @@
         1253.3,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7140,7 +7041,7 @@
         1249.9,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7151,7 +7052,7 @@
         1246.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7162,7 +7063,7 @@
         1245.6,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7173,7 +7074,7 @@
         1246.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7184,7 +7085,7 @@
         1251.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7195,7 +7096,7 @@
         1251.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7206,7 +7107,7 @@
         1249.3,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7217,7 +7118,7 @@
         1258.2,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7228,7 +7129,7 @@
         1245.3,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7239,7 +7140,7 @@
         1273.4,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7250,7 +7151,7 @@
         1268.3,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7261,7 +7162,7 @@
         1261.5,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7272,7 +7173,7 @@
         1274.4,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7283,7 +7184,7 @@
         1269.5,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7294,7 +7195,7 @@
         1273.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7305,7 +7206,7 @@
         1262.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7316,7 +7217,7 @@
         1261.8,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7327,7 +7228,7 @@
         1262.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7338,7 +7239,7 @@
         1268.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7349,7 +7250,7 @@
         1268.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7360,7 +7261,7 @@
         1261.5,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7371,7 +7272,7 @@
         1274.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7382,7 +7283,7 @@
         1278.8,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7393,7 +7294,7 @@
         1284.5,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7404,7 +7305,7 @@
         1289.9,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7415,7 +7316,7 @@
         1296.5,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7426,7 +7327,7 @@
         1300.4,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7437,7 +7338,7 @@
         1301.4,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7448,7 +7349,7 @@
         1301.4,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7459,7 +7360,7 @@
         1285.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7470,7 +7371,7 @@
         1282.3,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7481,7 +7382,7 @@
         1277.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7492,7 +7393,7 @@
         1293.7,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7503,7 +7404,7 @@
         954.8,
         660.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7514,7 +7415,7 @@
         955.8,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7525,7 +7426,7 @@
         949.7,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7536,7 +7437,7 @@
         954.8,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7547,7 +7448,7 @@
         950.9,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7558,7 +7459,7 @@
         947.5,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7569,7 +7470,7 @@
         944.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7580,7 +7481,7 @@
         943.2,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7591,7 +7492,7 @@
         944.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7602,7 +7503,7 @@
         949.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7613,7 +7514,7 @@
         949.4,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7624,7 +7525,7 @@
         946.9,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7635,7 +7536,7 @@
         955.8,
         677.2
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7646,7 +7547,7 @@
         942.9,
         674.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7657,7 +7558,7 @@
         971.0,
         671.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7668,7 +7569,7 @@
         965.9,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7679,7 +7580,7 @@
         959.1,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7690,7 +7591,7 @@
         972.0,
         622.6
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7701,7 +7602,7 @@
         967.1,
         628.8
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7712,7 +7613,7 @@
         971.0,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7723,7 +7624,7 @@
         960.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     },
     {
       "layer": "M1",
@@ -7734,7 +7635,7 @@
         959.4,
         655.4
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7745,7 +7646,7 @@
         960.2,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926e70>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6690>]"
     },
     {
       "layer": "M1",
@@ -7756,7 +7657,7 @@
         965.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446eac356d0>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a26a117f0>]"
     },
     {
       "layer": "M1",
@@ -7767,7 +7668,7 @@
         965.6,
         650.3
       ],
-      "path": "[<klayout.dbcore.InstElement object at 0xf446ea926d50>]"
+      "path": "[<klayout.dbcore.InstElement object at 0xea7a268e6570>]"
     }
   ]
 }

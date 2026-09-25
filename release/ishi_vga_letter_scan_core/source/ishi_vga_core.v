@@ -11,7 +11,7 @@ wire [2:0] animated_rgb = {logo_rgb[2], logo_rgb[1] | on, logo_rgb[0] | on};
 always @(posedge clk) begin
   if ((h == 7'd100) && (v == 10'd0)) begin
     phase[3:0] <= phase[3:0] + 4'd1;
-    if (&phase[3:0]) phase[6:4] <= phase[6] ? 3'd0 : phase[6:4] + 3'd1;
+    if (&phase[3:0]) phase[6:4] <= phase[6:4] + 3'd1;
   end
   if(h==7'd100) begin
     h<=7'd71;

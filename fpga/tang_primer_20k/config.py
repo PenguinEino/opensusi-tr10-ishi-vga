@@ -39,7 +39,7 @@ TARGETS["vga_animation"] = {
     ],
 }
 
-# Current choice: I -> S -> H -> I -> unchanged logo, 16 frames per stage.
+# Current choice: I -> S -> H -> I -> unchanged logo, 16 frames per letter, 64 idle.
 TARGETS["vga_letter_animation"] = {
     **TARGETS["vga"],
     "sources": [

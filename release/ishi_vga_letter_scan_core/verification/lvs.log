@@ -9,4 +9,4 @@ LVS: build/candidate.gds  top=ishi_vga_core
   INFO : Congratulations! Netlists match.
   ==========================================
 
-  レポート build/core.lvsdb（404 KB）
+  レポート build/core.lvsdb（407 KB）

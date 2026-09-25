@@ -7,7 +7,7 @@ from letter_animation_eco import ROOT,sha,verify
 from validate_route_candidate import report_markers
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--verify-existing',action='store_true');a=ap.parse_args();verify()
+    ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,required=True);ap.add_argument('--verify-existing',action='store_true');ap.add_argument('--expected-gds',type=Path,default=ROOT/'release/ishi_vga_letter_scan_core/ishi_vga.gds');a=ap.parse_args();verify()
     d=a.out.resolve();assert d.is_relative_to(ROOT)
     if not a.verify_existing:
         assert not d.exists();(d/'build').mkdir(parents=True)
@@ -30,7 +30,7 @@ def main():
         call('placement.log',[ROOT/'scripts/letter_animation_eco.py','--design-root',d])
         call('routing.log',[ROOT/'scripts/route_letter_animation_eco.py','--design-root',d])
         call('repair.log',[ROOT/'scripts/repair_letter_animation_drc.py','--design-root',d])
-    assert sha(d/'build/candidate.gds')==sha(ROOT/'release/ishi_vga_letter_scan_core/ishi_vga.gds')
+    assert sha(d/'build/candidate.gds')==sha(a.expected_gds)
     apr('reference.log','apr/mklvsnet.py','--netlist','out/ishi_vga_core_pnr.v','--placement','layout/placement.json','--out','build/ishi_vga_core.spice')
     apr('drc.log','apr/drc_pdk.py','build/candidate.gds','ishi_vga_core','-r','build/drawing.lyrdb','--mdp',allowed=(0,1))
     assert not report_markers(d/'build/drawing.lyrdb')
@@ -44,7 +44,7 @@ def main():
     call('audit.log',[ROOT/'scripts/routing_diagnostics.py','--gds',d/'build/candidate.gds','--pins',d/'build/pins.json','--shapes',d/'build/shapes.json','--placement',d/'layout/placement.json','--out',d/'build/audit'])
     call('functional.log',[ROOT/'scripts/test_letter_animation_eco.py','--design-root',d])
     assert json.loads((d/'build/functional/verification.json').read_text())['status']=='PASS'
-    result={'status':'PASS','scope':'byte-identical GDS, fresh DRC/LVS/STA, 80 continuous RTL/gate frames',
+    result={'status':'PASS','scope':'byte-identical GDS, fresh DRC/LVS/STA, 128 continuous RTL/gate frames',
             'gds_sha256':sha(d/'build/candidate.gds'),'size_um':[1792.8,897.2],
             'hashes':{str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),d/'config.py',d/'build/candidate.gds',d/'build/drawing.lyrdb',d/'build/core.lvsdb',d/'out/STA_ishi_vga_core.guard.json',d/'build/functional/verification.json']}}
     (d/'replay.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2),flush=True)

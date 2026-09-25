@@ -26,7 +26,7 @@ def main():
         for pn,p in c['pins'].items():
             expected=next((newnet for inst,pin,oldnet,newnet in st['replacements'] if inst==name and pin==pn),p.get('net'))
             assert other['pins'][pn].get('net')==expected,(name,pn)
-    logical=cells((d/'out/ishi_vga_core_pnr.v').read_text());assert len(logical)==247
+    logical=cells((d/'out/ishi_vga_core_pnr.v').read_text());assert len(logical)==241
     assert sum(t=='DFF' for t,n,p in logical)==29
     assert not report_markers(b/'drawing.lyrdb')
     assert report_markers(b/'candidate_mdp.lyrdb')==report_markers(source.parent/'static_mdp.lyrdb')
@@ -53,6 +53,8 @@ def main():
     route=json.loads((b/'routing_manifest.json').read_text());assert route['gds_sha256']==sha(b/'candidate_unrepaired.gds')
     repair=json.loads((b/'repair_manifest.json').read_text());assert repair['gds_sha256']==sha(b/'candidate.gds') and repair['source_sha256']==route['gds_sha256']
     functional=json.loads((b/'functional/verification.json').read_text());assert functional['status']=='PASS'
+    assert functional['continuous_frames']==128 and functional['ticks']==6720000
+    assert functional['stage_frames']==[16,16,16,16,64]
     sta=json.loads((d/'out/STA_ishi_vga_core.guard.json').read_text());assert sta['status']=='PASS'
     lib=(ROOT/'tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib').read_text()
     section=lib.split('  cell (DFF) {',1)[1].split('  cell (',1)[0]
@@ -63,7 +65,7 @@ def main():
     assert all(c['pin_ff']<c['limit_ff'] for c in loads.values())
     paths=[Path(__file__),d/'config.py',d/'ishi_vga_core.v',d/'ishi_logo.v',d/'out/ishi_vga_core_pnr.v',d/'out/STA_ishi_vga_core.guard.json',d/'layout/placement.json']
     paths += [b/n for n in ['candidate.gds','core.extracted','pins.json','placement_manifest.json','routing_manifest.json','repair_manifest.json','drawing.lyrdb','candidate_mdp.lyrdb','core.lvsdb','lvs.log','ishi_vga_core.spice','audit/metal_connectivity.json','functional/verification.json']]
-    result={'status':'CORE_VERIFIED','feature':'I -> S -> H -> I -> idle, 16 frames per stage, 80 total','gds_sha256':sha(b/'candidate.gds'),'size_um':[1792.8,897.2],'logical_cells':247,'added_logic_cells':34,'dffs':29,'placement_cells':len(current),'actual_signal_pins':audit['actual_pin_shapes_labeled'],'drawing_drc':0,'mask_warnings':1,'strict_lvs':'PASS','ports':ports,'clock_pin_loads':loads,'sta':sta,'functional':{'frames':80,'ticks':4200000,'counter_transitions':80,'decoder_states':131072,'phase_initial_states':128},'scope':'core only; inherited CLK Floating SG warning; no wire RC or frame integration','hashes':{str(p.relative_to(ROOT)):sha(p) for p in paths}}
+    result={'status':'CORE_VERIFIED','feature':'I -> S -> H -> I -> idle, 16 frames per letter, 64 idle frames, 128 total','gds_sha256':sha(b/'candidate.gds'),'size_um':[1792.8,897.2],'logical_cells':241,'added_logic_cells':28,'dffs':29,'placement_cells':len(current),'actual_signal_pins':audit['actual_pin_shapes_labeled'],'drawing_drc':0,'mask_warnings':1,'strict_lvs':'PASS','ports':ports,'clock_pin_loads':loads,'sta':sta,'functional':{'frames':128,'ticks':6720000,'counter_transitions':128,'decoder_states':131072,'phase_initial_states':128},'scope':'core only; inherited CLK Floating SG warning; no wire RC or frame integration','hashes':{str(p.relative_to(ROOT)):sha(p) for p in paths}}
     (b/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='hashes'},indent=2),flush=True)
 
 if __name__=='__main__':main()

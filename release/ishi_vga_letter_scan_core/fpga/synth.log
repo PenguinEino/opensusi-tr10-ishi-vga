@@ -238,21 +238,21 @@ Creating decoders for process `\ishi_vga_core.$proc$experiments/a_letter_scan_ec
 
 5.4.9. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\ishi_vga_core.\b' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$727' with positive edge clock.
+  created $dff cell `$procdff$726' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\r' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$728' with positive edge clock.
+  created $dff cell `$procdff$727' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\g' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$729' with positive edge clock.
+  created $dff cell `$procdff$728' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\hsync' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$730' with positive edge clock.
+  created $dff cell `$procdff$729' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\vsync' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$731' with positive edge clock.
+  created $dff cell `$procdff$730' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\h' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$732' with positive edge clock.
+  created $dff cell `$procdff$731' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\v' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$733' with positive edge clock.
+  created $dff cell `$procdff$732' with positive edge clock.
 Creating register for signal `\ishi_vga_core.\phase' using process `\ishi_vga_core.$proc$experiments/a_letter_scan_eco/ishi_vga_core.v:11$10'.
-  created $dff cell `$procdff$734' with positive edge clock.
+  created $dff cell `$procdff$733' with positive edge clock.
 
 5.4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
@@ -305,15 +305,15 @@ Optimizing module ishi_vga_tang_top.
 
 5.12.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\ishi_vga_tang_top'.
-Computing hashes of 379 cells of `\ishi_vga_tang_top'.
+Computing hashes of 378 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
-Computing hashes of 281 cells of `\ishi_vga_tang_top'.
+Computing hashes of 280 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
-Computing hashes of 258 cells of `\ishi_vga_tang_top'.
+Computing hashes of 257 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
-Computing hashes of 249 cells of `\ishi_vga_tang_top'.
+Computing hashes of 248 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
-Computing hashes of 247 cells of `\ishi_vga_tang_top'.
+Computing hashes of 246 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
 <suppressed ~396 debug messages>
 Removed a total of 132 cells.
@@ -324,7 +324,7 @@ Running muxtree optimizer on module \ishi_vga_tang_top..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~16 debug messages>
+<suppressed ~15 debug messages>
 
 5.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \ishi_vga_tang_top.
@@ -332,7 +332,7 @@ Performed a total of 0 changes.
 
 5.12.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\ishi_vga_tang_top'.
-Computing hashes of 247 cells of `\ishi_vga_tang_top'.
+Computing hashes of 246 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
 Removed a total of 0 cells.
 
@@ -354,7 +354,7 @@ Running muxtree optimizer on module \ishi_vga_tang_top..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~16 debug messages>
+<suppressed ~15 debug messages>
 
 5.12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \ishi_vga_tang_top.
@@ -362,7 +362,7 @@ Performed a total of 0 changes.
 
 5.12.12. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\ishi_vga_tang_top'.
-Computing hashes of 247 cells of `\ishi_vga_tang_top'.
+Computing hashes of 246 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
 Removed a total of 0 cells.
 
@@ -402,7 +402,7 @@ Optimizing module ishi_vga_tang_top.
 
 5.14.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\ishi_vga_tang_top'.
-Computing hashes of 247 cells of `\ishi_vga_tang_top'.
+Computing hashes of 246 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
 Removed a total of 0 cells.
 
@@ -412,7 +412,7 @@ Running muxtree optimizer on module \ishi_vga_tang_top..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~16 debug messages>
+<suppressed ~15 debug messages>
 
 5.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \ishi_vga_tang_top.
@@ -420,22 +420,21 @@ Performed a total of 0 changes.
 
 5.14.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\ishi_vga_tang_top'.
-Computing hashes of 247 cells of `\ishi_vga_tang_top'.
+Computing hashes of 246 cells of `\ishi_vga_tang_top'.
 Finding duplicate cells in `\ishi_vga_tang_top'.
 Removed a total of 0 cells.
 
 5.14.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\u_core.$procdff$734 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$ternary$experiments/a_letter_scan_eco/ishi_vga_core.v:14$17_Y, Q = \u_core.phase [6:4]).
-Adding EN signal on $flatten\u_core.$procdff$734 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14_Y, Q = \u_core.phase [3:0]).
-Adding SRST signal on $auto$ff.cc:337:slice$740 ($dffe) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16_Y, Q = \u_core.phase [6:4], rval = 3'000).
-Adding EN signal on $flatten\u_core.$procdff$733 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$ternary$experiments/a_letter_scan_eco/ishi_vga_core.v:18$21_Y, Q = \u_core.v).
-Adding SRST signal on $auto$ff.cc:337:slice$745 ($dffe) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20_Y, Q = \u_core.v, rval = 10'0111110100).
-Adding SRST signal on $flatten\u_core.$procdff$732 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$22_Y, Q = \u_core.h, rval = 7'1000111).
+Adding EN signal on $flatten\u_core.$procdff$733 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16_Y, Q = \u_core.phase [6:4]).
+Adding EN signal on $flatten\u_core.$procdff$733 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14_Y, Q = \u_core.phase [3:0]).
+Adding EN signal on $flatten\u_core.$procdff$732 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$ternary$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20_Y, Q = \u_core.v).
+Adding SRST signal on $auto$ff.cc:337:slice$743 ($dffe) from module ishi_vga_tang_top (D = $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$19_Y, Q = \u_core.v, rval = 10'0111110100).
+Adding SRST signal on $flatten\u_core.$procdff$731 ($dff) from module ishi_vga_tang_top (D = $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$21_Y, Q = \u_core.h, rval = 7'1000111).
 
 5.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \ishi_vga_tang_top..
-Removed 7 unused cells and 6 unused wires.
-<suppressed ~8 debug messages>
+Removed 6 unused cells and 5 unused wires.
+<suppressed ~7 debug messages>
 
 5.14.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module ishi_vga_tang_top.
@@ -452,7 +451,7 @@ Removed 0 multiplexer ports.
 
 5.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \ishi_vga_tang_top.
-    New input vector for $reduce_and cell $auto$simple.cc:211:make_patterns_logic$742: { \u_core.phase [3:0] $flatten\u_core.$logic_and$experiments/a_letter_scan_eco/ishi_vga_core.v:12$13_Y }
+    New input vector for $reduce_and cell $auto$simple.cc:211:make_patterns_logic$741: { \u_core.phase [3:0] $flatten\u_core.$logic_and$experiments/a_letter_scan_eco/ishi_vga_core.v:12$13_Y }
   Optimizing cells in module \ishi_vga_tang_top.
 Performed a total of 1 changes.
 
@@ -503,17 +502,17 @@ Optimizing module ishi_vga_tang_top.
 5.14.23. Finished fast OPT passes. (There is nothing left to do.)
 
 5.15. Executing WREDUCE pass (reducing word size of cells).
-Removed top 4 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$365 ($lt).
-Removed top 5 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$364 ($ge).
-Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$329 ($ne).
-Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$340 ($ge).
-Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$341 ($lt).
-Removed top 1 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$348 ($ge).
-Removed top 1 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$349 ($lt).
-Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$356 ($ge).
-Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$357 ($lt).
-Removed top 6 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$22 ($sub).
-Removed top 9 bits (of 10) from port B of cell ishi_vga_tang_top.$flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20 ($add).
+Removed top 4 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$364 ($lt).
+Removed top 5 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$363 ($ge).
+Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$328 ($ne).
+Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$339 ($ge).
+Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$340 ($lt).
+Removed top 1 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$347 ($ge).
+Removed top 1 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$348 ($lt).
+Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$355 ($ge).
+Removed top 2 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$356 ($lt).
+Removed top 6 bits (of 7) from port B of cell ishi_vga_tang_top.$flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$21 ($sub).
+Removed top 9 bits (of 10) from port B of cell ishi_vga_tang_top.$flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$19 ($add).
 Removed top 2 bits (of 3) from port B of cell ishi_vga_tang_top.$flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16 ($add).
 Removed top 3 bits (of 4) from port B of cell ishi_vga_tang_top.$flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14 ($add).
 
@@ -587,54 +586,54 @@ No more expansions possible.
 
 5.24. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module ishi_vga_tang_top:
-  creating $macc model for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20 ($add).
-  creating $macc model for $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$22 ($sub).
+  creating $macc model for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$19 ($add).
+  creating $macc model for $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$21 ($sub).
   creating $macc model for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16 ($add).
   creating $macc model for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14 ($add).
   creating $alu model for $macc $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14.
   creating $alu model for $macc $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16.
-  creating $alu model for $macc $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$22.
-  creating $alu model for $macc $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20.
-  creating $alu model for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:20$23 ($ge): new $alu
-  creating $alu model for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:20$24 ($lt): new $alu
-  creating $alu model for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:21$27 ($ge): new $alu
-  creating $alu model for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:21$28 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$364 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$360 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$359 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$357 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$356 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$349 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$348 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$344 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$343 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$341 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$340 ($ge): merged with $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$357.
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:8$320 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:8$318 ($ge): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$365 ($lt): new $alu
-  creating $alu model for $flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$329 ($ne): merged with $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$357.
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$365: $auto$alumacc.cc:576:replace_alu$765
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:8$318: $auto$alumacc.cc:576:replace_alu$770
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:8$320: $auto$alumacc.cc:576:replace_alu$783
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$341: $auto$alumacc.cc:576:replace_alu$788
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$343: $auto$alumacc.cc:576:replace_alu$793
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$344: $auto$alumacc.cc:576:replace_alu$806
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$348: $auto$alumacc.cc:576:replace_alu$811
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$349: $auto$alumacc.cc:576:replace_alu$824
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$356: $auto$alumacc.cc:576:replace_alu$829
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$357, $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$340, $flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$329: $auto$alumacc.cc:576:replace_alu$842
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$359: $auto$alumacc.cc:576:replace_alu$857
-  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$360: $auto$alumacc.cc:576:replace_alu$870
-  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$364: $auto$alumacc.cc:576:replace_alu$875
-  creating $alu cell for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:21$28: $auto$alumacc.cc:576:replace_alu$888
-  creating $alu cell for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:21$27: $auto$alumacc.cc:576:replace_alu$893
-  creating $alu cell for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:20$24: $auto$alumacc.cc:576:replace_alu$906
-  creating $alu cell for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:20$23: $auto$alumacc.cc:576:replace_alu$911
-  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$20: $auto$alumacc.cc:576:replace_alu$924
-  creating $alu cell for $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$22: $auto$alumacc.cc:576:replace_alu$927
-  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16: $auto$alumacc.cc:576:replace_alu$930
-  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14: $auto$alumacc.cc:576:replace_alu$933
+  creating $alu model for $macc $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$21.
+  creating $alu model for $macc $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$19.
+  creating $alu model for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:20$22 ($ge): new $alu
+  creating $alu model for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:20$23 ($lt): new $alu
+  creating $alu model for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:21$26 ($ge): new $alu
+  creating $alu model for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:21$27 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$359 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$358 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$356 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$355 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$348 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$347 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$343 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$342 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$340 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$339 ($ge): merged with $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$356.
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:8$319 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:8$317 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$364 ($lt): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$363 ($ge): new $alu
+  creating $alu model for $flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$328 ($ne): merged with $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$356.
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$363: $auto$alumacc.cc:576:replace_alu$763
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$364: $auto$alumacc.cc:576:replace_alu$776
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:8$317: $auto$alumacc.cc:576:replace_alu$781
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:8$319: $auto$alumacc.cc:576:replace_alu$794
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$340: $auto$alumacc.cc:576:replace_alu$799
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$342: $auto$alumacc.cc:576:replace_alu$804
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$343: $auto$alumacc.cc:576:replace_alu$817
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$347: $auto$alumacc.cc:576:replace_alu$822
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$348: $auto$alumacc.cc:576:replace_alu$835
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$355: $auto$alumacc.cc:576:replace_alu$840
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$356, $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$339, $flatten\u_core.\u_logo.$ne$experiments/a_letter_scan_eco/ishi_logo.v:11$328: $auto$alumacc.cc:576:replace_alu$853
+  creating $alu cell for $flatten\u_core.\u_logo.$ge$experiments/a_letter_scan_eco/ishi_logo.v:12$358: $auto$alumacc.cc:576:replace_alu$868
+  creating $alu cell for $flatten\u_core.\u_logo.$lt$experiments/a_letter_scan_eco/ishi_logo.v:12$359: $auto$alumacc.cc:576:replace_alu$881
+  creating $alu cell for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:21$27: $auto$alumacc.cc:576:replace_alu$886
+  creating $alu cell for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:21$26: $auto$alumacc.cc:576:replace_alu$891
+  creating $alu cell for $flatten\u_core.$lt$experiments/a_letter_scan_eco/ishi_vga_core.v:20$23: $auto$alumacc.cc:576:replace_alu$904
+  creating $alu cell for $flatten\u_core.$ge$experiments/a_letter_scan_eco/ishi_vga_core.v:20$22: $auto$alumacc.cc:576:replace_alu$909
+  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:18$19: $auto$alumacc.cc:576:replace_alu$922
+  creating $alu cell for $flatten\u_core.$sub$experiments/a_letter_scan_eco/ishi_vga_core.v:19$21: $auto$alumacc.cc:576:replace_alu$925
+  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:14$16: $auto$alumacc.cc:576:replace_alu$928
+  creating $alu cell for $flatten\u_core.$add$experiments/a_letter_scan_eco/ishi_vga_core.v:13$14: $auto$alumacc.cc:576:replace_alu$931
   created 21 $alu and 0 $macc cells.
 
 5.25. Executing OPT pass (performing simple optimizations).
@@ -803,15 +802,15 @@ Removed 0 multiplexer ports.
 
 5.32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \ishi_vga_tang_top.
-    Consolidated identical input bits for $mux cell $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373:
-      Old ports: A=3'000, B=3'101, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y
-      New ports: A=1'0, B=1'1, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [0]
-      New connections: $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [2:1] = { $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [0] 1'0 }
+    Consolidated identical input bits for $mux cell $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372:
+      Old ports: A=3'000, B=3'101, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y [0]
+      New connections: $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y [2:1] = { $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y [0] 1'0 }
   Optimizing cells in module \ishi_vga_tang_top.
-    Consolidated identical input bits for $mux cell $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$374:
-      Old ports: A=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y, B=3'001, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$374_Y
-      New ports: A={ $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [0] $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [0] }, B=2'01, Y={ $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$374_Y [2] $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$374_Y [0] }
-      New connections: $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$374_Y [1] = 1'0
+    Consolidated identical input bits for $mux cell $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373:
+      Old ports: A=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y, B=3'001, Y=$flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y
+      New ports: A={ $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y [0] $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$372_Y [0] }, B=2'01, Y={ $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [2] $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [0] }
+      New connections: $flatten\u_core.\u_logo.$ternary$experiments/a_letter_scan_eco/ishi_logo.v:14$373_Y [1] = 1'0
   Optimizing cells in module \ishi_vga_tang_top.
 Performed a total of 2 changes.
 
@@ -907,7 +906,6 @@ Using extmapper simplemap for cells of type $reduce_and.
 Using template $paramod$00298f3f8094950cb9a5ff2fda48d0d8bde8806c\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$d2fa05d38998afabc6d4f34471305d0af4b8b2df\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$b18e16801adf491a64caa0542270798e5d4ac6b6\_80_gw1n_alu for cells of type $alu.
-Using template $paramod$403e3b916c6203cefc86d5db164f41811de6a0e8\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$5042debdcb1fbd120a67f55dfe5b3afe2a9f08e5\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$ed40eaed6d7865a5f6e873e7da3aa6067d71cfbb\_80_gw1n_alu for cells of type $alu.
@@ -915,6 +913,7 @@ Using template $paramod$a40b3a69ab2154dca9743e30e1e84efb03b892b4\_80_gw1n_alu fo
 Using template $paramod$d597a1d02e4b78ac244cbe0a6bc64f098a6f19e7\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$5ccf584370207a3ccc3032757a8e590623d4de56\_80_gw1n_alu for cells of type $alu.
 Using template $paramod$dc04b7d98e503a7bab16fce2df70e6e2c5ca34d6\_80_gw1n_alu for cells of type $alu.
+Using template $paramod$403e3b916c6203cefc86d5db164f41811de6a0e8\_80_gw1n_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $sdff.
 Using extmapper simplemap for cells of type $sdffce.
 Using extmapper simplemap for cells of type $dffe.
@@ -1050,7 +1049,7 @@ Successfully finished Verilog frontend.
 5.44.3. Executing PROC pass (convert processes to netlists).
 
 5.44.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2730'.
+Found and cleaned up 1 empty switch in `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2722'.
 Cleaned up 1 empty switch.
 
 5.44.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
@@ -1068,18 +1067,18 @@ Promoted 4 assignments to connections.
 Converted 0 switches.
 
 5.44.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2730'.
+Creating decoders for process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2722'.
 
 5.44.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\C' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2730'.
-No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\S' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2730'.
+No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\C' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2722'.
+No latch inferred for signal `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.\S' from process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2722'.
 
 5.44.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
 
 5.44.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 5.44.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2730'.
+Removing empty process `$paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.$proc$/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_sim.v:1064$2722'.
 Cleaned up 0 empty switches.
 
 5.44.4. Executing SCC pass (detecting logic loops).
@@ -1170,7 +1169,7 @@ Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
 Successfully finished Verilog frontend.
 
 5.44.10. Executing ABC9_OPS pass (helper functions for ABC9).
-<suppressed ~68 debug messages>
+<suppressed ~65 debug messages>
 
 5.44.11. Executing ABC9_OPS pass (helper functions for ABC9).
 
@@ -1282,27 +1281,27 @@ Optimizing module ishi_vga_tang_top.
 5.44.14.16. Finished fast OPT passes. (There is nothing left to do.)
 
 5.44.15. Executing AIGMAP pass (map logic to AIG).
-Module ishi_vga_tang_top: replaced 96 cells with 411 new cells, skipped 496 cells.
+Module ishi_vga_tang_top: replaced 96 cells with 411 new cells, skipped 490 cells.
   replaced 3 cell types:
        7 $_MUX_
       87 $_OR_
        2 $_XOR_
   not replaced 15 cell types:
-     214 $_AND_
+     211 $_AND_
       55 $_NOT_
        3 $scopeinfo
        5 DFF
        1 IBUF
        1 rPLL
-       4 DFFE
+       7 DFFE
        4 DFFS
        6 DFFSE
        3 DFFR
-       7 DFFRE
+       4 DFFRE
        7 OBUF
      120 $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010
       29 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000001001000000
-      37 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000111111
+      34 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000111111
 
 5.44.15.1. Executing ABC9_OPS pass (helper functions for ABC9).
 
@@ -1310,8 +1309,8 @@ Module ishi_vga_tang_top: replaced 96 cells with 411 new cells, skipped 496 cell
 Warning: Feature 'write_xaiger2' is experimental.
 
 5.44.15.3. Executing XAIGER2 backend.
-<suppressed ~458 debug messages>
-Extracted 665 AND gates and 0 wires from module `ishi_vga_tang_top' to a netlist network with 347 inputs and 657 outputs.
+<suppressed ~452 debug messages>
+Extracted 659 AND gates and 0 wires from module `ishi_vga_tang_top' to a netlist network with 344 inputs and 651 outputs.
 
 5.44.15.4. Executing ABC9_EXE pass (technology mapping using ABC9).
 
@@ -1322,31 +1321,31 @@ ABC: + read_lut <abc-temp-dir>/input.lut
 ABC: + read_box <abc-temp-dir>/input.box 
 ABC: + &read <abc-temp-dir>/input.xaig 
 ABC: + &ps 
-ABC: <abc-temp-dir>/input : i/o =     41/    111  and =     293  lev =   42 (0.47)  mem = 0.02 MB  box = 186  bb = 66
+ABC: <abc-temp-dir>/input : i/o =     41/    108  and =     292  lev =   42 (0.43)  mem = 0.02 MB  box = 183  bb = 63
 ABC: + &scorr 
 ABC: Warning: The network is combinational.
 ABC: + &sweep 
 ABC: + &dc2 
 ABC: + &dch -f -r 
 ABC: + &ps 
-ABC: <abc-temp-dir>/input : i/o =     41/    111  and =     259  lev =   14 (0.39)  mem = 0.02 MB  ch =   36  box = 148  bb = 66
-ABC: cst =       0  cls =     32  lit =      36  unused =     462  proof =     0
+ABC: <abc-temp-dir>/input : i/o =     41/    108  and =     232  lev =   14 (0.35)  mem = 0.02 MB  ch =   28  box = 145  bb = 63
+ABC: cst =       0  cls =     26  lit =      28  unused =     446  proof =     0
 ABC: + &if -W 500 -v 
 ABC: K = 8. Memory (bytes): Truth =    0. Cut =   80. Obj =  160. Set =  816. CutMin = no
-ABC: Node =     259.  Ch =    32.  Total mem =    0.17 MB. Peak cut mem =    0.03 MB.
-ABC: P:  Del = 6180.00.  Ar =     188.0.  Edge =      163.  Cut =     3100.  T =     0.00 sec
-ABC: P:  Del = 6180.00.  Ar =     208.0.  Edge =      172.  Cut =     3102.  T =     0.00 sec
-ABC: P:  Del = 6180.00.  Ar =     152.0.  Edge =      152.  Cut =     5068.  T =     0.00 sec
-ABC: F:  Del = 6166.00.  Ar =     127.0.  Edge =      145.  Cut =     4034.  T =     0.00 sec
-ABC: A:  Del = 6166.00.  Ar =     126.0.  Edge =      142.  Cut =     3975.  T =     0.00 sec
-ABC: A:  Del = 6166.00.  Ar =     126.0.  Edge =      142.  Cut =     3966.  T =     0.00 sec
+ABC: Node =     232.  Ch =    26.  Total mem =    0.17 MB. Peak cut mem =    0.03 MB.
+ABC: P:  Del = 6180.00.  Ar =     173.0.  Edge =      155.  Cut =     2481.  T =     0.00 sec
+ABC: P:  Del = 6180.00.  Ar =     193.0.  Edge =      164.  Cut =     2492.  T =     0.00 sec
+ABC: P:  Del = 6180.00.  Ar =     135.0.  Edge =      137.  Cut =     4489.  T =     0.00 sec
+ABC: F:  Del = 6166.00.  Ar =     118.0.  Edge =      141.  Cut =     3647.  T =     0.00 sec
+ABC: A:  Del = 6166.00.  Ar =     117.0.  Edge =      135.  Cut =     3596.  T =     0.00 sec
+ABC: A:  Del = 6166.00.  Ar =     113.0.  Edge =      134.  Cut =     3604.  T =     0.00 sec
 ABC: Total time =     0.00 sec
 ABC: + &write -n <abc-temp-dir>/output.aig 
 ABC: + &mfs 
 ABC: + &ps -l 
-ABC: <abc-temp-dir>/input : i/o =     41/    111  and =     196  lev =   17 (0.51)  mem = 0.01 MB  box = 143  bb = 66
-ABC: Mapping (K=8)  :  lut =     25  edge =     114  lev =    4 (0.23)  levB =   11  mem = 0.00 MB
-ABC: LUT = 25 : 2=3 12.0 %  3=4 16.0 %  4=6 24.0 %  5=5 20.0 %  6=3 12.0 %  7=3 12.0 %  8=1 4.0 %  Ave = 4.56
+ABC: <abc-temp-dir>/input : i/o =     41/    108  and =     200  lev =   17 (0.47)  mem = 0.01 MB  box = 140  bb = 63
+ABC: Mapping (K=8)  :  lut =     25  edge =     120  lev =    4 (0.21)  levB =   11  mem = 0.00 MB
+ABC: LUT = 25 : 2=5 20.0 %  3=1 4.0 %  4=5 20.0 %  5=5 20.0 %  6=4 16.0 %  7=2 8.0 %  8=3 12.0 %  Ave = 4.80
 ABC: + &write -n <abc-temp-dir>/output.aig 
 ABC: + &verify 
 ABC: Networks are equivalent.  Time =     0.01 sec
@@ -1355,14 +1354,14 @@ ABC: elapse: 0.02 seconds, total: 0.02 seconds
 
 5.44.15.6. Executing AIGER frontend.
 <suppressed ~10 debug messages>
-Removed 292 unused cells and 994 unused wires.
+Removed 293 unused cells and 986 unused wires.
 
 5.44.15.7. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
 ABC RESULTS:              $lut cells:       29
 ABC RESULTS:   $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010 cells:       77
 ABC RESULTS:           input signals:       13
 ABC RESULTS:          output signals:        7
-<suppressed ~347 debug messages>
+<suppressed ~341 debug messages>
 Removing temp directory.
 
 5.44.16. Executing TECHMAP pass (map to technology primitives).
@@ -1377,7 +1376,7 @@ Successfully finished Verilog frontend.
 Using template $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010 for cells of type $paramod\ALU\ALU_MODE=s32'00000000000000000000000000000010.
 No more expansions possible.
 <suppressed ~83 debug messages>
-Removed 5 unused cells and 954 unused wires.
+Removed 5 unused cells and 948 unused wires.
 
 5.45. Executing TECHMAP pass (map to technology primitives).
 
@@ -1407,65 +1406,73 @@ Generating RTLIL representation for module `$lut'.
 Successfully finished Verilog frontend.
 
 5.45.2. Continuing TECHMAP pass.
-Using template $paramod$f3e32c0da5a5ec27f088c3d31a6029c03bdf1b61$lut for cells of type $lut.
+Using template $paramod$c165e8cd9e838f85bb59fa87e4edab331d879528$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
 Using template $paramod$2234fdb2ac6f962d1d3c58551e81c88a067bf6cb$lut for cells of type $lut.
-Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
-Using template $paramod$ac8106c625c23c930978a91d8d1e35be414aef13$lut for cells of type $lut.
+Using template $paramod$7fd6b83cb740d5b1418573ac55cff8549f09facf$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$de5074a80e0a92a065a2ccd0d26c618282111f8c$lut for cells of type $lut.
+Using template $paramod$0dcf501088307715c05c7adfee85129058e5df39$lut for cells of type $lut.
+Using template $paramod$f3e32c0da5a5ec27f088c3d31a6029c03bdf1b61$lut for cells of type $lut.
 Using template $paramod$93d80e92f359180d6cca439a9391f3d68cb31335$lut for cells of type $lut.
 Using template $paramod$daa416e048ebbd6eb9d50ce6da3ceb8f9e0ebbff$lut for cells of type $lut.
 Using template $paramod$a743caf801766df40bcc22d49baa12a0bdc2f7fe$lut for cells of type $lut.
-Using template $paramod$4dac257fb28745ee6441bc3ff8441363f69c62d2$lut for cells of type $lut.
-Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
-Using template $paramod$de5074a80e0a92a065a2ccd0d26c618282111f8c$lut for cells of type $lut.
-Using template $paramod$7fd6b83cb740d5b1418573ac55cff8549f09facf$lut for cells of type $lut.
-Using template $paramod$917139e52fa51b2e1677f33587f4c647ac0476f3$lut for cells of type $lut.
 Using template $paramod$c28a8b7ce0535d090c4cfb52e9c74affd52b110c$lut for cells of type $lut.
-Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101110 for cells of type $lut.
-Using template $paramod$7cda5b490e47b5d3f90bc84fa0d717bc3a6db5d7$lut for cells of type $lut.
+Using template $paramod$b21ccdab9f99700c2dc6848041e05ef1ab8009b8$lut for cells of type $lut.
+Using template $paramod$a3b6feb0ba7f68e208aec658f5b378feeb17d84d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110010 for cells of type $lut.
+Using template $paramod$50f144346eac814477fcde9b00d34fef767e1458$lut for cells of type $lut.
 Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1011 for cells of type $lut.
 Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
 Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b$lut for cells of type $lut.
 Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
 Using template $paramod$9bdc414229f06e785dc8fd97a243faa9336e164a$lut for cells of type $lut.
-Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9$lut for cells of type $lut.
-Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
-Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$251994398653c4cf8de320f1e306e535d5d2d624$lut for cells of type $lut.
 Using template $paramod$9664483609d9e726df9697364de1aad825ad3979$lut for cells of type $lut.
-Using template $paramod$6cfe8b7c0fe7283c1a1cd3d236f54ee65f77d7c5$lut for cells of type $lut.
-Using template $paramod$61bc98ece8c76bffd4acdf40e5f231340cba90fc$lut for cells of type $lut.
-Using template $paramod$734cb5d7d83659ae4da13abb9e04fafa8dc19119$lut for cells of type $lut.
-Using template $paramod$71a96c621bf23b139038ce199a04f47b853774b7$lut for cells of type $lut.
-Using template $paramod$bf0d0292861bdee659ef5cbc5e58b330ac5871f9$lut for cells of type $lut.
-Using template $paramod$f220063cf2475abf1bb6c07b61f35b54c110ec89$lut for cells of type $lut.
-Using template $paramod$fab2bfc5d407bfaa0ca609816c0436265e207b67$lut for cells of type $lut.
-Using template $paramod$17254b22e8500b1f253acbdf889fd3146d91faa8$lut for cells of type $lut.
+Using template $paramod$86e4ac392b89fc0cba75f5d7a03d15d56a120fdd$lut for cells of type $lut.
+Using template $paramod$f7232c4cf3eb2817fdfd87e476a1a9b3de3761d4$lut for cells of type $lut.
 Using template $paramod$fe2ccc9771c7f3621af3392ea69c0322e13310d4$lut for cells of type $lut.
+Using template $paramod$e6197a5e543ebf944598378b59598d3f9f1b57f8$lut for cells of type $lut.
+Using template $paramod$0c139881d3db5b833d6dc49ac441c8f621383393$lut for cells of type $lut.
+Using template $paramod$34e531dc93cdec6b88bf30bc052a85f014ce6b53$lut for cells of type $lut.
 Using template $paramod$87ebec334478dec0844d14a939764196d75b233e$lut for cells of type $lut.
 Using template $paramod$2bd023b59c054dac2b95ce3901071b3cb7f25df4$lut for cells of type $lut.
 Using template $paramod$0a384fcfd63a38407d465dea61faa7af7b050663$lut for cells of type $lut.
-Using template $paramod$2696bd9b1a744c826fadf813711388f6bdec42b8$lut for cells of type $lut.
 Using template $paramod$692927e279b3d5c42ee4aacb287247c0b34943ed$lut for cells of type $lut.
-Using template $paramod$8a7fded9bcd25f6b284701e0ddd33f1848d8d550$lut for cells of type $lut.
 Using template $paramod$49ef71a1361a42edc12a2265b30dd2e64cf1cc1b$lut for cells of type $lut.
-Using template $paramod$fb85387057a470832f8ae391311b6f154844582e$lut for cells of type $lut.
+Using template $paramod$10f9ec10907e3614f4091bb6c69006195a5f5733$lut for cells of type $lut.
+Using template $paramod$f8ef4fbeb1e8e5d5b460d5f5a72d557d3844a5be$lut for cells of type $lut.
+Using template $paramod$bf0d0292861bdee659ef5cbc5e58b330ac5871f9$lut for cells of type $lut.
+Using template $paramod$fab2bfc5d407bfaa0ca609816c0436265e207b67$lut for cells of type $lut.
+Using template $paramod$f220063cf2475abf1bb6c07b61f35b54c110ec89$lut for cells of type $lut.
+Using template $paramod$8a7fded9bcd25f6b284701e0ddd33f1848d8d550$lut for cells of type $lut.
+Using template $paramod$024acc877a0a4e1d4160da6934859e378fb0d2d3$lut for cells of type $lut.
+Using template $paramod$a2b4ddfa3906001b2ef9f2414d79c3048f2a3a6e$lut for cells of type $lut.
+Using template $paramod$2696bd9b1a744c826fadf813711388f6bdec42b8$lut for cells of type $lut.
 Using template $paramod$6290ca1cf81939a60f6512e1b18f97c5a70727be$lut for cells of type $lut.
 Using template $paramod$d1f00954996213f851210819611ddfcef51210bd$lut for cells of type $lut.
-Using template $paramod$15947a1156ab9f0a07956167bb5a4d56ad9481dd$lut for cells of type $lut.
+Using template $paramod$db3cc515e6967efc802249619c7772e9ca1c5c71$lut for cells of type $lut.
+Using template $paramod$58d806574f32fa08aa8bdb1774a536a883d3bd28$lut for cells of type $lut.
+Using template $paramod$61bc98ece8c76bffd4acdf40e5f231340cba90fc$lut for cells of type $lut.
+Using template $paramod$fb85387057a470832f8ae391311b6f154844582e$lut for cells of type $lut.
 Using template $paramod$b73879763f8dcd2e3747f088629a23a7637b9544$lut for cells of type $lut.
 Using template $paramod$0f625865eb7a835db7a4f860d00218099f709ce4$lut for cells of type $lut.
 Using template $paramod$6be5f116ea71c74795ae6000d70dffc08c8a3cf5$lut for cells of type $lut.
 Using template $paramod$bf86704c8162f1e6baa2fac93bc4c3e65f26619b$lut for cells of type $lut.
-Using template $paramod$7c36d412a32840bb16af5c3390938ff3d1abec04$lut for cells of type $lut.
-Using template $paramod$db3cc515e6967efc802249619c7772e9ca1c5c71$lut for cells of type $lut.
+Using template $paramod$c315fd171a22ad0b563d890e3adda172ea240769$lut for cells of type $lut.
+Using template $paramod$0944431c6b80a779d044be77891be250c48171bd$lut for cells of type $lut.
+Using template $paramod$81e6d63550f6c82050b454d39cb4e4ca693c70ff$lut for cells of type $lut.
+Using template $paramod$b47538df237ce5e8718417dd839eb659aa11a2f0$lut for cells of type $lut.
 Using template $paramod$fa2fc59539e6621fab6cd35ac6b55d1d86c162f0$lut for cells of type $lut.
 Using template $paramod$8a7d2594dcbc869d7fe17df6dfb434cafe049d86$lut for cells of type $lut.
 Using template $paramod$8fcd5cb25c60b455c9497b7d813cb2bde28178bc$lut for cells of type $lut.
 Using template $paramod$ae187abb050008e3cb59f09dc977bd49b5e1f236$lut for cells of type $lut.
 Using template $paramod$0346eca86156066ad11300f1a3c0ef174f653993$lut for cells of type $lut.
 Using template $paramod$a613b9fef3cc9774cac6b23709fb15a5abfb223a$lut for cells of type $lut.
+Using template $paramod$f12f5c320f33b032a5d8e9643b181e1c187aab62$lut for cells of type $lut.
+Using template $paramod$15947a1156ab9f0a07956167bb5a4d56ad9481dd$lut for cells of type $lut.
 Using template $paramod$4518d24fec38775f282096f22ad6cfb50f51384f$lut for cells of type $lut.
 Using template $paramod$eacec56d9f8a17dd8bd05ab410777702ff3be351$lut for cells of type $lut.
-Using template $paramod$f12f5c320f33b032a5d8e9643b181e1c187aab62$lut for cells of type $lut.
 Using template $paramod$1ca0c77d7567c92acaf7e472672ec4d95955310e$lut for cells of type $lut.
 Using template $paramod$a4c51b55b17754b00cf688e2e13b4ac1c390d528$lut for cells of type $lut.
 Using template $paramod$139b16cde9ae902b3162a0435832f0b65c680f65$lut for cells of type $lut.
@@ -1474,52 +1481,79 @@ Using template $paramod$e36b0f516b841d798086c0f897a21ee329f37206$lut for cells o
 Using template $paramod$b6819de29976c439254c718572777859cdb47d6c$lut for cells of type $lut.
 Using template $paramod$3bec3a96ec283562a84195cbd1131fa6b695dbfe$lut for cells of type $lut.
 Using template $paramod$b79e72ae316e1a6e1e0b624d3366995dc7eb6fc6$lut for cells of type $lut.
+Using template $paramod$f1b3abefc660d12ea94d1badae3c895338e57374$lut for cells of type $lut.
+Using template $paramod$0a4bb6e1b21203cc13c67229c76568484fb52643$lut for cells of type $lut.
 No more expansions possible.
-<suppressed ~889 debug messages>
+<suppressed ~1051 debug messages>
 
 5.46. Executing OPT_LUT_INS pass (discard unused LUT inputs).
 Optimizing LUTs in ishi_vga_tang_top.
-  Optimizing lut $abc$6254$lut$aiger6253$354.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$362.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$411.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$411.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$411.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$411.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$382.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$354.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$367.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$362.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$362.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$374.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 3)
-  Optimizing lut $abc$6254$lut$aiger6253$367.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6260.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$386.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$411.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6260.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$374.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 1)
-  Optimizing lut $abc$6254$lut$aiger6253$367.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger$o217.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6260.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$395.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $abc$6254$lut$aiger6253$421.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
-  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6258.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$351.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 3)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6235.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$382.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$371.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$371.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$376.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$382.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$362.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$351.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger$o235.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$376.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$371.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$429.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6235.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$366.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$376.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6235.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger$o217.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
+  Optimizing lut $auto$abc_ops_reintegrate.cc:686:reintegrate$6237.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$417.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$382.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$398.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1 (4 -> 0)
+  Optimizing lut $abc$6231$lut$aiger6230$407.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0.genblk1.genblk1.genblk1.genblk1.genblk1.genblk1.lut1.genblk1.genblk1.genblk1.genblk1.genblk1.lut0 (4 -> 0)
 
 5.47. Executing HILOMAP pass (mapping to constant drivers).
-Removed 0 unused cells and 273 unused wires.
+Removed 0 unused cells and 378 unused wires.
 
 5.48. Executing AUTONAME pass.
-Renamed 515 objects in module ishi_vga_tang_top.
-<suppressed ~515 debug messages>
+Renamed 618 objects in module ishi_vga_tang_top.
+<suppressed ~618 debug messages>
 
 5.49. Executing HIERARCHY pass (managing design hierarchy).
 Attribute `top' found on module `ishi_vga_tang_top'. Setting top module to ishi_vga_tang_top.
@@ -1537,33 +1571,33 @@ Removed 0 unused modules.
 
         +----------Local Count, excluding submodules.
         | 
-      291 wires
-      340 wire bits
-      291 public wires
-      340 public wire bits
+      342 wires
+      404 wire bits
+      342 public wires
+      404 public wire bits
         8 ports
         8 port bits
-      143 cells
+      195 cells
         3   $scopeinfo
         1   GND
         1   IBUF
-       37   LUT1
-        3   LUT2
-        5   LUT3
-       34   LUT4
-       31   MUX2_LUT5
-       13   MUX2_LUT6
-        5   MUX2_LUT7
-        1   MUX2_LUT8
+       62   LUT1
+        5   LUT2
+        2   LUT3
+       36   LUT4
+       45   MUX2_LUT5
+       20   MUX2_LUT6
+        8   MUX2_LUT7
+        3   MUX2_LUT8
         7   OBUF
         1   VCC
         1   rPLL
       106 submodules
        77   ALU
         5   DFF
-        4   DFFE
+        7   DFFE
         3   DFFR
-        7   DFFRE
+        4   DFFRE
         4   DFFS
         6   DFFSE
 
@@ -1571,40 +1605,40 @@ Removed 0 unused modules.
 
         +----------Count including submodules.
         | 
-      143 ishi_vga_tang_top
+      195 ishi_vga_tang_top
 
         +----------Count including submodules.
         | 
-      291 wires
-      340 wire bits
-      291 public wires
-      340 public wire bits
+      342 wires
+      404 wire bits
+      342 public wires
+      404 public wire bits
         8 ports
         8 port bits
         - memories
         - memory bits
         - processes
-      143 cells
+      195 cells
         3   $scopeinfo
         1   GND
         1   IBUF
-       37   LUT1
-        3   LUT2
-        5   LUT3
-       34   LUT4
-       31   MUX2_LUT5
-       13   MUX2_LUT6
-        5   MUX2_LUT7
-        1   MUX2_LUT8
+       62   LUT1
+        5   LUT2
+        2   LUT3
+       36   LUT4
+       45   MUX2_LUT5
+       20   MUX2_LUT6
+        8   MUX2_LUT7
+        3   MUX2_LUT8
         7   OBUF
         1   VCC
         1   rPLL
       106 submodules
        77   ALU
         5   DFF
-        4   DFFE
+        7   DFFE
         3   DFFR
-        7   DFFRE
+        4   DFFRE
         4   DFFS
         6   DFFSE
 
@@ -1616,6 +1650,6 @@ Found and reported 0 problems.
 
 Warnings: 1 unique messages, 1 total
 Warnings: 1 experimental features used (not excluded with -x).
-End of script. Logfile hash: 514f2cfadd, time: 0.26s, user: 0.17s, system: 0.04s, MEM: 43.32 MB peak
+End of script. Logfile hash: 4f3bda8ab4, time: 0.24s, user: 0.16s, system: 0.04s, MEM: 43.92 MB peak
 Yosys 0.69+152 (git sha1 6f876ae0e-dirty, Release, GNU /usr/bin/aarch64-linux-gnu-g++ 15.2.0)
-Time spent: 20% 29x read_verilog (0 sec), 16% 1x abc9_exe (0 sec), ...
+Time spent: 21% 29x read_verilog (0 sec), 16% 1x abc9_exe (0 sec), ...

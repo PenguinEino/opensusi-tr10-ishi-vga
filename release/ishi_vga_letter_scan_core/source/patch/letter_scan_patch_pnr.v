@@ -17,19 +17,13 @@ module letter_scan_patch(clk, frame_end_n, h4, h5, red, green, blue, green_new, 
   wire _13_;
   wire _14_;
   wire _15_;
-  wire _16_;
+  wire [2:0] _16_;
   wire _17_;
   wire _18_;
   wire _19_;
   wire _20_;
   wire _21_;
-  wire [2:0] _22_;
-  wire _23_;
-  wire _24_;
-  wire _25_;
-  wire _26_;
-  wire _27_;
-  wire _28_;
+  wire _22_;
   input blue;
   wire blue;
   output blue_new;
@@ -49,186 +43,159 @@ module letter_scan_patch(clk, frame_end_n, h4, h5, red, green, blue, green_new, 
   wire [6:0] phase;
   input red;
   wire red;
-  XNOR2 _29_ (
+  XNOR2 _23_ (
     .A(frame_end_n),
     .B(phase[0]),
     .Y(_00_[0])
   );
-  INV_X1 _30_ (
+  INV_X2 _24_ (
     .A(frame_end_n),
     .Y(_04_)
   );
-  AND2_X1 _31_ (
+  NAND2 _25_ (
     .A(_04_),
     .B(phase[0]),
     .Y(_05_)
   );
-  XOR2 _32_ (
+  XNOR2 _26_ (
     .A(phase[1]),
     .B(_05_),
     .Y(_00_[1])
   );
-  NAND2 _33_ (
-    .A(phase[1]),
-    .B(_05_),
+  NAND3 _27_ (
+    .A(_04_),
+    .B(phase[1]),
+    .C(phase[0]),
     .Y(_06_)
   );
-  XNOR2 _34_ (
+  XNOR2 _28_ (
     .A(phase[2]),
     .B(_06_),
     .Y(_00_[2])
   );
-  NAND4 _35_ (
+  AND4_X1 _29_ (
     .A(_04_),
     .B(phase[1]),
     .C(phase[0]),
     .D(phase[2]),
     .Y(_07_)
   );
-  XNOR2 _36_ (
+  XOR2 _30_ (
     .A(phase[3]),
     .B(_07_),
     .Y(_00_[3])
   );
-  INV_X1 _37_ (
-    .A(phase[6]),
+  INV_X1 _31_ (
+    .A(red),
     .Y(_08_)
   );
-  NAND2 _38_ (
-    .A(_08_),
-    .B(red),
-    .Y(_09_)
-  );
-  XNOR2 _39_ (
+  XOR2 _32_ (
     .A(phase[5]),
     .B(h5),
+    .Y(_09_)
+  );
+  XOR2 _33_ (
+    .A(phase[4]),
+    .B(h4),
     .Y(_10_)
   );
-  XNOR2 _40_ (
-    .A(h4),
-    .B(phase[4]),
+  NAND2 _34_ (
+    .A(_09_),
+    .B(_10_),
     .Y(_11_)
   );
-  NOR4 _41_ (
-    .A(blue),
-    .B(_09_),
-    .C(_10_),
+  NOR4 _35_ (
+    .A(_08_),
+    .B(blue),
+    .C(phase[6]),
     .D(_11_),
     .Y(_12_)
   );
-  OR2 _42_ (
+  OR2 _36_ (
     .A(green),
     .B(_12_),
     .Y(green_new)
   );
-  OR2 _43_ (
+  OR2 _37_ (
     .A(blue),
     .B(_12_),
     .Y(blue_new)
   );
-  AND2_X1 _44_ (
-    .A(_08_),
-    .B(_22_[0]),
+  NAND2 _38_ (
+    .A(phase[3]),
+    .B(_07_),
     .Y(_13_)
   );
-  INV_X1 _45_ (
-    .A(phase[3]),
-    .Y(_14_)
-  );
-  NOR2 _46_ (
-    .A(_14_),
-    .B(_07_),
-    .Y(_15_)
-  );
-  MUX2 _47_ (
-    .A(phase[4]),
-    .B(_13_),
-    .S(_15_),
+  MUX2 _39_ (
+    .A(_16_[0]),
+    .B(phase[4]),
+    .S(_13_),
     .Y(_01_)
   );
-  INV_X1 _48_ (
+  NAND3 _40_ (
     .A(phase[4]),
-    .Y(_16_)
-  );
-  NOR3 _49_ (
-    .A(_14_),
-    .B(_16_),
+    .B(phase[3]),
     .C(_07_),
-    .Y(_17_)
+    .Y(_14_)
   );
-  NOR2 _50_ (
+  XNOR2 _41_ (
     .A(phase[5]),
-    .B(_17_),
-    .Y(_18_)
-  );
-  AND2_X1 _51_ (
-    .A(phase[5]),
-    .B(_17_),
-    .Y(_19_)
-  );
-  NOR3 _52_ (
-    .A(_08_),
     .B(_14_),
-    .C(_07_),
-    .Y(_20_)
-  );
-  NOR3 _53_ (
-    .A(_18_),
-    .B(_19_),
-    .C(_20_),
     .Y(_02_)
   );
-  INV_X1 _54_ (
-    .A(_15_),
-    .Y(_21_)
+  NAND4 _42_ (
+    .A(phase[4]),
+    .B(phase[3]),
+    .C(phase[5]),
+    .D(_07_),
+    .Y(_15_)
   );
-  MUX2 _55_ (
-    .A(_21_),
-    .B(_19_),
-    .S(_08_),
+  XNOR2 _43_ (
+    .A(phase[6]),
+    .B(_15_),
     .Y(_03_)
   );
-  DFF _56_ (
-    .CK(clk),
-    .D(_00_[0]),
-    .Q(phase[0]),
-    .QB(_26_)
-  );
-  DFF _57_ (
-    .CK(clk),
-    .D(_00_[1]),
-    .Q(phase[1]),
-    .QB(_27_)
-  );
-  DFF _58_ (
-    .CK(clk),
-    .D(_00_[2]),
-    .Q(phase[2]),
-    .QB(_28_)
-  );
-  DFF _59_ (
-    .CK(clk),
-    .D(_00_[3]),
-    .Q(phase[3]),
-    .QB(_25_)
-  );
-  DFF _60_ (
+  DFF _44_ (
     .CK(clk),
     .D(_01_),
     .Q(phase[4]),
-    .QB(_22_[0])
+    .QB(_16_[0])
   );
-  DFF _61_ (
+  DFF _45_ (
     .CK(clk),
     .D(_02_),
     .Q(phase[5]),
-    .QB(_24_)
+    .QB(_18_)
   );
-  DFF _62_ (
+  DFF _46_ (
     .CK(clk),
     .D(_03_),
     .Q(phase[6]),
-    .QB(_23_)
+    .QB(_19_)
   );
-  assign _22_[2:1] = phase[6:5];
+  DFF _47_ (
+    .CK(clk),
+    .D(_00_[0]),
+    .Q(phase[0]),
+    .QB(_20_)
+  );
+  DFF _48_ (
+    .CK(clk),
+    .D(_00_[1]),
+    .Q(phase[1]),
+    .QB(_21_)
+  );
+  DFF _49_ (
+    .CK(clk),
+    .D(_00_[2]),
+    .Q(phase[2]),
+    .QB(_22_)
+  );
+  DFF _50_ (
+    .CK(clk),
+    .D(_00_[3]),
+    .Q(phase[3]),
+    .QB(_17_)
+  );
+  assign _16_[2:1] = phase[6:5];
 endmodule

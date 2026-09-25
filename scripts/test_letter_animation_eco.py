@@ -71,33 +71,32 @@ initial begin
  rtl.h=71;rtl.v=500;rtl.phase=0;rtl.r=0;rtl.g=0;rtl.b=0;rtl.hsync=0;rtl.vsync=0;
  $readmemh("REFERENCE",reference);
  fd=$fopen("observed.bin","wb");
- for(frame=0;frame<80;frame=frame+1) begin
+ for(frame=0;frame<128;frame=frame+1) begin
   for(tick=0;tick<52500;tick=tick+1) begin
    @(posedge clk);#80;
    x=tick%100;expected=reference[tick];
    if(expected[2:0]==4 && frame<64 && x>=8 && x<72 && ((x-8)/16)==frame/16) expected[2:0]=7;
    if(observed !== expected || rtl_observed !== expected) $fatal(1,"frame=%0d tick=%0d got=%h expected=%h",frame,tick,observed,expected);
-   if((frame%16)==0) $fwrite(fd,"%c",observed);
+   if((frame%16)==0 && frame<=64) $fwrite(fd,"%c",observed);
    @(negedge clk);#1;
   end
-  if({dut.anim_phase_6_,dut.anim_phase_5_,dut.anim_phase_4_,dut.anim_phase_3_,dut.anim_phase_2_,dut.anim_phase_1_,dut.anim_phase_0_} !== ((frame+1)%80))
+  if({dut.anim_phase_6_,dut.anim_phase_5_,dut.anim_phase_4_,dut.anim_phase_3_,dut.anim_phase_2_,dut.anim_phase_1_,dut.anim_phase_0_} !== ((frame+1)%128))
    $fatal(1,"phase transition at frame %0d",frame);
  end
  $fclose(fd);
  for(seed=0;seed<128;seed=seed+1) begin
   STATE_INIT
   rtl.h=100;rtl.v=0;rtl.phase=seed;
-  next_phase=(seed&112)|((seed+1)&15);
-  if((seed&15)==15) next_phase=seed>=64 ? 0 : (seed&112)+16;
+  next_phase=(seed+1)%128;
   @(posedge clk);#80;
   if({dut.anim_phase_6_,dut.anim_phase_5_,dut.anim_phase_4_,dut.anim_phase_3_,dut.anim_phase_2_,dut.anim_phase_1_,dut.anim_phase_0_} !== next_phase || rtl.phase !== next_phase)
    $fatal(1,"initial phase state %0d",seed);
   @(negedge clk);#1;
  end
- $display("PASS: 80 continuous RTL/gate frames, 4200000 RGB/HS/VS ticks, all 80 phase transitions, all 128 binary phase initial states");
+ $display("PASS: 128 continuous RTL/gate frames, 6720000 RGB/HS/VS ticks, all 128 phase transitions, all 128 binary phase initial states; stage lengths 16/16/16/16/64 frames");
  $finish;
 end
-initial begin #1500000000;$fatal(1,"watchdog");end
+initial begin #2300000000;$fatal(1,"watchdog");end
 endmodule
 '''.replace('STATE_INIT','\n'.join(state_init)).replace('INIT','\n'.join(init)).replace('REFERENCE',str(ROOT/'designs/grid_power/tests/expected_frame.hex'))
     (out/'tb.v').write_text(tb);model=d/st['patch_dir']/'build/tr1um_cells.v';exe=out/'sim.vvp'
@@ -113,15 +112,7 @@ endmodule
         if stage<4:frame[((base&7)==4)&(x>=8)&(x<72)&(((x-8)//16)==stage)]|=3
         frames.append(frame)
     assert (out/'observed.bin').read_bytes()==np.concatenate(frames).tobytes()
-    def next_phase(p):
-        return ((0 if p>=64 else (p&112)+16) if (p&15)==15 else (p&112)|((p+1)&15))
-    recovered=[]
-    for start in range(128):
-        value=start;steps=0
-        while value>=80:
-            value=next_phase(value);steps+=1;assert steps<=16
-        recovered.append(steps)
-    result={'status':'PASS','decoder_states':131072,'continuous_frames':80,'ticks':4200000,'counter_transitions_checked':80,'binary_phase_initial_states_checked':128,'max_frames_to_valid_phase_cycle':max(recovered),'sampled_frame_bytes':'5 distinct stages including unchanged base logo; independently checked','model':'RTL and mapped unit-delay gate cells; fixture initialization only','hashes':{str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),d/'config.py',original,net,model,rtl,d/'ishi_vga_core.v',d/'ishi_logo.v',out/'tb.v',out/'simulation.log',out/'observed.bin',reference,ROOT/'designs/grid_power/tests/expected_frame.hex']}}
+    result={'status':'PASS','decoder_states':131072,'continuous_frames':128,'ticks':6720000,'counter_transitions_checked':128,'binary_phase_initial_states_checked':128,'max_frames_to_valid_phase_cycle':0,'stage_frames':[16,16,16,16,64],'sampled_frame_bytes':'5 distinct stages including unchanged base logo; independently checked','model':'RTL and mapped unit-delay gate cells; fixture initialization only','hashes':{str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),d/'config.py',original,net,model,rtl,d/'ishi_vga_core.v',d/'ishi_logo.v',out/'tb.v',out/'simulation.log',out/'observed.bin',reference]}}
     (out/'verification.json').write_text(json.dumps(result,indent=2)+'\n');print(log,flush=True)
 
 if __name__=='__main__':main()

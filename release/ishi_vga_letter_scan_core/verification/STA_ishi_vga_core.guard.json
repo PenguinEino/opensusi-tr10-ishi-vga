@@ -3,7 +3,7 @@
   "failures": [],
   "expected_registers": 29,
   "slack_ns": {
-    "setup": 274.527252,
+    "setup": 274.740723,
     "hold": 6.686719,
     "output": 241.365341
   },

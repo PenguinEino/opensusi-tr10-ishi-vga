@@ -2,7 +2,7 @@
 * $APRTOOLS/apr/mklvsnet.py が生成。手で編集しないこと。
 *
 *   論理セル : out/ishi_vga_core_pnr.v
-*   物理セル : layout/placement.json (FILL1 x4, FILL2 x2, FILL3 x41, TAP2 x20)
+*   物理セル : layout/placement.json (FILL1 x4, FILL2 x5, FILL3 x44, TAP2 x20)
 *   セル定義 : $APRTOOLS/stdcell/v59_4/simulation/*.spice
 *
 * デバイスを持たない物理セルは出していない: FILL1, TAP2
@@ -27,6 +27,19 @@ MN2 n0 C s2 vss NMOS W=3.4u L=1.0u
 MP3 Y n0 vdd vdd PMOS W=10.2u L=1.0u
 MN3 Y n0 vss vss NMOS W=3.4u L=1.0u
 .ends AND3_X1
+
+.subckt AND4_X1 Y C D A B vdd vss
+MP0 n0 A vdd vdd PMOS W=10.2u L=1.0u
+MP1 n0 B vdd vdd PMOS W=10.2u L=1.0u
+MP2 n0 C vdd vdd PMOS W=10.2u L=1.0u
+MP3 n0 D vdd vdd PMOS W=10.2u L=1.0u
+MN0 s1 A vss vss NMOS W=3.4u L=1.0u
+MN1 s2 B s1 vss NMOS W=3.4u L=1.0u
+MN2 s3 C s2 vss NMOS W=3.4u L=1.0u
+MN3 n0 D s3 vss NMOS W=3.4u L=1.0u
+MP4 Y n0 vdd vdd PMOS W=10.2u L=1.0u
+MN4 Y n0 vss vss NMOS W=3.4u L=1.0u
+.ends AND4_X1
 
 .subckt BUFTH A Y vdd vss
 MP0 n3 n2 vss vdd PMOS W=5.1u L=1.0u
@@ -446,55 +459,51 @@ Xu_clk_row0 clk_buf clk_row0 vdd vss BUF_X2
 Xu_clk_row1 clk_buf clk_row1 vdd vss BUF_X2
 Xu_clk_row2 clk_buf clk_row2 vdd vss BUF_X2
 Xu_clk_row3 clk_buf clk_row3 vdd vss BUF_X2
-Xanim_29_ _117_ anim_phase_0_ anim__00__0_ vdd vss XNOR2
-Xanim_30_ _117_ anim__04_ vdd vss INV_X1
-Xanim_31_ anim__05_ anim__04_ anim_phase_0_ vdd vss AND2_X1
-Xanim_32_ anim_phase_1_ anim__05_ anim__00__1_ vdd vss XOR2
-Xanim_33_ anim_phase_1_ anim__06_ anim__05_ vdd vss NAND2
-Xanim_34_ anim_phase_2_ anim__06_ anim__00__2_ vdd vss XNOR2
-Xanim_35_ anim__07_ anim_phase_0_ anim_phase_2_ anim__04_ anim_phase_1_ vdd vss NAND4
-Xanim_36_ anim_phase_3_ anim__07_ anim__00__3_ vdd vss XNOR2
-Xanim_37_ anim_phase_6_ anim__08_ vdd vss INV_X1
-Xanim_38_ anim__08_ anim__09_ _009_ vdd vss NAND2
-Xanim_39_ anim_phase_5_ h[5] anim__10_ vdd vss XNOR2
-Xanim_40_ h[4] anim_phase_4_ anim__11_ vdd vss XNOR2
-Xanim_41_ anim__12_ anim__10_ anim__11_ _011_ anim__09_ vdd vss NOR4
-Xanim_42_ anim_green_new _010_ anim__12_ vdd vss OR2
-Xanim_43_ anim_blue_new _011_ anim__12_ vdd vss OR2
-Xanim_44_ anim__13_ anim__08_ anim__22__0_ vdd vss AND2_X1
-Xanim_45_ anim_phase_3_ anim__14_ vdd vss INV_X1
-Xanim_46_ anim__14_ anim__15_ anim__07_ vdd vss NOR2
-Xanim_47_ anim_phase_4_ anim__13_ anim__01_ anim__15_ vdd vss MUX2
-Xanim_48_ anim_phase_4_ anim__16_ vdd vss INV_X1
-Xanim_49_ anim__17_ anim__07_ anim__14_ anim__16_ vdd vss NOR3
-Xanim_50_ anim_phase_5_ anim__18_ anim__17_ vdd vss NOR2
-Xanim_51_ anim__19_ anim_phase_5_ anim__17_ vdd vss AND2_X1
-Xanim_52_ anim__20_ anim__07_ anim__08_ anim__14_ vdd vss NOR3
-Xanim_53_ anim__02_ anim__20_ anim__18_ anim__19_ vdd vss NOR3
-Xanim_54_ anim__15_ anim__21_ vdd vss INV_X1
-Xanim_55_ anim__21_ anim__19_ anim__03_ anim__08_ vdd vss MUX2
-Xanim_56_ clk_row3 anim__00__0_ anim__26_ anim_phase_0_ vdd vss DFF
-Xanim_57_ clk_row3 anim__00__1_ anim__27_ anim_phase_1_ vdd vss DFF
-Xanim_58_ clk_row3 anim__00__2_ anim__28_ anim_phase_2_ vdd vss DFF
-Xanim_59_ clk_row3 anim__00__3_ anim__25_ anim_phase_3_ vdd vss DFF
-Xanim_60_ clk_row3 anim__01_ anim__22__0_ anim_phase_4_ vdd vss DFF
-Xanim_61_ clk_row3 anim__02_ anim__24_ anim_phase_5_ vdd vss DFF
-Xanim_62_ clk_row3 anim__03_ anim__23_ anim_phase_6_ vdd vss DFF
+Xanim_23_ _117_ anim_phase_0_ anim__00__0_ vdd vss XNOR2
+Xanim_24_ _117_ anim__04_ vdd vss INV_X2
+Xanim_25_ anim__04_ anim__05_ anim_phase_0_ vdd vss NAND2
+Xanim_26_ anim_phase_1_ anim__05_ anim__00__1_ vdd vss XNOR2
+Xanim_27_ anim__06_ anim_phase_0_ anim__04_ anim_phase_1_ vdd vss NAND3
+Xanim_28_ anim_phase_2_ anim__06_ anim__00__2_ vdd vss XNOR2
+Xanim_29_ anim__07_ anim_phase_0_ anim_phase_2_ anim__04_ anim_phase_1_ vdd vss AND4_X1
+Xanim_30_ anim_phase_3_ anim__07_ anim__00__3_ vdd vss XOR2
+Xanim_31_ _009_ anim__08_ vdd vss INV_X1
+Xanim_32_ anim_phase_5_ h[5] anim__09_ vdd vss XOR2
+Xanim_33_ anim_phase_4_ h[4] anim__10_ vdd vss XOR2
+Xanim_34_ anim__09_ anim__11_ anim__10_ vdd vss NAND2
+Xanim_35_ anim__12_ anim_phase_6_ anim__11_ anim__08_ _011_ vdd vss NOR4
+Xanim_36_ anim_green_new _010_ anim__12_ vdd vss OR2
+Xanim_37_ anim_blue_new _011_ anim__12_ vdd vss OR2
+Xanim_38_ anim_phase_3_ anim__13_ anim__07_ vdd vss NAND2
+Xanim_39_ anim__16__0_ anim_phase_4_ anim__01_ anim__13_ vdd vss MUX2
+Xanim_40_ anim__14_ anim__07_ anim_phase_4_ anim_phase_3_ vdd vss NAND3
+Xanim_41_ anim_phase_5_ anim__14_ anim__02_ vdd vss XNOR2
+Xanim_42_ anim__15_ anim_phase_5_ anim__07_ anim_phase_4_ anim_phase_3_ vdd vss NAND4
+Xanim_43_ anim_phase_6_ anim__15_ anim__03_ vdd vss XNOR2
+Xanim_44_ clk_row3 anim__01_ anim__16__0_ anim_phase_4_ vdd vss DFF
+Xanim_45_ clk_row3 anim__02_ anim__18_ anim_phase_5_ vdd vss DFF
+Xanim_46_ clk_row3 anim__03_ anim__19_ anim_phase_6_ vdd vss DFF
+Xanim_47_ clk_row3 anim__00__0_ anim__20_ anim_phase_0_ vdd vss DFF
+Xanim_48_ clk_row3 anim__00__1_ anim__21_ anim_phase_1_ vdd vss DFF
+Xanim_49_ clk_row3 anim__00__2_ anim__22_ anim_phase_2_ vdd vss DFF
+Xanim_50_ clk_row3 anim__00__3_ anim__17_ anim_phase_3_ vdd vss DFF
 
 * --- フィラー（デキャップ）---
 XFILLPRI_r0_0 vdd vss FILL3
-Xanim_fill_8 vdd vss FILL3
+Xanim_fill_12 vdd vss FILL3
+Xanim_fill_13 vdd vss FILL3
+Xanim_fill_14 vdd vss FILL2
 XFILLPRI_r0_1 vdd vss FILL3
 XFILLPRI_r0_2 vdd vss FILL3
-Xanim_fill_9 vdd vss FILL3
-Xanim_fill_10 vdd vss FILL2
+Xanim_fill_15 vdd vss FILL3
+Xanim_fill_16 vdd vss FILL2
 XFILLPRI_r0_3 vdd vss FILL3
 XFILLPRI_r0_4 vdd vss FILL3
-Xanim_fill_11 vdd vss FILL3
-Xanim_fill_12 vdd vss FILL3
+Xanim_fill_17 vdd vss FILL3
+Xanim_fill_18 vdd vss FILL3
 XFILLPRI_r0_5 vdd vss FILL3
 XFILLPRI_r0_6 vdd vss FILL3
-Xanim_fill_14 vdd vss FILL3
+Xanim_fill_20 vdd vss FILL3
 XFILLPRI_r0_7 vdd vss FILL3
 XFILLPRI_r1_8 vdd vss FILL3
 Xanim_fill_5 vdd vss FILL3
@@ -504,14 +513,18 @@ XFILLPRI_r1_10 vdd vss FILL3
 XFILLPRI_r1_11 vdd vss FILL3
 XFILLPRI_r1_12 vdd vss FILL3
 Xanim_fill_7 vdd vss FILL3
+Xanim_fill_8 vdd vss FILL3
+Xanim_fill_9 vdd vss FILL2
 XFILLPRI_r1_13 vdd vss FILL3
 XFILLPRI_r1_14 vdd vss FILL3
+Xanim_fill_10 vdd vss FILL3
 XFILLPRI_r1_15 vdd vss FILL3
 XFILLPRI_r2_16 vdd vss FILL3
 XFILLPRI_r2_17 vdd vss FILL3
 XFILLPRI_r2_18 vdd vss FILL3
 XFILLPRI_r2_19 vdd vss FILL3
 XFILLPRI_r2_20 vdd vss FILL3
+Xanim_fill_4 vdd vss FILL2
 XFILLPRI_r2_21 vdd vss FILL3
 XFILLPRI_r2_22 vdd vss FILL3
 XFILLPRI_r2_23 vdd vss FILL3
@@ -519,7 +532,7 @@ XFILLPRI_r3_24 vdd vss FILL3
 Xanim_fill_0 vdd vss FILL3
 XFILLPRI_r3_25 vdd vss FILL3
 XFILLPRI_r3_26 vdd vss FILL3
-Xanim_fill_3 vdd vss FILL2
+Xanim_fill_2 vdd vss FILL2
 XFILLPRI_r3_27 vdd vss FILL3
 XFILLPRI_r3_28 vdd vss FILL3
 XFILLPRI_r3_29 vdd vss FILL3

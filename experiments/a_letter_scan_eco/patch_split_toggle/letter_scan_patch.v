@@ -7,7 +7,7 @@ always @(posedge clk) begin
  phase[1] <= phase[1] ^ (!frame_end_n & (&phase[0:0]));
  phase[2] <= phase[2] ^ (!frame_end_n & (&phase[1:0]));
  phase[3] <= phase[3] ^ (!frame_end_n & (&phase[2:0]));
- if(carry) phase[6:4] <= phase[6] ? 3'd0 : phase[6:4]+3'd1;
+ if(carry) phase[6:4] <= phase[6:4]+3'd1;
 end
 wire on = red & ~blue & ~phase[6] & ((~{h5,h4}) == phase[5:4]);
 assign green_new=green | on;

@@ -1,144 +1,120 @@
 {
   "source_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
-  "added_cells": 34,
-  "new_cell_width_um": 1026.0,
-  "hpwl_um": 19766.9,
+  "added_cells": 28,
+  "new_cell_width_um": 945.0,
+  "hpwl_um": 17099.8,
   "placements": {
-    "anim_61_": [
+    "anim_39_": [
       3,
-      216.0
+      210.6
     ],
-    "anim_60_": [
+    "anim_38_": [
       3,
-      280.8
+      243.0
+    ],
+    "anim_40_": [
+      3,
+      259.2
     ],
     "anim_44_": [
       3,
+      280.8
+    ],
+    "anim_41_": [
+      3,
       345.6
     ],
-    "anim_47_": [
+    "anim_42_": [
       3,
-      367.2
-    ],
-    "anim_48_": [
-      3,
-      399.6
-    ],
-    "anim_53_": [
-      3,
-      469.8
-    ],
-    "anim_50_": [
-      3,
-      410.4
-    ],
-    "anim_51_": [
-      3,
-      491.4
-    ],
-    "anim_49_": [
-      3,
-      513.0
-    ],
-    "anim_52_": [
-      3,
-      534.6
+      372.6
     ],
     "anim_43_": [
       3,
-      556.2
-    ],
-    "anim_54_": [
-      3,
-      577.8
-    ],
-    "anim_46_": [
-      3,
-      588.6
-    ],
-    "anim_55_": [
-      3,
-      604.8
-    ],
-    "anim_59_": [
-      3,
-      1090.8
+      399.6
     ],
     "anim_45_": [
       3,
-      637.2
+      469.8
     ],
-    "anim_36_": [
+    "anim_46_": [
       3,
-      648.0
-    ],
-    "anim_62_": [
-      3,
-      1155.6
-    ],
-    "anim_37_": [
-      3,
-      1220.4
-    ],
-    "anim_56_": [
-      3,
-      1231.2
-    ],
-    "anim_33_": [
-      3,
-      1296.0
+      534.6
     ],
     "anim_35_": [
       3,
+      599.4
+    ],
+    "anim_37_": [
+      3,
+      626.4
+    ],
+    "anim_30_": [
+      3,
+      648.0
+    ],
+    "anim_31_": [
+      3,
+      1090.8
+    ],
+    "anim_50_": [
+      3,
+      1101.6
+    ],
+    "anim_23_": [
+      3,
+      1166.4
+    ],
+    "anim_47_": [
+      3,
+      1193.4
+    ],
+    "anim_24_": [
+      3,
+      1258.2
+    ],
+    "anim_26_": [
+      3,
+      1269.0
+    ],
+    "anim_29_": [
+      3,
       1355.4
     ],
-    "anim_34_": [
+    "anim_27_": [
       3,
-      1382.4
+      1387.8
     ],
-    "anim_58_": [
+    "anim_48_": [
       3,
       1409.4
     ],
-    "anim_32_": [
+    "anim_28_": [
       3,
       1474.2
     ],
-    "anim_57_": [
+    "anim_49_": [
       3,
       1501.2
     ],
-    "anim_42_": [
+    "anim_36_": [
       2,
       469.8
     ],
-    "anim_41_": [
+    "anim_33_": [
       1,
       469.8
     ],
-    "anim_39_": [
-      1,
-      496.8
+    "anim_25_": [
+      3,
+      1296.0
     ],
-    "anim_29_": [
-      1,
-      1285.2
-    ],
-    "anim_38_": [
+    "anim_34_": [
       2,
       394.2
     ],
-    "anim_30_": [
-      2,
-      1301.4
-    ],
-    "anim_40_": [
-      0,
-      399.6
-    ],
-    "anim_31_": [
+    "anim_32_": [
       1,
-      1355.4
+      496.8
     ]
   },
   "removed_fillers": [
@@ -275,13 +251,7 @@
       "anim__13_",
       "anim__14_",
       "anim__15_",
-      "anim__16_",
-      "anim__17_",
-      "anim__18_",
-      "anim__19_",
-      "anim__20_",
-      "anim__21_",
-      "anim__22__0_",
+      "anim__16__0_",
       "anim_blue_new",
       "anim_green_new",
       "anim_phase_0_",
@@ -307,9 +277,9 @@
     }
   },
   "hashes": {
-    "build/letter_animation_core_final_replay/config.py": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148",
-    "build/letter_animation_core_final_replay/patch_split_toggle/out/letter_scan_patch_pnr.v": "290151b8db0f8ac679d13807915a85ac4518ff225de6d4a46d88d3c1652d178e",
-    "scripts/letter_animation_eco.py": "e2f0f82203eb3862a61afa049bf2ab94bb246540853e3ede2a55c88b8cdde454",
+    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "build/letter_long_idle_final_replay/patch_split_toggle/out/letter_scan_patch_pnr.v": "639502783b06eb26d070465912505e394c42dbf4dbe8cb76cb9cc56f68693c56",
+    "scripts/letter_animation_eco.py": "19f9c2f13c7aeeb9d015dc1d2245d00b1d288310ab7377e79a3368849ce894cd",
     "release/ishi_vga_letter_scan_core/reproduce/static_placement.json": "9c8a51a97b2679ff9f6c4b8ea16350b27d33906a54c655b65572219e7abd3942",
     "release/ishi_vga_letter_scan_core/reproduce/static_netlist.v": "8f7c6575d96e9c372df818afca973eddfb8d42b0d10897eb684aef68d2bb6b1d"
   }
