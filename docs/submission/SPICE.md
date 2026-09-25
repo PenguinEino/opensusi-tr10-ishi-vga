@@ -1,6 +1,6 @@
 # アニメーション版の抽出SPICE検証
 
-最終GDSから直接再抽出した **1990素子の回路をngspiceで実行し、20試験・922クロックすべて合格**しました。GDS SHA256は `4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b` です。
+最終GDSから直接再抽出した **1990素子の回路をngspiceで実行し、20試験・922クロックすべて合格**しました。GDS SHA256は `95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3` です。
 
 [集約結果](../../submission/simulation/summary.json) · [抽出・変換の監査](../../submission/simulation/extraction_manifest.json) · [ngspice用回路](../../submission/simulation/core_sim.spice)
 

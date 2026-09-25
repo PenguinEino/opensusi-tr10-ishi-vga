@@ -54,17 +54,17 @@
   "rgb_values_seen": [
     0
   ],
-  "max_low_sample_v": 2.0852402396408805e-08,
+  "max_low_sample_v": 2.0852402377303262e-08,
   "min_high_sample_v": 4.999999985987161,
   "errors": [],
   "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
   "hashes": {
-    "experiments/letter_spice/build/vsync/tb.spice": "b128240e51cbc68e4e172faa5b42f24fdb0f2b733477df689131f6dbf60df30d",
-    "experiments/letter_spice/build/vsync/case.json": "b35f5b27275131779d8b484e670406b60210c996492e7b3d75c06719ea436143",
-    "experiments/letter_spice/build/vsync/wave.raw": "d4b8949640890d4e35fad02a40d5564cecafdd7953f2ee04cc36196b740e7169",
-    "experiments/letter_spice/build/vsync/ngspice.log": "ce8bd3dda520fcc74f3dc9e8196d608f1efe5627fc4a989425e81086ed8c97e3",
-    "experiments/letter_spice/build/vsync/run.json": "9545a61d283f95d1cde77fdb9ebc20b4938e137fe76ba1d03ff12063a659beec",
-    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "experiments/letter_art_spice/build/vsync/tb.spice": "9b783c532bc269edc57328b6baf584e922d8cd5f0758bfbee7ab6025c4418391",
+    "experiments/letter_art_spice/build/vsync/case.json": "b35f5b27275131779d8b484e670406b60210c996492e7b3d75c06719ea436143",
+    "experiments/letter_art_spice/build/vsync/wave.raw": "628c6d0e18aaafd50256536228da91c8a22bc9d75ba28e6385e6346ef13beaa3",
+    "experiments/letter_art_spice/build/vsync/ngspice.log": "18b19c8407f34f91ede7a489179369c224064061af809601e4973d9972259363",
+    "experiments/letter_art_spice/build/vsync/run.json": "a650985e7e2b01cf7f1dedff726c7ce44fad8d42455b9035e69e9de3a0e52c3c",
+    "experiments/letter_art_spice/build/core_sim.spice": "b3d4fb66bcaf05d352a6c2dfcaf97a7320f4a0d02b5a937f61f5134b32d52050",
     "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
     "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
   }

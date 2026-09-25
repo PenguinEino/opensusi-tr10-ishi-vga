@@ -1,0 +1,11 @@
+{
+  "verdict": "CORE_HANDOFF_WITH_DOCUMENTED_LIMITATIONS",
+  "gds_sha256": "95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3",
+  "base_review": "base_review.json",
+  "physical_verification": "verification.json",
+  "transistor_verification": "../simulation/summary.json",
+  "rtl_gate_sta_scope": "base results retained by exact functional geometry and extraction equivalence",
+  "fatal_core_defect_found": false,
+  "manufacturing_signoff": false,
+  "frame_integration_performed": false
+}

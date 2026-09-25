@@ -60,16 +60,16 @@
     0
   ],
   "max_low_sample_v": 2.0852402349656305e-08,
-  "min_high_sample_v": 4.999999985987163,
+  "min_high_sample_v": 4.999999985987164,
   "errors": [],
   "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
   "hashes": {
-    "experiments/letter_spice/build/phase_111/tb.spice": "58f38b0b647990bbd9e69e6ec4a90f0a05f94c5aef6fcc560f5d990f0f69e43c",
-    "experiments/letter_spice/build/phase_111/case.json": "b7ab9c366993c8d4a2a1e2ac69eea5515310a96d57eef1fd93eb0aadd8c0069b",
-    "experiments/letter_spice/build/phase_111/wave.raw": "945f2d06f947eb0cfb1dcb39e791ba37e7b096866a34612fd1a16c0e175eebef",
-    "experiments/letter_spice/build/phase_111/ngspice.log": "c7f0f91c99883dc529c55baa899009141cc9879dbb09f8f1558fc5badf2a9429",
-    "experiments/letter_spice/build/phase_111/run.json": "f391aa1aea83e3e1303202ec3e928f4c0e5bbdce40195590e1108f374f6502c9",
-    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "experiments/letter_art_spice/build/phase_111/tb.spice": "703ba2db0f72459bd1957aa531ed6e06accd4c213ebbd1642afbd656da336203",
+    "experiments/letter_art_spice/build/phase_111/case.json": "b7ab9c366993c8d4a2a1e2ac69eea5515310a96d57eef1fd93eb0aadd8c0069b",
+    "experiments/letter_art_spice/build/phase_111/wave.raw": "a5a2da49ab3fe9603e85e58ee416b9403760a3d9a92765d5d1d5a176d88e3d2e",
+    "experiments/letter_art_spice/build/phase_111/ngspice.log": "d9104730cd55c0ce9b0f9cc9a60c4d6aeb86fbe7b601cc78c14cfd955e3da8ee",
+    "experiments/letter_art_spice/build/phase_111/run.json": "f19d04a166694c4dd5dda1fad36bc46d1ceba60fb2313e3057b71237c8e40e5c",
+    "experiments/letter_art_spice/build/core_sim.spice": "b3d4fb66bcaf05d352a6c2dfcaf97a7320f4a0d02b5a937f61f5134b32d52050",
     "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
     "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
   }

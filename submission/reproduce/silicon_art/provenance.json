@@ -1,0 +1,8 @@
+{
+  "source_project": "../balanced-ternary-logic",
+  "penguin_source": "layout/art/original_inverter_art.gds",
+  "penguin_sha256": "ee621b3a0946d31eec72cba42a02a07c68afb21f34fd757de1e1f2bc76212ec3",
+  "font_source": "layout/silicon_art.py",
+  "font_source_sha256": "a86e9324bac2fd342b74dd8565afcdbbe148dbe23940f81b213e6da646833774",
+  "font_sha256": "88a0175a83f8fda705a3ecbaffc46df7535298aca69877e5714daa8025811e78"
+}

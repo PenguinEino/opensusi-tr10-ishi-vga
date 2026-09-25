@@ -5,7 +5,7 @@ DRC: build/candidate.gds  top=ishi_vga_core
   違反 0 件
 
 === MDP: マスクを起こす -> build/candidate_mdp.gds
-  2026 KB
+  2036 KB
 === MDP: マスクに run_IP62.drc を当てる
   レポート build/candidate_mdp.lyrdb
 

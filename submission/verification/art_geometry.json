@@ -1,0 +1,75 @@
+{
+  "status": "GEOMETRY_CHECKED_NOT_SIGNED_OFF",
+  "gds_sha256": "95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3",
+  "source_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "art_bbox_um": "(40,404.1;148,502)",
+  "art_layer": "M1",
+  "clearance_to_functional_m1_m2_via_um": 3.0,
+  "penguin_retained_small_pixels": [
+    [
+      16,
+      24
+    ],
+    [
+      22,
+      29
+    ],
+    [
+      13,
+      29
+    ]
+  ],
+  "penguin_bridged_pixels": [
+    [
+      12,
+      27
+    ],
+    [
+      16,
+      27
+    ],
+    [
+      22,
+      28
+    ]
+  ],
+  "settings": {
+    "source_gds": "release/ishi_vga_letter_scan_core/ishi_vga.gds",
+    "source_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "penguin_gds": "assets/silicon_art/original_inverter_art.gds",
+    "penguin_sha256": "ee621b3a0946d31eec72cba42a02a07c68afb21f34fd757de1e1f2bc76212ec3",
+    "font_json": "assets/silicon_art/font.json",
+    "font_sha256": "88a0175a83f8fda705a3ecbaffc46df7535298aca69877e5714daa8025811e78",
+    "layer": "M1",
+    "cell": "ishi_vga_art",
+    "clearance_um": 3.0,
+    "penguin_scale": 0.45,
+    "penguin_pixel_um": 1.8,
+    "penguin_grid_cells": 38,
+    "penguin_center_um": [
+      94.0,
+      436.5
+    ],
+    "text_pixel_um": 2.0,
+    "text_advance_um": 14.0,
+    "text_lines": [
+      [
+        "EINOSUKE",
+        40.0,
+        488.0
+      ],
+      [
+        "OKAZAKI",
+        47.0,
+        472.0
+      ]
+    ]
+  },
+  "hashes": {
+    "scripts/add_letter_silicon_art.py": "f9096f4e48a0641ba05fd2d4f848d021a57c29a2554c7978b885e2409daa8007",
+    "experiments/a_letter_silicon_art/config.py": "22deeca36f104edb752b3c8112ad0d42913f82468f554121d7b6d92bdd20d64f",
+    "release/ishi_vga_letter_scan_core/ishi_vga.gds": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "assets/silicon_art/original_inverter_art.gds": "ee621b3a0946d31eec72cba42a02a07c68afb21f34fd757de1e1f2bc76212ec3",
+    "assets/silicon_art/font.json": "88a0175a83f8fda705a3ecbaffc46df7535298aca69877e5714daa8025811e78"
+  }
+}

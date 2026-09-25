@@ -58,17 +58,17 @@
     4,
     7
   ],
-  "max_low_sample_v": 2.0852402375552958e-08,
+  "max_low_sample_v": 2.0852402379811165e-08,
   "min_high_sample_v": 4.999999985987161,
   "errors": [],
   "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
   "hashes": {
-    "experiments/letter_spice/build/stage_2/tb.spice": "75e4cceb6bcc1512481330edf826483468d6e2cb4d90dba612580d336b7fd2cd",
-    "experiments/letter_spice/build/stage_2/case.json": "658e0d87d5cf983c27a5b89ce0c4e0d1731bce6d3d77fdce718538ba2e08898d",
-    "experiments/letter_spice/build/stage_2/wave.raw": "8bd7b7c10ad66ebeb5ebfbd016b87887fa13785cf82ca572989065b714f347f5",
-    "experiments/letter_spice/build/stage_2/ngspice.log": "7ec8488f9891d4b49c931dbb6a876f97a88cd848d780ff66072ed860a795c971",
-    "experiments/letter_spice/build/stage_2/run.json": "a6394d24bf0ae5bfe6ec9f10defb102e5d491ba09e17cb3234ad15e81646f92f",
-    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "experiments/letter_art_spice/build/stage_2/tb.spice": "f310760080ccf047fc2017ad50a84d93cca06df08ee373bee5871bae892771cb",
+    "experiments/letter_art_spice/build/stage_2/case.json": "658e0d87d5cf983c27a5b89ce0c4e0d1731bce6d3d77fdce718538ba2e08898d",
+    "experiments/letter_art_spice/build/stage_2/wave.raw": "b5c510f7322961030e5ec9bc3b501be855161222103b3324278a45c2af755d42",
+    "experiments/letter_art_spice/build/stage_2/ngspice.log": "07cf6eabe7b8f83d44c6e75af4eb5293d84ddbce23ae44113dae9bab5b34405e",
+    "experiments/letter_art_spice/build/stage_2/run.json": "e4b2c031eecdd8388f29a0406a227aed557e29d526e8b0a75918ae8d1f7ead16",
+    "experiments/letter_art_spice/build/core_sim.spice": "b3d4fb66bcaf05d352a6c2dfcaf97a7320f4a0d02b5a937f61f5134b32d52050",
     "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
     "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
   }

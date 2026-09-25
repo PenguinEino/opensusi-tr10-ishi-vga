@@ -1,0 +1,16 @@
+{
+  "source": "/home/ishi-kai/OpenEDA-PDK_SetupScript/samples/inverter/OpenSUSI-TR10/github/opensusi-tr10-penguin-inverter/inverter.gds",
+  "source_sha256": "f7aa1bd6f449421927134df97c748420fb378e428b77237eb783456b7222ab01",
+  "original_dbu_um": 0.09999999999999994,
+  "output_dbu_um": 0.001,
+  "cells": {
+    "SVG_METAL2_ART": {
+      "bbox_um": "(-72,-71;72,71)",
+      "polygons": 8
+    },
+    "EINOSUKE_M2_TEXT": {
+      "bbox_um": "(0,0;134,21)",
+      "polygons": 8
+    }
+  }
+}

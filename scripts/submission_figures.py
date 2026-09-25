@@ -21,7 +21,7 @@ from matplotlib.collections import PatchCollection
 from matplotlib.patches import Polygon, Rectangle, FancyBboxPatch, FancyArrowPatch
 
 ROOT = Path(__file__).resolve().parents[1]
-GDS_SHA = '4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b'
+GDS_SHA = '95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3'
 INK = '#17324d'
 M1, M2, RED = '#477cab', '#c89434', '#c42b36'
 
@@ -106,6 +106,29 @@ def pins(out):
     return {'pins_checked_on_metal_and_labels': ports, 'zoom_window_um': [24, 24]}
 
 
+def artwork(out):
+    import klayout.lay as lay
+    view = lay.LayoutView(); view.load_layout(str(out/'ishi_vga.gds'), 0)
+    cv = view.cellview(0); cv.cell_index = cv.layout().cell('ishi_vga_core').cell_index()
+    view.load_layer_props(str(ROOT/'tools/TR-1um/libs.tech/klayout/tech/TR-1um.lyp'), 0, True)
+    view.set_config('background-color', '#ffffff'); view.set_config('grid-visible', 'false')
+    view.max_hier(); view.zoom_fit(); view.save_image(str(out/'layout.png'), 1800, 1000)
+    ly = db.Layout(); ly.read(str(out/'ishi_vga.gds')); top = ly.cell('ishi_vga_core')
+    fig, axes = plt.subplots(1, 2, figsize=(15, 6), gridspec_kw={'width_ratios': [1, 2.6]}, layout='constrained')
+    for ax, bounds, title in zip(axes, [(20, 395, 170, 515), (-25, -10, 1790, 910)],
+                                 ['Name and penguin · M1', 'Actual core metal · artwork at left center']):
+        clip = db.Region(db.Box(*(round(v/ly.dbu) for v in bounds)))
+        for layer, color in [(13, M1), (20, M2)]:
+            region = db.Region(top.begin_shapes_rec(ly.layer(layer, 0))) & clip
+            patches = [Polygon([(p.x*ly.dbu, p.y*ly.dbu) for p in part.each_point()])
+                       for poly in region.each() for part in poly.decompose_trapezoids()]
+            ax.add_collection(PatchCollection(patches, facecolor=color, edgecolor='none'))
+        ax.set(xlim=(bounds[0], bounds[2]), ylim=(bounds[1], bounds[3]), xlabel='X [µm]', ylabel='Y [µm]', title=title)
+        ax.set_aspect('equal'); ax.set_facecolor('#f5f7fa')
+    axes[1].add_patch(Rectangle((40, 404.1), 108, 97.9, fill=False, edgecolor=RED, linewidth=1.4))
+    fig.savefig(out/'silicon_art.png', dpi=180); plt.close(fig)
+
+
 def blocks(out):
     fig, ax = plt.subplots(figsize=(16, 9.2), facecolor='white')
     fig.subplots_adjust(left=.015, right=.985, top=.97, bottom=.035)
@@ -188,12 +211,12 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--directory', default='submission')
     a = ap.parse_args(); out = (ROOT / a.directory).resolve()
     assert out.is_dir() and out.is_relative_to(ROOT)
-    fonts(); report = pins(out); blocks(out)
+    fonts(); report = pins(out); blocks(out); artwork(out)
     report.update({'gds_sha256': sha(out / 'ishi_vga.gds'), 'ports_sha256': sha(out / 'ports.json'),
                    'circuit_modified': False, 'script_sha256': sha(Path(__file__)),
                    'image_role': 'GDS pin-location illustration and explanatory RTL block diagram',
                    'matplotlib_version': matplotlib.__version__, 'klayout_version': db.__version__,
-                   'images': {name: sha(out / name) for name in ['ishi_vga_pins.png', 'ishi_vga_blocks.svg', 'ishi_vga_blocks.png']}})
+                   'images': {name: sha(out / name) for name in ['ishi_vga_pins.png', 'ishi_vga_blocks.svg', 'ishi_vga_blocks.png', 'layout.png', 'silicon_art.png']}})
     (out / 'verification/figures.json').write_text(json.dumps(report, indent=2) + '\n')
     print('Rendered actual-metal pin overview + 8 close-ups and readable block diagram')
 

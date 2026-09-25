@@ -1,0 +1,317 @@
+{
+  "date": "2026-09-25",
+  "verdict": "CORE_HANDOFF_WITH_DOCUMENTED_LIMITATIONS",
+  "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "gds_changed": false,
+  "rtl_changed": false,
+  "frame_integration_performed": false,
+  "fatal_core_defect_found": false,
+  "manufacturing_signoff": false,
+  "replay_byte_identical": true,
+  "reextraction_byte_identical": true,
+  "fresh_physical": {
+    "status": "CORE_VERIFIED",
+    "feature": "I -> S -> H -> I -> idle, 16 frames per letter, 64 idle frames, 128 total",
+    "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "size_um": [
+      1792.8,
+      897.2
+    ],
+    "logical_cells": 241,
+    "added_logic_cells": 28,
+    "dffs": 29,
+    "placement_cells": 314,
+    "actual_signal_pins": 802,
+    "drawing_drc": 0,
+    "mask_warnings": 1,
+    "strict_lvs": "PASS",
+    "ports": [
+      "b",
+      "clk",
+      "g",
+      "hsync",
+      "r",
+      "vdd",
+      "vss",
+      "vsync"
+    ],
+    "clock_pin_loads": {
+      "clk_row0": {
+        "dffs": 6,
+        "pin_ff": 357.822,
+        "limit_ff": 800.0
+      },
+      "clk_row1": {
+        "dffs": 4,
+        "pin_ff": 238.548,
+        "limit_ff": 800.0
+      },
+      "clk_row2": {
+        "dffs": 7,
+        "pin_ff": 417.459,
+        "limit_ff": 800.0
+      },
+      "clk_row3": {
+        "dffs": 12,
+        "pin_ff": 715.644,
+        "limit_ff": 800.0
+      }
+    },
+    "sta": {
+      "status": "PASS",
+      "failures": [],
+      "expected_registers": 29,
+      "slack_ns": {
+        "setup": 274.740723,
+        "hold": 6.686719,
+        "output": 241.365341
+      },
+      "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+    },
+    "scope": "core only; inherited CLK Floating SG warning; no wire RC or frame integration"
+  },
+  "additional_state_audit": {
+    "status": "PASS",
+    "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "binary_h_v_phase_states_checked": 16777216,
+    "output_ff_feedback": false,
+    "independent_raster_match": true,
+    "scan_cycle_ticks": 52500,
+    "max_ticks_into_scan_cycle": 49928,
+    "clock_loads": {
+      "clk_row0": {
+        "dffs": 6,
+        "pin_cap_ff": 357.822,
+        "max_cap_ff": 800.0,
+        "remaining_ff_before_wire": 442.178
+      },
+      "clk_row1": {
+        "dffs": 4,
+        "pin_cap_ff": 238.548,
+        "max_cap_ff": 800.0,
+        "remaining_ff_before_wire": 561.452
+      },
+      "clk_row2": {
+        "dffs": 7,
+        "pin_cap_ff": 417.459,
+        "max_cap_ff": 800.0,
+        "remaining_ff_before_wire": 382.541
+      },
+      "clk_row3": {
+        "dffs": 12,
+        "pin_cap_ff": 715.644,
+        "max_cap_ff": 800.0,
+        "remaining_ff_before_wire": 84.356
+      }
+    },
+    "ports_match_gds_labels_and_metal": true,
+    "distinct_electrical_port_components": 8,
+    "pinned_library_cell_geometry_matches": [
+      "AND2_X1",
+      "AND3_X1",
+      "AND4_X1",
+      "BUFTH",
+      "BUF_X1",
+      "BUF_X2",
+      "DFF",
+      "FILL1",
+      "FILL2",
+      "FILL3",
+      "INV_X1",
+      "INV_X2",
+      "MUX2",
+      "NAND2",
+      "NAND3",
+      "NAND4",
+      "NOR2",
+      "NOR3",
+      "NOR4",
+      "OR2",
+      "OR3",
+      "OR4",
+      "TAP2",
+      "XNOR2",
+      "XOR2"
+    ],
+    "scope": "Boolean final-netlist audit; no analog start-up/RC/PVT guarantee"
+  },
+  "saved_spice": {
+    "cases": 20,
+    "cycles": 922,
+    "all_pass": true
+  },
+  "fresh_spice": {
+    "phase_127": {
+      "status": "PASS",
+      "cycles_checked": 4,
+      "state_bits": 24,
+      "output_bits": 5
+    }
+  },
+  "sta_negative_controls": {
+    "corrected_core": {
+      "exit": 0,
+      "guard": {
+        "status": "PASS",
+        "failures": [],
+        "expected_registers": 22,
+        "slack_ns": {
+          "setup": 276.02475,
+          "hold": 6.686719,
+          "output": 241.965698
+        },
+        "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+      }
+    },
+    "original_cap_violation": {
+      "exit": 1,
+      "guard": {
+        "status": "FAIL",
+        "failures": [
+          "reported constraint violation"
+        ],
+        "expected_registers": 22,
+        "slack_ns": {
+          "setup": 275.598969,
+          "hold": 6.748887,
+          "output": 240.218872
+        },
+        "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+      }
+    },
+    "tcl_error": {
+      "exit": 1,
+      "guard": {
+        "status": "FAIL",
+        "failures": [
+          "tool error or unhandled warning",
+          "missing/duplicate GATE_BEGIN",
+          "missing/duplicate ELECTRICAL_BEGIN",
+          "missing/duplicate ELECTRICAL_END",
+          "missing/duplicate GATE_END",
+          "CLOCKS count mismatch",
+          "REG_CLOCKS count mismatch",
+          "REG_DATA count mismatch",
+          "missing/duplicate SETUP path",
+          "missing/duplicate HOLD path",
+          "missing/duplicate OUTPUT path"
+        ],
+        "expected_registers": 22,
+        "slack_ns": {},
+        "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+      }
+    },
+    "incomplete_report": {
+      "exit": 1,
+      "guard": {
+        "status": "FAIL",
+        "failures": [
+          "missing/duplicate GATE_BEGIN",
+          "missing/duplicate ELECTRICAL_BEGIN",
+          "missing/duplicate ELECTRICAL_END",
+          "missing/duplicate GATE_END",
+          "CLOCKS count mismatch",
+          "REG_CLOCKS count mismatch",
+          "REG_DATA count mismatch",
+          "missing/duplicate SETUP path",
+          "missing/duplicate HOLD path",
+          "missing/duplicate OUTPUT path"
+        ],
+        "expected_registers": 22,
+        "slack_ns": {},
+        "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+      }
+    }
+  },
+  "fpga_receipt_and_current_rtl_hashes_match": true,
+  "organizer": {
+    "repository": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_OpenSUSI-TR10-1_OpenSUSI04",
+    "commit": "2870b2749ed2af1b67dba9db224269901817d914",
+    "files": {
+      ".github/actions/checkout-pdk/action.yml": "7a4386277bd9130f1cd9a6c850c9dd6022185bfc7a9e8a88ed7a371ba41b9f0e",
+      ".github/actions/setup-klayout/action.yml": "14c82d0219440c23e38ad52f8be4e47d15065559ee26beee9f57bf1ef7b8fe4c",
+      ".github/workflows/check.yml": "ad32276b2ebba697ef6a5e9f8c3ac60be7cf7fb475a7c2e2da957351977c6dc4",
+      "README.md": "70ca21d15ed004f7c643a9b2b3fdb7c4ae2073d8157c44c9acb7f1939d316b2d",
+      "docs/info.md": "70ca21d15ed004f7c643a9b2b3fdb7c4ae2073d8157c44c9acb7f1939d316b2d",
+      "info.yaml": "fc535d64436af0d411849b09270093b58a149c1a9b26e6732470deaabfc9ed4b",
+      "scripts/pre_check.py": "90c3adf79042d114c14d29a7c27b2f3956c03b20836096786fa202efe9fc44c8",
+      "scripts/read_info.py": "0002214369fbb1c66e008562c3ebe2594ee8b910edb1a1bb64cef497f8b83b72"
+    },
+    "pdk_ref": "v1.2609.0",
+    "pdk_commit": "c5bcc378c1c3d041fef6cc15e70d173bb80dcedb",
+    "pdk_rule_files_different_from_locked": [
+      "libs.tech/klayout/tech/drc/00_Layers.drc",
+      "libs.tech/klayout/tech/drc/01_Basics.drc",
+      "libs.tech/klayout/tech/drc/02_Device.drc",
+      "libs.tech/klayout/tech/drc/03_Electrical.drc",
+      "libs.tech/klayout/tech/drc/04_TapeOut.drc",
+      "libs.tech/klayout/tech/drc/IP62/00_Layers.drc",
+      "libs.tech/klayout/tech/drc/IP62/01_Basics.drc",
+      "libs.tech/klayout/tech/drc/IP62/04_Check.drc",
+      "libs.tech/klayout/tech/drc/IP62/06_Check.drc",
+      "libs.tech/klayout/tech/drc/IP62/10_TapeOut.drc",
+      "libs.tech/klayout/tech/drc/run.drc",
+      "libs.tech/klayout/tech/drc/run_IP62.drc",
+      "libs.tech/klayout/tech/drc/run_mdp.drc",
+      "libs.tech/klayout/tech/lvs/02_Extract.lvs",
+      "libs.tech/klayout/tech/lvs/04_Custom.lvs",
+      "libs.tech/klayout/tech/lvs/05_Compare.lvs",
+      "libs.tech/klayout/tech/lvs/run.lvs"
+    ],
+    "lvs_netlist_only": true,
+    "final_top": "tr_1um_OpenSUSI04",
+    "layout_sha256": "b3bab58e7986708d975650874cfdec738d5831536ceb8b4e8e3f4d0742c2d239"
+  },
+  "remaining": [
+    "clk_row3 wire capacitance versus 84.356 fF remaining load budget",
+    "interconnect RC, PVT, actual I/O loads, IR/EM and analog startup coverage",
+    "organizer PDK alignment and final full-chip DRC/MDP/LVS by integration owner"
+  ],
+  "checked_files": {
+    "submission/ishi_vga.gds": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "submission/source/ishi_vga_core_pnr.v": "891aabbcf5f08edcf9bdcc47cf06acf610f3c6419ee7a13dd647b109de320532",
+    "submission/source/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "submission/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
+    "submission/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "submission/ports.json": "10420df273b260d0f90e29265c513637175072bd507137a0607a1840d0efebd3",
+    "tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib": "6d50bc1bed2d69afec703f2bd1ff13c8d7a300e5fca8dbbc0142c5cffa2da481",
+    "submission/verification/placement.json": "9fa7f0b5ae235006ffb6aa9c0f1f63e1b228d06f1b3fc94c45a7d1dc4e586f62",
+    "tools/APRtools/stdcell/v59_4/TR-1um_STDCELL.gds": "ec71c93a25529f0e937b57b2ca81dc3636e8e57c581dfc5b7b1ba97061b3f7da",
+    "tools/APRtools/stdcell/v59_4/TR-1um_cells.lef": "d765cbf0edd79f9f022df00b1bfc54160fd76631685ce217c02474a2c475ebcc",
+    "scripts/letter_animation_eco.py": "19f9c2f13c7aeeb9d015dc1d2245d00b1d288310ab7377e79a3368849ce894cd",
+    "tools/APRtools/apr/rules.py": "d57257f684236eaeed8c1a258a3b6d014fff157a7723d7546fcf86914b81be88",
+    "tools/APRtools/apr/lib_query.py": "19da0ccc9d9e7cdcd8105f17b33f5e343e18c8782a8f72a8ad3010ca89794ddb",
+    "tools/APRtools/apr/lef_parser.py": "e5d24d443bc937c80b13f559f25fa62b57bb212f96809656ca7b00320ad20e9b",
+    "experiments/a_metal_g_power/metal.json": "2c54161186bf772e160537cffa38a99aae79c7823864661f449c8b966a48dd97",
+    "experiments/a_half_grid64/glyphs.json": "c5f3b966b9ce9657e4986c1fc383b3285d75c75f6e7f54f8edefa1031ea4924c",
+    "scripts/review_letter_submission.py": "7ca8b3b6b284aa73a2e79bc49e77057e76d2f3e970c05ec1193338a47a4bbfe0",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "submission/ishi_vga.extracted": "40f084b017abe6f8ec83a93c44ba00ddeee5f2cb63bf5f913aabb769a84fe89b",
+    "submission/ishi_vga_lvs.spice": "a5705e9f9ebd4382cde53d57b32ebe540ba1140869091d3fbbb20c0a59a80299",
+    "submission/source/ishi_vga_core.v": "e49db0856f649c4175f68df66d540eaca00efac97148635350e0c29182a05718",
+    "submission/source/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "submission/source/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "submission/simulation/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "submission/simulation/cases.json": "0a58f7e1de64a86af5b650d4025e1fabfa704f7ac60cde19561c8023586b02ef",
+    "submission/fpga/vga_letter_animation.fs": "02d049bcfc497c8c76a276dabe16dc1e5ea80e50dcd395a36753d95fb782a77b",
+    "submission/fpga/programming.json": "65ca2185a98a82bccd0c0a9483e7890f8d82cc90149626a954e967e6800fead7",
+    "scripts/replay_letter_animation_core.py": "cbf50e2fb5222b74b0a6f06b003bb5d367c09bb8748e2b03d6f2208b1719ed9c",
+    "scripts/verify_letter_animation_core.py": "d0c661cee4180454f14b0cd33e6e47b0cce985bb8a38d16c7dace2fc9cf05cec",
+    "scripts/test_sta_guard.py": "6d7156bf54a0964014ff09cc00864fae0c08216127c7dffa7b4a0b34aa91b2c9",
+    "scripts/sta_guard.py": "06f1970b9a912744a934dc4baa4d1c6034a12bca78ee33123d924f64e2483af1",
+    "scripts/sta_guard.tcl": "b9a4842cefdfa746da148b0550075da93179535e0ecf125f242033384c6fc3bf"
+  },
+  "fresh_evidence": {
+    "build/submission_review_20260925/replay/replay.json": "b903389b3b6938d58828e9e48926531a5387ddf8c6cef11fb8594a35782a77b6",
+    "build/submission_review_20260925/replay/build/verification.json": "756dbe1fc1ad7a7faa810e86567c6efc62232aec43363c37b26876853b2021bd",
+    "build/submission_review_20260925/replay/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "build/submission_review_20260925/replay/build/candidate_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "build/submission_review_20260925/replay/build/core.lvsdb": "5b64909392459e0c92e575d034ba26db6ef32fdc2a4aabb8c8336b51320b2b47",
+    "build/submission_review_20260925/replay/build/functional/verification.json": "a2edda7dd2592c46657dc23223a14131eaee5470784e881e51639a8444b4a455",
+    "build/submission_review_20260925/replay/out/STA_ishi_vga_core.guard.json": "8c0f50b4c3c7a6021cd59dccb3fb16eae312acaf21a477c2fd62c7e669182597",
+    "build/submission_review_20260925/state_audit.json": "ff0c6e96c5cf701a151edcba051bce3612ad8ed1d8641636285d0439b598c9f9",
+    "build/submission_review_20260925/sta_controls/results.json": "42fca58b254f1e3225d5c34cae738e3fb9fc1d6da8371729b5a95c93642532f3",
+    "build/submission_review_20260925/organizer/snapshot.json": "2522cf15e973f11fdd106f2c409dc87f123e4292891d2f8055f1469e0d6bdd8b"
+  },
+  "environment_note": "Disk exhaustion interrupted first routing run; only new route intermediates moved to tmpfs, then routing restarted from unrouted GDS. Completed output is byte-identical."
+}

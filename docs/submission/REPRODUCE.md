@@ -21,10 +21,18 @@ python3 tools/run_letter_tests.py spice --case phase_127 --out ../letter_spice_r
 git submodule update --init --recursive
 python3 scripts/apply_toolchain_patches.py
 python3 scripts/check_toolchain.py
+# .venv / .tools が未準備の場合（Ubuntu 24.04 arm64向け）
+make setup
 .venv/bin/python scripts/replay_letter_animation_core.py --out build/letter_recheck
 .venv/bin/python scripts/verify_letter_animation_core.py --design-root build/letter_recheck
-.venv/bin/python scripts/letter_spice_check.py
+.venv/bin/python scripts/review_letter_submission.py --out build/letter_recheck/state_audit.json
+# 装飾の追加・DRC/LVS/抽出は SILICON_ART.md の手順を実行後
+.venv/bin/python scripts/letter_spice_check.py --design-root experiments/letter_art_spice
 ```
+
+`replay_letter_animation_core.py` は装飾前コアを再現します。最終提出GDSには [SILICON_ART.md](SILICON_ART.md) の装飾工程を続けて実行してください。
+
+`make setup` のビルド依存はリポジトリの `docs/IMPLEMENTATION.md` に記載しています。KLayoutのCLI（今回0.30.9）とngspiceは別途必要です。配線探索の中間ファイルだけで約1 GiBを使用します。ルートの `make synth`／`make test`／`make sta` は旧比較設計の入口で、現行アニメーションの検証には上記コマンドを使います。
 
 `tools/APRtools`、`tools/TR-1um` の版は `toolchain.lock.json` に固定されています。`reproduce/static_*` は配置配線を再現するための固定入力で、提出対象のGDSはルートの `ishi_vga.gds` です。
 

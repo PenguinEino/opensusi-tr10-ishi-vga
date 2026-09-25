@@ -59,17 +59,17 @@
   "rgb_values_seen": [
     0
   ],
-  "max_low_sample_v": 2.0852402328839624e-08,
-  "min_high_sample_v": 4.999999985987164,
+  "max_low_sample_v": 2.085240233156229e-08,
+  "min_high_sample_v": 4.999999985987161,
   "errors": [],
   "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
   "hashes": {
-    "experiments/letter_spice/build/phase_003/tb.spice": "935fa0e9b68f47a9adc8e3f2b62881a0a742835b3f2d57b1714a06d37f74e539",
-    "experiments/letter_spice/build/phase_003/case.json": "aa23516b3ba1f79c77c18a0ad8e5ae551ab3988a77114e1f93d859dfbb929802",
-    "experiments/letter_spice/build/phase_003/wave.raw": "75fa6d41d50c12eb5ba92a94e1f6789ad2acf64e476c72cddd7cceb953bd0eb0",
-    "experiments/letter_spice/build/phase_003/ngspice.log": "5496f781d3edcfb0b9f309c41c27c2be8ff90bff9937c5be36139b38b9f745e8",
-    "experiments/letter_spice/build/phase_003/run.json": "33279e83f781224060e1c7b4895261895a02596c5f00f5ef8a49f84327614527",
-    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "experiments/letter_art_spice/build/phase_003/tb.spice": "77726d12b705d578085d20c9f172b1f1589127158c76264e79776534bbfc41aa",
+    "experiments/letter_art_spice/build/phase_003/case.json": "aa23516b3ba1f79c77c18a0ad8e5ae551ab3988a77114e1f93d859dfbb929802",
+    "experiments/letter_art_spice/build/phase_003/wave.raw": "9d55c1d92b57ee9f81d411b1f9b8fd95b82353e093522e1268f32f942bf25d27",
+    "experiments/letter_art_spice/build/phase_003/ngspice.log": "cd7d7df37cfd3398819ef8427f08b197a3eff82ac6338a126367e8fb4fea22ba",
+    "experiments/letter_art_spice/build/phase_003/run.json": "4da49f1786baea7ec8e0b614dc39996aff17357e1d491090f51442fe32b6ee43",
+    "experiments/letter_art_spice/build/core_sim.spice": "b3d4fb66bcaf05d352a6c2dfcaf97a7320f4a0d02b5a937f61f5134b32d52050",
     "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
     "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
   }

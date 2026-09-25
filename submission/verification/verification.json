@@ -1,20 +1,10 @@
 {
-  "status": "CORE_VERIFIED",
-  "feature": "I -> S -> H -> I -> idle, 16 frames per letter, 64 idle frames, 128 total",
-  "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
-  "size_um": [
-    1792.8,
-    897.2
-  ],
-  "logical_cells": 241,
-  "added_logic_cells": 28,
-  "dffs": 29,
-  "placement_cells": 314,
-  "actual_signal_pins": 802,
-  "drawing_drc": 0,
-  "mask_warnings": 1,
-  "strict_lvs": "PASS",
-  "ports": [
+  "status": "ART_CORE_VERIFIED",
+  "gds_sha256": "95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3",
+  "base_gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "extracted_sha256": "36dfa47ed7d5c62f3cbab2801a5ab4ce384bf3b70079f45e701369be1f16bf24",
+  "all_original_functional_geometry_preserved": true,
+  "named_ports_preserved": [
     "b",
     "clk",
     "g",
@@ -24,67 +14,40 @@
     "vss",
     "vsync"
   ],
-  "clock_pin_loads": {
-    "clk_row0": {
-      "dffs": 6,
-      "pin_ff": 357.822,
-      "limit_ff": 800.0
-    },
-    "clk_row1": {
-      "dffs": 4,
-      "pin_ff": 238.548,
-      "limit_ff": 800.0
-    },
-    "clk_row2": {
-      "dffs": 7,
-      "pin_ff": 417.459,
-      "limit_ff": 800.0
-    },
-    "clk_row3": {
-      "dffs": 12,
-      "pin_ff": 715.644,
-      "limit_ff": 800.0
-    }
+  "extraction_electrically_identical": true,
+  "electrical_comparison": "exact cell parameters/internal terminals; top nets as named-port/physical-instance pin endpoint sets",
+  "drawing_drc": 0,
+  "strict_lvs": "PASS",
+  "inherited_mask_warnings": 1,
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "art_bbox_um": "(40,404.1;148,502)",
+  "art_layer": "M1",
+  "art_clearance_um": 3.0,
+  "signal_opens": 0,
+  "signal_shorts": 0,
+  "missing_signal_pins": 0,
+  "power_component_counts": {
+    "vss": 1,
+    "vdd": 1
   },
-  "sta": {
-    "status": "PASS",
-    "failures": [],
-    "expected_registers": 29,
-    "slack_ns": {
-      "setup": 274.740723,
-      "hold": 6.686719,
-      "output": 241.365341
-    },
-    "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
-  },
-  "functional": {
-    "frames": 128,
-    "ticks": 6720000,
-    "counter_transitions": 128,
-    "decoder_states": 131072,
-    "phase_initial_states": 128
-  },
-  "scope": "core only; inherited CLK Floating SG warning; no wire RC or frame integration",
+  "scope": "isolated artwork; no wire RC/PVT/frame integration; functional RTL/gate/STA evidence retained by equivalence",
   "hashes": {
-    "scripts/verify_letter_animation_core.py": "d0c661cee4180454f14b0cd33e6e47b0cce985bb8a38d16c7dace2fc9cf05cec",
-    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
-    "build/letter_long_idle_final_replay/ishi_vga_core.v": "e49db0856f649c4175f68df66d540eaca00efac97148635350e0c29182a05718",
-    "build/letter_long_idle_final_replay/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
-    "build/letter_long_idle_final_replay/out/ishi_vga_core_pnr.v": "891aabbcf5f08edcf9bdcc47cf06acf610f3c6419ee7a13dd647b109de320532",
-    "build/letter_long_idle_final_replay/out/STA_ishi_vga_core.guard.json": "8c0f50b4c3c7a6021cd59dccb3fb16eae312acaf21a477c2fd62c7e669182597",
-    "build/letter_long_idle_final_replay/layout/placement.json": "9fa7f0b5ae235006ffb6aa9c0f1f63e1b228d06f1b3fc94c45a7d1dc4e586f62",
-    "build/letter_long_idle_final_replay/build/candidate.gds": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
-    "build/letter_long_idle_final_replay/build/core.extracted": "40f084b017abe6f8ec83a93c44ba00ddeee5f2cb63bf5f913aabb769a84fe89b",
-    "build/letter_long_idle_final_replay/build/pins.json": "52336eee8bc1127defb221a8d70c118a4d2937bb8793465600a5f6fd88341a71",
-    "build/letter_long_idle_final_replay/build/placement_manifest.json": "278180490ea49d2f9026611babaff6d0cc576c00467bad35a6770adf83b6b18c",
-    "build/letter_long_idle_final_replay/build/routing_manifest.json": "2dca589bbb12dbdd182467290af397784876eda3c73a85621129eab39312654f",
-    "build/letter_long_idle_final_replay/build/repair_manifest.json": "a1f1493ef5f546cd442db45a93a0015ce23af2d3f25e1a649028a9d1f03d4ee4",
-    "build/letter_long_idle_final_replay/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
-    "build/letter_long_idle_final_replay/build/candidate_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
-    "build/letter_long_idle_final_replay/build/core.lvsdb": "5b64909392459e0c92e575d034ba26db6ef32fdc2a4aabb8c8336b51320b2b47",
-    "build/letter_long_idle_final_replay/build/lvs.log": "f2cc5d3616d9492c4e1c0cb09d6268832009bf4515f37e788eb9c37058c66a81",
-    "build/letter_long_idle_final_replay/build/ishi_vga_core.spice": "a5705e9f9ebd4382cde53d57b32ebe540ba1140869091d3fbbb20c0a59a80299",
-    "build/letter_long_idle_final_replay/build/audit/metal_connectivity.json": "a11a1180abb9f440e0e5cd8aba70761e2c7e86c7b6f29e738e98ebf8dfd1e69e",
-    "build/letter_long_idle_final_replay/build/functional/verification.json": "4b68b8d883aea24568acb1cf0d6b8d7edd5d90c882c9f4f6a90af6d206843867"
+    "scripts/verify_letter_silicon_art.py": "498030fbe8e8c9c5b4e253a3ebbccfb68a1287b6caab5f51dc7844d2eefd605f",
+    "scripts/add_letter_silicon_art.py": "f9096f4e48a0641ba05fd2d4f848d021a57c29a2554c7978b885e2409daa8007",
+    "experiments/a_letter_silicon_art/config.py": "22deeca36f104edb752b3c8112ad0d42913f82468f554121d7b6d92bdd20d64f",
+    "experiments/a_letter_silicon_art/build/candidate.gds": "95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3",
+    "experiments/a_letter_silicon_art/build/core.extracted": "36dfa47ed7d5c62f3cbab2801a5ab4ce384bf3b70079f45e701369be1f16bf24",
+    "experiments/a_letter_silicon_art/build/art_geometry.json": "647ca0c1e7c745c4215e51c234b4377ce8ba05fcd885a473327f11d0537712b5",
+    "experiments/a_letter_silicon_art/build/core.lvsdb": "162c66a58f1e00542839129d5a65577aef52f36157e8c4349cde749e6125baef",
+    "experiments/a_letter_silicon_art/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "experiments/a_letter_silicon_art/build/candidate_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "experiments/a_letter_silicon_art/build/lvs.log": "da9970b86d46a79fcb0e690e08330af23913fa0ac863ee8d74c75aa9f2ea6b1b",
+    "experiments/a_letter_silicon_art/build/drc.log": "ab062eb8da93950aa7d9681cf54bcb8f1f07a28d72a3c04376c3e5c2dd14a763",
+    "release/ishi_vga_letter_scan_core/ishi_vga.gds": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "release/ishi_vga_letter_scan_core/ishi_vga.extracted": "40f084b017abe6f8ec83a93c44ba00ddeee5f2cb63bf5f913aabb769a84fe89b",
+    "release/ishi_vga_letter_scan_core/verification/placement.json": "9fa7f0b5ae235006ffb6aa9c0f1f63e1b228d06f1b3fc94c45a7d1dc4e586f62"
   }
 }

@@ -85,16 +85,18 @@
     24,
     24
   ],
-  "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "gds_sha256": "95a799066aeade8a5ca04cd1425252759988ee61c429f383c699b1b17e4d29b3",
   "ports_sha256": "10420df273b260d0f90e29265c513637175072bd507137a0607a1840d0efebd3",
   "circuit_modified": false,
-  "script_sha256": "6389efcc8ffdee6a80953cdbed252176a5768064479c3f332dde7804dfe884fb",
+  "script_sha256": "75b47d2438e355ba9c118198f408e3dff65c03ddbd1fcbd6a8f9b589312cc873",
   "image_role": "GDS pin-location illustration and explanatory RTL block diagram",
   "matplotlib_version": "3.10.8",
   "klayout_version": "0.30.6",
   "images": {
-    "ishi_vga_pins.png": "598172737b3223c4ff687ecb772bff56cd88109a90ac58e64dd734416650973b",
+    "ishi_vga_pins.png": "104131d588a8d9cacc536a45efb0fe7208ae39a318d944c0e0076021eeadd65a",
     "ishi_vga_blocks.svg": "bcbd5ab84b12c7b9d4c6a0262400c06741653076dd1e45b262d96fe2073d953b",
-    "ishi_vga_blocks.png": "ca6908f1ac6dfd202a0e3d29970d48982a1e7c524efb51dfd9f20b9d59e510df"
+    "ishi_vga_blocks.png": "ca6908f1ac6dfd202a0e3d29970d48982a1e7c524efb51dfd9f20b9d59e510df",
+    "layout.png": "72cadb3994fbc06a9b5c3eadf2f9da14d33f794e6d3da74367680cf641f8106c",
+    "silicon_art.png": "9c5673e0943fb7d26fa8c3de838fdd747db4a22df1cf5eccf21f7e78aebec9ad"
   }
 }

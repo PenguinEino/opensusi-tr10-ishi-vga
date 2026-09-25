@@ -1,4 +1,4 @@
-wrote /home/ishi-kai/ishi-vga/experiments/letter_spice/build/core.extracted
+wrote /home/ishi-kai/ishi-vga/experiments/letter_art_spice/build/core.extracted
   ishi_vga_core        device     0  subckt 290  net   273  pins ['hsync', 'vdd', 'b', 'r', 'g', 'clk', 'vsync', 'vss']
   FILL3                device     2  subckt   0  net     2  pins ['vdd', 'vss']
   NAND2                device     4  subckt   0  net     6  pins ['A', 'B', 'Y', 'vdd', 'vss']

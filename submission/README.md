@@ -6,6 +6,8 @@ ISHI会ロゴをVGAに出力し、**I → S → H → I → 発光なし**を繰
 
 [仕様・端子](SPEC.md) · [GDS](ishi_vga.gds) · [抽出回路](ishi_vga.extracted) · [再検証](REPRODUCE.md) · [版・由来](PROVENANCE.md)
 
+これは**統合担当者へ渡す、パッド・フレーム未統合のコア**です。[提出レビュー](REVIEW.md)で再生成・DRC／LVS・全二値状態の動作を確認しました。配線RC・PVT・実I/O負荷は未検証で、特にクロック枝 `clk_row3` の配線容量の確認が残ります。
+
 ## 実機とシミュレーション
 
 Tang Primer 20K＋抵抗DACでの実機動画。横向きに回転した[MP4](fpga_demo.mp4)も収録しています。
@@ -30,9 +32,13 @@ Tang Primer 20K＋抵抗DACでの実機動画。横向きに回転した[MP4](fp
 
 ## レイアウト・構成
 
-統合時のトップセルは **`ishi_vga_core`** です。
+統合時のトップセルは **`ishi_vga_core`** です。左側中央に [名前とペンギン](SILICON_ART.md) をM1で配置しています。
 
-<img src="layout.png" alt="アニメーション版の最終GDS" width="900">
+<img src="silicon_art.png" alt="左側中央のEINOSUKE OKAZAKIとペンギン、および実メタル全体図" width="900">
+
+名前・ペンギンを含む最終GDSの全レイヤー表示。
+
+<img src="layout.png" alt="左側中央に名前とペンギンを配置した最終GDSの全体レイアウト" width="900">
 
 <img src="ishi_vga_blocks.png" alt="走査カウンタ、発光カウンタ、ロゴ描画、出力レジスタのブロック図" width="900">
 

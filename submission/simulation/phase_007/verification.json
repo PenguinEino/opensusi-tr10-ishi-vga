@@ -59,17 +59,17 @@
   "rgb_values_seen": [
     0
   ],
-  "max_low_sample_v": 2.0852402358701333e-08,
+  "max_low_sample_v": 2.0852402349656305e-08,
   "min_high_sample_v": 4.999999985987163,
   "errors": [],
   "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
   "hashes": {
-    "experiments/letter_spice/build/phase_007/tb.spice": "6ad0fc04dc0a930ca7f933453b8f63f4ae6db60602b0cb4b3ea0f91454cf0623",
-    "experiments/letter_spice/build/phase_007/case.json": "bda2c5a7005ffcc4c9d3b114cbb84ac08d726fc8c2dbee672dbd030ea97ac839",
-    "experiments/letter_spice/build/phase_007/wave.raw": "7e8c10f496c729145e561073621e55f2da36ea6ae99d77a9a0815bc0ba4b8a07",
-    "experiments/letter_spice/build/phase_007/ngspice.log": "300911e43917c2274feac7b189bea75d0963daddcbe903d4585cc050dc4f94b3",
-    "experiments/letter_spice/build/phase_007/run.json": "030321209cd24dea3fc0ac2563250432d9a6c2d304f20fd2882671e18f1d999c",
-    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "experiments/letter_art_spice/build/phase_007/tb.spice": "4e960c33fc788e9a90d93619763af5d8d31287dd9d8a8d5a6fb9a09bcf0b34c3",
+    "experiments/letter_art_spice/build/phase_007/case.json": "bda2c5a7005ffcc4c9d3b114cbb84ac08d726fc8c2dbee672dbd030ea97ac839",
+    "experiments/letter_art_spice/build/phase_007/wave.raw": "44a2f56abef50e0eb849ffa5cf9179c826be271d4c8fbcfecea7bace8d24368e",
+    "experiments/letter_art_spice/build/phase_007/ngspice.log": "63f92b3c57e3d3be1e1b62973243bc178787fcac9fb0101a6610028b1a1bf59c",
+    "experiments/letter_art_spice/build/phase_007/run.json": "7d00035870c058199a73cd5e35fb4a4777c5d2ee99f779c798589a258969bae9",
+    "experiments/letter_art_spice/build/core_sim.spice": "b3d4fb66bcaf05d352a6c2dfcaf97a7320f4a0d02b5a937f61f5134b32d52050",
     "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
     "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
   }
