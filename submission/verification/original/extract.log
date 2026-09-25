@@ -1,5 +1,5 @@
 wrote build/core.extracted
-  ishi_vga_core        device     0  subckt 325  net   234  pins ['hsync', 'vdd', 'b', 'g', 'r', 'clk', 'vsync', 'vss']
+  ishi_vga_core        device     0  subckt 325  net   238  pins ['hsync', 'vdd', 'b', 'g', 'r', 'clk', 'vsync', 'vss']
   FILL3                device     2  subckt   0  net     2  pins ['vdd', 'vss']
   NAND2                device     4  subckt   0  net     6  pins ['A', 'B', 'Y', 'vdd', 'vss']
   XNOR2                device    10  subckt   0  net     9  pins ['A', 'Y', 'B', 'vdd', 'vss']
@@ -16,9 +16,9 @@ wrote build/core.extracted
   OR4                  device    10  subckt   0  net    11  pins ['C', 'D', 'Y', 'A', 'B', 'vdd', 'vss']
   DFF                  device    24  subckt   0  net    15  pins ['QB', 'Q', 'D', 'vdd', 'CK', 'vss']
   OR2                  device     6  subckt   0  net     7  pins ['B', 'A', 'vdd', 'Y', 'vss']
+  BUF_X2               device     6  subckt   0  net     5  pins ['Y', 'A', 'vdd', 'vss']
   MUX2                 device    12  subckt   0  net    10  pins ['S', 'B', 'A', 'Y', 'vdd', 'vss']
   BUFTH                device    10  subckt   0  net     7  pins ['vdd', 'A', 'Y', 'vss']
   XOR2                 device    10  subckt   0  net     9  pins ['A', 'Y', 'B', 'vdd', 'vss']
   INV_X2               device     2  subckt   0  net     4  pins ['A', 'vdd', 'Y', 'vss']
-  BUF_X2               device     6  subckt   0  net     5  pins ['Y', 'A', 'vdd', 'vss']
   AND3_X1              device     8  subckt   0  net     9  pins ['Y', 'A', 'B', 'C', 'vdd', 'vss']

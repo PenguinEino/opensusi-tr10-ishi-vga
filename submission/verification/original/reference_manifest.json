@@ -1,8 +1,8 @@
 {
-  "source": "experiments/a_power_flex4/build/ishi_vga_core.spice",
-  "source_sha256": "075c085c4149a66e548237f5b19f2d0a0eafa1736cd508ea1ec3cf0c9c1881da",
-  "simulation_sha256": "068bb90ae4fc0e1887a0c66d39dd09bfbac847802cd3fad2187019efa9db14b1",
-  "conversion": "pinned apr/spi2ngspice.py; M to XM, bracket removal",
+  "source": "experiments/a_clock_tree/build/ishi_vga_core.spice",
+  "source_sha256": "36eec9d229412122b8f8c9f407d0a86d1648ad06fa0bc5f389ef1b42368e425a",
+  "simulation_sha256": "1ed2577545d4db555d29388c6df26b77f175c721c37b61560434895540721505",
+  "conversion": "pinned apr/spi2ngspice.py",
   "top_ports": [
     "b",
     "clk",

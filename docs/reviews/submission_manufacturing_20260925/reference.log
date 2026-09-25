@@ -1,0 +1,5 @@
+wrote regenerated_lvs.spice
+  top pin   : 8  (b clk g hsync r vsync vdd vss)
+  論理セル  : 209 個 / 20 種
+  物理セル  : 136 個 / 3 種 (FILL2 x15, FILL3 x101, TAP2 x20)
+  subckt    : 22 個を同梱

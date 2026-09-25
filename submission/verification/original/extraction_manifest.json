@@ -1,7 +1,7 @@
 {
-  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
-  "raw_sha256": "ebf79c59fa408fb2fa61e9caa093490649816339abe6abff8053c6e8e6e2b784",
-  "simulation_sha256": "322cae9352a18a7b149d782da96b42f31c812210a5fc926ff8e259354f20a0dc",
+  "gds_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+  "raw_sha256": "2e69d7fcdd9e7aee0f1197b31e5280b3a08556114106547a2b098a530e7abd10",
+  "simulation_sha256": "51db93db415bcc7f7a030d22199231d1fc1b560d7904857345a64b2c93676832",
   "top_ports": [
     "hsync",
     "vdd",
@@ -12,16 +12,16 @@
     "vsync",
     "vss"
   ],
-  "hierarchical_device_count": 1774,
+  "hierarchical_device_count": 1790,
   "no_combine": true,
   "connection_and_device_parameter_tokens_preserved": true,
   "identifier_collisions": 0,
   "interconnect_rc": false,
   "hashes": {
-    "release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
-    "experiments/a_power_spice/build/core.extracted": "ebf79c59fa408fb2fa61e9caa093490649816339abe6abff8053c6e8e6e2b784",
-    "experiments/a_power_spice/config.py": "6cf109e51b25eeea90dbc8ba7ecfbecbd64e3afbb90158cc323fc1d5ccfe4cf5",
-    "scripts/power_spice_check.py": "e1dc7fce6d414d7bdc28e81f4e511f928a61e56134c80fc9d786ac3ae8abf13f",
+    "experiments/a_clock_tree/build/candidate.gds": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+    "experiments/a_clock_tree/build/core.extracted": "2e69d7fcdd9e7aee0f1197b31e5280b3a08556114106547a2b098a530e7abd10",
+    "experiments/a_clock_tree/config.py": "b8248a665d6252dcc22ec9c8f7a949c265ffb228427e195108c847141f1f96c0",
+    "scripts/power_spice_check.py": "31eabc6902a4ed00edf4907f185bac105b0a81264f4440734c60c0cf614f6977",
     "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
     "tools/APRtools/apr/klayout_extract.py": "46a41a245588b33219784bb2f963b4d62ffe39b3c5077347df1fae16513410a0",
     "tools/APRtools/apr/gen_chip_sim_ready.py": "b9cb9581303523ceffa3591c29e7e49e4fd697eb1fbf7efaf7d0b4c714cfd95b",

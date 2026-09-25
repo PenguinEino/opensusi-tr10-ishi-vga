@@ -7,7 +7,7 @@
 - RGB111、黒背景、外部CLK 3.15 MHz、RESETなし、リングなし。
 - VDD、CLK、HSYNC、VSYNC、R、G、Bの7端子（共通VSSを除く）。
 - 予算1800×900 µm。フレーム統合はユーザーの保留指示を維持する。
-- 元の209セル・301,193 µm²の論理回路と参照フレームを固定して配置配線を最適化する。
+- 面積探索時は209セル・301,193 µm²の論理回路と参照フレームを固定。製造レビュー後にクロック分岐4セルを追加。
 - 出発点は `a_metal_g_power_anneal4` の1783.8×984.7 µm、短絡17ネット対、断線0。
 
 **コア単体の引き渡し版を完成。最終GDSは1792.8×897.2 µm、公式描画DRC 0、strict LVS合格。**
@@ -16,40 +16,30 @@
 探索は `scripts/power_layout_search.py` と既存の設計内配置探索スクリプトから、固定APRtoolsの配置・配線・圧縮入口を実行する。
 標準セル・PDK・設計規則は変更しない。各試行の設定はその `config.py`、入力は `source_manifest.json` に記録する。
 
-## 引き渡すファイル
+## 現行引き渡し（製造レビュー対応後）
 
-- [引き渡し用GDS](../release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds)。トップは `ishi_vga_core`。
-- [ファイル一式](../release/ishi_vga_grid_power_core.tar.gz)。GDS、SPICE、ゲート回路、RTL、端子表、機能・接続・DRC・MDP・LVS・STAの記録、再現用チェックポイントを含む。
-- [物理検証の正本](../experiments/a_power_escape/build/verification.json)。[GDSの正本](../experiments/a_power_escape/build/candidate.gds)。
-- [現行の設計config](../designs/grid_power/config.py)。rootの `config.py` / `rtl/` は旧Bの比較基準であり、こちらを合成しない。
+- [現行GDS](../submission/ishi_vga.gds)、top `ishi_vga_core`。
+- [提出フォルダ](../submission/README.md)／[製造レビュー対応](reviews/submission_manufacturing_response.md)。
+- [ECO設定](../experiments/a_clock_tree/config.py)／[物理検証](../submission/verification/physical/verification.json)。
+- SHA256: `299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c`。
 
-最終GDS SHA256: `3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e`。
-GDS bboxは **(-15.3, 0)–(1777.5, 897.2) µm**。原点はbbox左下ではない。1800×900枠内の左下に配置するなら、bbox左端とコア原点の15.3 µm差も考慮する。
-外接面積1.6085 mm²。予算に対する寸法余裕は横7.2 µm、縦2.8 µmで、フレーム側の配線余白を別に確保したという意味ではない。
+既存FILL3を4個のBUF_X2に交換し、BUFTH→4分岐→各行6/4/7/5個のDFFへ接続しました。ピン負荷の最大値は417.459 fFで、セル上限800 fF以内です。配線容量は未抽出です。
 
-## 最終検証
-
-|項目|結果・範囲|
+| 項目 | 現行結果 |
 |---|---|
-|採用画像・RTL・ゲート回路|採用元 `a_metal_g_power` とバイト一致|
-|論理セル|209、セル面積301,193 µm²|
-|配置セル|345：論理209＋TAP20＋FILL2 15＋FILL3 101|
-|信号端子の実形状照合|696端子、欠落0|
-|短絡・断線|ともに0。実LEF端子図形と独立した点抽出の両方で確認|
-|電源|VDD/VSSそれぞれ1成分、互いに分離、信号への誤接続なし|
-|公式描画DRC|0件|
-|公式MDP・マスクDRC|`WAR06: Floating SG Detected` 1件。外部CLKのBUFTH入力。未解消として添付|
-|公式LVS|strict port mode、8ポートすべて一致。全回路・トップの全ネット・子回路一致|
-|RTL／ゲート機能|3.15 MHz、同期獲得後2フレームの全105,000 tick照合PASS|
-|起動の二値モデル|h/vの131,072状態を探索、周期52,500 tickが1つ、周期へ入る最大49,928 tick（約15.85 ms）|
-|セル遅延STA|typ 5 V/25℃、周期317.460317 ns。reg→reg setup余裕275.957 ns、hold余裕6.634 ns|
-|追加：抽出SPICE過渡解析|ngspice 46+、5 V/27℃、3.15 MHz、出力1 pF。5試験・668クロック一致。配線RCなし、選択した時間窓。詳細は[追加検証記録](POWER_GRID_SPICE.md)|
-|修復からの再現|凍結APR出力から4段階を再実行、各GDSのSHA256一致。最終DRC/LVSも再実行して合格|
+| bbox | (-15.3,0)–(1777.5,897.2) µm。1792.8×897.2 µm |
+| 論理／配置セル | 213／345。FILL3を101→97へ減らし外形維持 |
+| 実信号端子 | 704、欠落・短絡・断線0 |
+| 描画DRC／strict LVS | 0件／PASS、8端子一致 |
+| MDP | CLKのFloating SG 1件残存 |
+| 機能 | 各2フレーム105,000 tick、全131,072二値状態照合PASS |
+| STA | propagated cell clock、setup276.025 ns、hold6.687 ns。既知ピン容量違反なし |
+| 抽出SPICE | 1790素子、境界540＋起動中128クロック、独立参照110。配線RCなし |
+| 再現 | 旧凍結コアからECOを再実行しGDSバイト一致、DRC/LVS/STA再合格 |
 
-STAは固定Libertyとideal clockによる**配線寄生を含まない**評価。配線後PEX/PVT保証やモニタ実機動作を示さない。機能試験は試験側だけでFFを0に置いており、起動の全状態探索はRTL形式検証やアナログ電源立上り検証とは別の二値遷移モデル。
-MDPのFloating SGはコアの外部入力がパッド／ESD未接続である段階の残件。フレーム統合後の消滅を未確認のまま保証せず、最終チップでDRC・MDP・LVSを再実行する。
+電源投入の短いSPICE観測では正常走査周期へ入る前の状態を確認しています。二値モデルの単一周期への到達と区別し、アナログ起動・画面同期獲得を保証しません。
 
-抽出SPICEは前回の引き渡し後に追加した。旧引き渡しアーカイブは凍結したままで、[抽出ファイルと試験結果](POWER_GRID_SPICE.md)は別の追加成果物。GDSは変更していない。
+**フレーム統合、Floating SG解消、RC/PVT、実I/O負荷、IR/EMは未完了。製造GOではありません。** 旧 `release/ishi_vga_grid_power_core/` と旧tarは履歴・ECO入力として保存し、現行提出GDSとして使用しません。
 
 ## 接続条件と端子
 
@@ -86,17 +76,6 @@ RGB111のデジタル出力で外部パレットデコーダは不要。コア�
 
 ## 再現・再確認
 
-ツールの固定版は [APRTOOLS_ADOPTION.md](APRTOOLS_ADOPTION.md) と [toolchain.lock.json](../toolchain.lock.json)。KLayout CLI 0.30.9、Python KLayout 0.30.6で今回実行した。
+現行は `scripts/replay_clock_core.py --out build/new_clock_replay`。初期配置探索をやり直さず、旧凍結コアから4分岐ECOを再生成し、GDSのバイト一致とDRC／MDP／strict LVS／guard付きSTAを確認します。詳しくは[提出用の再現手順](../submission/REPRODUCE.md)。
 
-```sh
-python3 scripts/check_toolchain.py
-.venv/bin/python scripts/test_power_core.py
-# 新しい出力ディレクトリを指定。凍結した既存GDSやログを上書きしない。
-.venv/bin/python scripts/replay_power_core.py --out build/power_recheck_01
-klayout release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds
-```
-
-再現は保存したAPR出力 `a_power_flex4/build/diagnostic_compacted.gds` を出発点とし、局所修復→ポート注記→端子引き出し→接続監査→公式DRC/MDP/LVSを実行する。初期の配置探索を毎回繰り返すものではない。最初の実行結果は `build/power_core_replay/replay.json`。
-配置探索自体の正本は `a_power_flex4/config.py`、`build/row_graph.txt`、`build/assignment.txt`、`layout/step4/`、使用した `scripts/a_row_placement.py` と `row_anneal.cpp`。上流の `place.py` のpack/dumpをそのまま使用した。
-
-提出用セットはレビュー・フレーム統合へ渡す**コアの完成版**であり、主催者への送信やリポジトリへの投稿はしていない。
+旧コアの4段階修復と初期配置探索の記録は `release/ishi_vga_grid_power_core/` に、当時のスクリプトごと凍結しています。旧コアを再現する場合は旧アーカイブを別ディレクトリへ展開し、その中のREPRODUCE.mdを使います。現在のスクリプトやネットリストを古い証拠へ混ぜません。

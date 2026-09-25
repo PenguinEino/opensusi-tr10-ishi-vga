@@ -45,6 +45,9 @@ def main():
     env['PYTHONUNBUFFERED'] = '1'
     env['LD_LIBRARY_PATH'] = str(ROOT / '.tools/root/usr/lib/aarch64-linux-gnu') + os.pathsep + env.get('LD_LIBRARY_PATH', '')
     cmd = [str(python) if target.suffix == '.py' else 'sh', str(target), *args[1:]]
+    if str(requested) == 'syn/sta/sta.sh':
+        from sta_guard import run
+        return run(cmd, design, env, upstream, ROOT)
     return subprocess.call(cmd, cwd=design, env=env)
 
 if __name__ == '__main__':

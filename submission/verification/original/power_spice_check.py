@@ -18,7 +18,7 @@ import time
 import numpy as np
 from check_toolchain import ROOT, verify
 
-D=ROOT/'experiments/a_power_spice'
+D=ROOT/'experiments/a_clock_tree'
 
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -73,7 +73,7 @@ def prepare():
     sim=b/'core_sim.spice';sim.write_text('* No-combine final GDS extraction; renamed identifiers only\n'+converted)
     # Map extracted top instances to original logical instances via independent
     # physical coordinates. Device parameters/connectivity are never rewritten.
-    placement=json.loads((ROOT/'experiments/a_power_flex4/layout/placement.json').read_text())
+    placement=json.loads((ROOT/'release/ishi_vga_grid_power_core/experiments/a_power_flex4/layout/placement.json').read_text())
     import klayout.db as db
     ly=db.Layout();ly.read(str(ROOT/st['gds']));top=ly.cell(st['top'])
     row_y=sorted({round(i.trans.disp.y*ly.dbu,3) for i in top.each_inst() if i.cell.name=='DFF'})
@@ -175,6 +175,11 @@ def check(name):
     observed=logic[:,1:6]@np.array([4,2,1,8,16])
     expected=np.array([int(x,16) for x in (ROOT/'designs/grid_power/tests/expected_frame.hex').read_text().split()])
     def next_state(h,v):return (71,500 if v==0 else (v+1)%1024) if h==100 else ((h-1)%128,v)
+    state_reference=None
+    if c.get('binary_state_reference'):
+        state_reference=np.array([int(x,16) for x in (ROOT/'designs/grid_power/tests'/c['binary_state_reference']).read_text().split()])
+        assert len(state_reference)==131072
+    raster_checked=0
     start=32 if c['natural'] else 0;errors=[];records=[];checked=0;rgb_seen=set();last_h=c['h'];last_v=c['v']
     if c['natural']:last_h,last_v=int(states_h[start-1]),int(states_v[start-1])
     for i in range(start,c['ticks']):
@@ -182,8 +187,11 @@ def check(name):
         if (logic[i]<0).any():errors.append({'tick':i,'type':'undefined voltage at sample'})
         if (h,v)!=(nh,nv):errors.append({'tick':i,'type':'counter mismatch','actual':[h,v],'expected':[nh,nv]})
         x=(71-last_h)%128;y=(last_v-500)%1024
-        if x<100 and y<525:
-            exp=int(expected[y*100+x]);checked+=1;rgb_seen.add(exp&7)
+        in_raster=x<100 and y<525
+        raster_checked+=int(in_raster)
+        if in_raster or state_reference is not None:
+            exp=int(state_reference[(last_v<<7)|last_h]) if state_reference is not None else int(expected[y*100+x])
+            checked+=1;rgb_seen.add(exp&7)
             if int(observed[i])!=exp:errors.append({'tick':i,'type':'output mismatch','actual':int(observed[i]),'expected':exp,'screen_tick':[x,y]})
             records.append([i,int(h),int(v),int(observed[i]),exp])
         last_h,last_v=h,v
@@ -203,6 +211,7 @@ def check(name):
             delays.append({'tick':i,'signal':signal,'clk50_to_output50_ns':float((t50-edge)*1e9)})
     report={'status':'PASS' if not errors else 'FAIL','scope':c.get('view','full-core extracted transistor transient')+'; selected time window',
         'case':c,'counter_cycles_checked':c['ticks']-start,'output_cycles_checked':checked,
+        'raster_cycles_checked':raster_checked, 'first_checked_state':[int(states_h[start-1]),int(states_v[start-1])] if start else [c['h'],c['v']],
         'signals_per_output_cycle':5,'rgb_values_seen':sorted(rgb_seen),'errors':errors,
         'max_low_sample_v':float(valid_lo.max()) if valid_lo.size else None,
         'min_high_sample_v':float(valid_hi.min()) if valid_hi.size else None,
@@ -210,6 +219,9 @@ def check(name):
         'output_transition_count':len(delays),'max_clk50_to_output50_ns':max((p['clk50_to_output50_ns'] for p in delays),default=None),
         'hashes':{str(p.relative_to(ROOT)):sha(p) for p in [d/'wave.raw',d/'tb.spice',d/'case.json',d/'ngspice.log',Path(__file__)]},
         'limitations':'1 pF assumed output load; typical 5 V/27C; no wire RC, PVT sweep, full-frame analog simulation or frame/pads.'}
+    if state_reference is not None:
+        ref=ROOT/'designs/grid_power/tests'/c['binary_state_reference'];report['hashes'][str(ref.relative_to(ROOT))]=sha(ref)
+        report['limitations']+=' Power-up window checks binary progress only; normal frame acquisition is not observed.'
     (d/'verification.json').write_text(json.dumps(report,indent=2)+'\n')
     (d/'samples.json').write_text(json.dumps({'columns':['tick','h_after','v_after','actual_rgbhs_vs','expected_rgbhs_vs'],'rows':records},indent=2)+'\n')
     print(name,report['status'],'checked',checked,'ticks','errors',errors[:5],flush=True)
@@ -217,9 +229,11 @@ def check(name):
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('action',choices=['prepare','generate','run','check']);ap.add_argument('name',nargs='?')
+    ap=argparse.ArgumentParser();ap.add_argument('--design-root',type=Path,default=D);ap.add_argument('action',choices=['prepare','generate','run','check']);ap.add_argument('name',nargs='?')
     ap.add_argument('--h',type=int,default=71);ap.add_argument('--v',type=int,default=672)
     ap.add_argument('--ticks',type=int,default=8);ap.add_argument('--natural',action='store_true');a=ap.parse_args()
+    D=a.design_root.resolve()
+    assert D.is_relative_to(ROOT)
     if a.action=='prepare':prepare()
     elif a.action=='generate':generate(a.name,a.h,a.v,a.ticks,a.natural)
     elif a.action=='run':run(a.name)

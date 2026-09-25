@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "cycles_checked": 128,
+  "counter_bits": 17,
+  "output_bits": 5,
+  "scope": "selected transient window; no wire RC",
+  "sample_offset_ns": 150
+}

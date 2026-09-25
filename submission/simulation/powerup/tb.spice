@@ -11,6 +11,6 @@ C_g g 0 1.0p
 C_b b 0 1.0p
 C_hsync hsync 0 1.0p
 C_vsync vsync 0 1.0p
-.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n172) v(xdut.n7) v(xdut.n65) v(xdut.n210) v(xdut.n18) v(xdut.n198) v(xdut.n984) v(xdut.n990) v(xdut.n767) v(xdut.n779) v(xdut.n795) v(xdut.n528) v(xdut.n577) v(xdut.n529) v(xdut.n647) v(xdut.n1000)
+.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n171) v(xdut.n7) v(xdut.n65) v(xdut.n209) v(xdut.n18) v(xdut.n188) v(xdut.n980) v(xdut.n986) v(xdut.n791) v(xdut.n797) v(xdut.n835) v(xdut.n518) v(xdut.n548) v(xdut.n520) v(xdut.n658) v(xdut.n1010)
 .tran 1n 52993.650793650799n 0 1n uic
 .end

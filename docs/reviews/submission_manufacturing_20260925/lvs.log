@@ -1,0 +1,12 @@
+LVS: ishi_vga.gds  top=ishi_vga_core
+  KLayout 0.30.9 / デッキ /home/ishi-kai/ishi-vga/tools/TR-1um/libs.tech/klayout/tech/lvs
+  ソース  /home/ishi-kai/ishi-vga/submission/simulation/ishi_vga_lvs.spice
+
+  Setting running mode => deep
+  Starting TR-1um LVS Comparison in strict port mode
+  flag_missing_ports enabled: missing/mislabeled top-level ports are treated as errors
+  ==========================================
+  INFO : Congratulations! Netlists match.
+  ==========================================
+
+  レポート core.lvsdb（373 KB）

@@ -23,93 +23,93 @@ X$9 vdd vss FILL3
 * cell instance $11 r0 *1 1312.2,807.2
 X$11 vdd vss FILL3
 * cell instance $13 r0 *1 1096.2,618.9
-X$13 \$821 \$692 \$901 vdd vss NAND2
+X$13 \$838 \$726 \$903 vdd vss NAND2
 * cell instance $14 r0 *1 1112.4,618.9
-X$14 \$1000 \$229 \$815 vdd vss NAND2
+X$14 \$1010 \$214 \$813 vdd vss NAND2
 * cell instance $15 r0 *1 1128.6,618.9
-X$15 \$373 \$656 \$880 vdd vss XNOR2
+X$15 \$522 \$656 \$880 vdd vss XNOR2
 * cell instance $16 r0 *1 1155.6,618.9
-X$16 \$647 vdd \$373 vss BUF_X1
+X$16 \$658 vdd \$522 vss BUF_X1
 * cell instance $17 r0 *1 1171.8,618.9
-X$17 \$1000 \$373 \$597 vdd vss NAND2
+X$17 \$1010 \$522 \$655 vdd vss NAND2
 * cell instance $18 r0 *1 1188,618.9
-X$18 \$229 vdd \$583 vss INV_X1
+X$18 \$214 vdd \$654 vss INV_X1
 * cell instance $19 r0 *1 1198.8,618.9
-X$19 \$229 \$692 \$836 \$540 vdd vss NAND3
+X$19 \$214 \$726 \$855 \$647 vdd vss NAND3
 * cell instance $20 r0 *1 1220.4,618.9
-X$20 \$383 \$365 \$821 \$900 vdd vss NOR3
+X$20 \$526 \$367 \$838 \$932 vdd vss NOR3
 * cell instance $21 r0 *1 1242,618.9
-X$21 \$373 \$880 \$687 vdd vss NAND2
+X$21 \$522 \$880 \$721 vdd vss NAND2
 * cell instance $22 r0 *1 1258.2,618.9
-X$22 \$383 \$359 vdd \$676 vss NOR2
+X$22 \$526 \$514 vdd \$702 vss NOR2
 * cell instance $23 r0 *1 1274.4,618.9
-X$23 \$39 \$901 \$685 \$680 \$883 vdd vss NAND4
+X$23 \$38 \$903 \$715 \$707 \$906 vdd vss NAND4
 * cell instance $24 r0 *1 1301.4,618.9
 X$24 vdd vss FILL2
 * cell instance $25 r0 *1 939.6,618.9
-X$25 \$364 \$826 \$832 vdd vss NAND2
+X$25 \$516 \$841 \$848 vdd vss NAND2
 * cell instance $26 r0 *1 955.8,618.9
-X$26 \$529 \$991 vdd \$695 vss NOR2
+X$26 \$520 \$987 vdd \$737 vss NOR2
 * cell instance $27 r0 *1 896.4,618.9
 X$27 vdd vss FILL3
 * cell instance $28 r0 *1 912.6,618.9
-X$28 \$984 \$990 \$383 \$365 \$704 vdd vss NOR4
+X$28 \$980 \$986 \$526 \$367 \$746 vdd vss NOR4
 * cell instance $29 r0 *1 972,618.9
-X$29 \$795 \$229 \$695 \$682 vdd vss NAND3
+X$29 \$835 \$214 \$737 \$709 vdd vss NAND3
 * cell instance $30 r0 *1 993.6,618.9
-X$30 \$1000 \$701 \$687 vdd vss XNOR2
+X$30 \$1010 \$740 \$721 vdd vss XNOR2
 * cell instance $31 r0 *1 1020.6,618.9
-X$31 \$685 \$363 vdd \$880 vss NOR2
+X$31 \$715 \$515 vdd \$880 vss NOR2
 * cell instance $32 r0 *1 1036.8,618.9
-X$32 \$529 \$365 \$685 vdd vss NAND2
+X$32 \$520 \$367 \$715 vdd vss NAND2
 * cell instance $33 r0 *1 1053,618.9
-X$33 \$364 \$365 \$991 vdd vss NAND2
+X$33 \$516 \$367 \$987 vdd vss NAND2
 * cell instance $34 r0 *1 1069.2,618.9
-X$34 \$529 \$373 \$359 \$883 vdd vss OR3
+X$34 \$520 \$522 \$514 \$906 vdd vss OR3
 * cell instance $35 r0 *1 1436.4,618.9
-X$35 \$383 \$373 vdd \$796 vss NOR2
+X$35 \$526 \$522 vdd \$815 vss NOR2
 * cell instance $36 r0 *1 1452.6,618.9
-X$36 \$597 \$676 vdd \$674 vss NOR2
+X$36 \$655 \$702 vdd \$698 vss NOR2
 * cell instance $37 r0 *1 1468.8,618.9
-X$37 \$597 \$900 \$891 \$534 vdd vss NOR3
+X$37 \$655 \$932 \$951 \$649 vdd vss NOR3
 * cell instance $38 r0 *1 1490.4,618.9
-X$38 \$583 \$818 \$547 \$752 vdd vss NOR3
+X$38 \$654 \$837 \$653 \$774 vdd vss NOR3
 * cell instance $39 r0 *1 1512,618.9
-X$39 \$383 \$675 \$178 \$547 vdd vss NAND3
+X$39 \$526 \$699 \$176 \$653 vdd vss NAND3
 * cell instance $40 r0 *1 1533.6,618.9
-X$40 \$383 \$675 \$818 \$179 \$533 vdd vss NOR4
+X$40 \$526 \$699 \$837 \$183 \$645 vdd vss NOR4
 * cell instance $41 r0 *1 1560.6,618.9
-X$41 \$673 \$749 vdd \$811 vss AND2_X1
+X$41 \$697 \$773 vdd \$828 vss AND2_X1
 * cell instance $42 r0 *1 1582.2,618.9
-X$42 \$673 \$782 \$551 vdd vss NAND2
+X$42 \$697 \$834 \$650 vdd vss NAND2
 * cell instance $43 r0 *1 1598.4,618.9
-X$43 \$673 \$536 vdd \$566 vss AND2_X1
+X$43 \$697 \$646 vdd \$651 vss AND2_X1
 * cell instance $44 r0 *1 1620,618.9
-X$44 \$796 \$815 \$673 \$671 \$674 vdd vss OR4
+X$44 \$815 \$813 \$697 \$694 \$698 vdd vss OR4
 * cell instance $45 r0 *1 1652.4,618.9
-X$45 \$533 \$538 \$540 \$782 \$670 vdd vss NAND4
+X$45 \$645 \$648 \$647 \$834 \$693 vdd vss NAND4
 * cell instance $46 r0 *1 1679.4,618.9
-X$46 \$670 \$538 \$540 \$536 vdd vss NAND3
+X$46 \$693 \$648 \$647 \$646 vdd vss NAND3
 * cell instance $47 r0 *1 1701,618.9
-X$47 \$533 \$536 \$752 \$749 vdd vss OR3
+X$47 \$645 \$646 \$774 \$773 vdd vss OR3
 * cell instance $48 r0 *1 1728,618.9
-X$48 \$176 \$534 \$538 vdd vss NAND2
+X$48 \$175 \$649 \$648 vdd vss NAND2
 * cell instance $49 r0 *1 1744.2,618.9
 X$49 vdd vss FILL3
 * cell instance $51 r0 *1 1339.2,618.9
 X$51 vdd vss FILL3
 * cell instance $52 r0 *1 1355.4,618.9
-X$52 \$682 \$680 \$677 vdd vss NAND2
+X$52 \$709 \$707 \$706 vdd vss NAND2
 * cell instance $53 r0 *1 1371.6,618.9
-X$53 \$1000 \$675 \$677 \$670 vdd vss NAND3
+X$53 \$1010 \$699 \$706 \$693 vdd vss NAND3
 * cell instance $54 r0 *1 1393.2,618.9
-X$54 \$818 \$994 vdd \$891 vss NOR2
+X$54 \$837 \$991 vdd \$951 vss NOR2
 * cell instance $55 r0 *1 1409.4,618.9
-X$55 \$383 \$373 \$994 vdd vss NAND2
+X$55 \$526 \$522 \$991 vdd vss NAND2
 * cell instance $56 r0 *1 1425.6,618.9
-X$56 \$373 vdd \$675 vss INV_X1
+X$56 \$522 vdd \$699 vss INV_X1
 * cell instance $57 r0 *1 1722.6,807.2
-X$57 \$994 \$991 \$1080 \$745 vdd vss NOR3
+X$57 \$991 \$987 \$1077 \$769 vdd vss NOR3
 * cell instance $58 r0 *1 1744.2,807.2
 X$58 vdd vss FILL3
 * cell instance $75 r0 *1 1339.2,807.2
@@ -141,15 +141,15 @@ X$112 vdd vss FILL3
 * cell instance $113 r0 *1 1549.8,807.2
 X$113 vdd vss FILL3
 * cell instance $114 r0 *1 1566,807.2
-X$114 \$I1426 \$795 \$1072 vdd \$25 vss DFF
+X$114 \$I1416 \$835 \$1069 vdd \$968 vss DFF
 * cell instance $115 r0 *1 1630.8,807.2
-X$115 \$843 \$1021 vdd \$838 vss NOR2
+X$115 \$825 \$1015 vdd \$823 vss NOR2
 * cell instance $116 r0 *1 1647,807.2
-X$116 \$795 \$1071 \$1021 vdd vss XNOR2
+X$116 \$835 \$1068 \$1015 vdd vss XNOR2
 * cell instance $120 r0 *1 1674,807.2
-X$120 \$990 \$1000 \$745 \$765 \$795 vdd vss NAND4
+X$120 \$986 \$1010 \$769 \$802 \$835 vdd vss NAND4
 * cell instance $121 r0 *1 1701,807.2
-X$121 \$779 \$767 \$1000 \$995 vdd vss NOR3
+X$121 \$797 \$791 \$1010 \$1009 vdd vss NOR3
 * cell instance $122 r0 *1 1188,807.2
 X$122 vdd vss FILL3
 * cell instance $123 r0 *1 1204.2,807.2
@@ -169,15 +169,15 @@ X$129 vdd vss FILL2
 * cell instance $130 r0 *1 896.4,807.2
 X$130 vdd vss FILL3
 * cell instance $131 r0 *1 912.6,807.2
-X$131 \$I1415 vsync \$765 vdd \$25 vss DFF
+X$131 \$I1417 vsync \$802 vdd \$968 vss DFF
 * cell instance $132 r0 *1 977.4,807.2
-X$132 \$I1421 \$779 \$838 vdd \$25 vss DFF
+X$132 \$I1413 \$797 \$823 vdd \$968 vss DFF
 * cell instance $151 r0 *1 1042.2,807.2
-X$151 \$1080 \$878 vdd \$1021 vss NOR2
+X$151 \$1077 \$888 vdd \$1015 vss NOR2
 * cell instance $152 r0 *1 1058.4,807.2
-X$152 \$779 \$1074 vdd \$843 vss NOR2
+X$152 \$797 \$1070 vdd \$825 vss NOR2
 * cell instance $153 r0 *1 1074.6,807.2
-X$153 \$779 \$767 \$1080 vdd vss NAND2
+X$153 \$797 \$791 \$1077 vdd vss NAND2
 * cell instance $172 r0 *1 1090.8,807.2
 X$172 vdd vss FILL3
 * cell instance $173 r0 *1 1107,807.2
@@ -197,59 +197,59 @@ X$312 vdd vss FILL3
 * cell instance $313 r0 *1 486,618.9
 X$313 vdd vss FILL2
 * cell instance $314 r0 *1 496.8,618.9
-X$314 \$I1428 r \$551 vdd \$25 vss DFF
+X$314 \$I1414 r \$650 vdd \$665 vss DFF
 * cell instance $315 r0 *1 561.6,618.9
-X$315 \$I1427 b \$811 vdd \$25 vss DFF
+X$315 \$I1428 b \$828 vdd \$665 vss DFF
 * cell instance $316 r0 *1 626.4,618.9
-X$316 \$I1424 \$528 \$711 vdd \$25 vss DFF
+X$316 \$I1419 \$518 \$747 vdd \$665 vss DFF
 * cell instance $317 r0 *1 691.2,618.9
-X$317 \$818 \$1000 \$701 vdd \$25 vss DFF
+X$317 \$837 \$1010 \$740 vdd \$665 vss DFF
 * cell instance $318 r0 *1 756,618.9
-X$318 \$795 \$1021 \$826 vdd vss NAND2
+X$318 \$835 \$1015 \$841 vdd vss NAND2
 * cell instance $319 r0 *1 772.2,618.9
-X$319 \$795 \$528 vdd \$821 vss AND2_X1
+X$319 \$835 \$518 vdd \$838 vss AND2_X1
 * cell instance $320 r0 *1 793.8,618.9
-X$320 \$363 \$832 \$620 vdd vss NAND2
+X$320 \$515 \$848 \$659 vdd vss NAND2
 * cell instance $321 r0 *1 810,618.9
-X$321 \$821 \$1021 \$363 vdd vss NAND2
+X$321 \$838 \$1015 \$515 vdd vss NAND2
 * cell instance $322 r0 *1 826.2,618.9
-X$322 \$795 \$528 \$597 \$836 vdd vss NOR3
+X$322 \$835 \$518 \$655 \$855 vdd vss NOR3
 * cell instance $323 r0 *1 847.8,618.9
-X$323 \$795 \$528 \$373 \$706 vdd vss NOR3
+X$323 \$835 \$518 \$522 \$754 vdd vss NOR3
 * cell instance $325 r0 *1 426.6,618.9
 X$325 vdd vss FILL3
 * cell instance $326 r0 *1 426.6,807.2
 X$326 vdd vss FILL3
 * cell instance $328 r0 *1 140.4,618.9
-X$328 \$690 \$984 \$546 vdd \$25 vss DFF
+X$328 \$713 \$980 \$662 vdd \$665 vss DFF
 * cell instance $329 r0 *1 205.2,618.9
-X$329 \$24 \$528 vdd \$527 vss OR2
+X$329 \$24 \$518 vdd \$644 vss OR2
 * cell instance $330 r0 *1 226.8,618.9
-X$330 \$I1417 \$647 \$694 vdd \$25 vss DFF
+X$330 \$I1429 \$658 \$716 vdd \$665 vss DFF
 * cell instance $332 r0 *1 291.6,618.9
-X$332 \$I1416 g \$566 vdd \$25 vss DFF
+X$332 \$I1427 g \$651 vdd \$665 vss DFF
 * cell instance $333 r0 *1 356.4,618.9
-X$333 \$582 \$620 \$711 vdd vss NAND2
+X$333 \$661 \$659 \$747 vdd vss NAND2
 * cell instance $334 r0 *1 372.6,618.9
-X$334 \$995 \$704 \$706 \$590 vdd vss NAND3
+X$334 \$1009 \$746 \$754 \$660 vdd vss NAND3
 * cell instance $335 r0 *1 394.2,618.9
 X$335 vdd vss FILL3
 * cell instance $336 r0 *1 410.4,618.9
-X$336 vdd vss FILL3
+X$336 \$665 \$280 vdd vss BUF_X2
 * cell instance $337 r0 *1 10.8,618.9
 X$337 vdd vss FILL3
 * cell instance $338 r0 *1 27,618.9
-X$338 \$24 \$543 \$535 vdd vss NAND2
+X$338 \$24 \$652 \$531 vdd vss NAND2
 * cell instance $339 r0 *1 43.2,618.9
-X$339 \$24 \$549 \$984 \$546 vdd vss MUX2
+X$339 \$24 \$657 \$980 \$662 vdd vss MUX2
 * cell instance $340 r0 *1 75.6,618.9
-X$340 \$590 vdd \$543 vss INV_X1
+X$340 \$660 vdd \$652 vss INV_X1
 * cell instance $341 r0 *1 86.4,618.9
-X$341 \$543 \$527 \$582 vdd vss NAND2
+X$341 \$652 \$644 \$661 vdd vss NAND2
 * cell instance $342 r0 *1 102.6,618.9
-X$342 \$690 \$590 vdd \$549 vss AND2_X1
+X$342 \$713 \$660 vdd \$657 vss AND2_X1
 * cell instance $343 r0 *1 124.2,618.9
-X$343 \$535 \$656 \$694 vdd vss NAND2
+X$343 \$531 \$656 \$716 vdd vss NAND2
 * cell instance $350 r0 *1 583.2,807.2
 X$350 vdd vss FILL3
 * cell instance $351 r0 *1 599.4,807.2
@@ -263,15 +263,15 @@ X$354 vdd vss FILL3
 * cell instance $355 r0 *1 664.2,807.2
 X$355 vdd vss FILL3
 * cell instance $356 r0 *1 680.4,807.2
-X$356 vdd vss FILL3
+X$356 \$968 \$280 vdd vss BUF_X2
 * cell instance $357 r0 *1 696.6,807.2
 X$357 vdd vss FILL2
 * cell instance $358 r0 *1 707.4,807.2
-X$358 \$I1431 \$990 \$820 vdd \$25 vss DFF
+X$358 \$I1424 \$986 \$831 vdd \$968 vss DFF
 * cell instance $359 r0 *1 772.2,807.2
-X$359 \$I1432 \$767 \$823 vdd \$25 vss DFF
+X$359 \$I1423 \$791 \$842 vdd \$968 vss DFF
 * cell instance $360 r0 *1 837,807.2
-X$360 vdd clk \$25 vss BUFTH
+X$360 vdd clk \$280 vss BUFTH
 * cell instance $361 r0 *1 518.4,807.2
 X$361 vdd vss FILL3
 * cell instance $362 r0 *1 534.6,807.2
@@ -288,378 +288,378 @@ X$366 vdd vss FILL3
 X$367 vdd vss FILL3
 * cell instance $368 r0 *1 502.2,807.2
 X$368 vdd vss FILL3
-* cell instance $384 r0 *1 226.8,807.2
+* cell instance $383 r0 *1 226.8,807.2
+X$383 vdd vss FILL3
+* cell instance $384 r0 *1 243,807.2
 X$384 vdd vss FILL3
-* cell instance $385 r0 *1 243,807.2
+* cell instance $385 r0 *1 259.2,807.2
 X$385 vdd vss FILL3
-* cell instance $386 r0 *1 259.2,807.2
+* cell instance $386 r0 *1 275.4,807.2
 X$386 vdd vss FILL3
-* cell instance $387 r0 *1 275.4,807.2
+* cell instance $387 r0 *1 291.6,807.2
 X$387 vdd vss FILL3
-* cell instance $388 r0 *1 291.6,807.2
+* cell instance $388 r0 *1 307.8,807.2
 X$388 vdd vss FILL3
-* cell instance $389 r0 *1 307.8,807.2
+* cell instance $389 r0 *1 324,807.2
 X$389 vdd vss FILL3
-* cell instance $390 r0 *1 324,807.2
+* cell instance $390 r0 *1 340.2,807.2
 X$390 vdd vss FILL3
-* cell instance $391 r0 *1 340.2,807.2
+* cell instance $391 r0 *1 356.4,807.2
 X$391 vdd vss FILL3
-* cell instance $392 r0 *1 356.4,807.2
+* cell instance $392 r0 *1 372.6,807.2
 X$392 vdd vss FILL3
-* cell instance $393 r0 *1 372.6,807.2
+* cell instance $393 r0 *1 388.8,807.2
 X$393 vdd vss FILL3
-* cell instance $394 r0 *1 388.8,807.2
-X$394 vdd vss FILL3
-* cell instance $395 r0 *1 405,807.2
+* cell instance $394 r0 *1 405,807.2
+X$394 vdd vss FILL2
+* cell instance $395 r0 *1 415.8,807.2
 X$395 vdd vss FILL2
-* cell instance $396 r0 *1 415.8,807.2
-X$396 vdd vss FILL2
-* cell instance $405 r0 *1 10.8,807.2
-X$405 vdd vss FILL3
-* cell instance $406 r0 *1 27,807.2
-X$406 \$535 \$761 \$823 vdd vss NAND2
-* cell instance $438 r0 *1 43.2,807.2
-X$438 \$780 \$761 \$878 vdd vss XNOR2
-* cell instance $439 r0 *1 70.2,807.2
-X$439 \$24 \$776 \$990 \$820 vdd vss MUX2
-* cell instance $440 r0 *1 102.6,807.2
-X$440 \$535 \$1071 \$1072 vdd vss NAND2
-* cell instance $441 r0 *1 118.8,807.2
-X$441 \$984 \$990 \$24 \$878 vdd vss NAND3
-* cell instance $442 r0 *1 140.4,807.2
-X$442 \$780 \$878 vdd \$1074 vss NOR2
-* cell instance $443 r0 *1 156.6,807.2
-X$443 \$984 \$776 \$990 vdd vss XOR2
-* cell instance $444 r0 *1 183.6,807.2
-X$444 \$767 vdd \$780 vss INV_X1
-* cell instance $445 r0 *1 194.4,807.2
-X$445 vdd vss FILL3
-* cell instance $446 r0 *1 210.6,807.2
-X$446 vdd vss FILL3
-* cell instance $541 r0 *1 426.6,74.9
-X$541 vdd vss FILL3
-* cell instance $543 r0 *1 426.6,338.8
-X$543 vdd vss FILL3
-* cell instance $568 r0 *1 799.2,338.8
-X$568 \$528 \$577 \$366 \$230 vdd vss NOR3
-* cell instance $569 r0 *1 820.8,338.8
-X$569 \$171 \$529 \$365 \$326 vdd vss NOR3
-* cell instance $573 r0 *1 842.4,338.8
-X$573 \$528 vdd \$364 vss INV_X1
-* cell instance $586 r0 *1 853.2,338.8
-X$586 \$366 \$342 vdd \$596 vss NOR2
-* cell instance $588 r0 *1 453.6,338.8
-X$588 vdd vss FILL3
-* cell instance $589 r0 *1 469.8,338.8
-X$589 vdd vss FILL3
-* cell instance $590 r0 *1 486,338.8
-X$590 vdd vss FILL3
-* cell instance $591 r0 *1 502.2,338.8
-X$591 vdd vss FILL2
-* cell instance $592 r0 *1 513,338.8
-X$592 vdd vss FILL2
-* cell instance $593 r0 *1 523.8,338.8
-X$593 \$366 \$529 \$553 vdd \$25 vss DFF
-* cell instance $594 r0 *1 588.6,338.8
-X$594 \$335 \$578 vdd \$338 vss AND2_X1
-* cell instance $595 r0 *1 610.2,338.8
-X$595 \$298 \$172 \$68 vdd \$25 vss DFF
-* cell instance $596 r0 *1 675,338.8
-X$596 \$252 \$228 \$363 vdd vss XNOR2
-* cell instance $597 r0 *1 702,338.8
-X$597 \$172 \$346 vdd \$557 vss NOR2
-* cell instance $598 r0 *1 718.2,338.8
-X$598 \$69 \$575 vdd \$202 vss NOR2
-* cell instance $599 r0 *1 734.4,338.8
-X$599 \$528 \$172 vdd \$281 vss OR2
-* cell instance $600 r0 *1 756,338.8
-X$600 \$528 \$577 vdd \$359 vss AND2_X1
-* cell instance $601 r0 *1 777.6,338.8
-X$601 \$366 \$364 vdd \$173 vss OR2
-* cell instance $603 r0 *1 27,338.8
-X$603 \$535 \$228 \$201 vdd vss NAND2
-* cell instance $604 r0 *1 43.2,338.8
-X$604 \$65 \$194 \$66 vdd vss XNOR2
-* cell instance $605 r0 *1 70.2,338.8
-X$605 \$173 \$200 vdd \$296 vss NOR2
-* cell instance $606 r0 *1 86.4,338.8
-X$606 \$65 \$281 \$173 \$333 vdd vss MUX2
-* cell instance $608 r0 *1 221.4,338.8
-X$608 \$564 \$560 vdd \$200 vss NOR2
-* cell instance $609 r0 *1 237.6,338.8
-X$609 \$171 \$252 vdd \$560 vss NOR2
-* cell instance $610 r0 *1 118.8,338.8
-X$610 \$296 \$338 vdd \$346 vss NOR2
-* cell instance $611 r0 *1 253.8,338.8
-X$611 \$171 \$559 vdd \$558 vss NOR2
-* cell instance $612 r0 *1 270,338.8
-X$612 \$557 \$558 vdd \$575 vss NOR2
-* cell instance $614 r0 *1 286.2,338.8
-X$614 \$244 \$577 \$201 vdd \$25 vss DFF
-* cell instance $615 r0 *1 351,338.8
-X$615 \$171 \$359 vdd \$578 vss NOR2
-* cell instance $617 r0 *1 367.2,338.8
-X$617 \$577 vdd \$252 vss INV_X1
-* cell instance $618 r0 *1 378,338.8
-X$618 vdd vss FILL3
-* cell instance $623 r0 *1 394.2,338.8
-X$623 vdd vss FILL3
-* cell instance $626 r0 *1 410.4,338.8
-X$626 vdd vss FILL3
-* cell instance $642 r0 *1 10.8,338.8
-X$642 vdd vss FILL3
-* cell instance $664 r0 *1 135,338.8
-X$664 \$265 \$65 \$194 vdd \$25 vss DFF
-* cell instance $665 r0 *1 199.8,338.8
-X$665 \$535 \$283 \$315 \$553 vdd vss NAND3
-* cell instance $669 r0 *1 399.6,74.9
-X$669 vdd vss FILL3
-* cell instance $671 r0 *1 415.8,74.9
-X$671 vdd vss FILL2
-* cell instance $680 r0 *1 27,74.9
-X$680 \$8 \$24 vdd \$2 vss OR2
-* cell instance $681 r0 *1 48.6,74.9
-X$681 \$24 \$23 vdd \$10 vss OR2
-* cell instance $682 r0 *1 70.2,74.9
-X$682 \$24 \$19 vdd \$22 vss NOR2
-* cell instance $686 r0 *1 10.8,74.9
-X$686 vdd vss FILL3
-* cell instance $687 r0 *1 86.4,74.9
-X$687 \$65 \$66 vdd \$57 vss NOR2
-* cell instance $689 r0 *1 102.6,74.9
-X$689 \$65 \$59 vdd \$56 vss AND2_X1
-* cell instance $690 r0 *1 124.2,74.9
-X$690 \$36 \$171 vdd \$66 vss OR2
-* cell instance $706 r0 *1 199.8,74.9
-X$706 \$I1435 hsync \$38 vdd \$25 vss DFF
-* cell instance $721 r0 *1 264.6,74.9
-X$721 \$23 \$20 \$10 vdd \$25 vss DFF
-* cell instance $723 r0 *1 329.4,74.9
-X$723 \$17 \$207 \$36 \$24 vdd vss NOR3
-* cell instance $725 r0 *1 351,74.9
-X$725 \$171 vdd \$211 vss INV_X1
-* cell instance $728 r0 *1 145.8,74.9
-X$728 \$171 \$8 \$36 vdd vss XNOR2
-* cell instance $729 r0 *1 172.8,74.9
-X$729 \$65 vdd \$69 vss INV_X2
-* cell instance $730 r0 *1 183.6,74.9
-X$730 \$171 \$7 vdd vss BUF_X2
-* cell instance $732 r0 *1 361.8,74.9
-X$732 \$65 \$210 \$66 \$197 vdd vss NOR3
-* cell instance $734 r0 *1 383.4,74.9
-X$734 vdd vss FILL3
-* cell instance $735 r0 *1 577.8,74.9
-X$735 \$I1422 \$210 \$6 vdd \$25 vss DFF
-* cell instance $753 r0 *1 642.6,74.9
-X$753 \$I1429 \$18 \$22 vdd \$25 vss DFF
-* cell instance $754 r0 *1 707.4,74.9
-X$754 \$171 \$69 \$17 \$222 \$220 vdd vss NOR4
-* cell instance $758 r0 *1 502.2,74.9
-X$758 vdd vss FILL2
-* cell instance $759 r0 *1 453.6,74.9
-X$759 vdd vss FILL3
-* cell instance $760 r0 *1 469.8,74.9
-X$760 vdd vss FILL3
-* cell instance $761 r0 *1 486,74.9
-X$761 vdd vss FILL3
-* cell instance $770 r0 *1 734.4,74.9
-X$770 \$20 \$172 vdd \$36 vss OR2
-* cell instance $771 r0 *1 756,74.9
-X$771 \$171 \$69 \$218 \$213 vdd vss NAND3
-* cell instance $772 r0 *1 777.6,74.9
-X$772 \$7 \$69 \$207 vdd vss NAND2
-* cell instance $773 r0 *1 793.8,74.9
-X$773 \$229 \$198 \$3 vdd \$25 vss DFF
-* cell instance $774 r0 *1 858.6,74.9
-X$774 \$20 vdd \$242 vss INV_X1
-* cell instance $776 r0 *1 513,74.9
-X$776 \$323 \$7 \$2 vdd \$25 vss DFF
-* cell instance $779 r0 *1 1312.2,338.8
-X$779 vdd vss FILL3
-* cell instance $781 r0 *1 1312.2,74.9
-X$781 vdd vss FILL3
-* cell instance $793 r0 *1 1533.6,338.8
-X$793 \$308 \$287 vdd \$377 vss NOR2
-* cell instance $794 r0 *1 1549.8,338.8
-X$794 \$298 \$542 vdd \$291 vss NOR2
-* cell instance $799 r0 *1 1620,338.8
-X$799 \$550 \$202 \$187 \$392 \$671 vdd vss NOR4
-* cell instance $800 r0 *1 1647,338.8
-X$800 \$71 \$188 vdd \$189 vss AND2_X1
-* cell instance $801 r0 *1 1668.6,338.8
-X$801 \$291 \$189 \$539 \$181 vdd vss NOR3
-* cell instance $802 r0 *1 1690.2,338.8
-X$802 \$72 \$185 vdd \$532 vss NOR2
-* cell instance $803 r0 *1 1706.4,338.8
-X$803 \$71 \$184 \$288 \$187 vdd vss NOR3
-* cell instance $804 r0 *1 1728,338.8
-X$804 \$183 \$181 vdd \$287 vss NOR2
-* cell instance $805 r0 *1 1744.2,338.8
-X$805 vdd vss FILL3
-* cell instance $807 r0 *1 1566,338.8
-X$807 \$376 \$303 vdd \$284 vss NOR2
-* cell instance $808 r0 *1 1582.2,338.8
-X$808 \$301 \$305 vdd \$288 vss NOR2
-* cell instance $809 r0 *1 1598.4,338.8
-X$809 \$298 \$183 \$284 \$392 vdd vss NOR3
-* cell instance $810 r0 *1 1479.6,338.8
-X$810 \$383 \$371 \$315 vdd vss NAND2
-* cell instance $811 r0 *1 1495.8,338.8
-X$811 \$371 \$383 vdd \$283 vss OR2
-* cell instance $813 r0 *1 1517.4,338.8
-X$813 \$298 \$374 vdd \$301 vss NOR2
-* cell instance $816 r0 *1 1339.2,338.8
-X$816 vdd vss FILL3
-* cell instance $818 r0 *1 1355.4,338.8
-X$818 vdd vss FILL2
-* cell instance $819 r0 *1 1366.2,338.8
-X$819 vdd vss FILL2
-* cell instance $820 r0 *1 1377,338.8
-X$820 \$365 \$74 vdd \$593 vss NOR2
-* cell instance $821 r0 *1 1393.2,338.8
-X$821 \$383 \$529 vdd vss BUF_X2
-* cell instance $829 r0 *1 1409.4,338.8
-X$829 \$364 \$383 \$244 \$184 vdd vss NOR3
-* cell instance $832 r0 *1 1431,338.8
-X$832 \$188 \$230 vdd \$185 vss NOR2
-* cell instance $835 r0 *1 1447.2,338.8
-X$835 \$593 \$596 vdd \$542 vss NOR2
-* cell instance $836 r0 *1 1463.4,338.8
-X$836 \$298 \$313 vdd \$586 vss NOR2
-* cell instance $895 r0 *1 1085.4,338.8
-X$895 \$529 \$365 \$70 \$649 vdd vss NOR3
-* cell instance $896 r0 *1 1107,338.8
-X$896 \$649 \$230 vdd \$336 vss NOR2
-* cell instance $899 r0 *1 1301.4,338.8
-X$899 vdd vss FILL2
-* cell instance $905 r0 *1 1123.2,338.8
-X$905 \$230 \$326 vdd \$322 vss NOR2
-* cell instance $906 r0 *1 1139.4,338.8
-X$906 \$230 \$695 \$637 \$313 vdd vss NOR3
-* cell instance $908 r0 *1 1161,338.8
-X$908 \$323 vdd \$374 vss INV_X1
-* cell instance $909 r0 *1 1171.8,338.8
-X$909 \$364 \$365 vdd \$178 vss NOR2
-* cell instance $910 r0 *1 1188,338.8
-X$910 \$532 \$586 vdd \$559 vss NOR2
-* cell instance $911 r0 *1 1204.2,338.8
-X$911 \$365 \$323 \$77 \$376 vdd vss NOR3
-* cell instance $913 r0 *1 1225.8,338.8
-X$913 \$70 \$322 vdd \$303 vss NOR2
-* cell instance $914 r0 *1 1242,338.8
-X$914 \$265 vdd \$183 vss INV_X1
-* cell instance $917 r0 *1 1252.8,338.8
-X$917 \$323 \$377 vdd \$550 vss NOR2
-* cell instance $918 r0 *1 1269,338.8
-X$918 vdd vss FILL3
-* cell instance $919 r0 *1 1285.2,338.8
-X$919 vdd vss FILL3
-* cell instance $920 r0 *1 1042.2,338.8
-X$920 \$244 \$70 \$333 \$308 vdd vss NOR3
-* cell instance $921 r0 *1 1004.4,338.8
-X$921 \$366 \$70 vdd \$637 vss NOR2
-* cell instance $922 r0 *1 896.4,338.8
-X$922 vdd vss FILL3
-* cell instance $923 r0 *1 1063.8,338.8
-X$923 \$365 \$323 \$70 \$564 vdd vss NOR3
-* cell instance $926 r0 *1 912.6,338.8
-X$926 \$359 \$335 vdd \$342 vss NOR2
-* cell instance $931 r0 *1 1020.6,338.8
-X$931 \$363 \$244 vdd \$371 vss OR2
-* cell instance $937 r0 *1 928.8,338.8
-X$937 \$529 \$252 vdd \$692 vss AND2_X1
-* cell instance $942 r0 *1 950.4,338.8
-X$942 \$528 \$529 \$244 \$188 vdd vss NOR3
-* cell instance $944 r0 *1 972,338.8
-X$944 \$172 \$336 vdd \$539 vss NOR2
-* cell instance $947 r0 *1 988.2,338.8
-X$947 \$365 \$577 vdd vss BUF_X2
-* cell instance $994 r0 *1 1134,74.9
-X$994 \$18 \$19 \$197 vdd vss XNOR2
-* cell instance $995 r0 *1 1161,74.9
-X$995 \$16 \$220 vdd \$54 vss NOR2
-* cell instance $1004 r0 *1 1177.2,74.9
-X$1004 \$229 \$222 \$207 \$47 vdd vss NOR3
-* cell instance $1007 r0 *1 1198.8,74.9
-X$1007 \$210 vdd \$50 vss INV_X2
-* cell instance $1008 r0 *1 1209.6,74.9
-X$1008 \$50 \$18 \$70 vdd vss NAND2
-* cell instance $1009 r0 *1 1225.8,74.9
-X$1009 \$50 \$18 \$198 \$17 vdd vss NAND3
-* cell instance $1011 r0 *1 1247.4,74.9
-X$1011 \$210 \$18 \$74 vdd vss NAND2
-* cell instance $1012 r0 *1 1263.6,74.9
-X$1012 \$18 vdd \$72 vss INV_X1
-* cell instance $1013 r0 *1 1274.4,74.9
-X$1013 vdd vss FILL3
-* cell instance $1014 r0 *1 1290.6,74.9
-X$1014 vdd vss FILL2
-* cell instance $1015 r0 *1 1301.4,74.9
-X$1015 vdd vss FILL2
-* cell instance $1018 r0 *1 896.4,74.9
-X$1018 vdd vss FILL3
-* cell instance $1019 r0 *1 912.6,74.9
-X$1019 \$218 \$36 \$68 vdd vss NAND2
-* cell instance $1023 r0 *1 928.8,74.9
-X$1023 \$172 \$211 vdd \$305 vss NOR2
-* cell instance $1030 r0 *1 945,74.9
-X$1030 \$172 \$242 \$222 vdd vss NAND2
-* cell instance $1032 r0 *1 961.2,74.9
-X$1032 \$211 \$69 \$51 vdd vss NAND2
-* cell instance $1036 r0 *1 977.4,74.9
-X$1036 \$172 \$20 \$218 vdd vss NAND2
-* cell instance $1040 r0 *1 993.6,74.9
-X$1040 \$211 \$218 \$59 vdd vss NAND2
-* cell instance $1044 r0 *1 1009.8,74.9
-X$1044 \$229 \$20 \$172 \$15 vdd vss MUX2
-* cell instance $1053 r0 *1 1042.2,74.9
-X$1053 \$50 \$6 \$57 vdd vss XNOR2
-* cell instance $1054 r0 *1 1069.2,74.9
-X$1054 \$70 \$56 vdd \$5 vss NOR2
-* cell instance $1061 r0 *1 1112.4,74.9
-X$1061 \$49 \$54 vdd \$38 vss OR2
-* cell instance $1064 r0 *1 1085.4,74.9
-X$1064 \$210 \$335 \$18 vdd vss XNOR2
-* cell instance $1069 r0 *1 1468.8,74.9
-X$1069 \$72 \$229 \$5 \$16 vdd vss NOR3
-* cell instance $1070 r0 *1 1490.4,74.9
-X$1070 \$4 \$198 \$213 \$51 vdd vss AND3_X1
-* cell instance $1071 r0 *1 1560.6,74.9
-X$1071 \$74 \$51 vdd \$205 vss NOR2
-* cell instance $1075 r0 *1 1517.4,74.9
-X$1075 \$210 \$72 \$71 vdd vss NAND2
-* cell instance $1079 r0 *1 1533.6,74.9
-X$1079 \$14 \$205 \$15 \$11 \$218 vdd vss NAND4
-* cell instance $1105 r0 *1 1722.6,74.9
-X$1105 \$11 \$44 \$12 \$176 vdd vss NAND3
-* cell instance $1106 r0 *1 1339.2,74.9
-X$1106 vdd vss FILL3
-* cell instance $1107 r0 *1 1355.4,74.9
-X$1107 vdd vss FILL3
-* cell instance $1108 r0 *1 1684.8,74.9
-X$1108 \$14 \$13 \$178 \$179 vdd vss NAND3
-* cell instance $1124 r0 *1 1371.6,74.9
-X$1124 \$207 \$71 \$12 \$198 \$222 vdd vss OR4
-* cell instance $1131 r0 *1 1706.4,74.9
-X$1131 \$13 \$11 \$39 vdd vss NAND2
-* cell instance $1132 r0 *1 1744.2,74.9
-X$1132 vdd vss FILL3
-* cell instance $1141 r0 *1 1576.8,74.9
-X$1141 \$74 \$48 vdd \$49 vss NOR2
-* cell instance $1144 r0 *1 1593,74.9
-X$1144 \$50 \$72 \$77 vdd vss NAND2
-* cell instance $1149 r0 *1 1609.2,74.9
-X$1149 \$72 \$197 vdd \$46 vss AND2_X1
-* cell instance $1150 r0 *1 1630.8,74.9
-X$1150 \$198 vdd \$14 vss INV_X1
-* cell instance $1151 r0 *1 1641.6,74.9
-X$1151 \$47 \$4 vdd \$48 vss NOR2
-* cell instance $1152 r0 *1 1657.8,74.9
-X$1152 \$14 \$3 \$46 vdd vss XNOR2
-* cell instance $1153 r0 *1 1404,74.9
-X$1153 \$207 \$71 \$13 \$198 \$218 vdd vss OR4
-* cell instance $1154 r0 *1 1436.4,74.9
-X$1154 \$51 \$77 \$44 \$198 \$218 vdd vss OR4
+* cell instance $404 r0 *1 10.8,807.2
+X$404 vdd vss FILL3
+* cell instance $405 r0 *1 27,807.2
+X$405 \$531 \$782 \$842 vdd vss NAND2
+* cell instance $436 r0 *1 43.2,807.2
+X$436 \$800 \$782 \$888 vdd vss XNOR2
+* cell instance $437 r0 *1 70.2,807.2
+X$437 \$24 \$793 \$986 \$831 vdd vss MUX2
+* cell instance $438 r0 *1 102.6,807.2
+X$438 \$531 \$1068 \$1069 vdd vss NAND2
+* cell instance $439 r0 *1 118.8,807.2
+X$439 \$980 \$986 \$24 \$888 vdd vss NAND3
+* cell instance $440 r0 *1 140.4,807.2
+X$440 \$800 \$888 vdd \$1070 vss NOR2
+* cell instance $441 r0 *1 156.6,807.2
+X$441 \$980 \$793 \$986 vdd vss XOR2
+* cell instance $442 r0 *1 183.6,807.2
+X$442 \$791 vdd \$800 vss INV_X1
+* cell instance $443 r0 *1 194.4,807.2
+X$443 vdd vss FILL3
+* cell instance $444 r0 *1 210.6,807.2
+X$444 vdd vss FILL3
+* cell instance $537 r0 *1 426.6,74.9
+X$537 vdd vss FILL3
+* cell instance $539 r0 *1 426.6,338.8
+X$539 vdd vss FILL3
+* cell instance $564 r0 *1 799.2,338.8
+X$564 \$518 \$548 \$519 \$238 vdd vss NOR3
+* cell instance $565 r0 *1 820.8,338.8
+X$565 \$170 \$520 \$367 \$334 vdd vss NOR3
+* cell instance $569 r0 *1 842.4,338.8
+X$569 \$518 vdd \$516 vss INV_X1
+* cell instance $582 r0 *1 853.2,338.8
+X$582 \$519 \$343 vdd \$577 vss NOR2
+* cell instance $584 r0 *1 453.6,338.8
+X$584 vdd vss FILL3
+* cell instance $585 r0 *1 469.8,338.8
+X$585 vdd vss FILL3
+* cell instance $586 r0 *1 486,338.8
+X$586 vdd vss FILL3
+* cell instance $587 r0 *1 502.2,338.8
+X$587 vdd vss FILL2
+* cell instance $588 r0 *1 513,338.8
+X$588 vdd vss FILL2
+* cell instance $589 r0 *1 523.8,338.8
+X$589 \$519 \$520 \$537 vdd \$279 vss DFF
+* cell instance $590 r0 *1 588.6,338.8
+X$590 \$333 \$565 vdd \$339 vss AND2_X1
+* cell instance $591 r0 *1 610.2,338.8
+X$591 \$298 \$171 \$68 vdd \$279 vss DFF
+* cell instance $592 r0 *1 675,338.8
+X$592 \$250 \$226 \$515 vdd vss XNOR2
+* cell instance $593 r0 *1 702,338.8
+X$593 \$171 \$337 vdd \$545 vss NOR2
+* cell instance $594 r0 *1 718.2,338.8
+X$594 \$69 \$543 vdd \$189 vss NOR2
+* cell instance $595 r0 *1 734.4,338.8
+X$595 \$518 \$171 vdd \$281 vss OR2
+* cell instance $596 r0 *1 756,338.8
+X$596 \$518 \$548 vdd \$514 vss AND2_X1
+* cell instance $597 r0 *1 777.6,338.8
+X$597 \$519 \$516 vdd \$172 vss OR2
+* cell instance $599 r0 *1 394.2,338.8
+X$599 \$279 \$280 vdd vss BUF_X2
+* cell instance $600 r0 *1 27,338.8
+X$600 \$531 \$226 \$201 vdd vss NAND2
+* cell instance $601 r0 *1 43.2,338.8
+X$601 \$65 \$193 \$66 vdd vss XNOR2
+* cell instance $602 r0 *1 70.2,338.8
+X$602 \$172 \$197 vdd \$294 vss NOR2
+* cell instance $603 r0 *1 86.4,338.8
+X$603 \$65 \$281 \$172 \$338 vdd vss MUX2
+* cell instance $605 r0 *1 221.4,338.8
+X$605 \$536 \$540 vdd \$197 vss NOR2
+* cell instance $606 r0 *1 237.6,338.8
+X$606 \$170 \$250 vdd \$540 vss NOR2
+* cell instance $607 r0 *1 118.8,338.8
+X$607 \$294 \$339 vdd \$337 vss NOR2
+* cell instance $608 r0 *1 253.8,338.8
+X$608 \$170 \$539 vdd \$544 vss NOR2
+* cell instance $609 r0 *1 270,338.8
+X$609 \$545 \$544 vdd \$543 vss NOR2
+* cell instance $611 r0 *1 286.2,338.8
+X$611 \$245 \$548 \$201 vdd \$279 vss DFF
+* cell instance $612 r0 *1 351,338.8
+X$612 \$170 \$514 vdd \$565 vss NOR2
+* cell instance $614 r0 *1 367.2,338.8
+X$614 \$548 vdd \$250 vss INV_X1
+* cell instance $615 r0 *1 378,338.8
+X$615 vdd vss FILL3
+* cell instance $622 r0 *1 410.4,338.8
+X$622 vdd vss FILL3
+* cell instance $638 r0 *1 10.8,338.8
+X$638 vdd vss FILL3
+* cell instance $658 r0 *1 135,338.8
+X$658 \$275 \$65 \$193 vdd \$279 vss DFF
+* cell instance $659 r0 *1 199.8,338.8
+X$659 \$531 \$283 \$310 \$537 vdd vss NAND3
+* cell instance $662 r0 *1 399.6,74.9
+X$662 vdd vss FILL3
+* cell instance $664 r0 *1 415.8,74.9
+X$664 vdd vss FILL2
+* cell instance $673 r0 *1 27,74.9
+X$673 \$8 \$24 vdd \$2 vss OR2
+* cell instance $674 r0 *1 48.6,74.9
+X$674 \$24 \$23 vdd \$10 vss OR2
+* cell instance $675 r0 *1 70.2,74.9
+X$675 \$24 \$19 vdd \$22 vss NOR2
+* cell instance $679 r0 *1 10.8,74.9
+X$679 vdd vss FILL3
+* cell instance $680 r0 *1 86.4,74.9
+X$680 \$65 \$66 vdd \$57 vss NOR2
+* cell instance $682 r0 *1 102.6,74.9
+X$682 \$65 \$59 vdd \$56 vss AND2_X1
+* cell instance $683 r0 *1 124.2,74.9
+X$683 \$35 \$170 vdd \$66 vss OR2
+* cell instance $699 r0 *1 199.8,74.9
+X$699 \$I1418 hsync \$37 vdd \$25 vss DFF
+* cell instance $714 r0 *1 264.6,74.9
+X$714 \$23 \$20 \$10 vdd \$25 vss DFF
+* cell instance $716 r0 *1 329.4,74.9
+X$716 \$17 \$206 \$35 \$24 vdd vss NOR3
+* cell instance $718 r0 *1 351,74.9
+X$718 \$170 vdd \$210 vss INV_X1
+* cell instance $721 r0 *1 145.8,74.9
+X$721 \$170 \$8 \$35 vdd vss XNOR2
+* cell instance $722 r0 *1 172.8,74.9
+X$722 \$65 vdd \$69 vss INV_X2
+* cell instance $723 r0 *1 183.6,74.9
+X$723 \$170 \$7 vdd vss BUF_X2
+* cell instance $725 r0 *1 361.8,74.9
+X$725 \$65 \$209 \$66 \$203 vdd vss NOR3
+* cell instance $727 r0 *1 383.4,74.9
+X$727 vdd vss FILL3
+* cell instance $728 r0 *1 486,74.9
+X$728 \$25 \$280 vdd vss BUF_X2
+* cell instance $729 r0 *1 577.8,74.9
+X$729 \$I1415 \$209 \$6 vdd \$25 vss DFF
+* cell instance $747 r0 *1 642.6,74.9
+X$747 \$I1430 \$18 \$22 vdd \$25 vss DFF
+* cell instance $748 r0 *1 707.4,74.9
+X$748 \$170 \$69 \$17 \$219 \$235 vdd vss NOR4
+* cell instance $752 r0 *1 502.2,74.9
+X$752 vdd vss FILL2
+* cell instance $753 r0 *1 453.6,74.9
+X$753 vdd vss FILL3
+* cell instance $754 r0 *1 469.8,74.9
+X$754 vdd vss FILL3
+* cell instance $763 r0 *1 734.4,74.9
+X$763 \$20 \$171 vdd \$35 vss OR2
+* cell instance $764 r0 *1 756,74.9
+X$764 \$170 \$69 \$225 \$217 vdd vss NAND3
+* cell instance $765 r0 *1 777.6,74.9
+X$765 \$7 \$69 \$206 vdd vss NAND2
+* cell instance $766 r0 *1 793.8,74.9
+X$766 \$214 \$188 \$3 vdd \$25 vss DFF
+* cell instance $767 r0 *1 858.6,74.9
+X$767 \$20 vdd \$247 vss INV_X1
+* cell instance $769 r0 *1 513,74.9
+X$769 \$323 \$7 \$2 vdd \$25 vss DFF
+* cell instance $772 r0 *1 1312.2,338.8
+X$772 vdd vss FILL3
+* cell instance $774 r0 *1 1312.2,74.9
+X$774 vdd vss FILL3
+* cell instance $786 r0 *1 1533.6,338.8
+X$786 \$309 \$287 vdd \$525 vss NOR2
+* cell instance $787 r0 *1 1549.8,338.8
+X$787 \$298 \$535 vdd \$291 vss NOR2
+* cell instance $792 r0 *1 1620,338.8
+X$792 \$532 \$189 \$177 \$380 \$694 vdd vss NOR4
+* cell instance $793 r0 *1 1647,338.8
+X$793 \$71 \$191 vdd \$182 vss AND2_X1
+* cell instance $794 r0 *1 1668.6,338.8
+X$794 \$291 \$182 \$551 \$181 vdd vss NOR3
+* cell instance $795 r0 *1 1690.2,338.8
+X$795 \$72 \$184 vdd \$529 vss NOR2
+* cell instance $796 r0 *1 1706.4,338.8
+X$796 \$71 \$179 \$288 \$177 vdd vss NOR3
+* cell instance $797 r0 *1 1728,338.8
+X$797 \$180 \$181 vdd \$287 vss NOR2
+* cell instance $798 r0 *1 1744.2,338.8
+X$798 vdd vss FILL3
+* cell instance $800 r0 *1 1566,338.8
+X$800 \$524 \$306 vdd \$284 vss NOR2
+* cell instance $801 r0 *1 1582.2,338.8
+X$801 \$301 \$304 vdd \$288 vss NOR2
+* cell instance $802 r0 *1 1598.4,338.8
+X$802 \$298 \$180 \$284 \$380 vdd vss NOR3
+* cell instance $803 r0 *1 1479.6,338.8
+X$803 \$526 \$365 \$310 vdd vss NAND2
+* cell instance $804 r0 *1 1495.8,338.8
+X$804 \$365 \$526 vdd \$283 vss OR2
+* cell instance $806 r0 *1 1517.4,338.8
+X$806 \$298 \$523 vdd \$301 vss NOR2
+* cell instance $809 r0 *1 1339.2,338.8
+X$809 vdd vss FILL3
+* cell instance $811 r0 *1 1355.4,338.8
+X$811 vdd vss FILL2
+* cell instance $812 r0 *1 1366.2,338.8
+X$812 vdd vss FILL2
+* cell instance $813 r0 *1 1377,338.8
+X$813 \$367 \$74 vdd \$578 vss NOR2
+* cell instance $814 r0 *1 1393.2,338.8
+X$814 \$526 \$520 vdd vss BUF_X2
+* cell instance $822 r0 *1 1409.4,338.8
+X$822 \$516 \$526 \$245 \$179 vdd vss NOR3
+* cell instance $825 r0 *1 1431,338.8
+X$825 \$191 \$238 vdd \$184 vss NOR2
+* cell instance $828 r0 *1 1447.2,338.8
+X$828 \$578 \$577 vdd \$535 vss NOR2
+* cell instance $829 r0 *1 1463.4,338.8
+X$829 \$298 \$315 vdd \$560 vss NOR2
+* cell instance $888 r0 *1 1085.4,338.8
+X$888 \$520 \$367 \$70 \$617 vdd vss NOR3
+* cell instance $889 r0 *1 1107,338.8
+X$889 \$617 \$238 vdd \$335 vss NOR2
+* cell instance $892 r0 *1 1301.4,338.8
+X$892 vdd vss FILL2
+* cell instance $898 r0 *1 1123.2,338.8
+X$898 \$238 \$334 vdd \$326 vss NOR2
+* cell instance $899 r0 *1 1139.4,338.8
+X$899 \$238 \$737 \$612 \$315 vdd vss NOR3
+* cell instance $901 r0 *1 1161,338.8
+X$901 \$323 vdd \$523 vss INV_X1
+* cell instance $902 r0 *1 1171.8,338.8
+X$902 \$516 \$367 vdd \$176 vss NOR2
+* cell instance $903 r0 *1 1188,338.8
+X$903 \$529 \$560 vdd \$539 vss NOR2
+* cell instance $904 r0 *1 1204.2,338.8
+X$904 \$367 \$323 \$77 \$524 vdd vss NOR3
+* cell instance $906 r0 *1 1225.8,338.8
+X$906 \$70 \$326 vdd \$306 vss NOR2
+* cell instance $907 r0 *1 1242,338.8
+X$907 \$275 vdd \$180 vss INV_X1
+* cell instance $910 r0 *1 1252.8,338.8
+X$910 \$323 \$525 vdd \$532 vss NOR2
+* cell instance $911 r0 *1 1269,338.8
+X$911 vdd vss FILL3
+* cell instance $912 r0 *1 1285.2,338.8
+X$912 vdd vss FILL3
+* cell instance $913 r0 *1 1042.2,338.8
+X$913 \$245 \$70 \$338 \$309 vdd vss NOR3
+* cell instance $914 r0 *1 1004.4,338.8
+X$914 \$519 \$70 vdd \$612 vss NOR2
+* cell instance $915 r0 *1 896.4,338.8
+X$915 vdd vss FILL3
+* cell instance $916 r0 *1 1063.8,338.8
+X$916 \$367 \$323 \$70 \$536 vdd vss NOR3
+* cell instance $919 r0 *1 912.6,338.8
+X$919 \$514 \$333 vdd \$343 vss NOR2
+* cell instance $924 r0 *1 1020.6,338.8
+X$924 \$515 \$245 vdd \$365 vss OR2
+* cell instance $930 r0 *1 928.8,338.8
+X$930 \$520 \$250 vdd \$726 vss AND2_X1
+* cell instance $935 r0 *1 950.4,338.8
+X$935 \$518 \$520 \$245 \$191 vdd vss NOR3
+* cell instance $937 r0 *1 972,338.8
+X$937 \$171 \$335 vdd \$551 vss NOR2
+* cell instance $940 r0 *1 988.2,338.8
+X$940 \$367 \$548 vdd vss BUF_X2
+* cell instance $987 r0 *1 1134,74.9
+X$987 \$18 \$19 \$203 vdd vss XNOR2
+* cell instance $988 r0 *1 1161,74.9
+X$988 \$16 \$235 vdd \$54 vss NOR2
+* cell instance $997 r0 *1 1177.2,74.9
+X$997 \$214 \$219 \$206 \$50 vdd vss NOR3
+* cell instance $1000 r0 *1 1198.8,74.9
+X$1000 \$209 vdd \$48 vss INV_X2
+* cell instance $1001 r0 *1 1209.6,74.9
+X$1001 \$48 \$18 \$70 vdd vss NAND2
+* cell instance $1002 r0 *1 1225.8,74.9
+X$1002 \$48 \$18 \$188 \$17 vdd vss NAND3
+* cell instance $1004 r0 *1 1247.4,74.9
+X$1004 \$209 \$18 \$74 vdd vss NAND2
+* cell instance $1005 r0 *1 1263.6,74.9
+X$1005 \$18 vdd \$72 vss INV_X1
+* cell instance $1006 r0 *1 1274.4,74.9
+X$1006 vdd vss FILL3
+* cell instance $1007 r0 *1 1290.6,74.9
+X$1007 vdd vss FILL2
+* cell instance $1008 r0 *1 1301.4,74.9
+X$1008 vdd vss FILL2
+* cell instance $1011 r0 *1 896.4,74.9
+X$1011 vdd vss FILL3
+* cell instance $1012 r0 *1 912.6,74.9
+X$1012 \$225 \$35 \$68 vdd vss NAND2
+* cell instance $1016 r0 *1 928.8,74.9
+X$1016 \$171 \$210 vdd \$304 vss NOR2
+* cell instance $1023 r0 *1 945,74.9
+X$1023 \$171 \$247 \$219 vdd vss NAND2
+* cell instance $1025 r0 *1 961.2,74.9
+X$1025 \$210 \$69 \$51 vdd vss NAND2
+* cell instance $1029 r0 *1 977.4,74.9
+X$1029 \$171 \$20 \$225 vdd vss NAND2
+* cell instance $1033 r0 *1 993.6,74.9
+X$1033 \$210 \$225 \$59 vdd vss NAND2
+* cell instance $1037 r0 *1 1009.8,74.9
+X$1037 \$214 \$20 \$171 \$15 vdd vss MUX2
+* cell instance $1046 r0 *1 1042.2,74.9
+X$1046 \$48 \$6 \$57 vdd vss XNOR2
+* cell instance $1047 r0 *1 1069.2,74.9
+X$1047 \$70 \$56 vdd \$5 vss NOR2
+* cell instance $1054 r0 *1 1112.4,74.9
+X$1054 \$49 \$54 vdd \$37 vss OR2
+* cell instance $1057 r0 *1 1085.4,74.9
+X$1057 \$209 \$333 \$18 vdd vss XNOR2
+* cell instance $1062 r0 *1 1468.8,74.9
+X$1062 \$72 \$214 \$5 \$16 vdd vss NOR3
+* cell instance $1063 r0 *1 1490.4,74.9
+X$1063 \$4 \$188 \$217 \$51 vdd vss AND3_X1
+* cell instance $1064 r0 *1 1560.6,74.9
+X$1064 \$74 \$51 vdd \$205 vss NOR2
+* cell instance $1068 r0 *1 1517.4,74.9
+X$1068 \$209 \$72 \$71 vdd vss NAND2
+* cell instance $1072 r0 *1 1533.6,74.9
+X$1072 \$14 \$205 \$15 \$11 \$225 vdd vss NAND4
+* cell instance $1098 r0 *1 1722.6,74.9
+X$1098 \$11 \$45 \$12 \$175 vdd vss NAND3
+* cell instance $1099 r0 *1 1339.2,74.9
+X$1099 vdd vss FILL3
+* cell instance $1100 r0 *1 1355.4,74.9
+X$1100 vdd vss FILL3
+* cell instance $1101 r0 *1 1684.8,74.9
+X$1101 \$14 \$13 \$176 \$183 vdd vss NAND3
+* cell instance $1117 r0 *1 1371.6,74.9
+X$1117 \$206 \$71 \$12 \$188 \$219 vdd vss OR4
+* cell instance $1124 r0 *1 1706.4,74.9
+X$1124 \$13 \$11 \$38 vdd vss NAND2
+* cell instance $1125 r0 *1 1744.2,74.9
+X$1125 vdd vss FILL3
+* cell instance $1134 r0 *1 1576.8,74.9
+X$1134 \$74 \$46 vdd \$49 vss NOR2
+* cell instance $1137 r0 *1 1593,74.9
+X$1137 \$48 \$72 \$77 vdd vss NAND2
+* cell instance $1142 r0 *1 1609.2,74.9
+X$1142 \$72 \$203 vdd \$47 vss AND2_X1
+* cell instance $1143 r0 *1 1630.8,74.9
+X$1143 \$188 vdd \$14 vss INV_X1
+* cell instance $1144 r0 *1 1641.6,74.9
+X$1144 \$50 \$4 vdd \$46 vss NOR2
+* cell instance $1145 r0 *1 1657.8,74.9
+X$1145 \$14 \$3 \$47 vdd vss XNOR2
+* cell instance $1146 r0 *1 1404,74.9
+X$1146 \$206 \$71 \$13 \$188 \$225 vdd vss OR4
+* cell instance $1147 r0 *1 1436.4,74.9
+X$1147 \$51 \$77 \$45 \$188 \$225 vdd vss OR4
 .ENDS ishi_vga_core
 
 * cell AND3_X1
@@ -687,26 +687,6 @@ XM$7 \$2 C \$5 vss NMOS L=1U W=3.4U AS=2.04P AD=9.52P PS=4.6U PD=12.4U
 * device instance $8 r0 *1 21,8.2 NMOS
 XM$8 Y \$2 vss vss NMOS L=1U W=3.4U AS=9.52P AD=9.52P PS=12.4U PD=12.4U
 .ENDS AND3_X1
-
-* cell BUF_X2
-* pin Y
-* pin A
-* pin vdd
-* pin vss
-.SUBCKT BUF_X2 Y A vdd vss
-* device instance $1 r0 *1 4,47.8 PMOS
-XM$1 vdd A \$2 vdd PMOS L=1U W=10.2U AS=28.56P AD=15.3P PS=26U PD=13.2U
-* device instance $2 r0 *1 8,47.8 PMOS
-XM$2 Y \$2 vdd vdd PMOS L=1U W=10.2U AS=15.3P AD=15.3P PS=13.2U PD=13.2U
-* device instance $3 r0 *1 12,47.8 PMOS
-XM$3 vdd \$2 Y vdd PMOS L=1U W=10.2U AS=15.3P AD=28.56P PS=13.2U PD=26U
-* device instance $4 r0 *1 4,8.2 NMOS
-XM$4 vss A \$2 vss NMOS L=1U W=3.4U AS=9.52P AD=5.1P PS=12.4U PD=6.4U
-* device instance $5 r0 *1 8,8.2 NMOS
-XM$5 Y \$2 vss vss NMOS L=1U W=3.4U AS=5.1P AD=5.1P PS=6.4U PD=6.4U
-* device instance $6 r0 *1 12,8.2 NMOS
-XM$6 vss \$2 Y vss NMOS L=1U W=3.4U AS=5.1P AD=9.52P PS=6.4U PD=12.4U
-.ENDS BUF_X2
 
 * cell INV_X2
 * pin A
@@ -810,6 +790,26 @@ XM$11 vss B \$6 vss NMOS L=1U W=3.4U AS=5.1P AD=9.52P PS=6.4U PD=12.4U
 * device instance $12 r0 *1 11.5,8.2 NMOS
 XM$12 \$3 S vss vss NMOS L=1U W=3.4U AS=10.2P AD=9.52P PS=12.8U PD=12.4U
 .ENDS MUX2
+
+* cell BUF_X2
+* pin Y
+* pin A
+* pin vdd
+* pin vss
+.SUBCKT BUF_X2 Y A vdd vss
+* device instance $1 r0 *1 4,47.8 PMOS
+XM$1 vdd A \$2 vdd PMOS L=1U W=10.2U AS=28.56P AD=15.3P PS=26U PD=13.2U
+* device instance $2 r0 *1 8,47.8 PMOS
+XM$2 Y \$2 vdd vdd PMOS L=1U W=10.2U AS=15.3P AD=15.3P PS=13.2U PD=13.2U
+* device instance $3 r0 *1 12,47.8 PMOS
+XM$3 vdd \$2 Y vdd PMOS L=1U W=10.2U AS=15.3P AD=28.56P PS=13.2U PD=26U
+* device instance $4 r0 *1 4,8.2 NMOS
+XM$4 vss A \$2 vss NMOS L=1U W=3.4U AS=9.52P AD=5.1P PS=12.4U PD=6.4U
+* device instance $5 r0 *1 8,8.2 NMOS
+XM$5 Y \$2 vss vss NMOS L=1U W=3.4U AS=5.1P AD=5.1P PS=6.4U PD=6.4U
+* device instance $6 r0 *1 12,8.2 NMOS
+XM$6 vss \$2 Y vss NMOS L=1U W=3.4U AS=5.1P AD=9.52P PS=6.4U PD=12.4U
+.ENDS BUF_X2
 
 * cell OR2
 * pin B

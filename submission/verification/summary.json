@@ -1,6 +1,6 @@
 {
   "scope": "unintegrated core",
-  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "gds_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
   "drawing_drc": 0,
   "mask_warnings": [
     {
@@ -21,9 +21,14 @@
   "pvt_sweep": false,
   "frame_integrated": false,
   "hardware_test": false,
+  "manufacturing_ready": false,
+  "binary_states_checked": 131072,
+  "spice_raster_cycles": 540,
+  "spice_startup_cycles": 128,
+  "analog_frame_acquisition_observed": false,
   "evidence": [
     "physical/verification.json",
     "functional/functional_verification.json",
-    "original/power_grid_spice.json"
+    "original/extraction_manifest.json"
   ]
 }

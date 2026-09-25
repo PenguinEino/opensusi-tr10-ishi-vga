@@ -1,0 +1,7 @@
+PASS: 121 manifest files; GDS identity; frame remains unintegrated
+upper_init {"status": "PASS", "cycles_checked": 110, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}
+lower_init {"status": "PASS", "cycles_checked": 110, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}
+vsync_init {"status": "PASS", "cycles_checked": 210, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}
+frame_wrap_init {"status": "PASS", "cycles_checked": 110, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}
+powerup {"status": "PASS", "cycles_checked": 128, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}
+upper_reference {"status": "PASS", "cycles_checked": 110, "counter_bits": 17, "output_bits": 5, "scope": "selected transient window; no wire RC", "sample_offset_ns": 150}

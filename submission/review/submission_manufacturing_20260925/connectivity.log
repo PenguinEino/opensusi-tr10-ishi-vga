@@ -1,0 +1,1 @@
+instances=345; signal pins=696; shorts=0 pair_count=0 map_anchor_classes={'inside_actual_LEF_pin_rect': 696} missing_pin=0 open_nets=0; report=/home/ishi-kai/ishi-vga/build/submission_review_20260925/connectivity/metal_connectivity.md

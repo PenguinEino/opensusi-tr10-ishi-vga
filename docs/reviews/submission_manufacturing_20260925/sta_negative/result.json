@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "intentional_error_reported": true,
+  "command": [
+    "python3",
+    "scripts/run_apr.py",
+    "--design-root",
+    "/home/ishi-kai/ishi-vga/build/submission_review_20260925/sta_negative",
+    "syn/sta/sta.sh",
+    "out/ishi_vga_core_pnr.v",
+    "ishi_vga_core",
+    "317.460317",
+    "/home/ishi-kai/ishi-vga/build/submission_review_20260925/sta_negative/bad_report.tcl"
+  ]
+}

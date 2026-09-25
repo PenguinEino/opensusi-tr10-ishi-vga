@@ -1,4 +1,6 @@
-# 採用コアの抽出SPICE過渡解析
+# 旧コアの抽出SPICE過渡解析（履歴）
+
+現在はクロック4分岐修正版へ更新済みです。[変更・再検証](reviews/submission_manufacturing_response.md)／[現行提出仕様](../submission/SPEC.md)。以下は旧GDSの記録を保存したものです。
 
 2026-09-25。前回のコア引き渡し時点では、RTL／ゲート機能試験、LVS、セル遅延STAまでで、抽出回路のngspice過渡解析は未実施だった。本記録は、その後に追加実行した結果。
 

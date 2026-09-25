@@ -1212,133 +1212,133 @@ module ishi_vga_core(clk, r, g, b, hsync, vsync);
     .Y(_028_)
   );
   DFF _394_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_009_),
     .Q(r),
     .QB(_205_)
   );
   DFF _395_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_010_),
     .Q(g),
     .QB(_206_)
   );
   DFF _396_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_000_),
     .Q(hsync),
     .QB(_207_)
   );
   DFF _397_ (
-    .CK(clk_buf),
+    .CK(clk_row3),
     .D(_001_),
     .Q(vsync),
     .QB(_204_)
   );
   DFF _398_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_011_),
     .Q(b),
     .QB(_203_)
   );
   DFF _399_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_012_),
     .Q(v[0]),
     .QB(_194_[0])
   );
   DFF _400_ (
-    .CK(clk_buf),
+    .CK(clk_row3),
     .D(_013_),
     .Q(v[1]),
     .QB(_202_)
   );
   DFF _401_ (
-    .CK(clk_buf),
+    .CK(clk_row3),
     .D(_014_),
     .Q(v[2]),
     .QB(_201_)
   );
   DFF _402_ (
-    .CK(clk_buf),
+    .CK(clk_row3),
     .D(_015_),
     .Q(v[3]),
     .QB(_200_)
   );
   DFF _403_ (
-    .CK(clk_buf),
+    .CK(clk_row3),
     .D(_016_),
     .Q(v[4]),
     .QB(_199_)
   );
   DFF _404_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_017_),
     .Q(v[5]),
     .QB(_198_)
   );
   DFF _405_ (
-    .CK(clk_buf),
+    .CK(clk_row1),
     .D(_018_),
     .Q(v[6]),
     .QB(_005_)
   );
   DFF _406_ (
-    .CK(clk_buf),
+    .CK(clk_row1),
     .D(_019_),
     .Q(v[7]),
     .QB(_003_)
   );
   DFF _407_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_020_),
     .Q(v[8]),
     .QB(_197_)
   );
   DFF _408_ (
-    .CK(clk_buf),
+    .CK(clk_row2),
     .D(_021_),
     .Q(v[9]),
     .QB(_007_)
   );
   DFF _409_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_022_),
     .Q(h[0]),
     .QB(_193_[0])
   );
   DFF _410_ (
-    .CK(clk_buf),
+    .CK(clk_row1),
     .D(_023_),
     .Q(h[1]),
     .QB(_002_)
   );
   DFF _411_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_024_),
     .Q(h[2]),
     .QB(_004_)
   );
   DFF _412_ (
-    .CK(clk_buf),
+    .CK(clk_row1),
     .D(_025_),
     .Q(h[3]),
     .QB(_006_)
   );
   DFF _413_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_026_),
     .Q(h[4]),
     .QB(_196_)
   );
   DFF _414_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_027_),
     .Q(h[5]),
     .QB(_195_)
   );
   DFF _415_ (
-    .CK(clk_buf),
+    .CK(clk_row0),
     .D(_028_),
     .Q(h[6]),
     .QB(_008_)
@@ -1352,4 +1352,13 @@ module ishi_vga_core(clk, r, g, b, hsync, vsync);
   assign \u_logo.y [1:0] = v[6:5];
   // --- 外部入力 1 本を BUFTH で受ける ---
   BUFTH u_bufth_clk (.A(clk), .Y(clk_buf));
+
+  wire clk_row0;
+  BUF_X2 u_clk_row0 (.A(clk_buf), .Y(clk_row0));
+  wire clk_row1;
+  BUF_X2 u_clk_row1 (.A(clk_buf), .Y(clk_row1));
+  wire clk_row2;
+  BUF_X2 u_clk_row2 (.A(clk_buf), .Y(clk_row2));
+  wire clk_row3;
+  BUF_X2 u_clk_row3 (.A(clk_buf), .Y(clk_row3));
 endmodule

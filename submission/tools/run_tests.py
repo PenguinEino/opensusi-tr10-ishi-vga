@@ -25,7 +25,7 @@ def call(command, cwd, logfile):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('mode', choices=['saved-spice', 'spice', 'rtl', 'gates'])
+    ap.add_argument('mode', choices=['saved-spice', 'spice', 'rtl', 'gates', 'exhaustive'])
     ap.add_argument('--case', choices=CASES, default='upper_init')
     ap.add_argument('--out', type=Path)
     ap.add_argument('--ngspice', default='ngspice')
@@ -60,11 +60,19 @@ def main():
         source = ROOT / 'source'
         files = ([source / 'ishi_vga_core.v', source / 'ishi_logo.v'] if a.mode == 'rtl'
                  else [source / 'ishi_vga_core_pnr.v', source / 'tr1um_cells.v'])
+        if a.mode=='exhaustive':
+            gates=out/'build/gate_core.v';gates.write_text((source/'ishi_vga_core_pnr.v').read_text().replace('module ishi_vga_core','module gate_core',1))
+            files=[source/'ishi_vga_core.v',source/'ishi_logo.v',gates,source/'tr1um_cells.v']
         exe = out / 'build' / (a.mode + '.vvp')
-        call([a.iverilog, '-g2012', '-s', 'tb_vga', '-o', str(exe),
+        call([a.iverilog, '-g2012', '-s', 'tb_exhaustive' if a.mode=='exhaustive' else 'tb_vga', '-o', str(exe),
               str(out / 'tests' / ('tb_' + a.mode + '.v')), *map(str, files)], out, out / 'compile.log')
         call([a.vvp, str(exe)], out, out / 'simulation.log')
         log = (out / 'simulation.log').read_text()
+        if a.mode=='exhaustive':
+            assert 'PASS: all 131072 binary counter states' in log and 'FAIL' not in log
+            assert (out/'tests/expected_states.hex').read_bytes()==(ROOT/'tests/expected_states.hex').read_bytes()
+            result={'status':'PASS','binary_counter_states':131072,'raster_reference_states':52500}
+            (out/'result.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result));return
         assert 'PASS: 105000 pixel ticks' in log and 'FAIL' not in log
         observed = [int(x, 16) for x in (out / 'build/observed.hex').read_text().split()]
         expected = [int(x, 16) for x in (out / 'tests/expected_frame.hex').read_text().split()]

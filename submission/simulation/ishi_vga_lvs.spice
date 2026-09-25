@@ -2,7 +2,7 @@
 * $APRTOOLS/apr/mklvsnet.py が生成。手で編集しないこと。
 *
 *   論理セル : out/ishi_vga_core_pnr.v
-*   物理セル : layout/placement.json (FILL2 x15, FILL3 x101, TAP2 x20)
+*   物理セル : layout/placement.json (FILL2 x15, FILL3 x97, TAP2 x20)
 *   セル定義 : $APRTOOLS/stdcell/v59_4/simulation/*.spice
 *
 * デバイスを持たない物理セルは出していない: TAP2
@@ -419,29 +419,33 @@ X_390_ h[5] _141_ _142_ vdd vss XNOR2
 X_391_ _114_ _027_ _142_ vdd vss NOR2
 X_392_ _143_ _144_ _141_ vdd vss AND2_X1
 X_393_ _075_ _143_ _028_ vdd vss XNOR2
-X_394_ clk_buf _009_ _205_ r vdd vss DFF
-X_395_ clk_buf _010_ _206_ g vdd vss DFF
-X_396_ clk_buf _000_ _207_ hsync vdd vss DFF
-X_397_ clk_buf _001_ _204_ vsync vdd vss DFF
-X_398_ clk_buf _011_ _203_ b vdd vss DFF
-X_399_ clk_buf _012_ _194_[0] v[0] vdd vss DFF
-X_400_ clk_buf _013_ _202_ v[1] vdd vss DFF
-X_401_ clk_buf _014_ _201_ v[2] vdd vss DFF
-X_402_ clk_buf _015_ _200_ v[3] vdd vss DFF
-X_403_ clk_buf _016_ _199_ v[4] vdd vss DFF
-X_404_ clk_buf _017_ _198_ v[5] vdd vss DFF
-X_405_ clk_buf _018_ _005_ v[6] vdd vss DFF
-X_406_ clk_buf _019_ _003_ v[7] vdd vss DFF
-X_407_ clk_buf _020_ _197_ v[8] vdd vss DFF
-X_408_ clk_buf _021_ _007_ v[9] vdd vss DFF
-X_409_ clk_buf _022_ _193_[0] h[0] vdd vss DFF
-X_410_ clk_buf _023_ _002_ h[1] vdd vss DFF
-X_411_ clk_buf _024_ _004_ h[2] vdd vss DFF
-X_412_ clk_buf _025_ _006_ h[3] vdd vss DFF
-X_413_ clk_buf _026_ _196_ h[4] vdd vss DFF
-X_414_ clk_buf _027_ _195_ h[5] vdd vss DFF
-X_415_ clk_buf _028_ _008_ h[6] vdd vss DFF
+X_394_ clk_row2 _009_ _205_ r vdd vss DFF
+X_395_ clk_row2 _010_ _206_ g vdd vss DFF
+X_396_ clk_row0 _000_ _207_ hsync vdd vss DFF
+X_397_ clk_row3 _001_ _204_ vsync vdd vss DFF
+X_398_ clk_row2 _011_ _203_ b vdd vss DFF
+X_399_ clk_row2 _012_ _194_[0] v[0] vdd vss DFF
+X_400_ clk_row3 _013_ _202_ v[1] vdd vss DFF
+X_401_ clk_row3 _014_ _201_ v[2] vdd vss DFF
+X_402_ clk_row3 _015_ _200_ v[3] vdd vss DFF
+X_403_ clk_row3 _016_ _199_ v[4] vdd vss DFF
+X_404_ clk_row2 _017_ _198_ v[5] vdd vss DFF
+X_405_ clk_row1 _018_ _005_ v[6] vdd vss DFF
+X_406_ clk_row1 _019_ _003_ v[7] vdd vss DFF
+X_407_ clk_row2 _020_ _197_ v[8] vdd vss DFF
+X_408_ clk_row2 _021_ _007_ v[9] vdd vss DFF
+X_409_ clk_row0 _022_ _193_[0] h[0] vdd vss DFF
+X_410_ clk_row1 _023_ _002_ h[1] vdd vss DFF
+X_411_ clk_row0 _024_ _004_ h[2] vdd vss DFF
+X_412_ clk_row1 _025_ _006_ h[3] vdd vss DFF
+X_413_ clk_row0 _026_ _196_ h[4] vdd vss DFF
+X_414_ clk_row0 _027_ _195_ h[5] vdd vss DFF
+X_415_ clk_row0 _028_ _008_ h[6] vdd vss DFF
 Xu_bufth_clk clk clk_buf vdd vss BUFTH
+Xu_clk_row0 clk_buf clk_row0 vdd vss BUF_X2
+Xu_clk_row1 clk_buf clk_row1 vdd vss BUF_X2
+Xu_clk_row2 clk_buf clk_row2 vdd vss BUF_X2
+Xu_clk_row3 clk_buf clk_row3 vdd vss BUF_X2
 
 * --- フィラー（デキャップ）---
 XFILLPRI_r0_0 vdd vss FILL3
@@ -451,7 +455,6 @@ XFILL_r0_18 vdd vss FILL2
 XFILLPRI_r0_1 vdd vss FILL3
 XFILLPRI_r0_2 vdd vss FILL3
 XFILL_r0_22 vdd vss FILL3
-XFILL_r0_23 vdd vss FILL3
 XFILL_r0_24 vdd vss FILL2
 XFILLPRI_r0_3 vdd vss FILL3
 XFILLPRI_r0_4 vdd vss FILL3
@@ -464,7 +467,6 @@ XFILL_r0_62 vdd vss FILL3
 XFILLPRI_r0_7 vdd vss FILL3
 XFILLPRI_r1_8 vdd vss FILL3
 XFILL_r1_16 vdd vss FILL3
-XFILL_r1_17 vdd vss FILL3
 XFILL_r1_18 vdd vss FILL3
 XFILLPRI_r1_9 vdd vss FILL3
 XFILLPRI_r1_10 vdd vss FILL3
@@ -484,7 +486,6 @@ XFILL_r1_69 vdd vss FILL2
 XFILLPRI_r1_15 vdd vss FILL3
 XFILLPRI_r2_16 vdd vss FILL3
 XFILL_r2_14 vdd vss FILL3
-XFILL_r2_15 vdd vss FILL3
 XFILLPRI_r2_17 vdd vss FILL3
 XFILLPRI_r2_18 vdd vss FILL3
 XFILL_r2_19 vdd vss FILL3
@@ -526,7 +527,6 @@ XFILL_r3_37 vdd vss FILL3
 XFILL_r3_38 vdd vss FILL3
 XFILL_r3_39 vdd vss FILL3
 XFILL_r3_40 vdd vss FILL3
-XFILL_r3_41 vdd vss FILL3
 XFILL_r3_42 vdd vss FILL2
 XFILLPRI_r3_27 vdd vss FILL3
 XFILLPRI_r3_28 vdd vss FILL3

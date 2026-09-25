@@ -1,0 +1,205 @@
+  セル 20 種 / モジュール 1 個
+=== Additional electrical checks: ideal clock ===
+Net clk_buf
+ Pin capacitance: 1312.01
+ Wire capacitance: 0.00
+ Total capacitance: 1312.01
+ Number of drivers: 1
+ Number of loads: 22
+ Number of pins: 23
+
+Driver pins
+ u_bufth_clk/Y output (BUFTH)
+
+Load pins
+ _394_/CK input (DFF) 59.64
+ _395_/CK input (DFF) 59.64
+ _396_/CK input (DFF) 59.64
+ _397_/CK input (DFF) 59.64
+ _398_/CK input (DFF) 59.64
+ _399_/CK input (DFF) 59.64
+ _400_/CK input (DFF) 59.64
+ _401_/CK input (DFF) 59.64
+ _402_/CK input (DFF) 59.64
+ _403_/CK input (DFF) 59.64
+ _404_/CK input (DFF) 59.64
+ _405_/CK input (DFF) 59.64
+ _406_/CK input (DFF) 59.64
+ _407_/CK input (DFF) 59.64
+ _408_/CK input (DFF) 59.64
+ _409_/CK input (DFF) 59.64
+ _410_/CK input (DFF) 59.64
+ _411_/CK input (DFF) 59.64
+ _412_/CK input (DFF) 59.64
+ _413_/CK input (DFF) 59.64
+ _414_/CK input (DFF) 59.64
+ _415_/CK input (DFF) 59.64
+
+=== Cell-propagated clock, no interconnect RC ===
+max capacitance
+
+Pin                                        Limit         Cap       Slack
+------------------------------------------------------------------------
+u_bufth_clk/Y                         800.000000 1312.013672 -512.013672 (VIOLATED)
+
+Startpoint: _409_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _409_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _409_/CK (DFF)
+     1   54.410000    0.742624    6.058484   13.164668 ^ _409_/QB (DFF)
+     1   39.680000    0.527136    1.455407   14.620074 ^ _381_/Y (OR2)
+                      0.527136    0.000000   14.620074 ^ _409_/D (DFF)
+                                             14.620074   data arrival time
+
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _409_/CK (DFF)
+                                  0.000000    7.106184   clock reconvergence pessimism
+                                  0.765003    7.871188   library hold time
+                                              7.871188   data required time
+---------------------------------------------------------------------------------------------
+                                              7.871188   data required time
+                                            -14.620074   data arrival time
+---------------------------------------------------------------------------------------------
+                                              6.748887   slack (MET)
+
+
+Startpoint: _400_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _397_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _400_/CK (DFF)
+     5  337.161011    2.416247    8.619370   15.725554 v _400_/Q (DFF)
+     1   39.680000    0.618720    1.090996   16.816551 ^ _241_/Y (NAND4)
+                      0.618720    0.000000   16.816551 ^ _397_/D (DFF)
+                                             16.816551   data arrival time
+
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _397_/CK (DFF)
+                                  0.000000    7.106184   clock reconvergence pessimism
+                                  0.754032    7.860217   library hold time
+                                              7.860217   data required time
+---------------------------------------------------------------------------------------------
+                                              7.860217   data required time
+                                            -16.816551   data arrival time
+---------------------------------------------------------------------------------------------
+                                              8.956334   slack (MET)
+
+
+Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: b (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _398_/CK (DFF)
+     1   45.923000    0.741378    6.643207   13.749392 ^ _398_/Q (DFF)
+                      0.741378    0.000000   13.749392 ^ b (out)
+                                             13.749392   data arrival time
+
+                                317.460327  317.460327   clock clk (rise edge)
+                                  0.000000  317.460327   clock network delay (propagated)
+                                  0.000000  317.460327   clock reconvergence pessimism
+                                -63.492062  253.968277   output external delay
+                                            253.968277   data required time
+---------------------------------------------------------------------------------------------
+                                            253.968277   data required time
+                                            -13.749392   data arrival time
+---------------------------------------------------------------------------------------------
+                                            240.218872   slack (MET)
+
+
+Startpoint: _395_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: g (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _395_/CK (DFF)
+     1   45.923000    0.741378    6.643207   13.749392 ^ _395_/Q (DFF)
+                      0.741378    0.000000   13.749392 ^ g (out)
+                                             13.749392   data arrival time
+
+                                317.460327  317.460327   clock clk (rise edge)
+                                  0.000000  317.460327   clock network delay (propagated)
+                                  0.000000  317.460327   clock reconvergence pessimism
+                                -63.492062  253.968277   output external delay
+                                            253.968277   data required time
+---------------------------------------------------------------------------------------------
+                                            253.968277   data required time
+                                            -13.749392   data arrival time
+---------------------------------------------------------------------------------------------
+                                            240.218872   slack (MET)
+
+
+clk period_min = 41.86 fmax = 23.89
+Startpoint: _414_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _408_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
+    22 1312.013672    5.393324    7.106184    7.106184 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000    7.106184 ^ _414_/CK (DFF)
+     6  497.843994    2.863756   11.024153   18.130337 ^ _414_/Q (DFF)
+     2  114.642006    3.148354    3.334302   21.464638 v _219_/Y (NAND3)
+     8  499.643036    6.930039    5.801573   27.266211 ^ _347_/Y (NOR3)
+     3  240.893005    5.278807    6.061604   33.327816 v _354_/Y (NAND3)
+     4  306.299988    3.516423    3.584098   36.911915 ^ _359_/Y (NOR2)
+     4  306.798981    3.840074    4.016666   40.928581 v _365_/Y (NAND2)
+     2  191.238998    2.490765    2.576389   43.504971 ^ _376_/Y (NOR2)
+     1  131.082993    2.061369    2.417970   45.922939 v _379_/Y (NAND2)
+     1   39.680000    0.899384    2.815796   48.738735 ^ _380_/Y (XNOR2)
+                      0.899384    0.000000   48.738735 ^ _408_/D (DFF)
+                                             48.738735   data arrival time
+
+                                317.460327  317.460327   clock clk (rise edge)
+                                  0.000000  317.460327   clock source latency
+     1   63.517002    1.200000    0.000000  317.460327 ^ clk (in)
+    22 1312.013672    5.393324    7.106195  324.566528 ^ u_bufth_clk/Y (BUFTH)
+                      5.393324    0.000000  324.566528 ^ _408_/CK (DFF)
+                                  0.000000  324.566528   clock reconvergence pessimism
+                                 -0.228820  324.337708   library setup time
+                                            324.337708   data required time
+---------------------------------------------------------------------------------------------
+                                            324.337708   data required time
+                                            -48.738735   data arrival time
+---------------------------------------------------------------------------------------------
+                                            275.598969   slack (MET)
+
+
+  -> out/STA_ishi_vga_core.txt

@@ -1,0 +1,75 @@
+{
+  "corrected_core": {
+    "exit": 0,
+    "guard": {
+      "status": "PASS",
+      "failures": [],
+      "expected_registers": 22,
+      "slack_ns": {
+        "setup": 276.02475,
+        "hold": 6.686719,
+        "output": 241.965698
+      },
+      "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+    }
+  },
+  "original_cap_violation": {
+    "exit": 1,
+    "guard": {
+      "status": "FAIL",
+      "failures": [
+        "reported constraint violation"
+      ],
+      "expected_registers": 22,
+      "slack_ns": {
+        "setup": 275.598969,
+        "hold": 6.748887,
+        "output": 240.218872
+      },
+      "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+    }
+  },
+  "tcl_error": {
+    "exit": 1,
+    "guard": {
+      "status": "FAIL",
+      "failures": [
+        "tool error or unhandled warning",
+        "missing/duplicate GATE_BEGIN",
+        "missing/duplicate ELECTRICAL_BEGIN",
+        "missing/duplicate ELECTRICAL_END",
+        "missing/duplicate GATE_END",
+        "CLOCKS count mismatch",
+        "REG_CLOCKS count mismatch",
+        "REG_DATA count mismatch",
+        "missing/duplicate SETUP path",
+        "missing/duplicate HOLD path",
+        "missing/duplicate OUTPUT path"
+      ],
+      "expected_registers": 22,
+      "slack_ns": {},
+      "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+    }
+  },
+  "incomplete_report": {
+    "exit": 1,
+    "guard": {
+      "status": "FAIL",
+      "failures": [
+        "missing/duplicate GATE_BEGIN",
+        "missing/duplicate ELECTRICAL_BEGIN",
+        "missing/duplicate ELECTRICAL_END",
+        "missing/duplicate GATE_END",
+        "CLOCKS count mismatch",
+        "REG_CLOCKS count mismatch",
+        "REG_DATA count mismatch",
+        "missing/duplicate SETUP path",
+        "missing/duplicate HOLD path",
+        "missing/duplicate OUTPUT path"
+      ],
+      "expected_registers": 22,
+      "slack_ns": {},
+      "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+    }
+  }
+}

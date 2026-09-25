@@ -1,0 +1,126 @@
+{
+  "manifest_sha256": "96bdc4c6b83d5897faae4dacc655521eccb0fdae85942f0e51505179ace87c5c",
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "payload_files": 121,
+  "exact_file_set": true,
+  "bbox_um": [
+    -15.3,
+    0.0,
+    1777.5,
+    897.2
+  ],
+  "top_cells": [
+    "ishi_vga_core",
+    "FILL1",
+    "REG8x16",
+    "REG4x16",
+    "via_1",
+    "RSLATCH",
+    "MUXDFFRB",
+    "AND4_X1",
+    "DFFRB",
+    "DEL1",
+    "TAP3",
+    "DFFS"
+  ],
+  "direct_instance_counts": {
+    "FILL3": 101,
+    "TAP2": 20,
+    "NAND2": 34,
+    "XNOR2": 11,
+    "BUF_X1": 1,
+    "INV_X1": 12,
+    "NAND3": 12,
+    "NOR3": 23,
+    "NOR2": 48,
+    "NAND4": 4,
+    "FILL2": 15,
+    "NOR4": 4,
+    "OR3": 2,
+    "AND2_X1": 10,
+    "OR4": 4,
+    "via_1$2": 850,
+    "DFF": 22,
+    "OR2": 10,
+    "MUX2": 4,
+    "BUFTH": 1,
+    "XOR2": 1,
+    "INV_X2": 2,
+    "BUF_X2": 3,
+    "AND3_X1": 1
+  },
+  "layer_inventory": {
+    "13/0": {
+      "polygons": 1231,
+      "area_um2": 357486.0
+    },
+    "235/0": {
+      "polygons": 4,
+      "area_um2": 420837.12
+    },
+    "19/0": {
+      "polygons": 1559,
+      "area_um2": 3055.64
+    },
+    "20/0": {
+      "polygons": 769,
+      "area_um2": 309857.42
+    },
+    "49/1": {
+      "polygons": 779,
+      "area_um2": 9005.24
+    },
+    "11/0": {
+      "polygons": 10780,
+      "area_um2": 10780.0
+    },
+    "3/1": {
+      "polygons": 418,
+      "area_um2": 75476.87999999999
+    },
+    "48/1": {
+      "polygons": 11,
+      "area_um2": 36850.68
+    },
+    "3/2": {
+      "polygons": 428,
+      "area_um2": 51739.46
+    },
+    "8/1": {
+      "polygons": 952,
+      "area_um2": 80205.16
+    },
+    "140/0": {
+      "polygons": 4,
+      "area_um2": 241169.75999999998
+    },
+    "250/0": {
+      "polygons": 1,
+      "area_um2": 1581504.48
+    }
+  },
+  "ports_match_labels_and_metal": true,
+  "lvs": {
+    "matching_circuits": 23,
+    "ports": [
+      "b",
+      "clk",
+      "g",
+      "hsync",
+      "r",
+      "vdd",
+      "vss",
+      "vsync"
+    ],
+    "top_nets": 234,
+    "top_subcircuits": 325
+  },
+  "independent_artwork_and_raster_match": true,
+  "startup": {
+    "states": 131072,
+    "cycle_lengths": [
+      52500
+    ],
+    "max_ticks_to_cycle": 49928
+  }
+}

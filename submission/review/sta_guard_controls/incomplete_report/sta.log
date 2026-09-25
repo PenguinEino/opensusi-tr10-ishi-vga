@@ -1,0 +1,4 @@
+  設計の追加制約: clock_electrical.tcl
+  セル 20 種 / モジュール 1 個
+  -> out/STA_ishi_vga_core.txt
+STA guard: FAIL missing/duplicate GATE_BEGIN; missing/duplicate ELECTRICAL_BEGIN; missing/duplicate ELECTRICAL_END; missing/duplicate GATE_END; CLOCKS count mismatch; REG_CLOCKS count mismatch; REG_DATA count mismatch; missing/duplicate SETUP path; missing/duplicate HOLD path; missing/duplicate OUTPUT path

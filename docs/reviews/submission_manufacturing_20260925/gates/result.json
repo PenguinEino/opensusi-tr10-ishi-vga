@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "mode": "gates",
+  "checked_ticks": 105000,
+  "recorded_frame_ticks": 52500,
+  "initial_state": "zero, test fixture only"
+}

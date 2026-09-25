@@ -1,0 +1,14 @@
+{
+  "opens": [],
+  "missing": [],
+  "power_component_counts": {
+    "vss": 1,
+    "vdd": 1
+  },
+  "rail_signal_nets": {
+    "vss": [],
+    "vdd": []
+  },
+  "short_pairs": [],
+  "regenerated_independent_lvs_reference_matches": true
+}

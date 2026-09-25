@@ -57,5 +57,24 @@ ADOPTED = {'art': 'g_power', 'reference': 'experiments/a_metal_g_power',
            'clock_hz': 3150000, 'terminals_excluding_vss': 7,
            'target_bbox_um': [1800, 900], 'reset': False, 'ring': False,
            'frame_integration': False, 'rgb_bits': [1, 1, 1]}
-SPICE_CHECK = {'gds': 'release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds', 'gds_sha256': '3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e', 'top': 'ishi_vga_core', 'voltage_v': 5.0, 'temperature_c': 27, 'clock_hz': 3150000, 'clock_rise_ns': 2, 'max_step_ns': 1, 'output_load_pf': 1.0, 'extraction_combine': False, 'frame_integration': False, 'interconnect_rc': False}
+CLOCK_ECO = {
+    'source_gds': 'release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds',
+    'source_sha256': '3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e',
+    'placement': 'release/ishi_vga_grid_power_core/experiments/a_power_flex4/layout/placement.json',
+    'pins': 'release/ishi_vga_grid_power_core/experiments/a_power_flex4/build/audit/actual_pin_map.json',
+    'shapes': 'release/ishi_vga_grid_power_core/experiments/a_power_flex4/build/diagnostic_shapes.json',
+    'netlist': 'release/ishi_vga_grid_power_core/designs/grid_power/out/ishi_vga_core_pnr.v',
+    'replace_fillers': ['FILL_r0_23', 'FILL_r1_17', 'FILL_r2_15', 'FILL_r3_41'],
+    'remove_clock_boxes': [41,42,51,52,53,56,57,58,61,62,63,64],
+    'remove_clock_vias': [[224.1,66.8],[224.1,309.1],[159.3,309.1],[159.3,583.8],[175.5,583.8],[175.5,799.1],[866.7,799.1]],
+    'bounds_um': [-12.6, 3.6, 1774.8, 893.7],
+    'grid_um': 0.9,
+    'via_cost_steps': 12,
+    'max_expanded_nodes': 8000000,
+    'route_order': ['clk_row0','clk_row1','clk_row2','clk_row3','clk_buf'],
+    'buffer_cell': 'BUF_X2',
+    'target_size_um': [1800,900],
+}
+SPICE_CHECK = {'gds': 'experiments/a_clock_tree/build/candidate.gds', 'gds_sha256': '299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c', 'top': 'ishi_vga_core', 'voltage_v': 5.0, 'temperature_c': 27, 'clock_hz': 3150000, 'clock_rise_ns': 2, 'max_step_ns': 1, 'output_load_pf': 1.0, 'extraction_combine': False, 'frame_integration': False, 'interconnect_rc': False}
+STA_EXTRA_TCL = os.path.join(ROOT, 'clock_electrical.tcl')
 finalize(globals())

@@ -1,0 +1,2 @@
+PASS: all 131072 binary counter states; RTL/gates next-state and 5 outputs; 52500 raster reference states
+build/submission_review_20260925/tb_exhaustive.v:73: $finish called at 31457280000 (1ps)

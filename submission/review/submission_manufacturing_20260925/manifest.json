@@ -1,0 +1,72 @@
+{
+  "review_date": "2026-09-25",
+  "scope": "submission as prospective manufacturing deliverable; design unchanged",
+  "submission_manifest_sha256": "96bdc4c6b83d5897faae4dacc655521eccb0fdae85942f0e51505179ace87c5c",
+  "submission_gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "pdk_dev_remote": "f408d3b5c23a8ebe44f02b0482a9270601e2880f\trefs/heads/dev",
+  "organizer_template_main_remote": "f09b35f66d71f979bfad0d50c863bb0b3e066e9a\trefs/heads/main",
+  "dependency_lock_sha256": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+  "archived_evidence": {
+    "audit_static.py": "144a6ce4c09a5ad8b9ee2c52a2f64afd244d76ffbae27b4a072f247e42135f3c",
+    "connectivity.log": "adfc6d196baec83a21d8dd7e0e9b7e1c4703a73f0e1cc00831c73d5cc085b694",
+    "drc.log": "26e4ffe3f0d73bb701655c301fc5f178404d5f1b1c0bc00b5f507543531fb207",
+    "electrical.tcl": "59ae4e3c6b3cc41f9c99162f57a298eaf8823ebd035561058e837324b1c974ed",
+    "exhaustive.log": "817b63842e79eee563826d5554d54a3839e5f8bcc5eb904f746b9e8e93116db1",
+    "extract.log": "7dd3edeebad8428688ff1ff6aa22f612a820a72e30fdb791f301108a111197c6",
+    "gates/result.json": "9b0540b4dd320df003b2633262ba9fd74cfe8a1df5d431e7094353a6f122096a",
+    "lvs.log": "8f64ffd670f1d6bdf67f75d6dcc403522a42fbf7dfed3ef76213a3dc202db158",
+    "prepare_checks.py": "4e3e7f3697c4761cb5c23e8cc417bd32b67d4d27a77a6147d56651735a9184a6",
+    "rails_and_reference.json": "ae1524f0d0c0cb5a4b108115c8f1b89dee36325252da234f56e09bd719218b93",
+    "reference.log": "3cf01a148fbcdf2dce5a7f670592c61e16bfd08623863b036ce821d1b9a17f5a",
+    "rtl/result.json": "5acc0f39ed1d82c980a86707d3d8853357e2c78ad686e0cc31f418f5068e2324",
+    "saved_spice.log": "ea80fe6f6b7ad6619ce7f62d811a8e794d22ee027236708441db82b4e4c91897",
+    "spice_powerup/result.json": "4f3154567e75ff55e12dffd39586e520686cbdcb93039c3d0583287e66c7a62b",
+    "sta_electrical.log": "46e902136a92b32ffc72b914fdff61265f1f19c2d6a8019a319ea7e2c0fa539e",
+    "sta_negative/bad_report.tcl": "e798129a732c927b4d4bb7d45b745a6413908e4239bf4ecd1534795975e1aafd",
+    "sta_negative/result.json": "dfd92c32a4b341f1a017beb65ba870e89e1767d1012cfd4fc177abcada4bccb8",
+    "sta_negative/run.log": "0788ffb38fff7c8f0308e934880067ed78b33d5eb6bc6fd9a48b51bfe7b4947f",
+    "sta_original.log": "e84b30be518c9f450c3ae42b24a6578034be8786f92e341f5e4734d76e15c008",
+    "static_audit.json": "8b66027a2cc50a6f303e792d614328979dbabe185d8755e228cd3fdea3e354a1",
+    "tb_exhaustive.v": "28efb82477fc3db7df1d7dc06e4a4982954430b465a62fd9900a33ed37ce751e"
+  },
+  "generated_raw_evidence": {
+    "build/submission_review_20260925/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "build/submission_review_20260925/ishi_vga_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "build/submission_review_20260925/core.lvsdb": "f9f105cf57254a5c3815b8096eed044e58192eef23ad4b669d753ad531ce7aef",
+    "build/submission_review_20260925/freshly.extracted": "ebf79c59fa408fb2fa61e9caa093490649816339abe6abff8053c6e8e6e2b784",
+    "build/submission_review_20260925/ishi_vga_mdp.gds": "f6fc170da8db421b30ce051c8b7bbb407641be9bfe40fb8ef9341370dfa7d0e4",
+    "build/submission_review_20260925/spice_powerup/simulation/powerup/wave.raw": "ae2900728bddf47d3febe8d126d563fa44cf842437336430eaa7bc6c65282bd3",
+    "build/submission_review_20260925/connectivity/metal_connectivity.json": "524e4c10f596c65949bb1b1d321eaa4881dda26a61a86ec791cf53befa9a6316"
+  },
+  "findings": [
+    {
+      "id": "MFG-001",
+      "priority": "P1",
+      "kind": "new",
+      "title": "Clock BUFTH pin load exceeds characterized Liberty limit",
+      "actual_ff_pin_load_ff": 1312.0140000000001,
+      "max_capacitance_ff": 800,
+      "observed_sta_violation": true
+    },
+    {
+      "id": "MFG-002",
+      "priority": "P1",
+      "kind": "known manufacturing prerequisite",
+      "title": "Unintegrated frame, pads, ESD and organizer interface; WAR06 remains"
+    },
+    {
+      "id": "MFG-003",
+      "priority": "P1",
+      "kind": "known signoff gap",
+      "title": "No routed RC/PVT/power and finalized IO load signoff"
+    },
+    {
+      "id": "MFG-004",
+      "priority": "P2",
+      "kind": "new test-infrastructure weakness",
+      "title": "STA reports success process status after deliberate Tcl error",
+      "negative_control_exit_code": 0
+    }
+  ],
+  "verdict": "NO_GO_for_direct_manufacture; binary logic and core connectivity checks pass; fix or substantiate electrical violation before signoff"
+}

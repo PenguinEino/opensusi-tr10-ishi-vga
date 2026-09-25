@@ -12,10 +12,11 @@ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def main():
     verify();d=ROOT/'designs/grid_power';b=d/'build';b.mkdir(exist_ok=True)
-    source=ROOT/'experiments/a_metal_g_power'
+    source=ROOT/'release/ishi_vga_grid_power_core/designs/grid_power'
     fixed=['ishi_logo.v','ishi_vga_core.v','out/ishi_vga_core_pnr.v','tests/expected_frame.hex',
            'tests/tb_rtl.v','tests/tb_gates.v','build/tr1um_cells.v']
-    assert all(sha(d/f)==sha(source/f) for f in fixed)
+    assert all(sha(d/f)==sha(source/f) for f in fixed if f!='out/ishi_vga_core_pnr.v')
+    assert sha(d/'out/ishi_vga_core_pnr.v')==sha(ROOT/'submission/source/ishi_vga_core_pnr.v')
     logs={}
     for kind,files in [('rtl',['ishi_vga_core.v','ishi_logo.v']),
                        ('gates',['out/ishi_vga_core_pnr.v','build/tr1um_cells.v'])]:
@@ -42,7 +43,7 @@ def main():
             path=path[:i]
         for state in reversed(path):distance[state]=distance[step(state)]+1
     assert cycles==[52500] and max(distance)<=50029
-    result={'status':'PASS','adopted_artwork_and_netlist_byte_identical':True,'frame_tests':logs,
+    result={'status':'PASS','adopted_rtl_and_artwork_byte_identical':True,'gate_netlist':'four row clock buffers added; data logic preserved','frame_tests':logs,
             'startup_model':{'binary_counter_states':count,'cycles_ticks':cycles,
                              'max_ticks_into_cycle':max(distance),'clock_hz':3150000},
             'limitations':'Frame tests initialize FFs in fixture only; unit-delay gates; startup graph is a two-state model, not analog or RTL formal proof.',

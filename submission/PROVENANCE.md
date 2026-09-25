@@ -1,9 +1,9 @@
 # 由来・固定版
 
 - 現採用図案：`g_power`（格子＋電源枝5本）。旧A／B案とは別。
-- 最終GDS：`experiments/a_power_escape/build/candidate.gds` とバイト一致。
-- SHA256：`3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e`。
-- 論理：`designs/grid_power/`。RTL、合成後ゲート回路、参照フレームを変更せず複写。
+- 最終GDS：`experiments/a_clock_tree/build/candidate.gds` とバイト一致。
+- SHA256：`299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c`。
+- 論理：`designs/grid_power/`。RTLと参照フレームは不変。合成後ゲート回路に4個のクロック分岐BUF_X2を追加し、各行のDFFのCK接続を変更。
 - スタンダードセル：岡村氏の [TR-1um_APRtools](https://github.com/jun1okamura/TR-1um_APRtools)、コミット `8f6962bf2df1618d633f8a81c230fec895fc83aa` のv59_4。
 - PDKとSPICEモデル：[OpenSUSI/TR-1um](https://github.com/OpenSUSI/TR-1um)、コミット `f408d3b5c23a8ebe44f02b0482a9270601e2880f`。
 - 固定資産・許可した5ファイルのPCell lookupパッチ：[toolchain.lock.json](toolchain.lock.json)。リングの資産も履歴上ロックに含まれますが、今回の回路にリングはありません。
@@ -12,7 +12,7 @@
 
 ## 抽出経路
 
-固定版 `apr/klayout_extract.py --no-combine` で最終GDSから直接抽出。`gen_chip_sim_ready.py` の識別子変換関数のみをimportして、全接続と素子パラメータの保持、識別子衝突0を確認しました。抽出は1774素子、配線RCのPEXではありません。
+固定版 `apr/klayout_extract.py --no-combine` で最終GDSから直接抽出。`gen_chip_sim_ready.py` の識別子変換関数のみをimportして、全接続と素子パラメータの保持、識別子衝突0を確認しました。抽出は1790素子、配線RCのPEXではありません。
 
 固定版のガイドは `gen_chip_sim_ready.py` のmainを紹介しますが、そのmainは抽出器へ `--no-combine` を渡しません。改善台帳U96と特性化コードを優先して明示的な抽出経路を選択しました。並列MOSをまとめるとBSIM3の狭幅項等が変わるためです。上流コードは追加編集していません。
 

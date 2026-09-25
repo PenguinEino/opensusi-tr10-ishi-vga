@@ -35,6 +35,11 @@ def check(path, case, expected_path):
     outputs = bits[:, 1:6] @ np.array([4, 2, 1, 8, 16])
     expected = np.array([int(x, 16) for x in Path(expected_path).read_text().split()])
     assert len(expected) == 52500
+    state_reference=None
+    if case.get('binary_state_reference'):
+        state_reference=np.array([int(x,16) for x in (Path(expected_path).parent/case['binary_state_reference']).read_text().split()])
+        assert len(state_reference)==131072
+    raster_checked=0
     ph, pv = (int(h[first - 1]), int(v[first - 1])) if first else (case['h'], case['v'])
     checked = 0
     for i in range(first, case['ticks']):
@@ -42,10 +47,14 @@ def check(path, case, expected_path):
                   if ph == 100 else ((ph - 1) % 128, pv))
         assert (int(h[i]), int(v[i])) == (nh, nv), ('counter', i, h[i], v[i], nh, nv)
         x, y = (71 - ph) % 128, (pv - 500) % 1024
-        assert x < 100 and y < 525, ('outside specified raster', i, x, y)
-        assert outputs[i] == expected[y * 100 + x], ('output', i, outputs[i], expected[y * 100 + x])
+        in_raster=x<100 and y<525
+        raster_checked+=int(in_raster)
+        assert in_raster or state_reference is not None, ('outside specified raster', i, x, y)
+        ref=state_reference[(pv<<7)|ph] if state_reference is not None else expected[y*100+x]
+        assert outputs[i] == ref, ('output', i, outputs[i], ref)
         checked += 1
         ph, pv = int(h[i]), int(v[i])
     assert checked == case['ticks'] - first
     return {'status': 'PASS', 'cycles_checked': checked, 'counter_bits': 17, 'output_bits': 5,
+            'raster_cycles_checked': raster_checked,
             'scope': 'selected transient window; no wire RC', 'sample_offset_ns': 150}

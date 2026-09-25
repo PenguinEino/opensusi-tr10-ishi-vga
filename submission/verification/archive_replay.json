@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "byte-identical clock ECO, fresh drawing/MDP/strict LVS/guarded cell STA; no frame or wire RC",
+  "gds_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+  "drawing_drc": 0,
+  "mask_warnings": 1,
+  "hashes": {
+    "build/portable_replay/config.py": "b8248a665d6252dcc22ec9c8f7a949c265ffb228427e195108c847141f1f96c0",
+    "build/portable_replay/build/candidate.gds": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+    "build/portable_replay/build/drawing.lyrdb": "9dd63588eac9bb9213ffc8ac38b7a6f80a07345735eac726229ded33cb4c3621",
+    "build/portable_replay/build/core.lvsdb": "e8784bdf2816a3ec881b06d4bd2f0a833bc63e393a6ffe18baeca28d9fda7a13",
+    "build/portable_replay/out/STA_ishi_vga_core.guard.json": "a9b62556a79f5a57112e47520e8003bf53b0b4e2444a16bf2427bf585cfeae04",
+    "scripts/replay_clock_core.py": "74ea531281e0072da81b87c1f14fd528e04ef3d32fd53321e7e15a93adfd98f5"
+  }
+}

@@ -1,6 +1,6 @@
 LVS: build/candidate.gds  top=ishi_vga_core
   KLayout 0.30.9 / デッキ /home/ishi-kai/ishi-vga/tools/TR-1um/libs.tech/klayout/tech/lvs
-  ソース  /home/ishi-kai/ishi-vga/experiments/a_power_flex4/build/ishi_vga_core.spice
+  ソース  build/ishi_vga_core.spice
 
   Setting running mode => deep
   Starting TR-1um LVS Comparison in strict port mode
@@ -9,4 +9,4 @@ LVS: build/candidate.gds  top=ishi_vga_core
   INFO : Congratulations! Netlists match.
   ==========================================
 
-  レポート build/core.lvsdb（373 KB）
+  レポート build/core.lvsdb（374 KB）

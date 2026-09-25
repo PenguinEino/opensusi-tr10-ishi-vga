@@ -1,7 +1,7 @@
 """Adopted grid+five power branches: 7 terminals excluding shared VSS.
 
 This is the current logical design. Archived physical checkpoints and the
-final signed-off core are documented in docs/POWER_GRID_IMPLEMENTATION.md.
+current verified core are documented in docs/POWER_GRID_IMPLEMENTATION.md.
 No package pad numbers are assigned while organizer frame integration waits.
 """
 from config_base import *
@@ -57,4 +57,7 @@ ADOPTED = {'art': 'g_power', 'reference': 'experiments/a_metal_g_power',
            'clock_hz': 3150000, 'terminals_excluding_vss': 7,
            'target_bbox_um': [1800, 900], 'reset': False, 'ring': False,
            'frame_integration': False, 'rgb_bits': [1, 1, 1]}
+# Current physical implementation adds four row buffers after mapping.
+# Reproduce with scripts/replay_clock_core.py and experiments/a_clock_tree/config.py.
+STA_EXTRA_TCL = os.path.join(ROOT, 'clock_electrical.tcl')
 finalize(globals())

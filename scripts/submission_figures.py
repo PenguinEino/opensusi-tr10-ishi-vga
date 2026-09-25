@@ -21,7 +21,7 @@ from matplotlib.collections import PatchCollection
 from matplotlib.patches import Polygon, Rectangle, FancyBboxPatch, FancyArrowPatch
 
 ROOT = Path(__file__).resolve().parents[1]
-GDS_SHA = '3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e'
+GDS_SHA = '299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c'
 INK = '#17324d'
 M1, M2, RED = '#477cab', '#c89434', '#c42b36'
 
@@ -171,7 +171,7 @@ def blocks(out):
     arrow(2.3, 1.15, 2.3, 2.15, clock, 2.4)
     arrow(12.2, 1.15, 12.2, 2.15, clock, 2.4)
     ax.plot(2.3, 1.15, 'o', color=clock, ms=5)
-    text(7.35, 1.43, 'すべてのカウンタ・出力FFに共通のクロック', 12, color=clock)
+    text(7.35, 1.43, 'BUFTH → 4分岐バッファ → 各行のFF', 12, color=clock)
     text(8, .28, '640 × 480 / 60 Hz相当     •     RGB111     •     RESETなし・リング発振器なし', 14, color='#566b80')
     fig.savefig(out / 'ishi_vga_blocks.svg', bbox_inches='tight', pad_inches=.16,
                 metadata={'Date': None, 'Creator': 'ISHI VGA submission_figures.py'})

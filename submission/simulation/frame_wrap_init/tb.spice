@@ -12,22 +12,22 @@ C_b b 0 1.0p
 C_hsync hsync 0 1.0p
 C_vsync vsync 0 1.0p
 .ic v(xdut.n20)=5 v(xdut.n23)=0
-.ic v(xdut.n172)=5 v(xdut.n298)=0
+.ic v(xdut.n171)=5 v(xdut.n298)=0
 .ic v(xdut.n7)=5 v(xdut.n323)=0
-.ic v(xdut.n65)=0 v(xdut.n265)=5
-.ic v(xdut.n210)=0 v(xdut.nI1422)=5
-.ic v(xdut.n18)=5 v(xdut.nI1429)=0
-.ic v(xdut.n198)=5 v(xdut.n229)=0
-.ic v(xdut.n984)=5 v(xdut.n690)=0
-.ic v(xdut.n990)=5 v(xdut.nI1431)=0
-.ic v(xdut.n767)=5 v(xdut.nI1432)=0
-.ic v(xdut.n779)=5 v(xdut.nI1421)=0
-.ic v(xdut.n795)=5 v(xdut.nI1426)=0
-.ic v(xdut.n528)=5 v(xdut.nI1424)=0
-.ic v(xdut.n577)=5 v(xdut.n244)=0
-.ic v(xdut.n529)=5 v(xdut.n366)=0
-.ic v(xdut.n647)=5 v(xdut.nI1417)=0
-.ic v(xdut.n1000)=5 v(xdut.n818)=0
-.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n172) v(xdut.n7) v(xdut.n65) v(xdut.n210) v(xdut.n18) v(xdut.n198) v(xdut.n984) v(xdut.n990) v(xdut.n767) v(xdut.n779) v(xdut.n795) v(xdut.n528) v(xdut.n577) v(xdut.n529) v(xdut.n647) v(xdut.n1000)
+.ic v(xdut.n65)=0 v(xdut.n275)=5
+.ic v(xdut.n209)=0 v(xdut.nI1415)=5
+.ic v(xdut.n18)=5 v(xdut.nI1430)=0
+.ic v(xdut.n188)=5 v(xdut.n214)=0
+.ic v(xdut.n980)=5 v(xdut.n713)=0
+.ic v(xdut.n986)=5 v(xdut.nI1424)=0
+.ic v(xdut.n791)=5 v(xdut.nI1423)=0
+.ic v(xdut.n797)=5 v(xdut.nI1413)=0
+.ic v(xdut.n835)=5 v(xdut.nI1416)=0
+.ic v(xdut.n518)=5 v(xdut.nI1419)=0
+.ic v(xdut.n548)=5 v(xdut.n245)=0
+.ic v(xdut.n520)=5 v(xdut.n519)=0
+.ic v(xdut.n658)=5 v(xdut.nI1429)=0
+.ic v(xdut.n1010)=5 v(xdut.n837)=0
+.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n171) v(xdut.n7) v(xdut.n65) v(xdut.n209) v(xdut.n18) v(xdut.n188) v(xdut.n980) v(xdut.n986) v(xdut.n791) v(xdut.n797) v(xdut.n835) v(xdut.n518) v(xdut.n548) v(xdut.n520) v(xdut.n658) v(xdut.n1010)
 .tran 1n 36120.634920634919n 0 1n
 .end
