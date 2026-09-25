@@ -28,3 +28,7 @@ designs/grid_power/build/*
 !designs/grid_power/build/observed.hex
 !designs/grid_power/build/rtl.log
 !designs/grid_power/build/gates.log
+
+# Frozen STA controls include their output guard JSON as submission evidence.
+!submission/review/sta_guard_controls/**/
+!submission/review/sta_guard_controls/**

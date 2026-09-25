@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "failures": [
+    "reported constraint violation"
+  ],
+  "expected_registers": 22,
+  "slack_ns": {
+    "setup": 275.598969,
+    "hold": 6.748887,
+    "output": 240.218872
+  },
+  "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+}
