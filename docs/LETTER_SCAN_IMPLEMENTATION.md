@@ -8,7 +8,7 @@
 - [コアRTL](../experiments/a_letter_scan_eco/ishi_vga_core.v)・[実行設定](../experiments/a_letter_scan_eco/config.py)
 - [FPGAの書き込み記録](FPGA_ANIMATION_20260925.md)
 
-最終提出物には左側中央の空きスペースに名前とペンギンを追加しました。[装飾工程・再現手順](submission/SILICON_ART.md)と[提出レビュー](submission/REVIEW.md)を参照してください。設定は `experiments/a_letter_silicon_art/config.py`、装飾後のSPICEは `experiments/letter_art_spice` です。以下の回路・STA結果は、装飾前後の全機能図形・抽出回路の同一性を検査して継承しています。`release/ishi_vga_letter_scan_core` は装飾前のチェックポイントとして保持しています。
+[装飾工程・再現手順](submission/SILICON_ART.md)と[提出レビュー](submission/REVIEW.md)を参照してください。設定は `experiments/a_letter_silicon_art/config.py`、装飾後のSPICEは `experiments/letter_art_spice` です。以下の回路・STA結果は、装飾前後の全機能図形・抽出回路の同一性を検査して継承しています。`release/ishi_vga_letter_scan_core` は装飾前のチェックポイントとして保持しています。
 
 ## 実装と検証
 

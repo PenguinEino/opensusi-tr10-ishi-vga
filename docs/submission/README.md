@@ -32,13 +32,11 @@ Tang Primer 20K＋抵抗DACでの実機動画。横向きに回転した[MP4](..
 
 ## レイアウト・構成
 
-統合時のトップセルは **`ishi_vga_core`** です。左側中央に [名前とペンギン](SILICON_ART.md) をM1で配置しています。
+統合時のトップセルは **`ishi_vga_core`** です。
 
-<img src="../../submission/silicon_art.png" alt="左側中央のEINOSUKE OKAZAKIとペンギン、および実メタル全体図" width="900">
+<img src="../../submission/silicon_art.png" alt="最終GDSのメタル全体図と拡大図" width="900">
 
-名前・ペンギンを含む最終GDSの全レイヤー表示。
-
-<img src="../../submission/layout.png" alt="左側中央に名前とペンギンを配置した最終GDSの全体レイアウト" width="900">
+<img src="../../submission/layout.png" alt="最終GDSの全体レイアウト" width="900">
 
 <img src="../../submission/ishi_vga_blocks.png" alt="走査カウンタ、発光カウンタ、ロゴ描画、出力レジスタのブロック図" width="900">
 

@@ -252,7 +252,7 @@
     },
     "README.md": {
       "path": "docs/submission/README.md",
-      "sha256": "d30e59b3a9403ed3449ff00fdddb74e07a14edab7c474e27892616e149060095",
+      "sha256": "75639c35903acfe1272f90965fda17f772e554be75846a803ab312a113a29d6b",
       "transform": "resolve docs-template submission links to bundle-relative paths"
     },
     "SPEC.md": {
@@ -277,12 +277,12 @@
     },
     "REVIEW.md": {
       "path": "docs/submission/REVIEW.md",
-      "sha256": "ed8d59b3010d6d5cbcdb97b92560d877f6210fc98de50bbd2cba8bc30f4496c8",
+      "sha256": "81e5d60cc60dbfa0c58ed5ef464053a5abc252b3e10f8398915f9b953f74ca6a",
       "transform": "resolve docs-template submission links to bundle-relative paths"
     },
     "SILICON_ART.md": {
       "path": "docs/submission/SILICON_ART.md",
-      "sha256": "8dd623768a4b85029ee6e8dbcd8fbaba11c56ca65a3181bbef302aff349168d8",
+      "sha256": "c1ced6d29ec351d4a6cb739d41f54bc3433ce7bea69fc2b4fab63e9b04e98c89",
       "transform": "resolve docs-template submission links to bundle-relative paths"
     },
     "simulation/core_sim.spice": {
@@ -988,10 +988,10 @@
   },
   "files": {
     "PROVENANCE.md": "9182704f1549257a32c1ae7e2e1478db648e43cb54186a7b4fa02e0ea18d38b0",
-    "README.md": "5503105620f3518b8c802b6226923cb0c48f48e5dfb5f2e7a28776073b78bab5",
+    "README.md": "2918845969a4fb98fb5486cacb74cd7e4e5dd990dccc66795f556b97d7e8d550",
     "REPRODUCE.md": "beeff1340143eb7cff69b4a5b9567d7c19eca613fcb72277b9770536b813344a",
-    "REVIEW.md": "a56ede2d0541b49836aab1b3e9e63e6a0d4651c849b69835c66d198ab709b7e0",
-    "SILICON_ART.md": "47e72073564eb250779516b6d6fd30547f3f89ae458c39a9431528cbc0ec237c",
+    "REVIEW.md": "f835299a16b038f80814d8e8cd321a17b2283652d47341d32d58c7f2a7987d04",
+    "SILICON_ART.md": "05d1d4f73dfd3ea5016ce1416f06664e8932e80f4e7b288d4da058ec09db74e3",
     "SPEC.md": "4a5796cf679404fa465b6a5cc37b8f3bfe8583782eba6f48b45cef6fe7e9d8fb",
     "SPICE.md": "b1a36b970153e242810927696bbb5fa93f9a0aa64744aa61ad24535711b4c3f6",
     "animation.gif": "c0502327422b51e02ffa9a1093aeed6e49f337f8702c7c7f86751617a92f2f3d",

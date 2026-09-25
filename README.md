@@ -24,10 +24,10 @@ Tang Primer 20K＋抵抗DACでの実機動画（2026-09-25）。[MP4](submission
 
 <img src="submission/animation.gif" alt="I、S、H、Iの順に点灯し、元のロゴへ戻る" width="640">
 
-提出GDSのレイアウト。左側中央に名前とペンギンを配置しています。
+提出GDSのレイアウト。
 
-<img src="submission/layout.png" alt="左側中央にEINOSUKE OKAZAKIとペンギンを配置した最終GDSの全体レイアウト" width="900">
+<img src="submission/layout.png" alt="最終GDSの全体レイアウト" width="900">
 
-<img src="submission/silicon_art.png" alt="名前とペンギンの拡大図、および最終GDSのメタル全体図" width="900">
+<img src="submission/silicon_art.png" alt="最終GDSのメタル全体図と拡大図" width="900">
 
-[装飾の詳細](submission/SILICON_ART.md) · [端子位置の拡大図](submission/ishi_vga_pins.png)
+[端子位置の拡大図](submission/ishi_vga_pins.png)
