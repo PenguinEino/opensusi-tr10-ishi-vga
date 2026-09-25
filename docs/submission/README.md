@@ -41,9 +41,13 @@ GDSを統合するときは **`ishi_vga_core` だけを明示して配置**し�
 
 ## 表示画像・レイアウト
 
-![合成後ゲートシミュレーションの観測フレームから生成した画像](ishi_vga_output.png)
+Tang Primer 20K＋抵抗DACでのVGA実機表示（2026-09-25）。利用者提供の写真を反時計回りに90°回転して掲載しています。
 
-上図は保存済みゲートシミュレーションの `observed.hex` から生成した640×480画像です。ngspiceや実モニタの画像ではありません。
+<img src="ishi_vga_fpga_photo.png" alt="Tang Primer 20KからVGAモニタへ出力したISHI会ロゴの実機写真" width="640">
+
+ゲートシミュレーションで観測した表示画像。保存済みの `observed.hex` から生成した640×480画像です。
+
+<img src="ishi_vga_output.png" alt="合成後ゲートシミュレーションの観測フレーム" width="640">
 
 ![最終GDSのレイアウト](ishi_vga_layout.png)
 

@@ -1,12 +1,13 @@
 {
   "directory": "submission",
-  "manifest_sha256": "bcc7061252b9b4e043ae62bd0e1ce0e38181153f7241a50b4625b70baedbecee",
+  "manifest_sha256": "659da699b29069a4990e3e49de7766cc60f51844c12722687050c14a57d686fc",
   "gds_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
-  "file_count": 158,
+  "file_count": 159,
   "review_status": "MFG001_KNOWN_PIN_CAP_FIXED_MFG004_FIXED_MFG002_MFG003_OPEN",
   "manufacturing_ready": false,
   "independent_rereview_of_eco": false,
   "response_sha256": "a9cba40aabdb527b5b76dd6b57b39403d8c6aebcb211ba101175760e27604086",
   "portability_sha256": "be397cad26f69cb0f12978f4996f1c13aaaa01888f82019cd726814509fe16bb",
-  "previous_gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e"
+  "previous_gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "presentation_update": "FPGA photo rotated 90 degrees counterclockwise; photo and gate observation displayed inline in both READMEs; circuit and test evidence unchanged"
 }

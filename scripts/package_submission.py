@@ -84,6 +84,7 @@ def main():
         sources[dst] = {'path': src, 'sha256': sha(source), 'transform': 'none'}
     copy('experiments/a_clock_tree/build/candidate.gds','ishi_vga.gds')
     copy('experiments/a_clock_tree/build/core.extracted', 'ishi_vga.extracted')
+    copy('docs/images/fpga-vga-monitor-20260925.png', 'ishi_vga_fpga_photo.png')
     copy('release/ishi_vga_grid_power_core/ports.json', 'ports.json')
     copy('toolchain.lock.json', 'toolchain.lock.json')
     copy('scripts/package_submission.py', 'reproduce/package_submission.py')
