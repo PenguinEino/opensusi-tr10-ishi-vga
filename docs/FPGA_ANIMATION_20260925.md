@@ -20,7 +20,7 @@ bash scripts/fpga_loader.sh -b tangprimer20k -m build/fpga_vga_letter_animation/
 - FPGA専用のresetや初期値はコアへ追加していません。
 - Flashへの書き込みは行っていません。
 
-書き込みログ・入力ハッシュ・ビットストリームは [引き渡しフォルダ](../release/ishi_vga_letter_scan_core/README.md) に保存します。画面の5段階の見え方は、利用者へ確認しています。
+書き込みログ・入力ハッシュ・ビットストリームは [引き渡しフォルダ](../release/ishi_vga_letter_scan_core/README.md) に保存しています。書き込み後、利用者から「5段階で動いている」と回答があり、実機モニタで **I → S → H → I → 発光なし** の動作を確認済みです。
 
 ## 先に試した配線発光版
 
