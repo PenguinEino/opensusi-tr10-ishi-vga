@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "byte-identical GDS, fresh DRC/LVS/STA, 80 continuous RTL/gate frames",
+  "gds_sha256": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121",
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "hashes": {
+    "scripts/replay_letter_animation_core.py": "f08f8d0b18ad1b907b6569bf7111910b3053262f795776941824866c3ac34dfc",
+    "build/letter_animation_core_final_replay/config.py": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148",
+    "build/letter_animation_core_final_replay/build/candidate.gds": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121",
+    "build/letter_animation_core_final_replay/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "build/letter_animation_core_final_replay/build/core.lvsdb": "e9339389a4a4b51c4f9cf362a068602ae19814c5127e9a856356c2c0c986fbba",
+    "build/letter_animation_core_final_replay/out/STA_ishi_vga_core.guard.json": "bc3e0ba08609aa4e9a0664c3c6f5b76527eae4d982caaf878b4296054ebeb4cb",
+    "build/letter_animation_core_final_replay/build/functional/verification.json": "ec17a1ba3ce3be7f4fc37585f1d78d37f90ca38b76a740f5fdecf9d82a897c43"
+  }
+}

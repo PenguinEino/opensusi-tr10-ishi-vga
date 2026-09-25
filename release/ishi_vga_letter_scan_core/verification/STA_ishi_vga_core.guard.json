@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "expected_registers": 29,
+  "slack_ns": {
+    "setup": 274.527252,
+    "hold": 6.686719,
+    "output": 241.365341
+  },
+  "scope": "propagated cell clocks, pin capacitance, no wire RC unless explicitly supplied"
+}

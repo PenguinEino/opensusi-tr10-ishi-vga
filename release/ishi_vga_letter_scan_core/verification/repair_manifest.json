@@ -1,0 +1,73 @@
+{
+  "status": "CONNECTED_NOT_SIGNED_OFF",
+  "source_sha256": "434e7f9ff963727f4480ec907135a1d3dd3baba6d86866bdbbe2c11b38126206",
+  "gds_sha256": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121",
+  "changes": {
+    "remove_boxes": [
+      [
+        "M2",
+        410.5,
+        372.7,
+        413.9,
+        648.8
+      ]
+    ],
+    "add_boxes": [
+      [
+        "M2",
+        410.5,
+        372.7,
+        413.9,
+        644.9
+      ],
+      [
+        "M2",
+        411.4,
+        641.5,
+        414.8,
+        648.8
+      ],
+      [
+        "M2",
+        410.5,
+        641.5,
+        414.8,
+        644.9
+      ],
+      [
+        "M1",
+        396.0,
+        823.0,
+        398.7,
+        826.2
+      ],
+      [
+        "M1",
+        1497.6,
+        814.2,
+        1500.6,
+        817.2
+      ],
+      [
+        "M1",
+        489.6,
+        687.6,
+        491.3,
+        688.6
+      ],
+      [
+        "M1",
+        474.8,
+        820.4,
+        488.6,
+        821.7
+      ]
+    ]
+  },
+  "hashes": {
+    "build/letter_animation_core_final_replay/build/candidate_unrepaired.gds": "434e7f9ff963727f4480ec907135a1d3dd3baba6d86866bdbbe2c11b38126206",
+    "build/letter_animation_core_final_replay/config.py": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148",
+    "scripts/repair_letter_animation_drc.py": "5199553283334c648292b89bcdb5daef3ed9ae1f6c3ebe575f39f48951a45f38",
+    "build/letter_animation_core_final_replay/layout/placement.json": "738ed4ac9c0b15dd33dc763400eb2b2b1676d42ab15354dcca115d34a28cd32d"
+  }
+}

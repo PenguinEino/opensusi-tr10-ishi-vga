@@ -1,0 +1,38 @@
+[
+  [
+    "/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/bin/yosys",
+    "-p",
+    "read_verilog fpga/tang_primer_20k/ishi_vga_tang_top.v fpga/tang_primer_20k/gowin_pll_315.v experiments/a_letter_scan_eco/ishi_vga_core.v experiments/a_letter_scan_eco/ishi_logo.v; synth_gowin -top ishi_vga_tang_top -family gw2a -json /home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/synth.json"
+  ],
+  [
+    "/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/bin/nextpnr-himbaechel",
+    "--json",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/synth.json",
+    "--write",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/pnr.json",
+    "--device",
+    "GW2A-LV18PG256C8/I7",
+    "--vopt",
+    "family=GW2A-18",
+    "--vopt",
+    "cst=fpga/tang_primer_20k/ishi_vga_tang.cst",
+    "--seed",
+    "1",
+    "--freq",
+    "27",
+    "--sdc",
+    "fpga/tang_primer_20k/nextpnr.sdc",
+    "--report",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/timing.json"
+  ],
+  [
+    "/home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/bin/gowin_pack",
+    "-c",
+    "-d",
+    "GW2A-18",
+    "--sspi_as_gpio",
+    "-o",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/vga_letter_animation.fs",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/pnr.json"
+  ]
+]

@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "status": "LETTER_ANIMATION_CORE_HANDOFF",
+  "top": "ishi_vga_core",
+  "gds_sha256": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121",
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "clock_hz": 3150000,
+  "terminals_excluding_common_vss": 7,
+  "frame_integrated": false,
+  "drawing_drc": 0,
+  "mask_warnings": 1,
+  "strict_lvs": "PASS",
+  "logical_cells": 247,
+  "dffs": 29,
+  "stages": [
+    "I",
+    "S",
+    "H",
+    "I",
+    "idle"
+  ],
+  "frames_per_stage": 16,
+  "rtl_gate_ticks": 4200000,
+  "fpga_programmed_mode": "SRAM",
+  "interconnect_rc": false,
+  "sources": {
+    "ishi_vga.gds": {
+      "path": "build/letter_animation_core_final_replay/build/candidate.gds",
+      "sha256": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121"
+    },
+    "ishi_vga.extracted": {
+      "path": "build/letter_animation_core_final_replay/build/core.extracted",
+      "sha256": "053a852c1ab2cc12584a0044e265efcc6f24c81a374f6782470848332b25452f"
+    },
+    "ishi_vga_lvs.spice": {
+      "path": "build/letter_animation_core_final_replay/build/ishi_vga_core.spice",
+      "sha256": "b7aedd27987ceb4309c367d657f3ba699911b0ea5c16aa58bd62da3842aaa35f"
+    },
+    "ports.json": {
+      "path": "submission/ports.json",
+      "sha256": "10420df273b260d0f90e29265c513637175072bd507137a0607a1840d0efebd3"
+    },
+    "toolchain.lock.json": {
+      "path": "toolchain.lock.json",
+      "sha256": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f"
+    },
+    "tools/verify_bundle.py": {
+      "path": "submission/tools/verify_bundle.py",
+      "sha256": "ea25a77e0243178c991edb0f22f30767c0fc9efe4b321a8abd7e744683912b23"
+    },
+    "reproduce/package_letter_animation_core.py": {
+      "path": "scripts/package_letter_animation_core.py",
+      "sha256": "e8821bec67698834c1741629b3ef1d7cab4e89d176ee912ae07d41210393af2f"
+    },
+    "source/ishi_vga_core.v": {
+      "path": "build/letter_animation_core_final_replay/ishi_vga_core.v",
+      "sha256": "a961895d09bf3c615ef1d878551301b04af31f2cb51e0ec77c9c7decea67be6e"
+    },
+    "source/ishi_logo.v": {
+      "path": "build/letter_animation_core_final_replay/ishi_logo.v",
+      "sha256": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb"
+    },
+    "source/config.py": {
+      "path": "build/letter_animation_core_final_replay/config.py",
+      "sha256": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148"
+    },
+    "source/clock_electrical.tcl": {
+      "path": "build/letter_animation_core_final_replay/clock_electrical.tcl",
+      "sha256": "b6e48c660f460d6ae98e73495f1ab79c07ac6a89f4703f39b7da434851130d63"
+    },
+    "source/clock_report.tcl": {
+      "path": "build/letter_animation_core_final_replay/clock_report.tcl",
+      "sha256": "2c758564e217da840708db938bf23207e8396b889eb4088e9df687d6a689b9da"
+    },
+    "source/ishi_vga_core_pnr.v": {
+      "path": "build/letter_animation_core_final_replay/out/ishi_vga_core_pnr.v",
+      "sha256": "c974e982a77e795e059db786db9199b05e0c7ec639411b7eeb4ab46b00b31290"
+    },
+    "source/tr1um_cells.v": {
+      "path": "build/letter_animation_core_final_replay/patch_split_toggle/build/tr1um_cells.v",
+      "sha256": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33"
+    },
+    "source/patch/config.py": {
+      "path": "build/letter_animation_core_final_replay/patch_split_toggle/config.py",
+      "sha256": "569240cbbb47b5ef30437fd7fe62210d73b608ca653f010ed89d0fd7059ef5ae"
+    },
+    "source/patch/letter_scan_patch.v": {
+      "path": "build/letter_animation_core_final_replay/patch_split_toggle/letter_scan_patch.v",
+      "sha256": "8bb650f42880ac8b4788e534b568d886a9c89cecd61bc6a664c7adb38a48e2ad"
+    },
+    "source/patch/letter_scan_patch_pnr.v": {
+      "path": "build/letter_animation_core_final_replay/patch_split_toggle/out/letter_scan_patch_pnr.v",
+      "sha256": "290151b8db0f8ac679d13807915a85ac4518ff225de6d4a46d88d3c1652d178e"
+    },
+    "verification/placement.json": {
+      "path": "build/letter_animation_core_final_replay/layout/placement.json",
+      "sha256": "738ed4ac9c0b15dd33dc763400eb2b2b1676d42ab15354dcca115d34a28cd32d"
+    },
+    "verification/verification.json": {
+      "path": "build/letter_animation_core_final_replay/build/verification.json",
+      "sha256": "93bcf607d53cd5afe4064b2fde2371bbbef4d560988a533669e74a2249167ef0"
+    },
+    "verification/drawing.lyrdb": {
+      "path": "build/letter_animation_core_final_replay/build/drawing.lyrdb",
+      "sha256": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a"
+    },
+    "verification/candidate_mdp.lyrdb": {
+      "path": "build/letter_animation_core_final_replay/build/candidate_mdp.lyrdb",
+      "sha256": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c"
+    },
+    "verification/drc.log": {
+      "path": "build/letter_animation_core_final_replay/build/drc.log",
+      "sha256": "81305a86fb4f112cee7cbdaf629edafc7ebe51484fd91649e52e4884790d2b95"
+    },
+    "verification/core.lvsdb": {
+      "path": "build/letter_animation_core_final_replay/build/core.lvsdb",
+      "sha256": "e9339389a4a4b51c4f9cf362a068602ae19814c5127e9a856356c2c0c986fbba"
+    },
+    "verification/lvs.log": {
+      "path": "build/letter_animation_core_final_replay/build/lvs.log",
+      "sha256": "fd848e32890036a7a8d59980129f3d90d3ae7789a789c95bc14de16c7716d03d"
+    },
+    "verification/pins.json": {
+      "path": "build/letter_animation_core_final_replay/build/pins.json",
+      "sha256": "c9eaf7281804568201f90a28dc0f5a0228a90523d71c1ffcccbcaa0e2253f966"
+    },
+    "verification/routing_manifest.json": {
+      "path": "build/letter_animation_core_final_replay/build/routing_manifest.json",
+      "sha256": "3c3007c8946aa41d42aa5952cad6707f48ed8d4dfc1a17c826271f145a1ffbd0"
+    },
+    "verification/placement_manifest.json": {
+      "path": "build/letter_animation_core_final_replay/build/placement_manifest.json",
+      "sha256": "7da3e2cdbe307221fd0427715413aa16c988595a3bb1b26be32336c65ce32c4e"
+    },
+    "verification/repair_manifest.json": {
+      "path": "build/letter_animation_core_final_replay/build/repair_manifest.json",
+      "sha256": "49eca8f4ec972bc95f64006f889aa764dc5cc8f9e3b793cd2ff05f877edd3f56"
+    },
+    "verification/audit/metal_connectivity.json": {
+      "path": "build/letter_animation_core_final_replay/build/audit/metal_connectivity.json",
+      "sha256": "4b66322cc121d115b83cb33cdb02e81dbf56de69ea20dbc5916bb262ba742026"
+    },
+    "verification/functional/verification.json": {
+      "path": "build/letter_animation_core_final_replay/build/functional/verification.json",
+      "sha256": "ec17a1ba3ce3be7f4fc37585f1d78d37f90ca38b76a740f5fdecf9d82a897c43"
+    },
+    "verification/functional/simulation.log": {
+      "path": "build/letter_animation_core_final_replay/build/functional/simulation.log",
+      "sha256": "4baeeff68e185f28d58339878f9438d360259b7bd6193a49c266cdf0cb44fb02"
+    },
+    "verification/functional/observed.bin": {
+      "path": "build/letter_animation_core_final_replay/build/functional/observed.bin",
+      "sha256": "75ce3e0202bc59548485024aebc4f94d1093a5965929eb807b788901b3b72c68"
+    },
+    "verification/functional/tb.v": {
+      "path": "build/letter_animation_core_final_replay/build/functional/tb.v",
+      "sha256": "c09fee6b5cb9cb4ab982e81be69d7193b6093dbae125d50760d8161537084a4e"
+    },
+    "verification/STA_ishi_vga_core.guard.json": {
+      "path": "build/letter_animation_core_final_replay/out/STA_ishi_vga_core.guard.json",
+      "sha256": "bc3e0ba08609aa4e9a0664c3c6f5b76527eae4d982caaf878b4296054ebeb4cb"
+    },
+    "verification/STA_ishi_vga_core.txt": {
+      "path": "build/letter_animation_core_final_replay/out/STA_ishi_vga_core.txt",
+      "sha256": "6770c272a28da55fcc848dc1b8190e3a6b5ca9f1ef69aacf663b9552b6d39788"
+    },
+    "verification/replay.json": {
+      "path": "build/letter_animation_core_final_replay/replay.json",
+      "sha256": "bc0d02df56a51921567a00969b44b267f56eab7b4bce955b8a7e9d1860325ec8"
+    },
+    "fpga/vga_letter_animation.fs": {
+      "path": "build/fpga_vga_letter_animation/vga_letter_animation.fs",
+      "sha256": "cc24d9046a72a3dda4f862b013312b218caf96f83e5c815ec3ec297c417e3cdb"
+    },
+    "fpga/program.log": {
+      "path": "build/fpga_vga_letter_animation/program.log",
+      "sha256": "a292b7fd585817a35b37a3149ebd91da0ff8f57fdda6ed498c3458533c62769f"
+    },
+    "fpga/preprogram_verification.json": {
+      "path": "build/fpga_vga_letter_animation/preprogram_verification.json",
+      "sha256": "9b6eaf85431e15d4d1864be2f4291b23af49c10c3f4ed7c7e4252537eeba5b17"
+    },
+    "fpga/sha256.json": {
+      "path": "build/fpga_vga_letter_animation/sha256.json",
+      "sha256": "3d6d3bdb266030086744e9e2e4d5dcad05850b8be1105e5dadafd22f5a96ce6b"
+    },
+    "fpga/commands.json": {
+      "path": "build/fpga_vga_letter_animation/commands.json",
+      "sha256": "4a9f6c12313af056d36919338169a868be8ba7d2cec3f423bf97acbf582da3e9"
+    },
+    "fpga/timing.json": {
+      "path": "build/fpga_vga_letter_animation/timing.json",
+      "sha256": "65bf34f9916eb7e3060f9e860650815600a2fe1b357878da65171ca1174f0b23"
+    },
+    "fpga/synth.log": {
+      "path": "build/fpga_vga_letter_animation/synth.log",
+      "sha256": "0edfe0f7407cadec53523fcb6d63132c1c6ae784c520aff80b34a6ff5cc68f25"
+    },
+    "fpga/pnr.log": {
+      "path": "build/fpga_vga_letter_animation/pnr.log",
+      "sha256": "1c53bf44e9cbbd8609a402a1c9c512134c871237847e4f489aae04787f064341"
+    },
+    "fpga/pack.log": {
+      "path": "build/fpga_vga_letter_animation/pack.log",
+      "sha256": "c854f9d0e79cd746e66c6847a4d3c8552832a4154cfbbec2f5a0f5ab2d3c7327"
+    }
+  },
+  "files": {
+    "README.md": "8cbbefde0c27eb08af099378a840f0635358b53f62413db8c616eed5c090e6b4",
+    "animation.gif": "64844a60275525cfc8e76be311d56e2d52bb23b8ec57eb40927a3ff44b073ec3",
+    "fpga/commands.json": "4a9f6c12313af056d36919338169a868be8ba7d2cec3f423bf97acbf582da3e9",
+    "fpga/pack.log": "c854f9d0e79cd746e66c6847a4d3c8552832a4154cfbbec2f5a0f5ab2d3c7327",
+    "fpga/pnr.log": "1c53bf44e9cbbd8609a402a1c9c512134c871237847e4f489aae04787f064341",
+    "fpga/preprogram_verification.json": "9b6eaf85431e15d4d1864be2f4291b23af49c10c3f4ed7c7e4252537eeba5b17",
+    "fpga/program.log": "a292b7fd585817a35b37a3149ebd91da0ff8f57fdda6ed498c3458533c62769f",
+    "fpga/sha256.json": "3d6d3bdb266030086744e9e2e4d5dcad05850b8be1105e5dadafd22f5a96ce6b",
+    "fpga/synth.log": "0edfe0f7407cadec53523fcb6d63132c1c6ae784c520aff80b34a6ff5cc68f25",
+    "fpga/timing.json": "65bf34f9916eb7e3060f9e860650815600a2fe1b357878da65171ca1174f0b23",
+    "fpga/vga_letter_animation.fs": "cc24d9046a72a3dda4f862b013312b218caf96f83e5c815ec3ec297c417e3cdb",
+    "ishi_vga.extracted": "053a852c1ab2cc12584a0044e265efcc6f24c81a374f6782470848332b25452f",
+    "ishi_vga.gds": "000b325d1d96c6a880faadd59332d8f16f623e31f9972844c0a674d4d9d96121",
+    "ishi_vga_lvs.spice": "b7aedd27987ceb4309c367d657f3ba699911b0ea5c16aa58bd62da3842aaa35f",
+    "layout.png": "6f51b8d1d0418c40a124c49b81b4a5ce572519903ccb76e5851b5b4a2e3c1611",
+    "ports.json": "10420df273b260d0f90e29265c513637175072bd507137a0607a1840d0efebd3",
+    "reproduce/package_letter_animation_core.py": "e8821bec67698834c1741629b3ef1d7cab4e89d176ee912ae07d41210393af2f",
+    "reproduce/static_core.gds": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+    "reproduce/static_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "reproduce/static_netlist.v": "8f7c6575d96e9c372df818afca973eddfb8d42b0d10897eb684aef68d2bb6b1d",
+    "reproduce/static_placement.json": "9c8a51a97b2679ff9f6c4b8ea16350b27d33906a54c655b65572219e7abd3942",
+    "source/clock_electrical.tcl": "b6e48c660f460d6ae98e73495f1ab79c07ac6a89f4703f39b7da434851130d63",
+    "source/clock_report.tcl": "2c758564e217da840708db938bf23207e8396b889eb4088e9df687d6a689b9da",
+    "source/config.py": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148",
+    "source/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "source/ishi_vga_core.v": "a961895d09bf3c615ef1d878551301b04af31f2cb51e0ec77c9c7decea67be6e",
+    "source/ishi_vga_core_pnr.v": "c974e982a77e795e059db786db9199b05e0c7ec639411b7eeb4ab46b00b31290",
+    "source/patch/config.py": "569240cbbb47b5ef30437fd7fe62210d73b608ca653f010ed89d0fd7059ef5ae",
+    "source/patch/letter_scan_patch.v": "8bb650f42880ac8b4788e534b568d886a9c89cecd61bc6a664c7adb38a48e2ad",
+    "source/patch/letter_scan_patch_pnr.v": "290151b8db0f8ac679d13807915a85ac4518ff225de6d4a46d88d3c1652d178e",
+    "source/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/verify_bundle.py": "ea25a77e0243178c991edb0f22f30767c0fc9efe4b321a8abd7e744683912b23",
+    "verification/STA_ishi_vga_core.guard.json": "bc3e0ba08609aa4e9a0664c3c6f5b76527eae4d982caaf878b4296054ebeb4cb",
+    "verification/STA_ishi_vga_core.txt": "6770c272a28da55fcc848dc1b8190e3a6b5ca9f1ef69aacf663b9552b6d39788",
+    "verification/audit/metal_connectivity.json": "4b66322cc121d115b83cb33cdb02e81dbf56de69ea20dbc5916bb262ba742026",
+    "verification/candidate_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "verification/core.lvsdb": "e9339389a4a4b51c4f9cf362a068602ae19814c5127e9a856356c2c0c986fbba",
+    "verification/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "verification/drc.log": "81305a86fb4f112cee7cbdaf629edafc7ebe51484fd91649e52e4884790d2b95",
+    "verification/functional/observed.bin": "75ce3e0202bc59548485024aebc4f94d1093a5965929eb807b788901b3b72c68",
+    "verification/functional/simulation.log": "4baeeff68e185f28d58339878f9438d360259b7bd6193a49c266cdf0cb44fb02",
+    "verification/functional/tb.v": "c09fee6b5cb9cb4ab982e81be69d7193b6093dbae125d50760d8161537084a4e",
+    "verification/functional/verification.json": "ec17a1ba3ce3be7f4fc37585f1d78d37f90ca38b76a740f5fdecf9d82a897c43",
+    "verification/lvs.log": "fd848e32890036a7a8d59980129f3d90d3ae7789a789c95bc14de16c7716d03d",
+    "verification/pins.json": "c9eaf7281804568201f90a28dc0f5a0228a90523d71c1ffcccbcaa0e2253f966",
+    "verification/placement.json": "738ed4ac9c0b15dd33dc763400eb2b2b1676d42ab15354dcca115d34a28cd32d",
+    "verification/placement_manifest.json": "7da3e2cdbe307221fd0427715413aa16c988595a3bb1b26be32336c65ce32c4e",
+    "verification/repair_manifest.json": "49eca8f4ec972bc95f64006f889aa764dc5cc8f9e3b793cd2ff05f877edd3f56",
+    "verification/replay.json": "bc0d02df56a51921567a00969b44b267f56eab7b4bce955b8a7e9d1860325ec8",
+    "verification/routing_manifest.json": "3c3007c8946aa41d42aa5952cad6707f48ed8d4dfc1a17c826271f145a1ffbd0",
+    "verification/verification.json": "93bcf607d53cd5afe4064b2fde2371bbbef4d560988a533669e74a2249167ef0"
+  }
+}

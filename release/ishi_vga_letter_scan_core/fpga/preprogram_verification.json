@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "bitstream_sha256": "cc24d9046a72a3dda4f862b013312b218caf96f83e5c815ec3ec297c417e3cdb",
+  "io_pll": {
+    "vsync_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y46/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=8": "00000000000000000000000000000001"
+      }
+    },
+    "u_pll.pll": {
+      "type": "rPLL",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y45/PLL"
+      }
+    },
+    "u_pll.clkin_IBUF_O": {
+      "type": "IBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X26Y0/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001"
+      }
+    },
+    "r_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y39/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      }
+    },
+    "pll_lock_mon_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y50/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=4": "00000000000000000000000000000001"
+      }
+    },
+    "hsync_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X0Y12/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=8": "00000000000000000000000000000001"
+      }
+    },
+    "g_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y39/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      }
+    },
+    "clk_315_mon_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X0Y21/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=4": "00000000000000000000000000000001"
+      }
+    },
+    "b_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y35/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      }
+    }
+  },
+  "fmax": {
+    "clk_315": {
+      "achieved": 269.83270263671875,
+      "constraint": 3.15000319480896
+    }
+  },
+  "stages": [
+    "I",
+    "S",
+    "H",
+    "I",
+    "idle"
+  ],
+  "frames_per_stage": 16,
+  "frames_per_cycle": 80
+}

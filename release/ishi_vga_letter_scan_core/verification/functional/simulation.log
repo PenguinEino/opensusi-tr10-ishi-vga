@@ -1,0 +1,2 @@
+PASS: 80 continuous RTL/gate frames, 4200000 RGB/HS/VS ticks, all 80 phase transitions, all 128 binary phase initial states
+/home/ishi-kai/ishi-vga/build/letter_animation_core_final_replay/build/functional/tb.v:96: $finish called at 1333372635880 (1ps)

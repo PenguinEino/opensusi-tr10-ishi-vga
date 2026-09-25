@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "decoder_states": 131072,
+  "continuous_frames": 80,
+  "ticks": 4200000,
+  "counter_transitions_checked": 80,
+  "binary_phase_initial_states_checked": 128,
+  "max_frames_to_valid_phase_cycle": 16,
+  "sampled_frame_bytes": "5 distinct stages including unchanged base logo; independently checked",
+  "model": "RTL and mapped unit-delay gate cells; fixture initialization only",
+  "hashes": {
+    "scripts/test_letter_animation_eco.py": "6dc8f6dfbe3566c39935c886256b2c8aa5ec975ba60a9bff1e7199ad3948d346",
+    "build/letter_animation_core_final_replay/config.py": "45deac229ff43f8059a462f8b871f2fee7340aed4a24377b1df466312b26f148",
+    "release/ishi_vga_letter_scan_core/reproduce/static_netlist.v": "8f7c6575d96e9c372df818afca973eddfb8d42b0d10897eb684aef68d2bb6b1d",
+    "build/letter_animation_core_final_replay/out/ishi_vga_core_pnr.v": "c974e982a77e795e059db786db9199b05e0c7ec639411b7eeb4ab46b00b31290",
+    "build/letter_animation_core_final_replay/patch_split_toggle/build/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "build/letter_animation_core_final_replay/build/functional/rtl_core.v": "62bbd178e9dfe3c42114056f22a38bc07e612601999049fa6a2966e2ab693c20",
+    "build/letter_animation_core_final_replay/ishi_vga_core.v": "a961895d09bf3c615ef1d878551301b04af31f2cb51e0ec77c9c7decea67be6e",
+    "build/letter_animation_core_final_replay/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "build/letter_animation_core_final_replay/build/functional/tb.v": "c09fee6b5cb9cb4ab982e81be69d7193b6093dbae125d50760d8161537084a4e",
+    "build/letter_animation_core_final_replay/build/functional/simulation.log": "4baeeff68e185f28d58339878f9438d360259b7bd6193a49c266cdf0cb44fb02",
+    "build/letter_animation_core_final_replay/build/functional/observed.bin": "75ce3e0202bc59548485024aebc4f94d1093a5965929eb807b788901b3b72c68",
+    "designs/grid_power/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9"
+  }
+}
