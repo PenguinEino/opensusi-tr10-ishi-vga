@@ -20,7 +20,11 @@ python3 scripts/program_fpga.py vga_letter_animation
 
 **延長版のSRAM書き込み完了。** JTAG IDCODE `0x81b`、ロード100%、DONE、終了コード0を確認しました。Flashへの書き込みは行っていません。USB再接続で外れていたアクセス権は、利用者の指示に基づいて対象の `/dev/bus/usb/002/010` にだけ再設定しました。USBを再接続した場合は、`lsusb` でデバイス番号を照合し、必要に応じてユーザーACLを設定してください。
 
-書き込みスクリプトはSRAMだけを対象にし、入力とビットストリームのハッシュを確認します。今回のログ・ビットストリーム・実行結果を結ぶ `programming.json` も保存しました。[引き渡しフォルダ](../release/ishi_vga_letter_scan_core/README.md)には、この版への転送成功が確認できた場合だけ書き込み記録を収録します。
+書き込みスクリプトはSRAMだけを対象にし、入力とビットストリームのハッシュを確認します。今回のログ・ビットストリーム・実行結果を結ぶ `programming.json` も保存しました。[引き渡しフォルダ](../submission/README.md)には、この版への転送成功が確認できた場合だけ書き込み記録を収録します。
+
+実機の録画（横向きへ回転）。[MP4](../submission/fpga_demo.mp4)
+
+<img src="../submission/fpga_demo.gif" alt="Tang Primer 20Kで文字が順番に発光する動画" width="640">
 
 ## 以前の短い発光なし段階
 

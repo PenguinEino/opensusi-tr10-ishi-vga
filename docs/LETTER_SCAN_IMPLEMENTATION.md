@@ -4,7 +4,7 @@
 
 **1792.8×897.2 µm、共通VSSを除き7端子。** 外部CLK 3.15 MHz、640×480・60 Hz相当、RGB111。文字の赤い部分だけをRGB=111にし、背景・格子・電源枝の形と同期タイミングを維持します。
 
-- [引き渡しデータとGDS](../release/ishi_vga_letter_scan_core/README.md)
+- [引き渡しデータとGDS](../submission/README.md)
 - [コアRTL](../experiments/a_letter_scan_eco/ishi_vga_core.v)・[実行設定](../experiments/a_letter_scan_eco/config.py)
 - [FPGAの書き込み記録](FPGA_ANIMATION_20260925.md)
 
@@ -22,12 +22,13 @@
 | strict LVS | 全8電気端子を含めて一致 |
 | 実形状からの配線検査 | 欠落・短絡・断線0 |
 | RTL／ゲート | 128フレーム連続、各672万クロックでRGB/HS/VS一致 |
+| 抽出SPICE | 1990素子、20試験・922クロック一致（5 V/27℃、出力各1 pF） |
 | 段階カウンタ | 全128遷移と全128二値初期状態を照合 |
 | セル遅延STA | setup 274.741 ns、hold 6.687 ns、ピン容量違反なし |
 
 配線端の同一ネット内の隙間を埋め、既存クロック枝の終端を局所的に迂回してDRCを解消しました。修正座標は `LOCAL_REPAIR`、実行記録は引き渡しデータに保存しています。標準セル内部とPDKは変更していません。
 
-マスク生成後は以前からのCLKのFloating SG警告1件が残ります。フレーム統合は引き続き保留です。STAはセル遅延とピン容量を対象とし、配線RC・PVTの検証ではありません。添付の `.extracted` は今回のGDSを `--no-combine` で抽出した回路です。旧静止画版のngspice結果を、この版の結果として流用していません。
+マスク生成後は以前からのCLKのFloating SG警告1件が残ります。フレーム統合は引き続き保留です。STAはセル遅延とピン容量を対象とし、配線RC・PVTの検証ではありません。添付の `.extracted` は今回のGDSを `--no-combine` で抽出した回路です。同じGDSから再抽出してバイト一致を確認し、ngspiceで状態24 bitと出力5 bitを照合しました。[抽出SPICEの条件と結果](../submission/SPICE.md)。
 
 ## 再現
 
@@ -40,3 +41,13 @@ python3 scripts/check_toolchain.py
 ```
 
 凍結した静止画コア、配置表、ゲート回路は `release/ishi_vga_letter_scan_core/reproduce/` にあります。追加回路の再合成、配置、配線、局所修復、GDSのSHA256照合、DRC/LVS/STA、RTLとゲートの照合まで実行します。過去の配線発光版 `a_wire_scan_eco` と、今回の文字発光版 `a_letter_scan_eco` は別の実験です。
+
+## 表示
+
+FPGA実機の記録（[MP4](../submission/fpga_demo.mp4)）：
+
+<img src="../submission/fpga_demo.gif" alt="文字の順次発光を表示するFPGA実機" width="640">
+
+ゲートシミュレーションの観測結果：
+
+<img src="../submission/animation.gif" alt="16/16/16/16/64フレームの発光周期" width="640">

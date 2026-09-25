@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "mode": "SRAM",
+  "bitstream_sha256": "02d049bcfc497c8c76a276dabe16dc1e5ea80e50dcd395a36753d95fb782a77b",
+  "program_log_sha256": "014b00a47baf4b0edbd71e518445a0f307c003407a5dc7a05430ebd1578e4504",
+  "returncode": 0,
+  "command": [
+    "bash",
+    "scripts/fpga_loader.sh",
+    "-b",
+    "tangprimer20k",
+    "-m",
+    "/home/ishi-kai/ishi-vga/build/fpga_vga_letter_animation/vga_letter_animation.fs"
+  ],
+  "script_sha256": "de0cf1370ec173d742b7290d2c61bca058fc71de24500a96c1f2ea078c7535d8"
+}

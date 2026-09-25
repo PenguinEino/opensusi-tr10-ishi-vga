@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "decoder_states": 131072,
+  "continuous_frames": 128,
+  "ticks": 6720000,
+  "counter_transitions_checked": 128,
+  "binary_phase_initial_states_checked": 128,
+  "max_frames_to_valid_phase_cycle": 0,
+  "stage_frames": [
+    16,
+    16,
+    16,
+    16,
+    64
+  ],
+  "sampled_frame_bytes": "5 distinct stages including unchanged base logo; independently checked",
+  "model": "RTL and mapped unit-delay gate cells; fixture initialization only",
+  "hashes": {
+    "scripts/test_letter_animation_eco.py": "3fd2121b37182bbc7ce5f280997c0e9c3e82374a3adb68c3ed51e1df24b6b39f",
+    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "release/ishi_vga_letter_scan_core/reproduce/static_netlist.v": "8f7c6575d96e9c372df818afca973eddfb8d42b0d10897eb684aef68d2bb6b1d",
+    "build/letter_long_idle_final_replay/out/ishi_vga_core_pnr.v": "891aabbcf5f08edcf9bdcc47cf06acf610f3c6419ee7a13dd647b109de320532",
+    "build/letter_long_idle_final_replay/patch_split_toggle/build/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "build/letter_long_idle_final_replay/build/functional/rtl_core.v": "9c0e574a663ec0e0c6bf729ffbddda0866b72cdf828f49a3f1903147789abd83",
+    "build/letter_long_idle_final_replay/ishi_vga_core.v": "e49db0856f649c4175f68df66d540eaca00efac97148635350e0c29182a05718",
+    "build/letter_long_idle_final_replay/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "build/letter_long_idle_final_replay/build/functional/tb.v": "480687c394798a4c0952ab7716999394cb615ae87af8f5ab0ad444f66f47b80f",
+    "build/letter_long_idle_final_replay/build/functional/simulation.log": "c680d7f4e15f2f61dcd2e0f4824921b8ba87072671f7fbb0faabb7d0d37f3b45",
+    "build/letter_long_idle_final_replay/build/functional/observed.bin": "75ce3e0202bc59548485024aebc4f94d1093a5965929eb807b788901b3b72c68",
+    "designs/grid_power/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9"
+  }
+}

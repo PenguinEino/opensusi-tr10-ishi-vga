@@ -1,0 +1,59 @@
+{
+  "status": "CONNECTED_NOT_SIGNED_OFF",
+  "source_sha256": "a0eceb894ed82413c9b9b33ff7ef48210e57456590c0c6b495068ecf9d0e7750",
+  "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "changes": {
+    "remove_boxes": [
+      [
+        "M2",
+        410.5,
+        372.7,
+        413.9,
+        648.8
+      ]
+    ],
+    "add_boxes": [
+      [
+        "M2",
+        410.5,
+        372.7,
+        413.9,
+        644.9
+      ],
+      [
+        "M2",
+        411.4,
+        641.5,
+        414.8,
+        648.8
+      ],
+      [
+        "M2",
+        410.5,
+        641.5,
+        414.8,
+        644.9
+      ],
+      [
+        "M1",
+        370.7,
+        822.3,
+        371.8,
+        825.2
+      ],
+      [
+        "M1",
+        603.8,
+        819.0,
+        604.1,
+        819.9
+      ]
+    ]
+  },
+  "hashes": {
+    "build/letter_long_idle_final_replay/build/candidate_unrepaired.gds": "a0eceb894ed82413c9b9b33ff7ef48210e57456590c0c6b495068ecf9d0e7750",
+    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "scripts/repair_letter_animation_drc.py": "5199553283334c648292b89bcdb5daef3ed9ae1f6c3ebe575f39f48951a45f38",
+    "build/letter_long_idle_final_replay/layout/placement.json": "9fa7f0b5ae235006ffb6aa9c0f1f63e1b228d06f1b3fc94c45a7d1dc4e586f62"
+  }
+}

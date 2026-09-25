@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "bitstream_sha256": "02d049bcfc497c8c76a276dabe16dc1e5ea80e50dcd395a36753d95fb782a77b",
+  "io_pll": {
+    "vsync_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y46/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=8": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "u_pll.pll": {
+      "type": "rPLL",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y45/PLL"
+      },
+      "parameters": {
+        "PSDA_SEL": "0000 ",
+        "ODIV_SEL": "00000000000000000000000000010000",
+        "IDIV_SEL": "00000000000000000000000000000010",
+        "FCLKIN": "27",
+        "FBDIV_SEL": "00000000000000000000000000000110",
+        "DYN_SDIV_SEL": "00000000000000000000000000010100",
+        "DYN_ODIV_SEL": "false",
+        "DYN_IDIV_SEL": "false",
+        "DYN_FBDIV_SEL": "false",
+        "DYN_DA_EN": "false",
+        "DUTYDA_SEL": "1000 ",
+        "DEVICE": "GW2A-18",
+        "CLKOUT_BYPASS": "false",
+        "CLKOUTP_BYPASS": "false",
+        "CLKOUTD_SRC": "CLKOUT",
+        "CLKOUTD_BYPASS": "false",
+        "CLKOUTD3_SRC": "CLKOUT",
+        "CLKFB_SEL": "internal"
+      }
+    },
+    "u_pll.clkin_IBUF_O": {
+      "type": "IBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X26Y0/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "r_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y39/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "pll_lock_mon_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y50/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=4": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "hsync_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X0Y12/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=8": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "g_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y39/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "clk_315_mon_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X0Y21/IOBA",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=4": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    },
+    "b_OBUF_O": {
+      "type": "OBUF",
+      "attributes": {
+        "NEXTPNR_BEL": "X55Y35/IOBB",
+        "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+        "&DRIVE=16": "00000000000000000000000000000001"
+      },
+      "parameters": {
+        "NET_I": "NET",
+        "NET_O": "NET"
+      }
+    }
+  },
+  "baseline_pnr_sha256": "60453ac269f26514a611c8c409baccc86f5f2aff7324ce9c68921ec8424ee9b5",
+  "fmax": {
+    "clk_315": {
+      "achieved": 244.25990295410156,
+      "constraint": 3.15000319480896
+    }
+  },
+  "stages": [
+    "I",
+    "S",
+    "H",
+    "I",
+    "idle"
+  ],
+  "stage_frames": [
+    16,
+    16,
+    16,
+    16,
+    64
+  ],
+  "frames_per_cycle": 128
+}

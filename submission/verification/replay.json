@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "byte-identical GDS, fresh DRC/LVS/STA, 128 continuous RTL/gate frames",
+  "gds_sha256": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "hashes": {
+    "scripts/replay_letter_animation_core.py": "cbf50e2fb5222b74b0a6f06b003bb5d367c09bb8748e2b03d6f2208b1719ed9c",
+    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "build/letter_long_idle_final_replay/build/candidate.gds": "4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b",
+    "build/letter_long_idle_final_replay/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "build/letter_long_idle_final_replay/build/core.lvsdb": "5b64909392459e0c92e575d034ba26db6ef32fdc2a4aabb8c8336b51320b2b47",
+    "build/letter_long_idle_final_replay/out/STA_ishi_vga_core.guard.json": "8c0f50b4c3c7a6021cd59dccb3fb16eae312acaf21a477c2fd62c7e669182597",
+    "build/letter_long_idle_final_replay/build/functional/verification.json": "4b68b8d883aea24568acb1cf0d6b8d7edd5d90c882c9f4f6a90af6d206843867"
+  }
+}

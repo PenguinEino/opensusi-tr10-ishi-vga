@@ -1,16 +1,16 @@
-* ISHI core powerup; no wire RC
-.include '../models.spice'
+* Letter scan powerup: final extracted transistor core
+.include '../models/ip62_models'
 .include '../core_sim.spice'
 .temp 27
 .options method=trap
 VDD vdd 0 PWL(0 0 100n 0 1100n 5)
 VCLK clk 0 PULSE(0 5 2000n 2n 2n 156.730158730159n 317.460317460317n)
-XDUT hsync vdd b g r clk vsync 0 ishi_vga_core
+XDUT hsync vdd b r g clk vsync 0 ishi_vga_core
 C_r r 0 1.0p
 C_g g 0 1.0p
 C_b b 0 1.0p
 C_hsync hsync 0 1.0p
 C_vsync vsync 0 1.0p
-.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n171) v(xdut.n7) v(xdut.n65) v(xdut.n209) v(xdut.n18) v(xdut.n188) v(xdut.n980) v(xdut.n986) v(xdut.n791) v(xdut.n797) v(xdut.n835) v(xdut.n518) v(xdut.n548) v(xdut.n520) v(xdut.n658) v(xdut.n1010)
-.tran 1n 52993.650793650799n 0 1n uic
+.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n173) v(xdut.n7) v(xdut.n65) v(xdut.n171) v(xdut.n18) v(xdut.n188) v(xdut.n917) v(xdut.n988) v(xdut.n925) v(xdut.n921) v(xdut.n791) v(xdut.n521) v(xdut.n618) v(xdut.n523) v(xdut.n656) v(xdut.n985) v(xdut.n1016) v(xdut.n1004) v(xdut.n1100) v(xdut.n1000) v(xdut.n675) v(xdut.n679) v(xdut.n1001)
+.tran 1n 32676.190476190477n 0 1.0n uic
 .end

@@ -1,0 +1,40 @@
+* Letter scan phase_047: final extracted transistor core
+.include '../models/ip62_models'
+.include '../core_sim.spice'
+.temp 27
+.options method=trap
+VDD vdd 0 5
+VCLK clk 0 PULSE(0 5 1000n 2n 2n 156.730158730159n 317.460317460317n)
+XDUT hsync vdd b r g clk vsync 0 ishi_vga_core
+C_r r 0 1.0p
+C_g g 0 1.0p
+C_b b 0 1.0p
+C_hsync hsync 0 1.0p
+C_vsync vsync 0 1.0p
+.ic v(xdut.n20)=5 v(xdut.n23)=0
+.ic v(xdut.n173)=0 v(xdut.n296)=5
+.ic v(xdut.n7)=5 v(xdut.n324)=0
+.ic v(xdut.n65)=0 v(xdut.n270)=5
+.ic v(xdut.n171)=0 v(xdut.nI1426)=5
+.ic v(xdut.n18)=5 v(xdut.nI1427)=0
+.ic v(xdut.n188)=5 v(xdut.n222)=0
+.ic v(xdut.n917)=0 v(xdut.n588)=5
+.ic v(xdut.n988)=0 v(xdut.nI1421)=5
+.ic v(xdut.n925)=0 v(xdut.nI1432)=5
+.ic v(xdut.n921)=0 v(xdut.nI1419)=5
+.ic v(xdut.n791)=0 v(xdut.nI1431)=5
+.ic v(xdut.n521)=0 v(xdut.nI1434)=5
+.ic v(xdut.n618)=0 v(xdut.n248)=5
+.ic v(xdut.n523)=0 v(xdut.n522)=5
+.ic v(xdut.n656)=0 v(xdut.nI1429)=5
+.ic v(xdut.n985)=0 v(xdut.n927)=5
+.ic v(xdut.n1016)=5 v(xdut.nI1416)=0
+.ic v(xdut.n1004)=5 v(xdut.nI1415)=0
+.ic v(xdut.n1100)=5 v(xdut.nI1417)=0
+.ic v(xdut.n1000)=5 v(xdut.nI1414)=0
+.ic v(xdut.n675)=0 v(xdut.n979)=5
+.ic v(xdut.n679)=5 v(xdut.nI1422)=0
+.ic v(xdut.n1001)=0 v(xdut.nI1425)=5
+.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n173) v(xdut.n7) v(xdut.n65) v(xdut.n171) v(xdut.n18) v(xdut.n188) v(xdut.n917) v(xdut.n988) v(xdut.n925) v(xdut.n921) v(xdut.n791) v(xdut.n521) v(xdut.n618) v(xdut.n523) v(xdut.n656) v(xdut.n985) v(xdut.n1016) v(xdut.n1004) v(xdut.n1100) v(xdut.n1000) v(xdut.n675) v(xdut.n679) v(xdut.n1001)
+.tran 1n 2469.841269841270n 0 1.0n
+.end

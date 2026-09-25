@@ -1,10 +1,16 @@
 # Tang Primer 20K DockでのVGA動作試験
 
-**現行の「格子＋5線：電源枝」を、手元のTang Primer 20K Dock＋抵抗DACで表示する手順です。**
-3.15 MHz・RGB111・リセットなしの提出版RTLを使います。旧B案の6.3/6.45 MHz・RGB222用手順を置き換えました。
+**現行の文字発光版を、Tang Primer 20K Dock＋抵抗DACで表示する手順です。** 外部3.15 MHz・RGB111・リセットなしのRTLを使用します。各文字16フレーム、発光なし64フレームです。
 
-最初にLEDサンプルで書き込みを確認し、次にPLLを生成してVGA版をSRAMへ書き込みます。
-ボード用の[トップRTL](../fpga/tang_primer_20k/ishi_vga_tang_top.v)・[ピン制約CST](../fpga/tang_primer_20k/ishi_vga_tang.cst)・[クロック制約SDC](../fpga/tang_primer_20k/ishi_vga_tang.sdc)を用意しています。**GowinでのPLL生成・合成/P&R・ビットストリーム作成と実機試験は未実施**です。
+実行済みのOSS CAD Suiteでの合成・P&R・SRAM書き込みは[試験記録](FPGA_ANIMATION_20260925.md)を参照してください。現在の環境では次のコマンドを使用します。
+
+```sh
+python3 scripts/build_fpga.py vga_letter_animation
+bash scripts/fpga_loader.sh -b tangprimer20k --detect
+python3 scripts/program_fpga.py vga_letter_animation
+```
+
+書き込み前にビルド入力とビットストリームのハッシュ、確認済みのI/O・PLL設定を照合します。新しいPCでのGowin EDA設定は以下に記載しています。
 
 ## 1. 用意するもの
 
@@ -52,6 +58,29 @@ USB・電源を外して配線します。Dockの **J5（2×6、RGB LCDと共用
 VGAの **4, 9, 11, 12, 15は未接続**。VGA 9へ電源を供給しません。
 VGA端子は部品の刻印で確認してください。嵌合面とハンダ面では左右が反転します。
 
+メス端子を**穴が見える側（ケーブルを挿す面）**から見て、金属シェルの幅が広い辺を上にした番号:
+
+```text
+  _________________________
+  \   5   4   3   2   1   /
+   \ 10   9   8   7   6  /
+    \15  14  13  12  11 /
+     -------------------
+```
+
+同じメス端子の**裏のハンダ付け側**から見ると左右反転する（広い辺は上のまま）:
+
+```text
+  _________________________
+  \   1   2   3   4   5   /
+   \  6   7   8   9  10  /
+    \11  12  13  14  15 /
+     -------------------
+```
+
+番号と信号の根拠: [VIA VB7009公式マニュアル §2.1.2、図7・表2](https://www.viatech.com.cn/uploads/files/20200706/1594023322631878.pdf#page=20)。端子台変換基板のネジ端子の並びはこの図と同じとは限らないため、基板の番号表示とコネクタ穴への導通で確認する。
+
+
 ```text
 Dock J5.5  L9  (r) ── 300 Ω ── VGA 1  (R)
 Dock J5.6  N8  (g) ── 300 Ω ── VGA 2  (G)
@@ -81,8 +110,8 @@ mkdir -p build/fpga_tang_315
 
 ```text
 fpga/tang_primer_20k/ishi_vga_tang_top.v
-designs/grid_power/ishi_vga_core.v
-designs/grid_power/ishi_logo.v
+experiments/a_letter_scan_eco/ishi_vga_core.v
+experiments/a_letter_scan_eco/ishi_logo.v
 ```
 
 続いて次の制約ファイルを登録します。
@@ -150,7 +179,7 @@ SDCは入力27 MHzを定義しています。GowinのPLL生成クロック解析
 5. 表示画像を開き、実画面と比較する。
 
 ```sh
-xdg-open submission/ishi_vga_output.png
+xdg-open submission/animation.gif
 ```
 
 | 測定項目 | 期待値 |
@@ -164,7 +193,15 @@ xdg-open submission/ishi_vga_output.png
 
 画像は**黒背景に赤文字、水色の横帯・枝、青、紫**。有色部分の範囲は640×480内の **X=64〜575、Y=92〜411**、512×320画素です。横は8画素時間単位で変わります。旧B案の白背景・512×432表示・青系の中間階調とは異なります。
 
-RGB111のコードは `000=黒, 001=青, 011=水色, 100=赤, 101=紫`。今回の画像に白はないので、振幅は各色がHighになる部分で測ります。モニタが640×480を認識していれば、必要に応じてAuto Adjustで位置・サンプリングを合わせます。
+RGB111のコードは `000=黒, 001=青, 011=水色, 100=赤, 101=紫`。発光中の文字は `111` です。振幅は各色がHighになる部分で測ります。モニタが640×480を認識していれば、必要に応じてAuto Adjustで位置・サンプリングを合わせます。
+
+I → S → H → I → 発光なしの順序を確認します。各文字は約0.267秒、発光なしは約1.067秒です。
+
+<img src="../submission/animation.gif" alt="ゲートシミュレーションで確認した表示周期" width="640">
+
+[実機動画](../submission/fpga_demo.mp4)
+
+<img src="../submission/fpga_demo.gif" alt="FPGA実機の発光アニメーション" width="640">
 
 数分表示してちらつき・流れ・色化けがないことを確認し、SRAM再書き込みを数回繰り返して再び表示できるか確認します。電源を切るとSRAM設定は消えるため、電源再投入試験ではその都度書き込みます。
 
@@ -180,7 +217,7 @@ RGB111のコードは `000=黒, 001=青, 011=水色, 100=赤, 101=紫`。今回�
 | HSが63 kHz・VSが120 Hz | コアに旧6.3 MHzを入力していないか |
 | HSが630 kHz・VSが1200 Hz | PLLの63 MHz `clkout` を誤接続していないか |
 | No Signal / Out of Range | HS/VSの取り違え、J5とVGAの番号、共通GND、実測周波数 |
-| 同期するが真っ黒 | `designs/grid_power` のRTLか、RGB3本の導通、抵抗と端子番号 |
+| 同期するが真っ黒 | `experiments/a_letter_scan_eco` のRTLか、RGB3本の導通、抵抗と端子番号 |
 | 暗い / 色がおかしい | 旧RGB222の2枝が残っていないか、300 Ω各1本、RGB順、75 Ωの追加有無 |
 | 横にずれる / 輪郭がにじむ | モニタのAuto Adjust、短い配線とGND、安定した3.15 MHz |
 

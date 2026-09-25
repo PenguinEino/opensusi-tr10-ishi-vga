@@ -1219,7 +1219,7 @@ module ishi_vga_core(clk, r, g, b, hsync, vsync);
   );
   DFF _395_ (
     .CK(clk_row2),
-    .D(_010_),
+    .D(anim_green_new),
     .Q(g),
     .QB(_206_)
   );
@@ -1237,7 +1237,7 @@ module ishi_vga_core(clk, r, g, b, hsync, vsync);
   );
   DFF _398_ (
     .CK(clk_row2),
-    .D(_011_),
+    .D(anim_blue_new),
     .Q(b),
     .QB(_203_)
   );
@@ -1361,4 +1361,67 @@ module ishi_vga_core(clk, r, g, b, hsync, vsync);
   BUF_X2 u_clk_row2 (.A(clk_buf), .Y(clk_row2));
   wire clk_row3;
   BUF_X2 u_clk_row3 (.A(clk_buf), .Y(clk_row3));
+  wire anim__00__0_;
+  wire anim__00__1_;
+  wire anim__00__2_;
+  wire anim__00__3_;
+  wire anim__01_;
+  wire anim__02_;
+  wire anim__03_;
+  wire anim__04_;
+  wire anim__05_;
+  wire anim__06_;
+  wire anim__07_;
+  wire anim__08_;
+  wire anim__09_;
+  wire anim__10_;
+  wire anim__11_;
+  wire anim__12_;
+  wire anim__13_;
+  wire anim__14_;
+  wire anim__15_;
+  wire anim__16__0_;
+  wire anim__17_;
+  wire anim__18_;
+  wire anim__19_;
+  wire anim__20_;
+  wire anim__21_;
+  wire anim__22_;
+  wire anim_blue_new;
+  wire anim_green_new;
+  wire anim_phase_0_;
+  wire anim_phase_1_;
+  wire anim_phase_2_;
+  wire anim_phase_3_;
+  wire anim_phase_4_;
+  wire anim_phase_5_;
+  wire anim_phase_6_;
+  XNOR2 anim_23_ (.A(_117_), .B(anim_phase_0_), .Y(anim__00__0_));
+  INV_X2 anim_24_ (.A(_117_), .Y(anim__04_));
+  NAND2 anim_25_ (.A(anim__04_), .B(anim_phase_0_), .Y(anim__05_));
+  XNOR2 anim_26_ (.A(anim_phase_1_), .B(anim__05_), .Y(anim__00__1_));
+  NAND3 anim_27_ (.A(anim__04_), .B(anim_phase_1_), .C(anim_phase_0_), .Y(anim__06_));
+  XNOR2 anim_28_ (.A(anim_phase_2_), .B(anim__06_), .Y(anim__00__2_));
+  AND4_X1 anim_29_ (.A(anim__04_), .B(anim_phase_1_), .C(anim_phase_0_), .D(anim_phase_2_), .Y(anim__07_));
+  XOR2 anim_30_ (.A(anim_phase_3_), .B(anim__07_), .Y(anim__00__3_));
+  INV_X1 anim_31_ (.A(_009_), .Y(anim__08_));
+  XOR2 anim_32_ (.A(anim_phase_5_), .B(h[5]), .Y(anim__09_));
+  XOR2 anim_33_ (.A(anim_phase_4_), .B(h[4]), .Y(anim__10_));
+  NAND2 anim_34_ (.A(anim__09_), .B(anim__10_), .Y(anim__11_));
+  NOR4 anim_35_ (.A(anim__08_), .B(_011_), .C(anim_phase_6_), .D(anim__11_), .Y(anim__12_));
+  OR2 anim_36_ (.A(_010_), .B(anim__12_), .Y(anim_green_new));
+  OR2 anim_37_ (.A(_011_), .B(anim__12_), .Y(anim_blue_new));
+  NAND2 anim_38_ (.A(anim_phase_3_), .B(anim__07_), .Y(anim__13_));
+  MUX2 anim_39_ (.A(anim__16__0_), .B(anim_phase_4_), .S(anim__13_), .Y(anim__01_));
+  NAND3 anim_40_ (.A(anim_phase_4_), .B(anim_phase_3_), .C(anim__07_), .Y(anim__14_));
+  XNOR2 anim_41_ (.A(anim_phase_5_), .B(anim__14_), .Y(anim__02_));
+  NAND4 anim_42_ (.A(anim_phase_4_), .B(anim_phase_3_), .C(anim_phase_5_), .D(anim__07_), .Y(anim__15_));
+  XNOR2 anim_43_ (.A(anim_phase_6_), .B(anim__15_), .Y(anim__03_));
+  DFF anim_44_ (.CK(clk_row3), .D(anim__01_), .Q(anim_phase_4_), .QB(anim__16__0_));
+  DFF anim_45_ (.CK(clk_row3), .D(anim__02_), .Q(anim_phase_5_), .QB(anim__18_));
+  DFF anim_46_ (.CK(clk_row3), .D(anim__03_), .Q(anim_phase_6_), .QB(anim__19_));
+  DFF anim_47_ (.CK(clk_row3), .D(anim__00__0_), .Q(anim_phase_0_), .QB(anim__20_));
+  DFF anim_48_ (.CK(clk_row3), .D(anim__00__1_), .Q(anim_phase_1_), .QB(anim__21_));
+  DFF anim_49_ (.CK(clk_row3), .D(anim__00__2_), .Q(anim_phase_2_), .QB(anim__22_));
+  DFF anim_50_ (.CK(clk_row3), .D(anim__00__3_), .Q(anim_phase_3_), .QB(anim__17_));
 endmodule

@@ -1,0 +1,286 @@
+{
+  "source_sha256": "299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c",
+  "added_cells": 28,
+  "new_cell_width_um": 945.0,
+  "hpwl_um": 17099.8,
+  "placements": {
+    "anim_39_": [
+      3,
+      210.6
+    ],
+    "anim_38_": [
+      3,
+      243.0
+    ],
+    "anim_40_": [
+      3,
+      259.2
+    ],
+    "anim_44_": [
+      3,
+      280.8
+    ],
+    "anim_41_": [
+      3,
+      345.6
+    ],
+    "anim_42_": [
+      3,
+      372.6
+    ],
+    "anim_43_": [
+      3,
+      399.6
+    ],
+    "anim_45_": [
+      3,
+      469.8
+    ],
+    "anim_46_": [
+      3,
+      534.6
+    ],
+    "anim_35_": [
+      3,
+      599.4
+    ],
+    "anim_37_": [
+      3,
+      626.4
+    ],
+    "anim_30_": [
+      3,
+      648.0
+    ],
+    "anim_31_": [
+      3,
+      1090.8
+    ],
+    "anim_50_": [
+      3,
+      1101.6
+    ],
+    "anim_23_": [
+      3,
+      1166.4
+    ],
+    "anim_47_": [
+      3,
+      1193.4
+    ],
+    "anim_24_": [
+      3,
+      1258.2
+    ],
+    "anim_26_": [
+      3,
+      1269.0
+    ],
+    "anim_29_": [
+      3,
+      1355.4
+    ],
+    "anim_27_": [
+      3,
+      1387.8
+    ],
+    "anim_48_": [
+      3,
+      1409.4
+    ],
+    "anim_28_": [
+      3,
+      1474.2
+    ],
+    "anim_49_": [
+      3,
+      1501.2
+    ],
+    "anim_36_": [
+      2,
+      469.8
+    ],
+    "anim_33_": [
+      1,
+      469.8
+    ],
+    "anim_25_": [
+      3,
+      1296.0
+    ],
+    "anim_34_": [
+      2,
+      394.2
+    ],
+    "anim_32_": [
+      1,
+      496.8
+    ]
+  },
+  "removed_fillers": [
+    "FILL_r0_16",
+    "FILL_r0_17",
+    "FILL_r0_18",
+    "FILL_r0_22",
+    "FILL_r0_24",
+    "FILL_r0_56",
+    "FILL_r0_57",
+    "FILL_r0_58",
+    "FILL_r0_62",
+    "FILL_r1_16",
+    "FILL_r1_18",
+    "FILL_r1_22",
+    "FILL_r1_23",
+    "FILL_r1_24",
+    "FILL_r1_25",
+    "FILL_r1_62",
+    "FILL_r1_63",
+    "FILL_r1_64",
+    "FILL_r1_68",
+    "FILL_r1_69",
+    "FILL_r2_14",
+    "FILL_r2_19",
+    "FILL_r2_20",
+    "FILL_r2_54",
+    "FILL_r3_10",
+    "FILL_r3_11",
+    "FILL_r3_12",
+    "FILL_r3_13",
+    "FILL_r3_14",
+    "FILL_r3_15",
+    "FILL_r3_16",
+    "FILL_r3_17",
+    "FILL_r3_18",
+    "FILL_r3_19",
+    "FILL_r3_20",
+    "FILL_r3_21",
+    "FILL_r3_22",
+    "FILL_r3_23",
+    "FILL_r3_24",
+    "FILL_r3_28",
+    "FILL_r3_29",
+    "FILL_r3_30",
+    "FILL_r3_31",
+    "FILL_r3_32",
+    "FILL_r3_33",
+    "FILL_r3_34",
+    "FILL_r3_35",
+    "FILL_r3_36",
+    "FILL_r3_37",
+    "FILL_r3_38",
+    "FILL_r3_39",
+    "FILL_r3_40",
+    "FILL_r3_42",
+    "FILL_r3_54",
+    "FILL_r3_55",
+    "FILL_r3_56",
+    "FILL_r3_57",
+    "FILL_r3_58",
+    "FILL_r3_59",
+    "FILL_r3_60",
+    "FILL_r3_61",
+    "FILL_r3_62",
+    "FILL_r3_63",
+    "FILL_r3_64",
+    "FILL_r3_65",
+    "FILL_r3_66",
+    "FILL_r3_67",
+    "FILL_r3_71",
+    "FILL_r3_72",
+    "FILL_r3_73",
+    "FILL_r3_74",
+    "FILL_r3_75",
+    "FILL_r3_76",
+    "FILL_r3_77",
+    "FILL_r3_78",
+    "FILL_r3_79",
+    "FILL_r3_80",
+    "FILL_r3_81",
+    "FILL_r3_82",
+    "FILL_r3_83"
+  ],
+  "removed_colour_shapes": [
+    [
+      "M1",
+      "(305100,518100;305100,519900;1617300,519900;1617300,518100)"
+    ],
+    [
+      "M1",
+      "(575100,690200;575100,692000;1579500,692000;1579500,690200)"
+    ],
+    [
+      "M2",
+      "(1577800,650300;1577800,691100;1581200,691100;1581200,650300)"
+    ],
+    [
+      "M2",
+      "(1615600,519000;1615600,646900;1619000,646900;1619000,519000)"
+    ],
+    [
+      "M2",
+      "(573400,650200;573400,691100;576800,691100;576800,650200)"
+    ],
+    [
+      "M2",
+      "(303400,519000;303400,646800;306800,646800;306800,519000)"
+    ]
+  ],
+  "connections": {
+    "missing": [],
+    "opens": [
+      "_009_",
+      "_010_",
+      "_011_",
+      "_117_",
+      "anim__00__0_",
+      "anim__00__1_",
+      "anim__00__2_",
+      "anim__00__3_",
+      "anim__01_",
+      "anim__02_",
+      "anim__03_",
+      "anim__04_",
+      "anim__05_",
+      "anim__06_",
+      "anim__07_",
+      "anim__08_",
+      "anim__09_",
+      "anim__10_",
+      "anim__11_",
+      "anim__12_",
+      "anim__13_",
+      "anim__14_",
+      "anim__15_",
+      "anim__16__0_",
+      "anim_blue_new",
+      "anim_green_new",
+      "anim_phase_0_",
+      "anim_phase_1_",
+      "anim_phase_2_",
+      "anim_phase_3_",
+      "anim_phase_4_",
+      "anim_phase_5_",
+      "anim_phase_6_",
+      "clk_row3",
+      "h[4]",
+      "h[5]"
+    ],
+    "pairs": [],
+    "groups": 0,
+    "power_component_counts": {
+      "vss": 1,
+      "vdd": 1
+    },
+    "rail_signal_nets": {
+      "vss": [],
+      "vdd": []
+    }
+  },
+  "hashes": {
+    "build/letter_long_idle_final_replay/config.py": "179e7ae2d7a89b17bf79c5959aa408c5d246694e4bda467b34a2aa9160e9a6f7",
+    "build/letter_long_idle_final_replay/patch_split_toggle/out/letter_scan_patch_pnr.v": "639502783b06eb26d070465912505e394c42dbf4dbe8cb76cb9cc56f68693c56",
+    "scripts/letter_animation_eco.py": "19f9c2f13c7aeeb9d015dc1d2245d00b1d288310ab7377e79a3368849ce894cd",
+    "release/ishi_vga_letter_scan_core/reproduce/static_placement.json": "9c8a51a97b2679ff9f6c4b8ea16350b27d33906a54c655b65572219e7abd3942",
+    "release/ishi_vga_letter_scan_core/reproduce/static_netlist.v": "8f7c6575d96e9c372df818afca973eddfb8d42b0d10897eb684aef68d2bb6b1d"
+  }
+}

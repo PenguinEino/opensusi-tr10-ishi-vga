@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
-"""Build a shallow, portable submission directory from frozen core evidence.
-
-This is design-owned packaging code. It does not modify the GDS or upstream.
-"""
+"""Package the adopted letter-animation core, transistor evidence and real video."""
 import argparse
-import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -12,152 +8,72 @@ import shutil
 import subprocess
 from check_toolchain import ROOT, verify
 
-CASES = ['upper_init', 'lower_init', 'vsync_init', 'frame_wrap_init', 'powerup', 'upper_reference']
 
-
-def sha(p):
-    return hashlib.sha256(p.read_bytes()).hexdigest()
-
-
-def seal(out, sources):
-    files = {str(p.relative_to(out)): sha(p) for p in sorted(out.rglob('*'))
-             if p.is_file() and p not in (out/'manifest.json',out/'SHA256SUMS')}
-    m = {'schema': 1, 'status': 'CLOCK_ECO_CORE_HANDOFF_NOT_MANUFACTURING_SIGNOFF',
-         'top': 'ishi_vga_core', 'gds_sha256': sha(out / 'ishi_vga.gds'),
-         'size_um': [1792.8, 897.2], 'bbox_um': [-15.3, 0, 1777.5, 897.2],
-         'terminals_excluding_common_vss': 7, 'clock_hz': 3150000,
-         'frame_integrated': False, 'drawing_drc': 0, 'mask_warnings': 1,
-         'strict_lvs': 'PASS', 'extracted_spice_cycles': 668,
-         'clock_pin_capacitance_violation': False, 'interconnect_rc': False,
-         'manufacturing_ready': False,
-         'sources': sources, 'files': files}
-    (out / 'manifest.json').write_text(json.dumps(m, indent=2, ensure_ascii=False) + '\n')
-    files['manifest.json'] = sha(out / 'manifest.json')
-    (out / 'SHA256SUMS').write_text(''.join(h + '  ' + p + '\n' for p, h in sorted(files.items())))
-
-
-def pictures(out):
-    import klayout.db as db
-    import klayout.lay as lay
-    import numpy as np
-    from PIL import Image
-    ly = db.Layout(); ly.read(str(out / 'ishi_vga.gds'))
-    top = ly.cell('ishi_vga_core')
-    assert ly.dbu == .001
-    assert [round(x * ly.dbu, 3) for x in [top.bbox().left, top.bbox().bottom,
-                                          top.bbox().right, top.bbox().top]] == [-15.3, 0, 1777.5, 897.2]
-    view = lay.LayoutView()
-    view.load_layout(str(out / 'ishi_vga.gds'), 0)
-    cv = view.cellview(0)
-    cv.cell_index = cv.layout().cell('ishi_vga_core').cell_index()
-    view.load_layer_props(str(ROOT / 'tools/TR-1um/libs.tech/klayout/tech/TR-1um.lyp'), 0, True)
-    view.set_config('background-color', '#ffffff')
-    view.set_config('grid-visible', 'false')
-    view.max_hier(); view.zoom_fit()
-    view.save_image(str(out / 'ishi_vga_layout.png'), 1800, 1000)
-    # Actual gate observation starts at raster index 49000 (VSYNC assertion).
-    observed = np.array([int(x, 16) for x in (out / 'verification/functional/observed.hex').read_text().split()])
-    expected = np.array([int(x, 16) for x in (out / 'tests/expected_frame.hex').read_text().split()])
-    assert len(observed) == 52500 and np.array_equal(observed, np.roll(expected, -49000))
-    frame = np.roll(observed, 49000).reshape(525, 100)[:480, :80] & 7
-    rgb = np.stack([((frame >> s) & 1) * 255 for s in [2, 1, 0]], axis=-1).astype('uint8')
-    Image.fromarray(np.repeat(rgb, 8, axis=1)).save(out / 'ishi_vga_output.png')
-    subprocess.run(['/usr/bin/python3', str(ROOT / 'scripts/submission_figures.py'),
-                    '--directory', str(out)], cwd=ROOT, check=True)
-
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--out', default='submission')
-    a = ap.parse_args(); verify(); out = (ROOT / a.out).resolve()
-    assert out.is_relative_to(ROOT) and not out.exists(), 'Choose a new workspace directory'
-    # Validate evidence before presenting it under a new name.
-    report=json.loads((ROOT/'experiments/a_clock_tree/build/verification.json').read_text())
-    for path,expected in report['hashes'].items():
-        assert sha(ROOT/path)==expected,path
-    assert report['status']=='CORE_ECO_VERIFIED_NOT_MANUFACTURING_SIGNOFF'
-    assert sha(ROOT/'release/ishi_vga_grid_power_core.tar.gz')=='90d25224bc9f83ff6afc845da94019aa417df4a089e481b29d3a74c5e2dffded'
-    out.mkdir(parents=True); sources = {}
-    def copy(src, dst):
-        source = ROOT / src; target = out / dst; target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source, target)
-        sources[dst] = {'path': src, 'sha256': sha(source), 'transform': 'none'}
-    copy('experiments/a_clock_tree/build/candidate.gds','ishi_vga.gds')
-    copy('experiments/a_clock_tree/build/core.extracted', 'ishi_vga.extracted')
-    copy('docs/images/fpga-vga-monitor-20260925.png', 'ishi_vga_fpga_photo.png')
-    copy('release/ishi_vga_grid_power_core/ports.json', 'ports.json')
-    copy('toolchain.lock.json', 'toolchain.lock.json')
-    copy('scripts/package_submission.py', 'reproduce/package_submission.py')
-    copy('scripts/submission_figures.py', 'reproduce/submission_figures.py')
-    copy('tools/TR-1um/LICENSE', 'licenses/TR-1um-LICENSE')
-    copy('release/ishi_vga_clock_eco_reproduce.tar.gz', 'reproduce/clock_eco_reproduce.tar.gz')
-    for p in ['README.md', 'SPEC.md', 'REPRODUCE.md', 'PROVENANCE.md']:
-        copy('docs/submission/' + p, p)
-    for p in sorted((ROOT / 'scripts/submission_tools').glob('*.py')):
-        copy(str(p.relative_to(ROOT)), 'tools/' + p.name)
-    for p in ['ishi_vga_core.v', 'ishi_logo.v', 'out/ishi_vga_core_pnr.v', 'build/tr1um_cells.v']:
-        copy('designs/grid_power/' + p, 'source/' + Path(p).name)
-    copy('experiments/a_clock_tree/config.py','source/config.py')
-    for p in ['tb_rtl.v', 'tb_gates.v', 'tb_exhaustive.v', 'expected_frame.hex','expected_states.hex']:
-        copy('designs/grid_power/tests/' + p, 'tests/' + p)
-    for p in ['functional_verification.json', 'rtl.log', 'gates.log', 'observed.hex']:
-        copy('experiments/a_clock_tree/build/' + p, 'verification/functional/' + p)
-    for p in ['verification.json', 'drawing.lyrdb', 'candidate_mdp.lyrdb', 'core.lvsdb', 'drc.log', 'lvs.log']:
-        copy('experiments/a_clock_tree/build/' + p, 'verification/physical/' + p)
-    copy('experiments/a_clock_tree/build/audit/metal_connectivity.json', 'verification/physical/metal_connectivity.json')
-    copy('experiments/a_clock_tree/build/sta.log', 'verification/sta.log')
-    copy('experiments/a_clock_tree/out/STA_ishi_vga_core.txt', 'verification/STA_ishi_vga_core.txt')
-    copy('experiments/a_clock_tree/out/STA_ishi_vga_core.guard.json','verification/STA_ishi_vga_core.guard.json')
-    copy('experiments/a_clock_tree/build/exhaustive.log','verification/functional/exhaustive.log')
-    copy('build/clock_replay02/replay.json','verification/clock_replay.json')
-    for p in ['extraction_manifest.json', 'reference_manifest.json', 'state_nodes.json', 'extract.log']:
-        copy('experiments/a_clock_tree/build/' + p, 'verification/original/' + p)
-    copy('scripts/power_spice_check.py', 'verification/original/power_spice_check.py')
-    copy('experiments/a_clock_tree/config.py', 'verification/original/config.py')
-    copy('experiments/a_clock_tree/build/ishi_vga_core.spice', 'simulation/ishi_vga_lvs.spice')
-    for p in ['core_sim.spice', 'reference_sim.spice']:
-        copy('experiments/a_clock_tree/build/' + p, 'simulation/' + p)
-    for p in sorted((ROOT / 'tools/TR-1um/libs.tech/spice/models').iterdir()):
-        if p.is_file(): copy(str(p.relative_to(ROOT)), 'simulation/models/' + p.name)
-    (out / 'simulation/models.spice').write_text("* Portable include; model files copied unchanged from pinned PDK\n.include '../models/ip62_models'\n")
-    for name in CASES:
-        origin = 'experiments/a_clock_tree/build/' + name + '/'
-        for p in ['tb.spice', 'case.json', 'config.py']:
-            copy(origin + p, 'simulation/' + name + '/' + p)
-        for p in ['verification.json', 'samples.json', 'ngspice.log', 'run.json']:
-            copy(origin + p, 'verification/spice/' + name + '/' + p)
-        target = 'verification/spice/' + name + '/wave.raw.gz'
-        (out / target).write_bytes(gzip.compress((ROOT / (origin + 'wave.raw')).read_bytes(), mtime=0))
-        sources[target] = {'path': origin + 'wave.raw', 'sha256': sha(ROOT / (origin + 'wave.raw')), 'transform': 'gzip, mtime=0'}
-    pictures(out)
-    summary = {'scope': 'unintegrated core', 'gds_sha256': sha(out / 'ishi_vga.gds'),
-               'drawing_drc': 0, 'mask_warnings': [{'rule': 'WAR06 Floating SG', 'count': 1, 'node': 'CLK BUFTH input'}],
-               'strict_lvs': 'PASS: 8 ports', 'short_pairs': 0, 'open_nets': 0,
-               'rtl_and_gate_frames': 2, 'ticks_per_functional_test': 105000,
-               'transistor_extracted_cycles': 668, 'transistor_reference_cycles': 110,
-               'interconnect_rc': False, 'full_frame_analog': False, 'pvt_sweep': False,
-               'frame_integrated': False, 'hardware_test': False,
-               'manufacturing_ready':False, 'binary_states_checked':131072,
-               'spice_raster_cycles':540, 'spice_startup_cycles':128, 'analog_frame_acquisition_observed':False,
-               'evidence': ['physical/verification.json', 'functional/functional_verification.json', 'original/extraction_manifest.json']}
-    (out / 'verification/summary.json').write_text(json.dumps(summary, indent=2) + '\n')
-    copy('docs/submission/REVIEW.md','REVIEW.md')
-    for name in ['submission_manufacturing_review.md','submission_manufacturing_response.md','submission_astra_review.md','submission_astra_review.json','submission_reviewed_manifest.json']:
-        copy('docs/reviews/'+name,'review/'+name)
-    for p in sorted((ROOT/'docs/reviews/submission_manufacturing_20260925').rglob('*')):
-        if p.is_file():copy(str(p.relative_to(ROOT)),'review/submission_manufacturing_20260925/'+str(p.relative_to(ROOT/'docs/reviews/submission_manufacturing_20260925')))
-    base=ROOT/'build/sta_guard_replay01'
-    for p in sorted(base.rglob('*')):
-        if p.is_file() and (p.name in ['results.json','sta.log','control.tcl'] or p.name.endswith('.guard.json')):
-            copy(str(p.relative_to(ROOT)),'review/sta_guard_controls/'+str(p.relative_to(base)))
-    if (ROOT/'docs/clock_eco_portability.json').exists():
-        copy('docs/clock_eco_portability.json','verification/portability.json')
-        for mode in ['rtl','gates','states','spice']:
-            copy('build/clock_bundle_'+mode+'/result.json','verification/portable_runs/'+mode+'/result.json')
-        copy('build/clock_archive_portability/ishi_vga_clock_eco/build/portable_replay/replay.json','verification/archive_replay.json')
-    seal(out, sources)
-    print('Created', out, 'with', len(json.loads((out / 'manifest.json').read_text())['files']), 'hashed files')
+    ap=argparse.ArgumentParser();ap.add_argument('--out',default='submission');a=ap.parse_args();verify()
+    out=(ROOT/a.out).resolve();assert out.is_relative_to(ROOT) and not out.exists(), 'Choose a new directory'
+    core=ROOT/'release/ishi_vga_letter_scan_core';spice=ROOT/'experiments/letter_spice/build'
+    original=json.loads((core/'manifest.json').read_text())
+    assert all(sha(core/name)==digest for name,digest in original['files'].items())
+    assert original['stage_frames']==[16,16,16,16,64] and original['fpga_programmed_mode']=='SRAM'
+    summary=json.loads((spice/'summary.json').read_text())
+    assert summary['status']=='PASS' and summary['gds_sha256']==original['gds_sha256']
+    for report in [summary,json.loads((spice/'extraction_manifest.json').read_text())]:
+        assert all(sha(ROOT/path)==digest for path,digest in report['hashes'].items())
+    cases=json.loads((spice/'cases.json').read_text())
+    for name in cases:
+        report=json.loads((spice/name/'verification.json').read_text())
+        assert report['status']=='PASS'
+        assert all(sha(ROOT/path)==digest for path,digest in report['hashes'].items())
+    assert sha(spice/'core.extracted')==sha(core/'ishi_vga.extracted')
+    out.mkdir();sources={}
+    def copy(src,dest):
+        src=Path(src);target=out/dest;target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copyfile(src,target)
+        sources[dest]={'path':str(src.relative_to(ROOT)),'sha256':sha(src)}
+    for p in sorted(core.rglob('*')):
+        if p.is_file() and p.name not in ('manifest.json','SHA256SUMS','README.md'):
+            copy(p,str(p.relative_to(core)))
+    for name in ['README.md','SPEC.md','PROVENANCE.md','REPRODUCE.md','SPICE.md']:
+        copy(ROOT/'docs/submission'/name,name)
+        # Templates also render correctly inside the repository's docs/ tree.
+        (out/name).write_text((out/name).read_text().replace('../../submission/',''))
+        sources[name]['transform']='resolve docs-template submission links to bundle-relative paths'
+    for name in ['core_sim.spice','core.extracted','state_nodes.json','extract.log','extraction_manifest.json','summary.json','cases.json']:
+        copy(spice/name,'simulation/'+name)
+    for p in sorted((spice/'models').iterdir()):
+        if p.is_file():copy(p,'simulation/models/'+p.name)
+    for name in cases:
+        for file in ['tb.spice','case.json','ngspice.log','run.json','verification.json','samples.json','wave.raw.gz']:
+            copy(spice/name/file,'simulation/'+name+'/'+file)
+    for name in ['expected_frame.hex','expected_states.hex']:
+        copy(ROOT/'designs/grid_power/tests'/name,'tests/'+name)
+    for name in ['verify_bundle.py','check_letter_wave.py','run_letter_tests.py']:
+        copy(ROOT/'scripts/submission_tools'/name,'tools/'+name)
+    for ext in ['gif','mp4','json']:
+        copy(ROOT/'docs/images'/('fpga-vga-animation-20260925.'+ext),'fpga_demo.'+ext)
+    copy(ROOT/'tools/TR-1um/LICENSE','licenses/TR-1um-LICENSE')
+    for name in ['package_submission.py','submission_figures.py','letter_spice_check.py','make_demo_media.py']:
+        copy(ROOT/'scripts'/name,'reproduce/'+name)
+    copy(ROOT/'experiments/letter_spice/config.py','reproduce/spice_config.py')
+    subprocess.run(['/usr/bin/python3',str(ROOT/'scripts/submission_figures.py'),'--directory',str(out)],cwd=ROOT,check=True)
+    portability=ROOT/'docs/animated_submission_portability.json'
+    if portability.exists():
+        portable=json.loads(portability.read_text());assert portable['status']=='PASS'
+        assert all(sha(out/name)==digest for name,digest in portable['checked_files'].items())
+        copy(portability,'verification/portable_runs.json')
+    files={str(p.relative_to(out)):sha(p) for p in sorted(out.rglob('*')) if p.is_file()}
+    manifest={k:v for k,v in original.items() if k not in ('files','sources')}
+    manifest.update(status='LETTER_ANIMATION_SUBMISSION',sources=sources,files=files,
+                    extracted_spice_cases=summary['cases'],extracted_spice_cycles=summary['cycles_checked'],
+                    hardware_demo='fpga_demo.gif',hardware_video='fpga_demo.mp4')
+    (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');files['manifest.json']=sha(out/'manifest.json')
+    (out/'SHA256SUMS').write_text(''.join(digest+'  '+name+'\n' for name,digest in sorted(files.items())))
+    print('Created',out,'with',len(manifest['files']),'hashed files')
 
 
-if __name__ == '__main__':
-    main()
+if __name__=='__main__':main()

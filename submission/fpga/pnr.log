@@ -1,0 +1,200 @@
+Info: Using uarch 'gowin' for device 'GW2A-LV18PG256C8/I7'
+Info: constraining clock net 'clk_27m' to 27.00 MHz
+Info: constraining clock net 'clk_315' to 3.15 MHz
+
+Info: Reading constraints...
+Info: Create constant nets...
+Info: Modify LUTs...
+Info: Pack IOBs...
+Info: Pack I3C IOs...
+Info: Pack MIPI IOs...
+Info: Pack diff IOBs...
+Info: Pack FFs into IO cells...
+Info: Pack IODELAY...
+Info: Pack Input Edge Monitors...
+Info: Pack IO logic...
+Info: Pack DESER16 logic...
+Info: Pack GSR...
+Info: Pack HCLK cells...
+Info: Pack DLLDLYs...
+Info: Pack wide LUTs...
+Info: Packed MUX2_LUT8:3, MUX2_LU7:2, MUX2_LUT6:4, MUX2_LUT5:5
+Info: Pack ALUs...
+Info: Pack SSRAMs...
+Info: Constrained 7 LUTFF pairs.
+Info: Pack PLL...
+Info: Pack ADC...
+Info: Pack GW JTAG...
+Info: Pack BSRAMs...
+Info: Pack DSP...
+Info: Pack INV...
+Info: Pack buffered nets...
+Info: Pack EMCU and UserFlash cells...
+Info: Pack UserFlash cells...
+Info: Pack DQCE cells...
+Info: Pack DCS cells...
+Info: Checksum: 0xbf74f1ef
+
+Info: Device utilisation:
+Info: 	                 VCC:       1/      1   100%
+Info: 	                 IOB:       8/    384     2%
+Info: 	                LUT4:     213/  20736     1%
+Info: 	            IOLOGICI:       0/    384     0%
+Info: 	            IOLOGICO:       0/    384     0%
+Info: 	           MUX2_LUT5:      45/  10368     0%
+Info: 	           MUX2_LUT6:      20/   5184     0%
+Info: 	           MUX2_LUT7:       8/   2592     0%
+Info: 	           MUX2_LUT8:       3/   2592     0%
+Info: 	                 ALU:     108/  15552     0%
+Info: 	                 GND:       1/      1   100%
+Info: 	                 DFF:      29/  15552     0%
+Info: 	           RAM16SDP4:       0/    648     0%
+Info: 	               BSRAM:       0/     46     0%
+Info: 	              ALU54D:       0/     24     0%
+Info: 	     MULTADDALU18X18:       0/     24     0%
+Info: 	        MULTALU18X18:       0/     24     0%
+Info: 	        MULTALU36X18:       0/     24     0%
+Info: 	           MULT36X36:       0/     12     0%
+Info: 	           MULT18X18:       0/     48     0%
+Info: 	             MULT9X9:       0/     96     0%
+Info: 	              PADD18:       0/     48     0%
+Info: 	               PADD9:       0/     96     0%
+Info: 	                 GSR:       1/      1   100%
+Info: 	                 OSC:       0/      1     0%
+Info: 	                rPLL:       1/      4    25%
+Info: 	                BUFG:       0/     24     0%
+Info: 	                DQCE:       0/     24     0%
+Info: 	                 DCS:       0/      8     0%
+Info: 	               DHCEN:       0/     24     0%
+Info: 	              CLKDIV:       0/      8     0%
+Info: 	             CLKDIV2:       0/     16     0%
+
+Info: Running custom HCLK placer...
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 65 cells, random placement wirelen = 4278.
+Info:     at initial placer iter 0, wirelen = 683
+Info:     at initial placer iter 1, wirelen = 589
+Info:     at initial placer iter 2, wirelen = 511
+Info:     at initial placer iter 3, wirelen = 458
+Info: Running main analytical placer, max placement attempts per cell = 23980.
+Info:     at iteration #1, type ALL: wirelen solved = 428, spread = 634, legal = 756; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 437, spread = 629, legal = 764; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 440, spread = 600, legal = 715; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 454, spread = 591, legal = 741; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 449, spread = 595, legal = 693; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 474, spread = 639, legal = 760; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 476, spread = 689, legal = 775; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 474, spread = 672, legal = 759; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 490, spread = 577, legal = 683; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 486, spread = 620, legal = 675; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 494, spread = 634, legal = 730; time = 0.00s
+Info:     at iteration #12, type ALL: wirelen solved = 504, spread = 628, legal = 766; time = 0.00s
+Info:     at iteration #13, type ALL: wirelen solved = 514, spread = 663, legal = 738; time = 0.00s
+Info:     at iteration #14, type ALL: wirelen solved = 524, spread = 666, legal = 770; time = 0.00s
+Info:     at iteration #15, type ALL: wirelen solved = 532, spread = 737, legal = 846; time = 0.00s
+Info: HeAP Placer Time: 0.08s
+Info:   of which solving equations: 0.02s
+Info:   of which spreading cells: 0.01s
+Info:   of which strict legalisation: 0.01s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 12, wirelen = 675
+Info:   at iteration #5: temp = 0.000000, timing cost = 12, wirelen = 652
+Info:   at iteration #5: temp = 0.000000, timing cost = 12, wirelen = 652 
+Info: SA placement time 0.02s
+
+Info: Max frequency for clock 'clk_315': 218.67 MHz (PASS at 3.15 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [312887, 313051) |* 
+Info: [313051, 313215) | 
+Info: [313215, 313379) |* 
+Info: [313379, 313543) | 
+Info: [313543, 313707) | 
+Info: [313707, 313871) | 
+Info: [313871, 314035) | 
+Info: [314035, 314199) | 
+Info: [314199, 314363) |* 
+Info: [314363, 314527) | 
+Info: [314527, 314691) | 
+Info: [314691, 314855) |**** 
+Info: [314855, 315019) |*************** 
+Info: [315019, 315183) |**** 
+Info: [315183, 315347) |*** 
+Info: [315347, 315511) |***** 
+Info: [315511, 315675) |************ 
+Info: [315675, 315839) |*** 
+Info: [315839, 316003) |**** 
+Info: [316003, 316167) |*** 
+Info: Checksum: 0xcdaa51d2
+Info: Routing globals...
+Info:     'u_pll.clkin' net was routed using global resources only.
+Info:     'clk_315' net was routed using global resources only.
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 763 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        764 |        1        525 |    1   525 |         0|       0.06       0.06|
+Info: Routing complete.
+Info: Router1 time 0.06s
+Info: Checksum: 0x7db4b7e2
+
+Info: Critical path report for clock 'clk_315' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.23  0.23 Source u_core.h_DFFR_Q.Q
+Info:    routing  0.64  0.87 Net u_core.h[4] (50,25) -> (48,22)
+Info:                          Sink u_core.h_DFFS_Q_SET_LUT4_F_1_I3_LUT4_F.I1
+Info:                          Defined in:
+Info:                               /home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.57  1.44 Source u_core.h_DFFS_Q_SET_LUT4_F_1_I3_LUT4_F.F
+Info:    routing  0.14  1.58 Net u_core.h_DFFS_Q_SET_LUT4_F_1_I3[3] (48,22) -> (48,22)
+Info:                          Sink u_core.h_DFFS_Q_SET_LUT4_F_1.I3
+Info:                          Defined in:
+Info:                               /home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.37  1.95 Source u_core.h_DFFS_Q_SET_LUT4_F_1.F
+Info:    routing  0.64  2.59 Net u_core.h_DFFS_Q_SET[4] (48,22) -> (47,25)
+Info:                          Sink u_core.phase_DFFE_Q_CE_MUX2_LUT5_O.S0
+Info:                          Defined in:
+Info:                               /home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.10  2.70 Source u_core.phase_DFFE_Q_CE_MUX2_LUT5_O.O
+Info:    routing  0.78  3.48 Net u_core.phase_DFFE_Q_CE[4] (47,25) -> (45,22)
+Info:                          Sink u_core.phase_DFFE_Q_1_CE_MUX2_LUT5_O.S0
+Info:                          Defined in:
+Info:                               /home/ishi-kai/ishi-vga/build/fpga_tools/oss-cad-suite/lib/../share/yosys/gowin/cells_map.v:130.20-130.21
+Info:      logic  0.10  3.59 Source u_core.phase_DFFE_Q_1_CE_MUX2_LUT5_O.O
+Info:    routing  0.47  4.06 Net u_core.phase_DFFE_Q_1_CE (45,22) -> (48,22)
+Info:                          Sink u_core.phase_DFFE_Q_1.CE
+Info:      setup  0.04  4.09 Source u_core.phase_DFFE_Q_1.CE
+Info: 1.41 ns logic, 2.68 ns routing
+
+Info: Max frequency for clock 'clk_315': 244.26 MHz (PASS at 3.15 MHz)
+
+Info: Slack histogram:
+Info:  legend: * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [313366, 313498) |*** 
+Info: [313498, 313630) | 
+Info: [313630, 313762) | 
+Info: [313762, 313894) |* 
+Info: [313894, 314026) |**** 
+Info: [314026, 314158) |*** 
+Info: [314158, 314290) |***** 
+Info: [314290, 314422) |* 
+Info: [314422, 314554) |* 
+Info: [314554, 314686) | 
+Info: [314686, 314818) |******** 
+Info: [314818, 314950) |**** 
+Info: [314950, 315082) |*** 
+Info: [315082, 315214) |* 
+Info: [315214, 315346) |*** 
+Info: [315346, 315478) | 
+Info: [315478, 315610) | 
+Info: [315610, 315742) |*** 
+Info: [315742, 315874) |** 
+Info: [315874, 316006) |*** 
+
+Info: Program finished normally.

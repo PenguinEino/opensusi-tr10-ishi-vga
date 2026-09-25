@@ -1,2 +1,0 @@
-* Portable include; model files copied unchanged from pinned PDK
-.include '../models/ip62_models'

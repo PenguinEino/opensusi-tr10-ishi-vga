@@ -54,7 +54,10 @@ def main():
   paths += [rtl,gates,d/name/'ishi_vga_core.v',d/name/'ishi_logo.v',d/name/'config.py',d/name/'out/ishi_vga_core_pnr.v',d/name/'build/synthesis.log']
   shutil.copyfile(d/name/'build/synthesis.log',out/f'{name}_synthesis.log')
   shutil.copyfile(d/name/'out/ishi_vga_core_pnr.v',out/f'{name}_mapped.v')
- shutil.copyfile(ROOT/'submission/ishi_vga_output.png',out/'static_reference.png')
+ # The historical comparison owns its frozen reference; submission is animated.
+ reference=ROOT/'docs/animation_samples/static_reference.png'
+ if reference.resolve()!=(out/'static_reference.png').resolve():
+  shutil.copyfile(reference,out/'static_reference.png')
  shutil.copyfile(d/'static_reference/build/synthesis.log',out/'static_reference_synthesis.log')
  for kind in ['rtl','gates']:shutil.copyfile(d/('sim_'+kind)/'build/simulation.log',out/f'{kind}_simulation.log')
  page='''<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">

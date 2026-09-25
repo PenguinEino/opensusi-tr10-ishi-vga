@@ -12,14 +12,14 @@ ISHI会ロゴをVGAに出力し、文字を **I → S → H → I → 発光な�
 | PDK | [TR-1um](https://github.com/OpenSUSI/TR-1um) dev / `f408d3b` に固定 |
 | スタンダードセル | 岡村氏の[APRtools](https://github.com/jun1okamura/TR-1um_APRtools) / `v59_4` |
 
-[文字発光版・GDS](release/ishi_vga_letter_scan_core/README.md) · [実装・再検証](docs/LETTER_SCAN_IMPLEMENTATION.md) · [FPGA書き込み](docs/FPGA_ANIMATION_20260925.md) · [静止画版の提出物](submission/README.md)
+[提出物](submission/README.md) · [GDS](submission/ishi_vga.gds) · [仕様・端子](submission/SPEC.md) · [FPGA試験](docs/FPGA_ANIMATION_20260925.md)
 
-フレーム未統合のコアです。検証結果と残件は仕様書に記載しています。
+描画DRC 0件・LVS一致。抽出回路のngspiceも20試験・922クロック合格しています。
 
-静止画版のTang Primer 20K＋抵抗DACでの実機表示（2026-09-25）。
+Tang Primer 20K＋抵抗DACでの実機動画（2026-09-25）。[MP4](submission/fpga_demo.mp4)
 
-<img src="docs/images/fpga-vga-monitor-20260925.png" alt="Tang Primer 20KからVGAモニタへ出力したISHI会ロゴの実機写真" width="640">
+<img src="submission/fpga_demo.gif" alt="Tang Primer 20KからVGAモニタへ出力したISHI会ロゴの実機動画" width="640">
 
 文字発光版のゲートシミュレーションで観測した5段階の表示。
 
-<img src="release/ishi_vga_letter_scan_core/animation.gif" alt="I、S、H、Iの順に点灯し、元のロゴへ戻る" width="640">
+<img src="submission/animation.gif" alt="I、S、H、Iの順に点灯し、元のロゴへ戻る" width="640">

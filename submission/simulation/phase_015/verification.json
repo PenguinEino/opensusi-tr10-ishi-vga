@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "case": {
+    "name": "phase_015",
+    "h": 101,
+    "v": 0,
+    "phase": 15,
+    "ticks": 4,
+    "natural": false,
+    "delay_ns": 1000,
+    "period_ns": 317.46031746031747,
+    "signals": [
+      "clk",
+      "r",
+      "g",
+      "b",
+      "hsync",
+      "vsync",
+      "xdut.n20",
+      "xdut.n173",
+      "xdut.n7",
+      "xdut.n65",
+      "xdut.n171",
+      "xdut.n18",
+      "xdut.n188",
+      "xdut.n917",
+      "xdut.n988",
+      "xdut.n925",
+      "xdut.n921",
+      "xdut.n791",
+      "xdut.n521",
+      "xdut.n618",
+      "xdut.n523",
+      "xdut.n656",
+      "xdut.n985",
+      "xdut.n1016",
+      "xdut.n1004",
+      "xdut.n1100",
+      "xdut.n1000",
+      "xdut.n675",
+      "xdut.n679",
+      "xdut.n1001"
+    ],
+    "sample_offset_ns": 150,
+    "voltage_v": 5.0,
+    "temperature_c": 27,
+    "output_load_pf": 1.0,
+    "max_step_ns": 1.0
+  },
+  "cycles_checked": 4,
+  "state_bits": 24,
+  "output_bits": 5,
+  "phase_transitions": [
+    [
+      15,
+      16
+    ]
+  ],
+  "rgb_values_seen": [
+    0
+  ],
+  "max_low_sample_v": 2.0852402352400192e-08,
+  "min_high_sample_v": 4.999999985987162,
+  "errors": [],
+  "scope": "extracted full-core transistor simulation, selected time window; no wire RC or PVT sweep",
+  "hashes": {
+    "experiments/letter_spice/build/phase_015/tb.spice": "6b3a254066ac428d3c890ef4a910211c94213fe933d3aecee933469e319dcc92",
+    "experiments/letter_spice/build/phase_015/case.json": "6f0b75855803fe527f8f421cdf4d47275c8a2f424241df91a23e7f5387bae5f5",
+    "experiments/letter_spice/build/phase_015/wave.raw": "158a48fe712310956b4d750bdaefe2a681f814894667695ecab3dd81594f2670",
+    "experiments/letter_spice/build/phase_015/ngspice.log": "f00697bc2442721fb22007bc47d5e9d945f3c92a1c3ea4bfb675e1b6fdfe98d9",
+    "experiments/letter_spice/build/phase_015/run.json": "5944cd6b0370e067fd5589b1630b699f0e83e8004422f259d23a58af40227a8f",
+    "experiments/letter_spice/build/core_sim.spice": "34a17dfae76e3bc8c4266022dbc0564148b7567a4e5dfd163b039dd61289b988",
+    "designs/grid_power/tests/expected_states.hex": "0100eff8a83450b7f0b12c351b63ce355b648fce6bbc86a864c6e395bab62b83",
+    "scripts/letter_spice_check.py": "df1522f67342a02c8a473aebd7d86720d316f4471980b559b562b294479e180e"
+  }
+}

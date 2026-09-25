@@ -1,0 +1,11 @@
+{
+  "fpga/tang_primer_20k/ishi_vga_tang_top.v": "f0445ce821b8349dbd9950514f54678da81e6dbc2f6bc49ecbb574836e14da12",
+  "fpga/tang_primer_20k/gowin_pll_315.v": "31ca6b01caf7204b1dbba950a870528f6e5454fee1ab6592b419054ecbc82bac",
+  "experiments/a_letter_scan_eco/ishi_vga_core.v": "e49db0856f649c4175f68df66d540eaca00efac97148635350e0c29182a05718",
+  "experiments/a_letter_scan_eco/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+  "fpga/tang_primer_20k/ishi_vga_tang.cst": "18aed5c4901956eccac8acbfeb30c45f5eb063d7004d7472945dc14b5cfde3a5",
+  "fpga/tang_primer_20k/config.py": "22f41e0b0c2175801dd958c5d292d1d0b4a9a3fcdc538663a263507c0913a958",
+  "fpga/tang_primer_20k/nextpnr.sdc": "61d5df15ccd45ce38cec94cc2d99532c1eb3892463d960f302aec8202f76bc6f",
+  "scripts/build_fpga.py": "a363b51d66e9839563db3fa61b52ebea2568ca5a86288da80953656619ebe45b",
+  "build/fpga_vga_letter_animation/vga_letter_animation.fs": "02d049bcfc497c8c76a276dabe16dc1e5ea80e50dcd395a36753d95fb782a77b"
+}

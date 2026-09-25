@@ -72,12 +72,12 @@ Load pins
  _408_/CK input (DFF) 59.64
 
 Net clk_row3
- Pin capacitance: 298.18
+ Pin capacitance: 715.64
  Wire capacitance: 0.00
- Total capacitance: 298.18
+ Total capacitance: 715.64
  Number of drivers: 1
- Number of loads: 5
- Number of pins: 6
+ Number of loads: 12
+ Number of pins: 13
 
 Driver pins
  u_clk_row3/Y output (BUF_X2)
@@ -88,20 +88,27 @@ Load pins
  _401_/CK input (DFF) 59.64
  _402_/CK input (DFF) 59.64
  _403_/CK input (DFF) 59.64
+ anim_44_/CK input (DFF) 59.64
+ anim_45_/CK input (DFF) 59.64
+ anim_46_/CK input (DFF) 59.64
+ anim_47_/CK input (DFF) 59.64
+ anim_48_/CK input (DFF) 59.64
+ anim_49_/CK input (DFF) 59.64
+ anim_50_/CK input (DFF) 59.64
 
 Clock clk
-6.515598 source latency _399_/CK ^
+6.952933 source latency _400_/CK ^
 -6.222218 target latency _405_/CK ^
 0.000000 CRPR
 --------------
-0.293380 setup skew
+0.730715 setup skew
 
 Clock clk
-6.515598 source latency _399_/CK ^
+6.952933 source latency _400_/CK ^
 -6.222218 target latency _405_/CK ^
 0.000000 CRPR
 --------------
-0.293380 hold skew
+0.730715 hold skew
 
 Startpoint: _409_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: _409_ (rising edge-triggered flip-flop clocked by clk)
@@ -137,8 +144,8 @@ Fanout         Cap        Slew       Delay        Time   Description
                                               6.686719   slack (MET)
 
 
-Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: b (output port clocked by clk)
+Startpoint: _397_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: vsync (output port clocked by clk)
 Path Group: clk
 Path Type: max
 
@@ -148,11 +155,11 @@ Fanout         Cap        Slew       Delay        Time   Description
                                   0.000000    0.000000   clock source latency
      1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
      4  234.891998    1.441383    4.025539    4.025539 ^ u_bufth_clk/Y (BUFTH)
-     7  417.459015    1.194815    2.490059    6.515598 ^ u_clk_row2/Y (BUF_X2)
-                      1.194815    0.000000    6.515598 ^ _398_/CK (DFF)
-     1   45.923000    0.741044    5.486962   12.002561 ^ _398_/Q (DFF)
-                      0.741044    0.000000   12.002561 ^ b (out)
-                                             12.002561   data arrival time
+    12  715.643921    1.737535    2.927394    6.952933 ^ u_clk_row3/Y (BUF_X2)
+                      1.737535    0.000000    6.952933 ^ _397_/CK (DFF)
+     1   45.923000    0.741041    5.649998   12.602931 ^ _397_/Q (DFF)
+                      0.741041    0.000000   12.602931 ^ vsync (out)
+                                             12.602931   data arrival time
 
                                 317.460327  317.460327   clock clk (rise edge)
                                   0.000000  317.460327   clock network delay (propagated)
@@ -161,16 +168,16 @@ Fanout         Cap        Slew       Delay        Time   Description
                                             253.968277   data required time
 ---------------------------------------------------------------------------------------------
                                             253.968277   data required time
-                                            -12.002561   data arrival time
+                                            -12.602931   data arrival time
 ---------------------------------------------------------------------------------------------
-                                            241.965698   slack (MET)
+                                            241.365341   slack (MET)
 
 
 ISHI_STA_GATE_BEGIN
 ISHI_STA_CLOCKS 1
-ISHI_STA_REG_CLOCKS 22
-ISHI_STA_REG_DATA 22
-ISHI_STA_SETUP 276.024750
+ISHI_STA_REG_CLOCKS 29
+ISHI_STA_REG_DATA 29
+ISHI_STA_SETUP 274.740723
 Startpoint: _414_ (rising edge-triggered flip-flop clocked by clk)
 Endpoint: _408_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
@@ -184,17 +191,17 @@ Fanout         Cap        Slew       Delay        Time   Description
      4  234.891998    1.441383    4.025539    4.025539 ^ u_bufth_clk/Y (BUFTH)
      6  357.822021    1.086881    2.394499    6.420038 ^ u_clk_row0/Y (BUF_X2)
                       1.086881    0.000000    6.420038 ^ _414_/CK (DFF)
-     6  497.843994    2.863588    9.837153   16.257191 ^ _414_/Q (DFF)
-     2  114.642006    3.148345    3.334270   19.591461 v _219_/Y (NAND3)
-     8  499.643036    6.930039    5.801571   25.393032 ^ _347_/Y (NOR3)
-     3  240.893005    5.278807    6.061604   31.454638 v _354_/Y (NAND3)
-     4  306.299988    3.516423    3.584098   35.038734 ^ _359_/Y (NOR2)
-     4  306.798981    3.840074    4.016666   39.055401 v _365_/Y (NAND2)
-     2  191.238998    2.490765    2.576389   41.631790 ^ _376_/Y (NOR2)
-     1  131.082993    2.061369    2.417970   44.049759 v _379_/Y (NAND2)
-     1   39.680000    1.806178    2.519720   46.569481 v _380_/Y (XNOR2)
-                      1.806178    0.000000   46.569481 v _408_/D (DFF)
-                                             46.569481   data arrival time
+     7  625.777954    3.461426   11.000538   17.420576 ^ _414_/Q (DFF)
+     2  114.642006    3.183713    3.452764   20.873339 v _219_/Y (NAND3)
+     8  499.643036    6.930039    5.803694   26.677032 ^ _347_/Y (NOR3)
+     3  240.893005    5.278807    6.061604   32.738636 v _354_/Y (NAND3)
+     4  306.299988    3.516423    3.584098   36.322735 ^ _359_/Y (NOR2)
+     4  306.798981    3.840074    4.016666   40.339401 v _365_/Y (NAND2)
+     2  191.238998    2.490765    2.576389   42.915791 ^ _376_/Y (NOR2)
+     1  131.082993    2.061369    2.417970   45.333759 v _379_/Y (NAND2)
+     1   39.680000    1.806178    2.519720   47.853481 v _380_/Y (XNOR2)
+                      1.806178    0.000000   47.853481 v _408_/D (DFF)
+                                             47.853481   data arrival time
 
                                 317.460327  317.460327   clock clk (rise edge)
                                   0.000000  317.460327   clock source latency
@@ -207,9 +214,9 @@ Fanout         Cap        Slew       Delay        Time   Description
                                             322.594238   data required time
 ---------------------------------------------------------------------------------------------
                                             322.594238   data required time
-                                            -46.569481   data arrival time
+                                            -47.853481   data arrival time
 ---------------------------------------------------------------------------------------------
-                                            276.024750   slack (MET)
+                                            274.740723   slack (MET)
 
 
 ISHI_STA_HOLD 6.686719
@@ -247,9 +254,9 @@ Fanout         Cap        Slew       Delay        Time   Description
                                               6.686719   slack (MET)
 
 
-ISHI_STA_OUTPUT 241.965698
-Startpoint: _398_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: b (output port clocked by clk)
+ISHI_STA_OUTPUT 241.365341
+Startpoint: _397_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: vsync (output port clocked by clk)
 Path Group: clk
 Path Type: max
 
@@ -259,11 +266,11 @@ Fanout         Cap        Slew       Delay        Time   Description
                                   0.000000    0.000000   clock source latency
      1   63.517002    1.200000    0.000000    0.000000 ^ clk (in)
      4  234.891998    1.441383    4.025539    4.025539 ^ u_bufth_clk/Y (BUFTH)
-     7  417.459015    1.194815    2.490059    6.515598 ^ u_clk_row2/Y (BUF_X2)
-                      1.194815    0.000000    6.515598 ^ _398_/CK (DFF)
-     1   45.923000    0.741044    5.486962   12.002561 ^ _398_/Q (DFF)
-                      0.741044    0.000000   12.002561 ^ b (out)
-                                             12.002561   data arrival time
+    12  715.643921    1.737535    2.927394    6.952933 ^ u_clk_row3/Y (BUF_X2)
+                      1.737535    0.000000    6.952933 ^ _397_/CK (DFF)
+     1   45.923000    0.741041    5.649998   12.602931 ^ _397_/Q (DFF)
+                      0.741041    0.000000   12.602931 ^ vsync (out)
+                                             12.602931   data arrival time
 
                                 317.460327  317.460327   clock clk (rise edge)
                                   0.000000  317.460327   clock network delay (propagated)
@@ -272,12 +279,12 @@ Fanout         Cap        Slew       Delay        Time   Description
                                             253.968277   data required time
 ---------------------------------------------------------------------------------------------
                                             253.968277   data required time
-                                            -12.002561   data arrival time
+                                            -12.602931   data arrival time
 ---------------------------------------------------------------------------------------------
-                                            241.965698   slack (MET)
+                                            241.365341   slack (MET)
 
 
 ISHI_STA_ELECTRICAL_BEGIN
 ISHI_STA_ELECTRICAL_END
-clk period_min = 41.44 fmax = 24.13
+clk period_min = 42.72 fmax = 23.41
 ISHI_STA_GATE_END

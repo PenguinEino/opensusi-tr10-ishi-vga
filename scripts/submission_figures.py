@@ -21,7 +21,7 @@ from matplotlib.collections import PatchCollection
 from matplotlib.patches import Polygon, Rectangle, FancyBboxPatch, FancyArrowPatch
 
 ROOT = Path(__file__).resolve().parents[1]
-GDS_SHA = '299b3203897dd4dffca7fb1a260a68dbd577c4ac4f98fb105cfe9e8579cf650c'
+GDS_SHA = '4a56593ff8f9d61112e69780ed80f04ef276713d3f8fa88901554c8dbbbee22b'
 INK = '#17324d'
 M1, M2, RED = '#477cab', '#c89434', '#c42b36'
 
@@ -107,9 +107,9 @@ def pins(out):
 
 
 def blocks(out):
-    fig, ax = plt.subplots(figsize=(16, 8.2), facecolor='white')
+    fig, ax = plt.subplots(figsize=(16, 9.2), facecolor='white')
     fig.subplots_adjust(left=.015, right=.985, top=.97, bottom=.035)
-    ax.set_xlim(0, 16); ax.set_ylim(0, 8); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_xlim(0, 16); ax.set_ylim(0, 9); ax.set_aspect('equal'); ax.axis('off')
 
     def text(x, y, s, size=16, weight='normal', color=INK, ha='center'):
         ax.text(x, y, s, ha=ha, va='center', fontsize=size, weight=weight, color=color, linespacing=1.55)
@@ -123,8 +123,8 @@ def blocks(out):
                                     mutation_scale=18, lw=lw, color=color,
                                     shrinkA=0, shrinkB=1))
 
-    text(.45, 7.6, 'ISHI VGA  |  回路ブロック図', 25, 'bold', ha='left')
-    text(.45, 7.05, '座標から固定画像と同期信号を作り、同じクロックで出力する', 16, ha='left', color='#566b80')
+    text(.45, 8.6, 'ISHI VGA  |  回路ブロック図', 25, 'bold', ha='left')
+    text(.45, 8.05, '座標からロゴと同期信号を生成し、フレームごとに発光状態を進める', 16, ha='left', color='#566b80')
 
     # Two clocked groups; combinational logic sits between them.
     box(.5, 2.15, 3.6, 4.2)
@@ -138,14 +138,19 @@ def blocks(out):
 
     # Single h/v coordinate bus, explicitly branching to the two functions.
     ax.plot([4.1, 4.9], [4.25, 4.25], color=INK, lw=2)
-    ax.plot([4.9, 4.9], [3.15, 5.35], color=INK, lw=2)
+    ax.plot([4.9, 4.9], [3.15, 7.2], color=INK, lw=2)
     ax.plot(4.9, 4.25, 'o', color=INK, ms=5)
     arrow(4.9, 5.35, 5.7, 5.35); arrow(4.9, 3.15, 5.7, 3.15)
     text(4.52, 4.57, 'h, v', 15, 'bold')
 
+    box(5.7, 6.7, 4.05, 1.0, face='#fbeff3', edge='#ad7d92')
+    text(7.725, 7.2, '発光カウンタ phase：7 bit\nCLKで更新・フレーム末に加算', 14)
+    arrow(4.9, 7.2, 5.7, 7.2)
+    arrow(7.725, 6.7, 7.725, 6.2)
+
     box(5.7, 4.5, 4.05, 1.7, face='#f1f7f1', edge='#76977e')
-    text(7.725, 5.65, 'ロゴ描画', 21, 'bold')
-    text(7.725, 5.05, '文字・横帯・電源枝5本\n座標からRGBを判定（ROMなし）', 14)
+    text(7.725, 5.65, 'ロゴ描画＋文字の発光', 19, 'bold')
+    text(7.725, 5.05, 'I → S → H → I：各16フレーム\n発光なし：64フレーム（ROMなし）', 14)
     box(5.7, 2.3, 4.05, 1.7, face='#faf5e9', edge='#b59b5c')
     text(7.725, 3.46, '同期信号の判定', 20, 'bold')
     text(7.725, 2.83, '水平同期・垂直同期\nHSYNC / VSYNC は負極性', 14)

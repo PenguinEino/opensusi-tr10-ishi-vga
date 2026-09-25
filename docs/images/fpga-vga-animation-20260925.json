@@ -1,0 +1,24 @@
+{
+  "source_name": "PXL_20260925_131954596.mp4",
+  "source_sha256": "054312b1c012818f584364aa93d49290b2ba8da594f961d3998e352f4843ef95",
+  "source_duration_seconds": 3.934367,
+  "role": "FPGA monitor recording; not an ASIC silicon measurement or simulator output",
+  "rotation": "90 degrees counterclockwise after input display-matrix orientation",
+  "video_filter": "transpose=cclock,scale=960:-2,setsar=1",
+  "gif_filter": "fps=15,scale=640:-2:flags=lanczos,split[a][b];[a]palettegen=max_colors=128[p];[b][p]paletteuse=dither=bayer:bayer_scale=3",
+  "video_pixels": [
+    960,
+    540
+  ],
+  "gif_pixels": [
+    640,
+    360
+  ],
+  "audio_in_published_video": false,
+  "ffmpeg_version": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "files": {
+    "fpga-vga-animation-20260925.mp4": "c7e06dd5ded912d65db1f3dd6248549732a1bc15a984542830483265fd3e01a1",
+    "fpga-vga-animation-20260925.gif": "e827538d037e1b586812e1303cece48e9488eedf3eb580b9b6e05d77d01c2fef"
+  },
+  "script_sha256": "1a988e7e2db349c78e1235efe7080414c2f0daba1eb0b9305e3d059e9a69a07b"
+}

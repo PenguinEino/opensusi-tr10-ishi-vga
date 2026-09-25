@@ -1,56 +1,39 @@
 # ISHI VGA — TR-1um
 
-ISHI会ロゴを「格子＋5本の電源枝」の図案としてVGAへ出力する固定映像回路です。外部CLK 3.15 MHzで、640×480・60 Hz相当の同期信号とRGB111を生成します。
+ISHI会ロゴをVGAに出力し、**I → S → H → I → 発光なし**を繰り返す回路です。各文字は約0.267秒、発光なしは約1.067秒、1周は約2.13秒です。
 
-**コア外形1792.8×897.2 µm、VDD込み7端子（共通VSSを除く）。** 岡村氏の[APRtools](https://github.com/jun1okamura/TR-1um_APRtools)／v59_4スタンダードセルを使用し、VerilogからYosysで論理合成、配置配線と局所修復を行いました。
+**1792.8 × 897.2 µm、VDD込み7端子（共通VSSを除く）。** 外部CLK 3.15 MHz、640×480・60 Hz相当、RGB111。岡村氏の[APRtools](https://github.com/jun1okamura/TR-1um_APRtools)／v59_4を使い、論理合成・配置配線・検証を行いました。
 
-| 内容 | ファイル |
-|---|---|
-| 仕様・端子・動作・検証範囲 | [SPEC.md](SPEC.md) |
-| レイアウト | [ishi_vga.gds](ishi_vga.gds) — top: **`ishi_vga_core`** |
-| GDSから直接抽出した回路 | [ishi_vga.extracted](ishi_vga.extracted) |
-| 独立したLVS参照回路 | [simulation/ishi_vga_lvs.spice](simulation/ishi_vga_lvs.spice) |
-| ngspice用の抽出回路 | [simulation/core_sim.spice](simulation/core_sim.spice) |
-| 論理回路のソース | [RTL](source/ishi_vga_core.v)・[描画RTL](source/ishi_logo.v)・[合成後ゲート回路](source/ishi_vga_core_pnr.v) |
-| 端子の機械可読表 | [ports.json](ports.json) |
-| 再検証方法 | [REPRODUCE.md](REPRODUCE.md) |
-| 依存の固定版・由来 | [toolchain.lock.json](toolchain.lock.json)・[PROVENANCE.md](PROVENANCE.md) |
-| 検証記録 | [verification/summary.json](verification/summary.json) |
+[仕様・端子](SPEC.md) · [GDS](ishi_vga.gds) · [抽出回路](ishi_vga.extracted) · [再検証](REPRODUCE.md) · [版・由来](PROVENANCE.md)
 
-統合時はトップセル **`ishi_vga_core`** を指定します。
+## 実機とシミュレーション
 
-## 実装内容
+Tang Primer 20K＋抵抗DACでの実機動画。横向きに回転した[MP4](fpga_demo.mp4)も収録しています。
 
-- 座標ビット・共有した文字パターン・線分判定から固定ロゴを生成。
-- 水平を8画素時間単位で進め、3.15 MHzでVGAタイミングを生成。
-- RESET端子を省いた水平・垂直カウンタを実装。
-- 4行のセル配置とM1/M2配線で、1800×900 µmの半枠に収めたコアを作成。
-- クロックを4個のバッファで分岐し、各行のFFを駆動。
-- ツール・セル・PDKの版を固定し、チェックポイントから同じGDSを再生成できる手順を整備。
+<img src="fpga_demo.gif" alt="FPGA実機でI、S、H、Iが順に発光し、発光なしの段階へ戻る" width="640">
 
-## 検証結果
+ゲートシミュレーションで観測した表示。各文字16フレーム、発光なし64フレームです。
 
-| 項目 | 結果 |
-|---|---|
-| 描画DRC・strict LVS | 描画DRC 0件、strict LVS一致 |
-| RTL／ゲート | 各2フレーム・105,000クロック一致。全131,072二値カウンタ状態の次状態・出力も一致 |
-| セル遅延STA | 5 V・25℃、setup余裕276.025 ns、hold余裕6.687 ns |
-| 抽出SPICE | 5 V・27℃・各出力1 pFで、5試験・計668クロック一致（境界540＋起動中128） |
-| FPGA実機 | Tang Primer 20K＋抵抗DACでVGAモニタへのロゴ表示を確認 |
-| 再現性 | チェックポイントから再生成したGDSのSHA256一致、DRC／LVS／STAを再確認 |
+<img src="animation.gif" alt="ゲートシミュレーションの文字発光アニメーション" width="640">
 
-## 表示画像・レイアウト
+## 実装・検証
 
-Tang Primer 20K＋抵抗DACでのVGA実機表示（2026-09-25）。
+- 画像ROMを使わず、座標からロゴを描画。7 bitカウンタで発光状態を更新。
+- M1/M2配線で半枠に収容。241論理セル、29 DFF。
+- 描画DRC 0件、strict LVS一致、802信号端子の接続監査で欠落・短絡・断線0。
+- セル遅延STA：setup余裕274.741 ns、hold余裕6.687 ns。
+- RTL／ゲート：128フレーム・672万クロック一致。
+- 抽出回路のngspice：1990素子、20試験・922クロックで状態24 bitと出力5 bitが一致。
+- Tang Primer 20KへのSRAM書き込み・実機動画を収録。
 
-<img src="ishi_vga_fpga_photo.png" alt="Tang Primer 20KからVGAモニタへ出力したISHI会ロゴの実機写真" width="640">
+[物理・論理検証記録](verification/verification.json) · [抽出SPICEの条件と結果](SPICE.md) · [FPGA書き込み記録](fpga/programming.json)
 
-ゲートシミュレーションで観測した表示画像。保存済みの `observed.hex` から生成した640×480画像です。
+## レイアウト・構成
 
-<img src="ishi_vga_output.png" alt="合成後ゲートシミュレーションの観測フレーム" width="640">
+統合時のトップセルは **`ishi_vga_core`** です。
 
-![最終GDSのレイアウト](ishi_vga_layout.png)
+<img src="layout.png" alt="アニメーション版の最終GDS" width="900">
 
-![回路の説明用ブロック図](ishi_vga_blocks.png)
+<img src="ishi_vga_blocks.png" alt="走査カウンタ、発光カウンタ、ロゴ描画、出力レジスタのブロック図" width="900">
 
-[拡大用のSVG](ishi_vga_blocks.svg)
+[ブロック図SVG](ishi_vga_blocks.svg) · [実メタル上の端子位置](ishi_vga_pins.png)
