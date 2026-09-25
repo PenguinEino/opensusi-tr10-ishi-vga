@@ -1,0 +1,57 @@
+{
+  "scope": "placement room heuristic only; not an animated place-and-route result",
+  "source": "experiments/a_clock_tree/layout/placement.json",
+  "source_sha256": "9c8a51a97b2679ff9f6c4b8ea16350b27d33906a54c655b65572219e7abd3942",
+  "row_height_um": 59.4,
+  "rows": [
+    {
+      "row": 0,
+      "filler_width_um": 253.8,
+      "filler_area_um2": 15075.72,
+      "longest_contiguous_widths_um": [
+        59.4,
+        54.0,
+        32.4,
+        32.4,
+        16.2
+      ]
+    },
+    {
+      "row": 1,
+      "filler_width_um": 280.8,
+      "filler_area_um2": 16679.52,
+      "longest_contiguous_widths_um": [
+        70.2,
+        59.4,
+        37.8,
+        32.4,
+        16.2
+      ]
+    },
+    {
+      "row": 2,
+      "filler_width_um": 183.6,
+      "filler_area_um2": 10905.84,
+      "longest_contiguous_widths_um": [
+        43.2,
+        27.0,
+        16.2,
+        16.2,
+        16.2
+      ]
+    },
+    {
+      "row": 3,
+      "filler_width_um": 1015.2,
+      "filler_area_um2": 60302.88,
+      "longest_contiguous_widths_um": [
+        248.4,
+        237.6,
+        226.8,
+        226.8,
+        16.2
+      ]
+    }
+  ],
+  "total_filler_area_um2": 102963.96
+}

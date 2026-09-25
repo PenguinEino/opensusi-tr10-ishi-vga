@@ -1,0 +1,2 @@
+PASS: 3360000 ticks per variant; RGB and sync, 4 variants
+/home/ishi-kai/ishi-vga/experiments/animation_selected/sim_rtl/tb_anim.v:52: $finish called at 1066665601000 (1ps)

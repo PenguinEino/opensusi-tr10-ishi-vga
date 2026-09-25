@@ -1,0 +1,99 @@
+設計 : ishi_vga_core   (/home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse)
+Yosys: yosys  (Yosys 0.33 (git sha1 2584903a060))
+Liberty: /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib
+ABC 制約: set_driving_cell BUF_X2 set_load 45.923    （/home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/abc.constr / set_load は /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib の OSS_ESD_5V_DIO / OUT から引いた値。U99）
+
+##################### 0. セルの Verilog モデルを生成
+wrote build/tr1um_cells.v  (26 cells)
+
+##################### 1. RTL の機能検証
+  飛ばす（SYN_TB_RTL 未設定か iverilog 無し）
+
+##################### 2. 合成 → 実セルへマッピング
+Warning: Found unsupported expression 'A*!S+B*S' in pin attribute of cell 'MUXDFFRB' - skipping.
+  ishi_vga_core    221 セル (FF 28 / 組合せ 193)     333,910 um2 = 0.334 mm2
+
+##################### 3. 重複ゲートの整理（dedup_gates.py）
+found 0 duplicate group(s), 0 redundant instance(s) to remove
+wrote /home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/ishi_vga_core_dedup.v
+
+##################### 4. MUXDFFRB / RSLATCH への畳み込み
+parsed 221 instances from /home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/ishi_vga_core_dedup.v
+found 0 MUX2->DFFRB.D pairs -> MUXDFFRB, 0 cross-coupled NOR2 pairs -> RSLATCH
+wrote /home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/ishi_vga_core_merged.v
+  MUXDFFRB instances created: 0
+  RSLATCH instances created:  0
+
+post-merge instance count: 221
+  AND2_X1      9
+  AND3_X1      2
+  AND4_X1      1
+  BUF_X2       6
+  DFF          28
+  INV_X1       15
+  INV_X2       1
+  MUX2         3
+  NAND2        34
+  NAND3        11
+  NAND4        3
+  NOR2         42
+  NOR3         26
+  NOR4         11
+  OR2          8
+  OR3          1
+  OR4          2
+  XNOR2        14
+  XOR2         4
+
+##################### 5. ゲートレベル TB（畳み込み後）
+  飛ばす（SYN_TB_NET 未設定か iverilog 無し）
+
+##################### 6. BUFTH で外部入力を受ける
+入力ポート 1 本、対象 1 本
+  BUFTH on clk → clk_buf
+wrote /home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/ishi_vga_core_pnr.v
+  BUFTH 1 個を挿入（32.4 um / 1,925 um2）
+  ishi_vga_core    222 セル (FF 28 / 組合せ 194)     335,835 um2 = 0.336 mm2
+
+##################### 7. 面積と使用率
+--- ishi_vga_core: マッピング後の実セル（/home/ishi-kai/ishi-vga/experiments/animation_addenable/white_pulse/out/ishi_vga_core_pnr.v）---
+  DFF          28  x   3849.1 =    107,775 um2
+  NOR2         42  x    962.3 =     40,417 um2
+  NOR3         26  x   1283.0 =     33,358 um2
+  NAND2        34  x    962.3 =     32,718 um2
+  XNOR2        14  x   1603.8 =     22,453 um2
+  NOR4         11  x   1603.8 =     17,642 um2
+  NAND3        11  x   1283.0 =     14,113 um2
+  AND2_X1       9  x   1283.0 =     11,547 um2
+  OR2           8  x   1283.0 =     10,264 um2
+  INV_X1       15  x    641.5 =      9,622 um2
+  XOR2          4  x   1603.8 =      6,415 um2
+  BUF_X2        6  x    962.3 =      5,774 um2
+  MUX2          3  x   1924.6 =      5,774 um2
+  NAND4         3  x   1603.8 =      4,811 um2
+  OR4           2  x   1924.6 =      3,849 um2
+  AND3_X1       2  x   1603.8 =      3,208 um2
+  AND4_X1       1  x   1924.6 =      1,925 um2
+  BUFTH         1  x   1924.6 =      1,925 um2
+  OR3           1  x   1603.8 =      1,604 um2
+  INV_X2        1  x    641.5 =        642 um2
+  合計          222                     335,835 um2 = 0.336 mm2
+FF 28 / 組合せ 194 / NAND2 換算 349 ゲート
+セル幅の総和 5,654 um  (行高 59.4 um → 1 行 1840um なら 3.1 行ぶん)
+コア 1840 x 1840 um から四隅を欠いて 3.328 mm2
+  util 50%:  0.672 mm2  OK
+  util 60%:  0.560 mm2  OK
+  util 70%:  0.480 mm2  OK
+  util 80%:  0.420 mm2  OK
+
+★ セル面積は **実測**（GDS の (235,0) abutment box）。
+  行数・util・所要面積は **見積り**（配置も配線も済んでいない）。
+  成果物の寸法は配置配線のあと GDS を測ること。
+
+##################### 8. 既提出ネットリストとの突き合わせ
+  飛ばす（SYN_REF_NETLIST 未設定）
+
+##################### 9. STA
+  飛ばす（config.py に STA_CLK_PORT が無い）
+
+完了

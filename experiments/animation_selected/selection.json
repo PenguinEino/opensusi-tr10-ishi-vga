@@ -1,0 +1,52 @@
+{
+  "static_reference": {
+    "source": "experiments/animation_samples/static_reference",
+    "files": {
+      "config.py": "25582a27cfb5358e0cc4792219619e54a1a38e5d8593b30ebc9affc88571d2a1",
+      "ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+      "ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+      "out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+      "build/synthesis.log": "c5c23f8d5ecd948594546c4b3d1f82e31fd3f70d17329817192c37a32ce6f47a"
+    }
+  },
+  "white_pulse": {
+    "source": "experiments/animation_addenable/white_pulse",
+    "files": {
+      "config.py": "9c9779ae942947fb5395fa911636a9efe661749d3e29448839fac87583719f84",
+      "ishi_vga_core.v": "a44b27ece44ccfb370cff52d834488a54dc1a278303afde637ff6c4cec7816bf",
+      "ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+      "out/ishi_vga_core_pnr.v": "dc4076d7407f3979ec83d64f39a972b0d3e151215f0c6a9c5fd2852baab28bf6",
+      "build/synthesis.log": "e268232fe9c30d1f4114b5a509164145fe1dd6d4ae14a5503e243df54eddf6b1"
+    }
+  },
+  "wire_scan": {
+    "source": "experiments/animation_samples/wire_scan",
+    "files": {
+      "config.py": "c1a7364b6e2d92a69645ee06bd2adfb66e3f4d728e2263d736bbc91c17ef7f4e",
+      "ishi_vga_core.v": "c5037817d0041914d8812acbd3850e3473e76ae3975e43b367b9f16f243a5a1a",
+      "ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+      "out/ishi_vga_core_pnr.v": "d8cb28bd4dc1f92e332778fb62553d9796b4694c38a79f680ebe4dc8a4c30f4f",
+      "build/synthesis.log": "c153c566344a0d1bf24f73558aab0229b12dedc49e5cefa92ca8dff3934f2c1f"
+    }
+  },
+  "letter_scan": {
+    "source": "experiments/animation_addenable/letter_scan",
+    "files": {
+      "config.py": "0d43bfb34a82986fa2e97d2e318271ebd5b91b9ef43ced5e2ff8198d76105e62",
+      "ishi_vga_core.v": "03a5ae1f5a6c0c7f57940b8e2d7462b4735c23ca86fac1599893ff4ecde07c33",
+      "ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+      "out/ishi_vga_core_pnr.v": "9df462cd388583050028e9633874d5163899ce3ba26af39dc0fe2e8a85ffc8b1",
+      "build/synthesis.log": "edf4870314453d3e889a066c29799b62f8fe5dfcfbb2a02f55fb6d2bb1940a34"
+    }
+  },
+  "palette_swap": {
+    "source": "experiments/animation_addenable/palette_swap",
+    "files": {
+      "config.py": "7e18c321c0151f4e5e83d50946131f9bae040937fb59478512acfffee0b61aa0",
+      "ishi_vga_core.v": "638584545e0fdad9c14d606fc6f84a77f1358e96f7bf2051a097d00b7b1e232b",
+      "ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+      "out/ishi_vga_core_pnr.v": "2595137678b1869c66ee7f5ee6f06237864afdb0104b5747fb47876d2467c38c",
+      "build/synthesis.log": "d9948e3f54e0c5e2a4f6516d1b7266e794e7023b80719d7da624ff0eaf1521de"
+    }
+  }
+}

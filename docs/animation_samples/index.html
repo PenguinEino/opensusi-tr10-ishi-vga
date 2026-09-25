@@ -1,0 +1,29 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISHI VGA — アニメーション比較</title><style>
+*{box-sizing:border-box}body{margin:0;background:#101821;color:#eef4fa;font:15px system-ui,sans-serif}main{max-width:1140px;margin:auto;padding:22px 24px}h1{font-size:27px;margin:0 0 6px}header p{margin:0;color:#b4c4d3;line-height:1.7}.controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:17px 0}button,select{background:#243446;color:white;border:1px solid #647991;border-radius:7px;padding:8px 12px;font:inherit;cursor:pointer}button{min-width:100px}input[type=range]{width:200px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}article{background:#1b2837;border:1px solid #33485d;border-radius:10px;padding:12px}.label{display:flex;justify-content:space-between;align-items:center;gap:10px}h2{font-size:18px;margin:0 0 10px}.label span{font-size:13px;color:#77ddd6;white-space:nowrap}canvas{display:block;width:100%;max-height:29vh;object-fit:contain;background:#000;image-rendering:pixelated}article p{margin:9px 0 6px;font-size:14px}.foot{font-size:12px;color:#b4c4d3;display:flex;justify-content:space-between}a{color:#80d2ff}footer{margin-top:15px;color:#aebed0;line-height:1.65;font-size:13px}#position{font-variant-numeric:tabular-nums;color:#8de4db}label{display:flex;align-items:center;gap:6px}@media(max-width:700px){.grid{grid-template-columns:1fr}canvas{max-height:none}.label{flex-wrap:wrap}main{padding:16px}}
+</style><main><header><h1>ISHI VGA — アニメーション比較</h1><p>6bitのフレームカウンタで動かす4案。1周64フレーム＝約1.07秒、追加端子0本。</p></header>
+<div class="controls"><button id="play">一時停止</button><label>速度<select id="speed"><option value="0.5">0.5×</option><option selected value="1">1×（実時間）</option><option value="2">2×</option></select></label><label><input id="original" type="checkbox">静止画と比較</label><input id="seek" type="range" min="0" max="63" value="0" aria-label="フレーム位置"><span id="position">0 / 64 frame</span></div>
+<div class="grid"><article><div class="label"><h2>A · 配線の白点灯</h2><span>セル面積 +11.5%</span></div>
+<canvas width="640" height="480" data-name="white_pulse" aria-label="A · 配線の白点灯のRTLシミュレーション"></canvas>
+<p>水色の配線全体を、約0.53秒ごとに白く点灯。</p><div class="foot">追加 13セル / 34,642 µm² <a href="white_pulse.gif">GIFを開く</a></div>
+<img hidden id="sprite-white_pulse" src="white_pulse_sprite.png" alt=""></article>
+<article><div class="label"><h2>B · 配線を走る光</h2><span>セル面積 +14.4%</span></div>
+<canvas width="640" height="480" data-name="wire_scan" aria-label="B · 配線を走る光のRTLシミュレーション"></canvas>
+<p>8区画のハイライトが左から右へ移動。</p><div class="foot">追加 18セル / 43,302 µm² <a href="wire_scan.gif">GIFを開く</a></div>
+<img hidden id="sprite-wire_scan" src="wire_scan_sprite.png" alt=""></article>
+<article><div class="label"><h2>C · 文字の順次点灯</h2><span>セル面積 +12.9%</span></div>
+<canvas width="640" height="480" data-name="letter_scan" aria-label="C · 文字の順次点灯のRTLシミュレーション"></canvas>
+<p>I → S → H → I の順に、文字を白く点灯。</p><div class="foot">追加 15セル / 38,812 µm² <a href="letter_scan.gif">GIFを開く</a></div>
+<img hidden id="sprite-letter_scan" src="letter_scan_sprite.png" alt=""></article>
+<article><div class="label"><h2>D · 色の切り替え</h2><span>セル面積 +13.5%</span></div>
+<canvas width="640" height="480" data-name="palette_swap" aria-label="D · 色の切り替えのRTLシミュレーション"></canvas>
+<p>赤と緑の出力を切り替え、ロゴの配色を変化。</p><div class="foot">追加 16セル / 40,737 µm² <a href="palette_swap.gif">GIFを開く</a></div>
+<img hidden id="sprite-palette_swap" src="palette_swap_sprite.png" alt=""></article></div><footer>RTLは64フレームを連続実行し、各案のRGB・HSYNC・VSYNCを照合。ゲート回路でも代表8フレームを照合し、表示データが一致しました。<br>面積は同じv59_4で新規合成した静止画版との差分です。配線後の外形寸法ではありません。現行提出版とは別の試作です。</footer><img id="static" hidden src="static_reference.png" alt=""></main>
+<script>
+const canvases=[...document.querySelectorAll('canvas')],play=document.querySelector('#play'),speed=document.querySelector('#speed'),seek=document.querySelector('#seek'),position=document.querySelector('#position'),original=document.querySelector('#original');
+let running=true,phase=0,last=performance.now();
+function paint(){let frame=Math.floor(phase)%64,sample=Math.floor(frame/8);for(const c of canvases){const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;if(original.checked){ctx.drawImage(document.querySelector('#static'),0,0)}else{ctx.drawImage(document.querySelector('#sprite-'+c.dataset.name),0,sample*480,640,480,0,0,640,480)}}seek.value=frame;position.textContent=frame+' / 64 frame'}
+play.onclick=()=>{running=!running;play.textContent=running?'一時停止':'再生'};seek.oninput=()=>{phase=Number(seek.value);running=false;play.textContent='再生';paint()};
+function step(now){const dt=Math.min(now-last,100);last=now;if(running)phase=(phase+dt*.06*Number(speed.value))%64;paint();requestAnimationFrame(step)}
+Promise.all([...document.images].map(im=>im.decode())).then(()=>{last=performance.now();requestAnimationFrame(step)});
+</script></html>
