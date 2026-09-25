@@ -66,7 +66,7 @@
     },
     "README.md": {
       "path": "docs/submission/README.md",
-      "sha256": "cd2752fc2a97cbf1a0a6b81e7c51f683e55af0946935b826dc4cdbc209441720",
+      "sha256": "e89c164bf6ecd6afb278a04facfcd60e1d187430ba0e3444de5e61a04dd2e12c",
       "transform": "none"
     },
     "SPEC.md": {
@@ -782,7 +782,7 @@
   },
   "files": {
     "PROVENANCE.md": "1c919398e535e17aee4ec4c38bf6dae7f6f6ce663a5ffacd438cdd75bdaff7f9",
-    "README.md": "cd2752fc2a97cbf1a0a6b81e7c51f683e55af0946935b826dc4cdbc209441720",
+    "README.md": "e89c164bf6ecd6afb278a04facfcd60e1d187430ba0e3444de5e61a04dd2e12c",
     "REPRODUCE.md": "37d988a9136e055a029aeb899bbf6a73834d2a7292e30412698534bc337ef8e7",
     "REVIEW.md": "5b589719687e113675a685274786d9e797b74bd9421c4157a6f3811f4ce37eb9",
     "SPEC.md": "152524bbd94c70f465f1e346514dc313114764dd5fec6f4557b0a276206d5b18",
