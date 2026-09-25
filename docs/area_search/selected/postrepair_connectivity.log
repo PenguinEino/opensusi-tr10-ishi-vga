@@ -1,0 +1,46 @@
+1939 M1 components, 1267 M2 components, 2699 V1 vias (in scan area)
+
+Checked 302 nets, 1017 pins total.
+
+41 PROBLEM(S) FOUND:
+ - SHORT SUSPECTED: net=_027_ pin _329_.Y shares a component with net=_211_
+ - SHORT SUSPECTED: net=h[3] pin _272_.A shares a component with net=_244_
+ - SHORT SUSPECTED: net=_051_ pin _473_.B shares a component with net=_143_
+ - SHORT SUSPECTED: net=v[0] pin _293_.C shares a component with net=_270_
+ - SHORT SUSPECTED: net=_048_ pin _401_.C shares a component with net=_082_
+ - SHORT SUSPECTED: net=v[9] pin _486_.A shares a component with net=_051_
+ - SHORT SUSPECTED: net=h[1] pin _420_.B shares a component with net=_179_
+ - SHORT SUSPECTED: net=_247_ pin _347_.B shares a component with net=_119_
+ - SHORT SUSPECTED: net=h[0] pin _354_.A shares a component with net=_048_
+ - SHORT SUSPECTED: net=_103_ pin _410_.C shares a component with net=_059_
+ - SHORT SUSPECTED: net=_227_ pin _304_.A shares a component with net=_027_
+ - SHORT SUSPECTED: net=h[5] pin _397_.A shares a component with net=h[3]
+ - SHORT SUSPECTED: net=_162_ pin _470_.B shares a component with net=_227_
+ - SHORT SUSPECTED: net=_209_ pin _351_.B shares a component with net=_103_
+ - SHORT SUSPECTED: net=_139_ pin _448_.B shares a component with net=_104_
+ - SHORT SUSPECTED: net=_083_ pin _392_.A shares a component with net=_209_
+ - SHORT SUSPECTED: net=_213_ pin _518_.A shares a component with net=_162_
+ - SHORT SUSPECTED: net=_233_ pin _302_.B shares a component with net=_214_
+ - SHORT SUSPECTED: net=_148_ pin _484_.C shares a component with net=_233_
+ - SHORT SUSPECTED: net=_222_ pin _374_.B shares a component with net=_148_
+ - SHORT SUSPECTED: net=_068_ pin _374_.Y shares a component with net=h[1]
+ - SHORT SUSPECTED: net=_073_ pin _380_.B shares a component with net=_222_
+ - SHORT SUSPECTED: net=_069_ pin _381_.B shares a component with net=_073_
+ - SHORT SUSPECTED: net=_108_ pin _430_.A shares a component with net=_173_
+ - SHORT SUSPECTED: net=_223_ pin _291_.Y shares a component with net=_069_
+ - SHORT SUSPECTED: net=_079_ pin _386_.B shares a component with net=_213_
+ - SHORT SUSPECTED: net=_240_ pin _449_.B shares a component with net=_223_
+ - SHORT SUSPECTED: net=_065_ pin _491_.C shares a component with net=_240_
+ - SHORT SUSPECTED: net=v[7] pin _376_.A shares a component with net=_065_
+ - SHORT SUSPECTED: net=_185_ pin _494_.C shares a component with net=_247_
+ - SHORT SUSPECTED: net=_034_ pin _339_.B shares a component with net=_052_
+ - SHORT SUSPECTED: net=_194_ pin _507_.Y shares a component with net=_079_
+ - SHORT SUSPECTED: net=_038_ pin _342_.Y shares a component with net=_194_
+ - SHORT SUSPECTED: net=_246_ pin _320_.B shares a component with net=_038_
+ - SHORT SUSPECTED: net=h[4] pin _321_.A shares a component with net=_185_
+ - SHORT SUSPECTED: net=_033_ pin _345_.A shares a component with net=_246_
+ - SHORT SUSPECTED: net=_040_ pin _345_.C shares a component with net=_058_
+ - SHORT SUSPECTED: net=v[2] pin _546_.Q shares a component with net=v[0]
+ - SHORT SUSPECTED: net=_000_[1] pin _460_.Y shares a component with net=_193_
+ - SHORT SUSPECTED: net=_031_ pin _432_.A shares a component with net=v[7]
+ - SHORT SUSPECTED: net=_161_ pin _469_.B shares a component with net=_031_

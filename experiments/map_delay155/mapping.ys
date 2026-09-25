@@ -1,0 +1,8 @@
+read_verilog /home/ishi-kai/ishi-vga/rtl/ishi_vga_core.v /home/ishi-kai/ishi-vga/rtl/ishi_logo.v
+hierarchy -check -top ishi_vga_core
+synth -top ishi_vga_core -flatten -noabc
+dfflibmap -liberty /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib
+abc -liberty /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib -constr out/abc.constr -D 155000
+opt_clean
+write_verilog -noattr out/ishi_vga_core.v
+stat -liberty /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib

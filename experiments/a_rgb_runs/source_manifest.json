@@ -1,0 +1,15 @@
+{
+  "mode": "rgb_runs",
+  "source": "assets/logo_rectangles_a_corrected.json",
+  "rectangles": 37,
+  "counter_source": "experiments/descending_h79_v500",
+  "sha256": {
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "scripts/a_logo_trial.py": "cd7f4ac6b56b9ac441b1b01ba1483c62709e517101bc8cbc9beab8cbff73d85b",
+    "experiments/a_rgb_runs/config.py": "32fe08df2939df0cdbbb0d34eb3365a99641cb576fdb5656e12ada9ec637a396",
+    "experiments/a_rgb_runs/ishi_vga_core.v": "5390b401ce1077a0d1f907735b23662534cdb513f8785178bd68fb90b466ad25",
+    "experiments/a_rgb_runs/ishi_logo.v": "99dac0ed20ef12bae31741a1e3509f2c1506d1ab1c7fcac59e93a2c550bce1af",
+    "experiments/a_rgb_runs/tests/expected_frame.hex": "b6b3f4cb54d37ef2820a1a9a4d7942eb8906ff0a2b8c0d9365bd0c0402ab57ce"
+  }
+}

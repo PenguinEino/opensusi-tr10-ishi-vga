@@ -1,0 +1,247 @@
+{
+  "status": "ACCEPTED",
+  "top": "ishi_vga_core",
+  "reference_spice_ports": [
+    "b",
+    "clk",
+    "g",
+    "hsync",
+    "r",
+    "vsync",
+    "vdd",
+    "vss"
+  ],
+  "port_labels": [
+    {
+      "port": "b",
+      "instance": "_398_",
+      "pin": "Q",
+      "xy_um": [
+        623.7,
+        648.5
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$385",
+      "point_dbu": [
+        623700,
+        648500
+      ]
+    },
+    {
+      "port": "clk",
+      "instance": "u_bufth_clk",
+      "pin": "A",
+      "xy_um": [
+        845.1,
+        836.9
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$445",
+      "point_dbu": [
+        845100,
+        836900
+      ]
+    },
+    {
+      "port": "g",
+      "instance": "_395_",
+      "pin": "Q",
+      "xy_um": [
+        353.7,
+        648.5
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$382",
+      "point_dbu": [
+        353700,
+        648500
+      ]
+    },
+    {
+      "port": "hsync",
+      "instance": "_396_",
+      "pin": "Q",
+      "xy_um": [
+        261.9,
+        104.5
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$85",
+      "point_dbu": [
+        261900,
+        104500
+      ]
+    },
+    {
+      "port": "r",
+      "instance": "_394_",
+      "pin": "Q",
+      "xy_um": [
+        558.9,
+        648.5
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$384",
+      "point_dbu": [
+        558900,
+        648500
+      ]
+    },
+    {
+      "port": "vsync",
+      "instance": "_397_",
+      "pin": "Q",
+      "xy_um": [
+        974.7,
+        836.8
+      ],
+      "layer": "M2",
+      "label_layer": [
+        49,
+        0
+      ],
+      "net_identity": "$451",
+      "point_dbu": [
+        974700,
+        836800
+      ]
+    },
+    {
+      "port": "vdd",
+      "instance_cell": "TAP2",
+      "xy_um": [
+        2.7,
+        132.0
+      ],
+      "layer": "M1",
+      "label_layer": [
+        48,
+        0
+      ],
+      "net_identity": "$131",
+      "point_dbu": [
+        2700,
+        132000
+      ]
+    },
+    {
+      "port": "vss",
+      "instance_cell": "TAP2",
+      "xy_um": [
+        2.7,
+        77.3
+      ],
+      "layer": "M1",
+      "label_layer": [
+        48,
+        0
+      ],
+      "net_identity": "$31",
+      "point_dbu": [
+        2700,
+        77300
+      ]
+    }
+  ],
+  "checks": {
+    "exact_12_expected_labels": true,
+    "all_polygon_regions_unchanged": true,
+    "top_nontext_shapes_unchanged": true,
+    "hierarchy_unchanged": true,
+    "all_non_top_cell_shapes_and_children_unchanged": true,
+    "signal_labels_on_actual_pin_conductors": true,
+    "vdd_vss_actual_labels_are_separate_single_components": true,
+    "drawing_marker_subset": true,
+    "mask_marker_subset": true,
+    "candidate_unchanged_during_checks": true,
+    "all_bound_inputs_unchanged": true
+  },
+  "power_components": {
+    "vdd": "$131",
+    "vss": "$31"
+  },
+  "drc": {
+    "source": {
+      "exit_code": 1,
+      "drawing_count": 1,
+      "drawing_markers": [
+        [
+          "'GC.ANT:GC must electrically connect to Substrate (or text if not chip level)'",
+          [
+            "polygon: (847.3,822.2;847.3,832.2;843.4,832.2;843.4,834.8;847.3,834.8;847.3,850.1;848.3,850.1;848.3,834.8;851.3,834.8;851.3,850.1;852.3,850.1;852.3,822.2;851.3,822.2;851.3,832.2;848.3,832.2;848.3,822.2)"
+          ]
+        ]
+      ],
+      "mdp_count": 1,
+      "mdp_markers": [
+        [
+          "'WAR06: Floating SG Detected'",
+          [
+            "polygon: (847.3,822.2;847.3,832.2;843.4,832.2;843.4,834.8;847.3,834.8;847.3,850.1;848.3,850.1;848.3,834.8;851.3,834.8;851.3,850.1;852.3,850.1;852.3,822.2;851.3,822.2;851.3,832.2;848.3,832.2;848.3,822.2)"
+          ]
+        ]
+      ]
+    },
+    "candidate": {
+      "exit_code": 1,
+      "drawing_count": 0,
+      "drawing_markers": [],
+      "mdp_count": 1,
+      "mdp_markers": [
+        [
+          "'WAR06: Floating SG Detected'",
+          [
+            "polygon: (847.3,822.2;847.3,832.2;843.4,832.2;843.4,834.8;847.3,834.8;847.3,850.1;848.3,850.1;848.3,834.8;851.3,834.8;851.3,850.1;852.3,850.1;852.3,822.2;851.3,822.2;851.3,832.2;848.3,832.2;848.3,822.2)"
+          ]
+        ]
+      ]
+    }
+  },
+  "paths": {
+    "source_gds": "experiments/a_power_fix172eq/build/candidate.gds",
+    "candidate_gds": "experiments/a_power_labels/build/labeled_core.gds",
+    "source_spice": "experiments/a_power_flex4/build/ishi_vga_core.spice",
+    "source_drawing_report": "experiments/a_power_labels/build/source_core_drawing.lyrdb",
+    "source_mdp_report": "experiments/a_power_labels/build/source_core_mdp.lyrdb",
+    "candidate_drawing_report": "experiments/a_power_labels/build/labeled_core_drawing.lyrdb",
+    "candidate_mdp_report": "experiments/a_power_labels/build/labeled_core_mdp.lyrdb"
+  },
+  "hashes": {
+    "source_gds": "ae88a6cf4a9e0242afa88a12882a5c372ca9492b0e6a3eb15598ab9d2fa606ae",
+    "actual_pin_map": "c02093a4666091ed3c00c61878f8508f2efc7cda27dd7fe304c932074d6929f3",
+    "placement": "9bb14d39620bfcf46904af14cafc9b22ff23da51b21e8e6e4734b5b092847f0f",
+    "reference_spice": "075c085c4149a66e548237f5b19f2d0a0eafa1736cd508ea1ec3cf0c9c1881da",
+    "config": "8264dcc74e773ea3c42c999003157c030adc63af1e05dec3b25a6b86128f9c14",
+    "generator": "da4e5ce83e224dd9ed601fa321cf16a4ed9fe4431ed7dc96c0629d0b3c8887f7",
+    "rules": "d57257f684236eaeed8c1a258a3b6d014fff157a7723d7546fcf86914b81be88",
+    "cell_lef": "d765cbf0edd79f9f022df00b1bfc54160fd76631685ce217c02474a2c475ebcc",
+    "toolchain_lock": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "toolchain_check": "95cbe980c707a0a18e3cf2325da6a2311a142f1afef25195d75c91ba3ad26aaf",
+    "apr_wrapper": "844361da667c026efb59613d2129b2903bd53d12b48f5e29f4a40739938891b2",
+    "drawing_deck": "8ffc43f3ea42fedf8f6f39facfada8309cd16d089a3af1b26016526e215f56ca",
+    "mdp_deck": "828f54f161f47efb4c1b9721577ec018649d367438bdc6c9ef50123c4a30bd4c",
+    "mask_deck": "07f9811a87a562ac4e0e4a13b70c5f60dd9d3ca962a8b034acb224877a3c5ebe",
+    "candidate_gds": "5a464e53d90307e510aeb3e8113941caa135f34427a8500f672f9f0746913c80"
+  },
+  "verification_payload_sha256": "f60760cf43bf2f9debd6e92d92b1c3ddeec5534923698f0d94ac05ef8701a4e2"
+}

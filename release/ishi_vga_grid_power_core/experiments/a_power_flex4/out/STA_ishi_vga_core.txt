@@ -1,0 +1,7 @@
+######## ishi_vga_core   out/ishi_vga_core_pnr.v   period = 317.460317 ns
+  reg->reg    slack   275.957 ns   _414_/Q -> _408_/D
+  in->reg     (パスなし)
+  reg->out    slack   248.781 ns   _398_/Q -> b
+  hold r->r   slack     6.634 ns   _409_/QB -> _409_/D
+  => reg->reg が要求する最小周期 41.503 ns  (24.09 MHz)
+     周期係数 a = 1.00 -> 全周期パス（同じ縁どうし）。経路の実遅延は 41.503 ns

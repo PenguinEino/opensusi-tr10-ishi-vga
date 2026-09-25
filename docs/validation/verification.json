@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "model": "rtl",
+      "clock_mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "rtl",
+      "clock_mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "clock_mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "clock_mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    }
+  ],
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "bdc657fce3fcbdd9dab7ddef91d3c98bea2fdda1a01b208f7744c41e544e1b6f",
+    "assets/logo_rectangles.json": "3159f7e4e397ba473157134fd243af5bf2c91aa7c82b09bc2d021458c77a1421",
+    "tests/tb_vga.v": "3d644f58d34b3b46ff63dc04534c3959d6309f0d3dbaeef0c21148a970f702a6",
+    "out/ishi_vga_core_pnr.v": "45997e49c48bb74a4602314227ab841c6930d704f05bcd7e98ee1816dd2fa44a"
+  },
+  "limitations": "Gate simulation uses unit delays, not SDF or silicon timing."
+}

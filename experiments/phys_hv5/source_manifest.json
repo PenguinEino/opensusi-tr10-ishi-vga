@@ -1,0 +1,18 @@
+{
+  "rtl_dir": "experiments/combine_direct_bounds_h80_v500",
+  "netlist": "experiments/combine_direct_bounds_h80_v500/out/ishi_vga_core_pnr.v",
+  "rows": 5,
+  "tracks": 328,
+  "seed": 4,
+  "restarts": 160,
+  "balance": 0.02,
+  "prl": 10,
+  "case": "G",
+  "source": "experiments/combine_direct_bounds_h80_v500/out/ishi_vga_core_pnr.v",
+  "rtl_source": "experiments/combine_direct_bounds_h80_v500",
+  "sha256": "1d4de09df9648e29f225cd149e806b3b61112ed53896090fbcf299574a695f5d",
+  "design": "phys_hv5",
+  "fill": "alternate",
+  "pad_weight": 1.0,
+  "span_lane_pack": false
+}

@@ -1,0 +1,4 @@
+DRC: build/postrepair_compacted.gds  top=ishi_vga_core
+  KLayout 0.30.9 / デッキ /home/ishi-kai/ishi-vga/tools/TR-1um/libs.tech/klayout/tech/drc
+  レポート /home/ishi-kai/ishi-vga/experiments/routing_audit/postrepair_baseline.lyrdb
+  レポートが出ていない

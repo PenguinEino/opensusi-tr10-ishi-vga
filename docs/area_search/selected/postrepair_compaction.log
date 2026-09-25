@@ -1,0 +1,12 @@
+channel0: budget=40 keeping=18 removing=22 tracks (118.8 um)
+channel1: budget=166 keeping=65 removing=101 tracks (545.4 um)
+channel2: budget=166 keeping=74 removing=92 tracks (496.8 um)
+channel3: budget=166 keeping=59 removing=107 tracks (577.8 um)
+channel4: budget=166 keeping=38 removing=128 tracks (691.2 um)
+channel5: budget=40 keeping=16 removing=24 tracks (129.6 um)
+step6 の記録に無いが実際に M1 が乗っているトラックを 1 本回収した（step7/step8 が足した配線）
+コア高 予算 4329.0 um -> 計算 1756.2 um (-2572.8 um, -59.4%)
+wrote build/postrepair_compacted.gds
+コア高 実測 1756.200 um  （bbox -6.300,0.000 - 1777.500,1756.200）
+wrote build/postrepair_pins.json
+wrote build/postrepair_shapes.json

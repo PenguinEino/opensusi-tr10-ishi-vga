@@ -1,0 +1,39 @@
+{
+  "art": "B",
+  "scale": 4,
+  "h_start": 79,
+  "h_end": 136,
+  "h_bits": 8,
+  "v_start": 500,
+  "v_last": 0,
+  "horizontal_total": 200,
+  "palette_rgb111": [
+    0,
+    3,
+    4,
+    3,
+    1,
+    5
+  ],
+  "signals": 6,
+  "including_vdd_excluding_common_vss": 7,
+  "target_bbox_um": [
+    1800,
+    900
+  ],
+  "adopted": false,
+  "reset": false,
+  "background": "black",
+  "source": "a_half_b128_5col",
+  "proposal": "b_power",
+  "title": "B+5：電源への枝",
+  "base": "B",
+  "added_nets": [
+    "VDD",
+    "VSS"
+  ],
+  "added_segments": 5,
+  "article": "https://note.com/akira_tsuchiya/n/n0c720b3498b4",
+  "grid_n_diff_split": false,
+  "drawing_not_extracted_cmos": true
+}

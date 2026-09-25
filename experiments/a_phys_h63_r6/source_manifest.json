@@ -1,0 +1,21 @@
+{
+  "source": "a_h63_v500_x",
+  "physical": {
+    "source": "a_h63_v500_x",
+    "name": "a_phys_h63_r6",
+    "rows": 6,
+    "seed": 4,
+    "restarts": 160,
+    "prl": 10,
+    "pad_weight": 1.0
+  },
+  "sha256": {
+    "scripts/a_physical_trial.py": "9db28f6444e0beabc2fd3fe458e871950eec6141fb31ba1664dffb9afeba11cf",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_h63_v500_x/source_manifest.json": "2eb09c089bf02b39ec0a7c5fae2f385d05769eab1383034b979b48e9cfea00d4",
+    "experiments/a_h63_v500_x/out/ishi_vga_core_pnr.v": "94bf32d8ea11bad8491d634ce16b27ae2f888248c6e1262bfd1d8d278411fa3f",
+    "experiments/a_phys_h63_r6/config.py": "2bfe32bdd2e782f0e5da44fa2c88e28f38f88a7bc7a5b40f8170fc9ca0a82299",
+    "experiments/a_phys_h63_r6/ishi_logo.v": "925e22863d459aa84f38c4bdd969aadd24a2c85ed62eaff0ffa03af5ccff873c",
+    "experiments/a_phys_h63_r6/ishi_vga_core.v": "1f1ff8030fec621f5137c15881320f41d675d23caeebfe92a15c30b3e2e20e98"
+  }
+}

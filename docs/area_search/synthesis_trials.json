@@ -1,0 +1,857 @@
+{
+  "baseline_cells": 375,
+  "baseline_cell_area_um2": 495252,
+  "baseline_raw_compacted_bbox_um": [
+    1611,
+    2905
+  ],
+  "limitations": "Cell area excludes routing/TAP/FILL/frame/ring. Physical trial GDS is diagnostic until connectivity, official DRC/LVS and timing pass.",
+  "trials": [
+    {
+      "name": "arch_hoffset16",
+      "last_report_cells": 361,
+      "last_report_area_um2": 484026,
+      "has_final_netlist": true,
+      "log": "experiments/arch_hoffset16/out/SYN_RESULTS.txt",
+      "netlist_sha256": "82c9cee42c8158c59bfd79543cca99b88f7720cae41f51a8b56a28e5f0bfcdc8",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_hoffset16/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_hoffset56",
+      "last_report_cells": 358,
+      "last_report_area_um2": 485308,
+      "has_final_netlist": true,
+      "log": "experiments/arch_hoffset56/out/SYN_RESULTS.txt",
+      "netlist_sha256": "0cbcd6d5fc62e62299bc17e9f9029fdacfb1cac5e63df09cdb58386ef88fd1f4",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_hoffset56/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h24",
+      "last_report_cells": 354,
+      "last_report_area_um2": 482422,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h24/out/SYN_RESULTS.txt",
+      "netlist_sha256": "731c89d643d171e74cfd860faaa81a193716820e6b7d7fa1c2693bcbac219e17",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h32",
+      "last_report_cells": 321,
+      "last_report_area_um2": 449704,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h32/out/SYN_RESULTS.txt",
+      "netlist_sha256": "c5cba379f3713f9eaddad665e06e63ff684f706e5b6ba0f3956c92e36265c2dc",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h40",
+      "last_report_cells": 319,
+      "last_report_area_um2": 444572,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h40/out/SYN_RESULTS.txt",
+      "netlist_sha256": "5432a362f685e1473dafdccc91b92272d662a251e7e7114f445fca0fc62828aa",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h48",
+      "last_report_cells": 338,
+      "last_report_area_um2": 465421,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h48/out/SYN_RESULTS.txt",
+      "netlist_sha256": "e857d734a8b141f1cc858c3ef1e118767b3aa9c6983668c84011fa2ce31a4d3a",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h64",
+      "last_report_cells": 320,
+      "last_report_area_um2": 448101,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h64/out/SYN_RESULTS.txt",
+      "netlist_sha256": "9a69957656ed07cf5ce05726ed0f0241a41964eff1ff6ee6d1c806d4773505cb",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h8",
+      "last_report_cells": 380,
+      "last_report_area_um2": 499422,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h8/out/SYN_RESULTS.txt",
+      "netlist_sha256": "e19a044ad878953f28e560cff9100ed714d4bd3253929ef1104eef6725dad4e9",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_h80",
+      "last_report_cells": 311,
+      "last_report_area_um2": 433987,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_h80/out/SYN_RESULTS.txt",
+      "netlist_sha256": "51a1f54fe3187ca32cb8664a61ea13a8a539305c943e0003f3440bbfc2e09632",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_offset_h80/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm16",
+      "last_report_cells": 343,
+      "last_report_area_um2": 469591,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm16/out/SYN_RESULTS.txt",
+      "netlist_sha256": "a79e8bba556ef09f81fddc108896af1d7e9ea4733eb1b11f3e49b1153d642f26",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm24",
+      "last_report_cells": 336,
+      "last_report_area_um2": 463497,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm24/out/SYN_RESULTS.txt",
+      "netlist_sha256": "4687c4baa9ccc78b9a73b50c683d199cb6323e432dcacd26c95c452013d81493",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm32",
+      "last_report_cells": 340,
+      "last_report_area_um2": 468950,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm32/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ba3dfd56072e8bf925f03e8e2bab6b77df59e9e567c2814db4e1194b070328ef",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm40",
+      "last_report_cells": 358,
+      "last_report_area_um2": 480819,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm40/out/SYN_RESULTS.txt",
+      "netlist_sha256": "35ae9c9f23933fe1b7243736c08ec0e191b959baf81d3089c3032a4db21f7fd7",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm48",
+      "last_report_cells": 324,
+      "last_report_area_um2": 451949,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm48/out/SYN_RESULTS.txt",
+      "netlist_sha256": "8affa0cb7ff3d8bf5a85440054bbff249830ce6ee0c40faf0c430814e5df8790",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_offset_hm48/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm56",
+      "last_report_cells": 327,
+      "last_report_area_um2": 453234,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm56/out/SYN_RESULTS.txt",
+      "netlist_sha256": "2583f678a52ce8f59895cd7dc25aca0972afdb7a4e77a1768cb964e0b6ad939d",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_offset_hm56/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_hm8",
+      "last_report_cells": 357,
+      "last_report_area_um2": 477290,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_hm8/out/SYN_RESULTS.txt",
+      "netlist_sha256": "04c8d594b9cd3fa2af2b0c67ec008177aa6a192b399b01418f2c0875a831f311",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_v128",
+      "last_report_cells": 335,
+      "last_report_area_um2": 463177,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_v128/out/SYN_RESULTS.txt",
+      "netlist_sha256": "fc75384461fc500be144522469787b1c407df7eafbe71bac1a13c9d0aafdcd5b",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_v256",
+      "last_report_cells": 371,
+      "last_report_area_um2": 492687,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_v256/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ebe0b29c43b5c7fbfd70724fe26999c8f7e1e7c5e96dbd94e592e04f93321f13",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_v32",
+      "last_report_cells": 351,
+      "last_report_area_um2": 474404,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_v32/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ca70da2abf56711f0b3f2b726389be39f2f33b389dfde20e9ef602168e4028b5",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_v500",
+      "last_report_cells": 335,
+      "last_report_area_um2": 452592,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ac00aec4dac30304e87aac7b146628a3d803b60f284c6abe0734f7dabbf03f3d",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_v64",
+      "last_report_cells": 367,
+      "last_report_area_um2": 490120,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_v64/out/SYN_RESULTS.txt",
+      "netlist_sha256": "622f7ac14fc4715199b88f84e7befda5594e8ea146723a253c9ad3e514e35beb",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_vm128",
+      "last_report_cells": 361,
+      "last_report_area_um2": 479536,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_vm128/out/SYN_RESULTS.txt",
+      "netlist_sha256": "8a870c749f8a1125688e165fbb7d1540f8cb682af6ede926ded465bb1e3dac2f",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_vm32",
+      "last_report_cells": 347,
+      "last_report_area_um2": 470554,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_vm32/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ec4aed2045282df0332ef86844653ca3e5ae5ee5b2c86a9d72f9bc015b4cd070",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_vm64",
+      "last_report_cells": 336,
+      "last_report_area_um2": 455478,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_vm64/out/SYN_RESULTS.txt",
+      "netlist_sha256": "b3a6201885ed2eb32971c5c2d5f2a990ceb5fb08e3303d2213b105d7e01b0065",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_vm76",
+      "last_report_cells": 340,
+      "last_report_area_um2": 463497,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_vm76/out/SYN_RESULTS.txt",
+      "netlist_sha256": "0b8d9dbac65c93da2efa0ef7de0b8a005692c29f1e91254ade43bc61094908b4",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_offset_vm96",
+      "last_report_cells": 349,
+      "last_report_area_um2": 476328,
+      "has_final_netlist": true,
+      "log": "experiments/arch_offset_vm96/out/SYN_RESULTS.txt",
+      "netlist_sha256": "eb82499813b4541767fc20b747ac3e94d4638f1e1ccd5012e9c773ec64bffbee",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_palette3",
+      "last_report_cells": 364,
+      "last_report_area_um2": 487233,
+      "has_final_netlist": false,
+      "log": "experiments/arch_palette3/out/SYN_RESULTS.txt",
+      "netlist_sha256": null,
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": false,
+      "blocked_existing_bufth": true,
+      "warning": "Last reported area is an intermediate netlist, NOT a completed candidate."
+    },
+    {
+      "name": "arch_rgb3",
+      "last_report_cells": 368,
+      "last_report_area_um2": 484026,
+      "has_final_netlist": true,
+      "log": "experiments/arch_rgb3/out/SYN_RESULTS.txt",
+      "netlist_sha256": "9f529d3cff60fd08ced98631cbde706df0f9ee90d2e400e072a8a5dab9ba2f18",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_rgb5",
+      "last_report_cells": 377,
+      "last_report_area_um2": 499101,
+      "has_final_netlist": true,
+      "log": "experiments/arch_rgb5/out/SYN_RESULTS.txt",
+      "netlist_sha256": "8b372b7b6c07507b70c36b87e7b97706c46603bedaef1148d50c1107406dfdb5",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_split_counters",
+      "last_report_cells": 367,
+      "last_report_area_um2": 498781,
+      "has_final_netlist": true,
+      "log": "experiments/arch_split_counters/out/SYN_RESULTS.txt",
+      "netlist_sha256": "258b7d57d3555e6e61ef5af23e59b0d6ec0f324131af91ad14dc0294b70d1a85",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_split_counters/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_sync_counters",
+      "last_report_cells": 392,
+      "last_report_area_um2": 523158,
+      "has_final_netlist": true,
+      "log": "experiments/arch_sync_counters/out/SYN_RESULTS.txt",
+      "netlist_sha256": "8566ca64e12cde1f1ab9a03a77757e62c2df665759407e87973d9755f4e79e1d",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/arch_sync_counters/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_vevents_binary",
+      "last_report_cells": 371,
+      "last_report_area_um2": 504234,
+      "has_final_netlist": true,
+      "log": "experiments/arch_vevents_binary/out/SYN_RESULTS.txt",
+      "netlist_sha256": "dec5b4159040acee1713707492cd3b2620176cf0b9877c0f1cb87c9540dfa7f5",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "arch_vevents_onehot",
+      "last_report_cells": 370,
+      "last_report_area_um2": 586991,
+      "has_final_netlist": true,
+      "log": "experiments/arch_vevents_onehot/out/SYN_RESULTS.txt",
+      "netlist_sha256": "9f35b73094630d819e3c50d8a68fc26bd8d932be14c29bea796a23d028cc5509",
+      "complete_four_checks": false,
+      "evidence": [],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "combine_axis_pos_h80_v500",
+      "last_report_cells": 346,
+      "last_report_area_um2": 489158,
+      "has_final_netlist": true,
+      "log": "experiments/combine_axis_pos_h80_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "d9d791f5711f2589f58ecb3a5381356fa113c061bd232ce4a9006aab77fb4fa6",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/combine_axis_pos_h80_v500/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "combine_bdd_yx_msb_h80_v500",
+      "last_report_cells": 316,
+      "last_report_area_um2": 454196,
+      "has_final_netlist": true,
+      "log": "experiments/combine_bdd_yx_msb_h80_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "dc2f4f1a245ba93186f3712a07e2dd64e32bcae745bc73d44e16eb96657aa7ff",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/combine_bdd_yx_msb_h80_v500/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "combine_direct_bounds_h80_v-64",
+      "last_report_cells": 307,
+      "last_report_area_um2": 425969,
+      "has_final_netlist": false,
+      "log": "experiments/combine_direct_bounds_h80_v-64/out/SYN_RESULTS.txt",
+      "netlist_sha256": null,
+      "complete_four_checks": false,
+      "evidence": [
+        "experiments/combine_direct_bounds_h80_v-64/build/metrics.json"
+      ],
+      "upstream_completed": false,
+      "blocked_existing_bufth": true,
+      "warning": "Last reported area is an intermediate netlist, NOT a completed candidate."
+    },
+    {
+      "name": "combine_direct_bounds_h80_v500",
+      "last_report_cells": 285,
+      "last_report_area_um2": 409289,
+      "has_final_netlist": true,
+      "log": "experiments/combine_direct_bounds_h80_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "1d4de09df9648e29f225cd149e806b3b61112ed53896090fbcf299574a695f5d",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/combine_direct_bounds_h80_v500/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "combine_direct_masked_h80_v500",
+      "last_report_cells": 344,
+      "last_report_area_um2": 484668,
+      "has_final_netlist": true,
+      "log": "experiments/combine_direct_masked_h80_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "522f3b2326a8e0c6038f78bfd046035a5043b876185b024fd3e73c61ab0f29b0",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/combine_direct_masked_h80_v500/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "descending_h159",
+      "last_report_cells": 333,
+      "last_report_area_um2": 462534,
+      "has_final_netlist": true,
+      "log": "experiments/descending_h159/out/SYN_RESULTS.txt",
+      "netlist_sha256": "a25b0d3b77d22b45c7d49c91139e56e0549216b79c6ac9ccbb49ed8e34a6aa42",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/descending_h159/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "descending_h199",
+      "last_report_cells": 383,
+      "last_report_area_um2": 509366,
+      "has_final_netlist": true,
+      "log": "experiments/descending_h199/out/SYN_RESULTS.txt",
+      "netlist_sha256": "cfdb0488ccab641fbfd6f39b0ec5037927a26054c04429bc2b30fbad2c7fe6ef",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/descending_h199/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "descending_h255",
+      "last_report_cells": 335,
+      "last_report_area_um2": 460290,
+      "has_final_netlist": true,
+      "log": "experiments/descending_h255/out/SYN_RESULTS.txt",
+      "netlist_sha256": "6bf4b109ded0042e30864b1e2ff33bca1669a9c4fede0540eb90fdf43460949d",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/descending_h255/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "descending_h79",
+      "last_report_cells": 317,
+      "last_report_area_um2": 440402,
+      "has_final_netlist": true,
+      "log": "experiments/descending_h79/out/SYN_RESULTS.txt",
+      "netlist_sha256": "b9a3023421b146bbb8c50f8803270112971e6e4ed24025a1a9221033f44e49fe",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/descending_h79/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "descending_h79_v500",
+      "last_report_cells": 282,
+      "last_report_area_um2": 407684,
+      "has_final_netlist": true,
+      "log": "experiments/descending_h79_v500/out/SYN_RESULTS.txt",
+      "netlist_sha256": "9e2b7928ea22297300fe376483f21b778647caae48ffd51ac68c75186cec0592",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/descending_h79_v500/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "event_setclear_h0",
+      "last_report_cells": 359,
+      "last_report_area_um2": 490441,
+      "has_final_netlist": true,
+      "log": "experiments/event_setclear_h0/out/SYN_RESULTS.txt",
+      "netlist_sha256": "247faa1d09ce009f8fc7fc8590aac73d65e16813720fd88ef6ff339e67b2982a",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/event_setclear_h0/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "event_setclear_h80",
+      "last_report_cells": 360,
+      "last_report_area_um2": 487234,
+      "has_final_netlist": true,
+      "log": "experiments/event_setclear_h80/out/SYN_RESULTS.txt",
+      "netlist_sha256": "47fdb354a277e7c06eb4156c02dbdaf3edf492186cb87122a1a2f99af058947c",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/event_setclear_h80/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "event_toggle_h0",
+      "last_report_cells": 351,
+      "last_report_area_um2": 474403,
+      "has_final_netlist": true,
+      "log": "experiments/event_toggle_h0/out/SYN_RESULTS.txt",
+      "netlist_sha256": "da4722af70c0e3ddfd02e7dfc2cde2a8462f5a33f4a30ab336ad51b76e55f008",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/event_toggle_h0/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "event_toggle_h80",
+      "last_report_cells": 356,
+      "last_report_area_um2": 484026,
+      "has_final_netlist": true,
+      "log": "experiments/event_toggle_h80/out/SYN_RESULTS.txt",
+      "netlist_sha256": "0ce7c78041c80ddc9834a97f047c6a3358bf9e00537f08e452edf2d190906372",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/event_toggle_h80/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_axis_mixed",
+      "last_report_cells": 373,
+      "last_report_area_um2": 505516,
+      "has_final_netlist": true,
+      "log": "experiments/logic_axis_mixed/out/SYN_RESULTS.txt",
+      "netlist_sha256": "65578d7f66411489c84ec8fd79f527ca3d3c4719d3f3ebf090bde57fc14ab87a",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_axis_mixed/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_axis_pos",
+      "last_report_cells": 330,
+      "last_report_area_um2": 470554,
+      "has_final_netlist": true,
+      "log": "experiments/logic_axis_pos/out/SYN_RESULTS.txt",
+      "netlist_sha256": "cd6d4c7f1bb28ef9de08af29bdedfe3879900581aa1170e79291c7ab95a932d8",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_axis_pos/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_axis_sop",
+      "last_report_cells": 345,
+      "last_report_area_um2": 481459,
+      "has_final_netlist": true,
+      "log": "experiments/logic_axis_sop/out/SYN_RESULTS.txt",
+      "netlist_sha256": "a01c8aaf31a5ad8f913a25cebe9e62e43d7a9d93cc32d11709d897afd9c5e1f4",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_axis_sop/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_bdd_xy_msb",
+      "last_report_cells": 478,
+      "last_report_area_um2": 658200,
+      "has_final_netlist": true,
+      "log": "experiments/logic_bdd_xy_msb/out/SYN_RESULTS.txt",
+      "netlist_sha256": "323a24cf6535ad0d9c917eb613f54a21ff8cacd39d4be320d8a7fbb793091ddc",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_bdd_xy_msb/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_bdd_yx_msb",
+      "last_report_cells": 339,
+      "last_report_area_um2": 466063,
+      "has_final_netlist": true,
+      "log": "experiments/logic_bdd_yx_msb/out/SYN_RESULTS.txt",
+      "netlist_sha256": "ba0bdfd220a0cf1f3bc7b882dddf12210a6f058ef891aefe97f4fe235b532faa",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_bdd_yx_msb/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_direct_bounds",
+      "last_report_cells": 367,
+      "last_report_area_um2": 495572,
+      "has_final_netlist": true,
+      "log": "experiments/logic_direct_bounds/out/SYN_RESULTS.txt",
+      "netlist_sha256": "bec5f6276bd5cd3e08535476dcafddaae804ebde34af161e25851cd74197cd7e",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_direct_bounds/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_direct_masked",
+      "last_report_cells": 339,
+      "last_report_area_um2": 474403,
+      "has_final_netlist": true,
+      "log": "experiments/logic_direct_masked/out/SYN_RESULTS.txt",
+      "netlist_sha256": "3e02ca296f7b300cd63839188c3246908e882764fb957f1561933b6b5e686a61",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_direct_masked/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_espresso_colors",
+      "last_report_cells": 533,
+      "last_report_area_um2": 690595,
+      "has_final_netlist": true,
+      "log": "experiments/logic_espresso_colors/out/SYN_RESULTS.txt",
+      "netlist_sha256": "98bcfbf6fdb0ca87cf98500ccd41f0cd06f5c77f2afadb975f7303b0c6336045",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_espresso_colors/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_espresso_rgb",
+      "last_report_cells": 908,
+      "last_report_area_um2": 1164997,
+      "has_final_netlist": true,
+      "log": "experiments/logic_espresso_rgb/out/SYN_RESULTS.txt",
+      "netlist_sha256": "f9627775d9c36eeb87f2c812fa64d07a316b82a7173c5b93ec089587e7708a87",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_espresso_rgb/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_factor_x",
+      "last_report_cells": 345,
+      "last_report_area_um2": 476648,
+      "has_final_netlist": true,
+      "log": "experiments/logic_factor_x/out/SYN_RESULTS.txt",
+      "netlist_sha256": "d0f431c06a62fd104a5415844f0852d6f6403688f7b8522efb7f91e0bee4f3b4",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_factor_x/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "logic_factor_y",
+      "last_report_cells": 346,
+      "last_report_area_um2": 484347,
+      "has_final_netlist": true,
+      "log": "experiments/logic_factor_y/out/SYN_RESULTS.txt",
+      "netlist_sha256": "11dd50aebdbf7fbe26039d6f752e27962a3f9e7f4e597cb183d2e47667d2c24e",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/logic_factor_y/build/metrics.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "map_area",
+      "last_report_cells": 456,
+      "last_report_area_um2": 552027,
+      "has_final_netlist": true,
+      "log": "experiments/map_area/build/synthesis.log",
+      "netlist_sha256": "0d939ab3dff4523bc392decab4c39255212d56efec05f8e913146f38b248a51e",
+      "complete_four_checks": false,
+      "evidence": [
+        "experiments/map_area/result.json"
+      ],
+      "upstream_completed": false,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "map_delay155",
+      "last_report_cells": 415,
+      "last_report_area_um2": 551385,
+      "has_final_netlist": true,
+      "log": "experiments/map_delay155/build/synthesis.log",
+      "netlist_sha256": "93f14c4260732d4e186f4242319ae125f1ff65c06e03f4eff4ea8f13cdc97798",
+      "complete_four_checks": false,
+      "evidence": [
+        "experiments/map_delay155/result.json"
+      ],
+      "upstream_completed": false,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "map_fast",
+      "last_report_cells": 500,
+      "last_report_area_um2": 624520,
+      "has_final_netlist": true,
+      "log": "experiments/map_fast/build/synthesis.log",
+      "netlist_sha256": "d210a3b3e107eed64d49d4edc6e71cd7b28b05326e5490b41032d47d793e83e2",
+      "complete_four_checks": false,
+      "evidence": [
+        "experiments/map_fast/result.json"
+      ],
+      "upstream_completed": false,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "map_noabc",
+      "last_report_cells": 415,
+      "last_report_area_um2": 551385,
+      "has_final_netlist": true,
+      "log": "experiments/map_noabc/build/synthesis.log",
+      "netlist_sha256": "8e03337c51ee99ab13b85f1b90d966a1e45119ced392435abdec20ffdff87eee",
+      "complete_four_checks": false,
+      "evidence": [
+        "experiments/map_noabc/result.json"
+      ],
+      "upstream_completed": false,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "row_patterns",
+      "last_report_cells": 401,
+      "last_report_area_um2": 530215,
+      "has_final_netlist": true,
+      "log": "experiments/row_patterns/out/SYN_RESULTS.txt",
+      "netlist_sha256": "e5f1488903db76727fa9e57d2d0070824adcc017dcff5917213ca70e28f96223",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/row_patterns/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    },
+    {
+      "name": "row_patterns_onehot",
+      "last_report_cells": 389,
+      "last_report_area_um2": 516423,
+      "has_final_netlist": true,
+      "log": "experiments/row_patterns_onehot/out/SYN_RESULTS.txt",
+      "netlist_sha256": "f8aa24540e3247b7e1db2a9c91ed79a2df7354219c359497b1c0cb9b0f8ff38d",
+      "complete_four_checks": true,
+      "evidence": [
+        "experiments/row_patterns_onehot/build/verification.json"
+      ],
+      "upstream_completed": true,
+      "blocked_existing_bufth": false
+    }
+  ]
+}

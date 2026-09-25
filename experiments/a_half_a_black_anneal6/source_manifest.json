@@ -1,0 +1,14 @@
+{
+  "source": "a_half_a_black_phys6",
+  "sha256": {
+    "experiments/a_half_a_black_phys6/source_manifest.json": "1d52d085b1113427cb1b71c79ca1c40ea111f0c55d290982f9082469a3564581",
+    "experiments/a_half_a_black_phys6/layout/placement.json": "757b4523633c030082471830c89ea7f3e3e7571191361171b12a5ecc922b7648",
+    "experiments/a_half_a_black_phys6/layout/row_assignment.json": "ff34d3300fa217f178e54cfc2d9bc434bbb29f79157213447bf207ba2f141649",
+    "experiments/a_half_a_black_phys6/out/ishi_vga_core_pnr.v": "6b6493582fe5ae57192cb13fd7e6bb66ffb8e123642815dc29665ad7f25d3f21",
+    "experiments/a_half_a_black_anneal6/config.py": "0777850e4ce9465cc1c9f888c9c98d76ac9ec87ce2b085c19144c615b258f05b",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "scripts/row_anneal.cpp": "2c43e48c1f6e00340fd33b496091137e615acf2d1c980910e4ae032d3f63915e",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/place.py": "e40d1da3ac5da8d422209f315d04a3be7dbddb0141eb78207c4fcf4c5df8b045"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "rows": 6,
+  "tracks": 328,
+  "seed": 4,
+  "restarts": 80,
+  "balance": 0.08,
+  "prl": 10,
+  "case": "C",
+  "source": "experiments/arch_offset_h80/out/ishi_vga_core_pnr.v",
+  "sha256": "51a1f54fe3187ca32cb8664a61ea13a8a539305c943e0003f3440bbfc2e09632",
+  "design": "phys_c",
+  "fill": "alternate",
+  "pad_weight": 1.0,
+  "span_lane_pack": false
+}

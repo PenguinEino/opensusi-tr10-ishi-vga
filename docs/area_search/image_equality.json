@@ -1,0 +1,12 @@
+{
+  "comparison": "Baseline B gate-simulation image vs selected candidate gate-simulation image",
+  "size": [
+    640,
+    480
+  ],
+  "changed_pixels": 0,
+  "sha256": {
+    "docs/validation_b/gates_630.png": "2f6e5ba81388fd4174d68e6e581b6b1434ac9d63879232c505a343909e6687c1",
+    "docs/area_search/selected/gates_630.png": "2f6e5ba81388fd4174d68e6e581b6b1434ac9d63879232c505a343909e6687c1"
+  }
+}

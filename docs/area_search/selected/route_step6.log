@@ -1,0 +1,324 @@
+routing channel budget: [216.0, 900.0, 900.0, 900.0, 900.0, 216.0]  (placement estimate was [140.4, 151.2, 151.2, 151.2, 151.2, 162.0])
+
+============================================================
+=== step5 ===
+============================================================
+wrote layout/placement.json
+  行 [85, 93, 83, 82, 78]   行幅 1771.2   コア 1771.2 x 1204.2
+  ch_heights [140.4, 151.2, 151.2, 151.2, 151.2, 162.0]
+  優先コリドー 40 本 / ネットの付いた信号ピン 987 本
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step5/route_step_1_placement.gds
+core bbox: (0,0)-(1771.2,4329.0)
+  bottom margin    0.0 - 216.0
+  row0             216.0 - 275.4
+  channel 1        275.4 - 1175.4
+  row1             1175.4 - 1234.8
+  channel 2        1234.8 - 2134.8
+  row2             2134.8 - 2194.2
+  channel 3        2194.2 - 3094.2
+  row3             3094.2 - 3153.6
+  channel 4        3153.6 - 4053.6
+  row4             4053.6 - 4113.0
+  top margin       4113.0 - 4329.0
+instances per row: [85, 93, 83, 82, 78]
+
+============================================================
+=== step6 ===
+============================================================
+priority M2 corridors: 24 track(s) at x=[13.5, 18.9, 24.3, 429.3, 434.7, 440.1, 456.3, 461.7, 467.1, 872.1, 877.5, 882.9, 899.1, 904.5, 909.9, 1314.9, 1320.3, 1325.7, 1341.9, 1347.3, 1352.7, 1746.9, 1752.3, 1757.7]
+forced overlap zone(s): {1: (29.7, 1741.5), 2: (35.1, 1741.5), 3: (35.1, 1741.5), 4: (29.7, 1741.5)}
+per-row local trunk nets: 12 (['_026_', '_032_', '_205_', '_211_', '_214_', '_216_', '_220_', '_224_', '_256_', 'clk_buf', 'reset_pipe[1]', 'v[6]']), 47 row-local segment(s) total, dedicated guarded tracks nearest each row, routed first
+channel primary track usage: [18, 41, 40, 36, 34, 16]
+per-row-local reserved track indices (off-limits to every other net's fallback/allow_claimed search): {0: [11, 12, 13, 14, 15, 16, 17], 1: [31, 32, 33, 34, 35, 36, 37, 38, 39, 40], 2: [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39], 3: [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35], 4: [25, 26, 27, 28, 29, 30, 31, 32, 33]}
+case-1 collisions resolved by moving 6 net(s) to a spare track
+TAP power mesh: 5 column(s) x 6 channel(s) x 2 nets (VDD/GND)
+  checkpoint: wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_1_tap_power_mesh.gds (744 track(s) with real idle capacity, 2.3720 mm^2 total, highlighted on layer (258,1); 24 priority M2 corridor(s) highlighted on layer (259, 0))
+per-row local trunk spine jogs: 71
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/per_row_spine_events.json (190 spine event(s))
+  checkpoint: wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_2_pass0_per_row_local.gds (744 track(s) with real idle capacity, 2.3415 mm^2 total, highlighted on layer (258,2); 24 priority M2 corridor(s) highlighted on layer (259, 0))
+  WARNING: [_021_] draw_jog could not find a track near y=275.4 in channel 1 with a clear departure leg at x=159.3, and a direct bridge to clear_x=170.10000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [v[0]] draw_jog could not find a track near y=3153.6000000000004 in channel 4 with a clear departure leg at x=980.0999999999999, and a direct bridge to clear_x=990.8999999999999 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+forced-overlap-zone collisions resolved by jogging 53 pin(s)
+  checkpoint: wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_3_pass1_high_fo_row_only_adjacent.gds (744 track(s) with real idle capacity, 2.2096 mm^2 total, highlighted on layer (258,3); 24 priority M2 corridor(s) highlighted on layer (259, 0))
+  WARNING: [v[9]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=278.1, and a direct bridge to clear_x=1752.3000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [v[9]] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=747.9000000000001, and a direct bridge to clear_x=1363.5 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=315.9 (net='h[1]') -- falling back to nearest extra_ok-only track at x=364.5 (may leave a short to investigate)
+  WARNING: [h[1]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=315.9, and a direct bridge to clear_x=364.5 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=720.9000000000001 (net='h[1]') -- falling back to nearest extra_ok-only track at x=872.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1044.9 (net='_207_') -- falling back to nearest extra_ok-only track at x=1007.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1093.5 (net='_207_') -- falling back to nearest extra_ok-only track at x=1098.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1568.6999999999998 (net='_207_') -- falling back to nearest extra_ok-only track at x=1574.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1617.3000000000002 (net='_207_') -- falling back to nearest extra_ok-only track at x=1628.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=926.0999999999999 (net='_059_') -- falling back to nearest extra_ok-only track at x=909.9 (may leave a short to investigate)
+  WARNING: [_059_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=926.0999999999999, and a direct bridge to clear_x=909.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1163.7 (net='_059_') -- falling back to nearest extra_ok-only track at x=1147.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=645.3 (net='_247_') -- falling back to nearest extra_ok-only track at x=477.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=666.9000000000001 (net='_171_') -- falling back to nearest extra_ok-only track at x=467.1000000000001 (may leave a short to investigate)
+  WARNING: [_171_] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=666.9000000000001, and a direct bridge to clear_x=467.1000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=715.5 (net='h[0]') -- falling back to nearest extra_ok-only track at x=882.9 (may leave a short to investigate)
+  WARNING: [h[0]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=715.5, and a direct bridge to clear_x=882.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=882.9 (net='h[0]') -- falling back to nearest extra_ok-only track at x=882.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=774.9000000000001 (net='h[0]') -- falling back to nearest extra_ok-only track at x=882.9 (may leave a short to investigate)
+  WARNING: [h[0]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=774.9000000000001, and a direct bridge to clear_x=882.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=882.9 (net='h[0]') -- falling back to nearest extra_ok-only track at x=882.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1152.9 (net='_103_') -- falling back to nearest extra_ok-only track at x=1125.9 (may leave a short to investigate)
+  WARNING: [_103_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=1152.9, and a direct bridge to clear_x=1125.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=758.7 (net='_227_') -- falling back to nearest extra_ok-only track at x=899.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=899.1 (net='_227_') -- falling back to nearest extra_ok-only track at x=899.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1061.1 (net='_227_') -- falling back to nearest extra_ok-only track at x=1066.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=666.9000000000001 (net='_058_') -- falling back to nearest extra_ok-only track at x=623.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=920.7 (net='_058_') -- falling back to nearest extra_ok-only track at x=623.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=974.7 (net='_058_') -- falling back to nearest extra_ok-only track at x=920.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=812.7 (net='_043_') -- falling back to nearest extra_ok-only track at x=456.3 (may leave a short to investigate)
+  WARNING: [_043_] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=812.7, and a direct bridge to clear_x=456.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=456.3 (net='_043_') -- falling back to nearest extra_ok-only track at x=456.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=839.7 (net='h[5]') -- falling back to nearest extra_ok-only track at x=440.1 (may leave a short to investigate)
+  WARNING: [h[5]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=839.7, and a direct bridge to clear_x=440.1 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [h[5]] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=861.3, and a direct bridge to clear_x=839.6999999999999 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [h[5]] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=1023.3, and a direct bridge to clear_x=1039.5 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=920.7 (net='_162_') -- falling back to nearest extra_ok-only track at x=1239.3000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1239.3000000000002 (net='_162_') -- falling back to nearest extra_ok-only track at x=1250.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=931.5 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.7 (may leave a short to investigate)
+  WARNING: [h[7]] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=931.5, and a direct bridge to clear_x=1325.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1325.7 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1007.0999999999999 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.6999999999998 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1325.6999999999998 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1206.9 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1325.7 (net='h[7]') -- falling back to nearest extra_ok-only track at x=1325.7 (may leave a short to investigate)
+  WARNING: [_209_] draw_jog could not find a track near y=1203.4 in channel 1 with a clear departure leg at x=1125.9, and a direct bridge to clear_x=1352.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1066.5 (net='_209_') -- falling back to nearest extra_ok-only track at x=947.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=947.7 (net='_209_') -- falling back to nearest extra_ok-only track at x=1341.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1082.7 (net='_209_') -- falling back to nearest extra_ok-only track at x=947.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=947.7 (net='_209_') -- falling back to nearest extra_ok-only track at x=1341.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1098.9 (net='_209_') -- falling back to nearest extra_ok-only track at x=947.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=947.7 (net='_209_') -- falling back to nearest extra_ok-only track at x=1341.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1120.5 (net='_209_') -- falling back to nearest extra_ok-only track at x=1260.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1260.9 (net='_209_') -- falling back to nearest extra_ok-only track at x=1341.9 (may leave a short to investigate)
+  WARNING: [_139_] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=953.0999999999999, and a direct bridge to clear_x=996.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1169.1 (net='_139_') -- falling back to nearest extra_ok-only track at x=1385.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=985.5 (net='_083_') -- falling back to nearest extra_ok-only track at x=1314.9 (may leave a short to investigate)
+  WARNING: [_083_] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=985.5, and a direct bridge to clear_x=1314.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_083_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=1147.5, and a direct bridge to clear_x=1136.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_083_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=947.7, and a direct bridge to clear_x=942.3000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_083_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=980.0999999999999, and a direct bridge to clear_x=969.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1023.3 (net='_213_') -- falling back to nearest extra_ok-only track at x=1476.9 (may leave a short to investigate)
+  WARNING: [_213_] draw_jog could not find a track near y=247.4 in channel 1 with a clear departure leg at x=1023.3, and a direct bridge to clear_x=1476.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1476.9 (net='_213_') -- falling back to nearest extra_ok-only track at x=1466.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1206.9 (net='_213_') -- falling back to nearest extra_ok-only track at x=1401.3000000000002 (may leave a short to investigate)
+  WARNING: [_213_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=1206.9, and a direct bridge to clear_x=1401.3000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_213_] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=1066.5, and a direct bridge to clear_x=1244.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=29.7 (net='_230_') -- falling back to nearest extra_ok-only track at x=13.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=35.099999999999994 (net='_233_') -- falling back to nearest extra_ok-only track at x=78.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=51.3 (net='_144_') -- falling back to nearest extra_ok-only track at x=110.7 (may leave a short to investigate)
+  WARNING: [_173_] draw_jog could not find a track near y=1203.4 in channel 1 with a clear departure leg at x=72.9, and a direct bridge to clear_x=56.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=251.10000000000002 (net='_173_') -- falling back to nearest extra_ok-only track at x=240.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=240.3 (net='_173_') -- falling back to nearest extra_ok-only track at x=207.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=105.3 (net='_148_') -- falling back to nearest extra_ok-only track at x=121.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=121.5 (net='_148_') -- falling back to nearest extra_ok-only track at x=159.3 (may leave a short to investigate)
+  WARNING: [_222_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=121.5, and a direct bridge to clear_x=126.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_222_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=78.3, and a direct bridge to clear_x=83.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=553.5 (net='_222_') -- falling back to nearest extra_ok-only track at x=585.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=170.10000000000002 (net='_222_') -- falling back to nearest extra_ok-only track at x=423.90000000000003 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=423.90000000000003 (net='_222_') -- falling back to nearest extra_ok-only track at x=499.50000000000006 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1525.5 (net='_222_') -- falling back to nearest extra_ok-only track at x=1530.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=126.9 (net='_068_') -- falling back to nearest extra_ok-only track at x=45.900000000000006 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=364.5 (net='_068_') -- falling back to nearest extra_ok-only track at x=315.9 (may leave a short to investigate)
+  WARNING: [_068_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=364.5, and a direct bridge to clear_x=315.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=137.7 (net='_073_') -- falling back to nearest extra_ok-only track at x=180.89999999999998 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=180.89999999999998 (net='_073_') -- falling back to nearest extra_ok-only track at x=170.09999999999997 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=126.9 (net='_069_') -- falling back to nearest extra_ok-only track at x=267.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=121.5 (net='_069_') -- falling back to nearest extra_ok-only track at x=267.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=267.3 (net='_069_') -- falling back to nearest extra_ok-only track at x=342.90000000000003 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=159.3 (net='_069_') -- falling back to nearest extra_ok-only track at x=267.3 (may leave a short to investigate)
+  WARNING: [_069_] draw_jog could not find a track near y=3122.2000000000003 in channel 3 with a clear departure leg at x=159.3, and a direct bridge to clear_x=267.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=267.3 (net='_069_') -- falling back to nearest extra_ok-only track at x=342.90000000000003 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=261.9 (net='_069_') -- falling back to nearest extra_ok-only track at x=267.29999999999995 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=267.29999999999995 (net='_069_') -- falling back to nearest extra_ok-only track at x=342.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=602.0999999999999 (net='_069_') -- falling back to nearest extra_ok-only track at x=267.2999999999999 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=267.2999999999999 (net='_069_') -- falling back to nearest extra_ok-only track at x=342.8999999999999 (may leave a short to investigate)
+  WARNING: [_108_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=207.89999999999998, and a direct bridge to clear_x=218.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_108_] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=240.3, and a direct bridge to clear_x=245.70000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=677.7 (net='_108_') -- falling back to nearest extra_ok-only track at x=872.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=240.3 (net='_223_') -- falling back to nearest extra_ok-only track at x=553.5 (may leave a short to investigate)
+  WARNING: [_223_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=240.3, and a direct bridge to clear_x=553.5 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_223_] draw_jog could not find a track near y=3122.2000000000003 in channel 3 with a clear departure leg at x=720.9000000000001, and a direct bridge to clear_x=715.5000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=251.10000000000002 (net='_079_') -- falling back to nearest extra_ok-only track at x=1417.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=83.7 (net='_079_') -- falling back to nearest extra_ok-only track at x=434.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=218.7 (net='_079_') -- falling back to nearest extra_ok-only track at x=434.7 (may leave a short to investigate)
+  WARNING: [_079_] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=218.7, and a direct bridge to clear_x=434.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=267.3 (net='_240_') -- falling back to nearest extra_ok-only track at x=1433.7 (may leave a short to investigate)
+  WARNING: [_240_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=267.3, and a direct bridge to clear_x=1433.7 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=359.1 (net='_240_') -- falling back to nearest extra_ok-only track at x=1433.7000000000003 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1433.7000000000003 (net='_240_') -- falling back to nearest extra_ok-only track at x=1455.3000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=180.89999999999998 (net='_240_') -- falling back to nearest extra_ok-only track at x=440.1 (may leave a short to investigate)
+  WARNING: [_240_] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=180.89999999999998, and a direct bridge to clear_x=440.1 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=294.3 (net='_240_') -- falling back to nearest extra_ok-only track at x=440.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=342.9 (net='_065_') -- falling back to nearest extra_ok-only track at x=1595.7000000000003 (may leave a short to investigate)
+  WARNING: [_065_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=342.9, and a direct bridge to clear_x=1595.7000000000003 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1595.7000000000003 (net='_065_') -- falling back to nearest extra_ok-only track at x=1590.3000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=672.3 (net='_065_') -- falling back to nearest extra_ok-only track at x=1595.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1595.7 (net='_065_') -- falling back to nearest extra_ok-only track at x=1590.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=558.9000000000001 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1660.5000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1660.5000000000002 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1757.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=585.9000000000001 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1660.5000000000002 (may leave a short to investigate)
+  WARNING: [v[7]] draw_jog could not find a track near y=3122.2000000000003 in channel 3 with a clear departure leg at x=585.9000000000001, and a direct bridge to clear_x=1660.5000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1660.5000000000002 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1757.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=607.5 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1660.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1660.5 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1757.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=639.9000000000001 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1660.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1660.5 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1757.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1158.3 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1115.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1115.1 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1660.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1660.5 (net='v[7]') -- falling back to nearest extra_ok-only track at x=1757.7 (may leave a short to investigate)
+  WARNING: [_185_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=693.9000000000001, and a direct bridge to clear_x=688.5000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=688.5000000000001 (y 1350.2000000000003-1506.8000000000002, net='_185_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=175.5 (net='_185_') -- falling back to nearest extra_ok-only track at x=990.9000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=175.5 (net='_185_') -- falling back to nearest extra_ok-only track at x=990.9000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=753.3 (net='_034_') -- falling back to nearest extra_ok-only track at x=1428.3 (may leave a short to investigate)
+  WARNING: [_034_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=753.3, and a direct bridge to clear_x=1428.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=818.0999999999999 (net='_194_') -- falling back to nearest extra_ok-only track at x=1698.3 (may leave a short to investigate)
+  WARNING: [_194_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=818.0999999999999, and a direct bridge to clear_x=1698.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1698.3 (net='_194_') -- falling back to nearest extra_ok-only track at x=1709.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1401.3 (net='_194_') -- falling back to nearest extra_ok-only track at x=1698.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1698.3 (net='_194_') -- falling back to nearest extra_ok-only track at x=1709.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1514.7 (net='_194_') -- falling back to nearest extra_ok-only track at x=1698.3000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1698.3000000000002 (net='_194_') -- falling back to nearest extra_ok-only track at x=1709.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1077.3 (net='_194_') -- falling back to nearest extra_ok-only track at x=1104.3 (may leave a short to investigate)
+  WARNING: [_038_] draw_jog could not find a track near y=1203.4 in channel 1 with a clear departure leg at x=1163.7, and a direct bridge to clear_x=1158.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_038_] draw_jog could not find a track near y=1203.4 in channel 1 with a clear departure leg at x=1239.3, and a direct bridge to clear_x=1233.8999999999999 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1104.3 (net='_038_') -- falling back to nearest extra_ok-only track at x=1719.9 (may leave a short to investigate)
+  WARNING: [_038_] draw_jog could not find a track near y=3122.2000000000003 in channel 3 with a clear departure leg at x=1104.3, and a direct bridge to clear_x=1719.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1719.9 (net='_038_') -- falling back to nearest extra_ok-only track at x=1557.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1142.1 (net='_038_') -- falling back to nearest extra_ok-only track at x=1719.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=1719.9 (net='_038_') -- falling back to nearest extra_ok-only track at x=1557.9 (may leave a short to investigate)
+  WARNING: [_246_] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=1066.5, and a direct bridge to clear_x=1071.9 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=1071.9 (y 1377.2000000000003-1523.0000000000002, net='_246_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=936.9000000000001 (net='_246_') -- falling back to nearest extra_ok-only track at x=1061.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1109.7 (net='h[4]') -- falling back to nearest extra_ok-only track at x=1493.1000000000001 (may leave a short to investigate)
+  WARNING: [h[4]] draw_jog could not find a track near y=1206.8000000000002 in channel 2 with a clear departure leg at x=1109.7, and a direct bridge to clear_x=1493.1000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [h[4]] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=990.9000000000001, and a direct bridge to clear_x=985.5000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1503.9 (net='_193_') -- falling back to nearest extra_ok-only track at x=1725.3000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1725.3000000000002 (net='_193_') -- falling back to nearest extra_ok-only track at x=1746.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1109.7 (net='_193_') -- falling back to nearest extra_ok-only track at x=1028.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1385.1 (net='_193_') -- falling back to nearest extra_ok-only track at x=1358.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1557.9 (net='_033_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=1557.9 (y 1206.8000000000002-2134.8, net='_033_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1557.9 (net='_033_') -- falling back to nearest extra_ok-only track at x=1520.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=974.7 (net='_040_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=974.7 (net='_040_') -- falling back to nearest extra_ok-only track at x=143.10000000000002 (may leave a short to investigate)
+  WARNING: [_040_] draw_jog could not find a track near y=2134.8 in channel 2 with a clear departure leg at x=974.7, and a direct bridge to clear_x=143.10000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1644.3 (net='v[2]') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=1644.3 (y 1206.7-2134.8, net='v[2]') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1644.3 (net='v[2]') -- falling back to nearest extra_ok-only track at x=1655.1 (may leave a short to investigate)
+  WARNING: [v[2]] draw_jog could not find a track near y=3125.5000000000005 in channel 4 with a clear departure leg at x=920.7, and a direct bridge to clear_x=1131.3000000000002 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: [_000_[1]] draw_jog could not find a track near y=2162.8 in channel 2 with a clear departure leg at x=1725.3, and a direct bridge to clear_x=1736.1 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1692.9 (net='_000_[1]') -- falling back to nearest extra_ok-only track at x=1563.3000000000002 (may leave a short to investigate)
+  WARNING: [_031_] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=121.5, and a direct bridge to clear_x=116.1 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=116.1 (y 2282.6000000000004-2417.6000000000004, net='_031_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=40.5 (net='_031_') -- falling back to nearest extra_ok-only track at x=191.70000000000002 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=267.3 (net='_161_') -- falling back to nearest extra_ok-only track at x=132.3 (may leave a short to investigate)
+  WARNING: [_161_] draw_jog could not find a track near y=2166.2000000000003 in channel 3 with a clear departure leg at x=267.3, and a direct bridge to clear_x=132.3 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1476.9 (net='_005_') -- falling back to nearest extra_ok-only track at x=1514.7 (may leave a short to investigate)
+pass2 spanning-net final-run collisions resolved by jogging 38 pin(s)
+  checkpoint: wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_4_pass2_spanning.gds (744 track(s) with real idle capacity, 2.0381 mm^2 total, highlighted on layer (258,4); 24 priority M2 corridor(s) highlighted on layer (259, 0))
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/force_jog_events.json (0 jog event(s))
+  checkpoint: wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_5_pass3_force_jog_nets.gds (744 track(s) with real idle capacity, 2.0381 mm^2 total, highlighted on layer (258,5); 24 priority M2 corridor(s) highlighted on layer (259, 0))
+  channel0: used 18 tracks, budget 40 (216.0 um) -> OK
+  channel1: used 166 tracks, budget 166 (900.0 um) -> OK
+  channel2: used 166 tracks, budget 166 (900.0 um) -> OK
+  channel3: used 166 tracks, budget 166 (900.0 um) -> OK
+  channel4: used 166 tracks, budget 166 (900.0 um) -> OK
+  channel5: used 16 tracks, budget 40 (216.0 um) -> OK
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/channel_usage.json
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/compaction_info.json
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step6/route_step_2_routed_raw.gds
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/pin_map.json
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/net_shapes.json (2841 boxes, 302 nets)
+signal nets: 313, routed: 302, stubs: 11
+row-only=165, adjacent-pair=70, spanning=55, high-FO=0, per-row-local=12
+spanning-net pins requiring a row pass-through: 127
+via_1-based jogs inserted: 203 (row-crossing) + 53 (forced-overlap zone) + 38 (pass2 spanning-net final-run) + 71 (per-row local trunk spine)
+
+=== DRC ===
+M1: width viol=0 space viol=0
+M2: width viol=0 space viol=0
+V1 space viol: 0
+V1 enclosed by M1<1.0 viol: 0
+V1 enclosed by M2<1.0 viol: 0
+V1-GA space<1.2 viol: 0
+V1 cut > 1.4 viol: 0
+
+=== connectivity (M1-then-M2 pin search) ===
+1912 M1 components, 1225 M2 components, 2651 V1 vias (in scan area)
+
+Checked 302 nets, 1017 pins total.
+
+65 PROBLEM(S) FOUND:
+ - SHORT SUSPECTED: net=_214_ pin _438_.A shares a component with net=_211_
+ - SHORT SUSPECTED: net=_143_ pin _451_.A shares a component with net=_214_
+ - SHORT SUSPECTED: net=_221_ pin _289_.Y shares a component with net=_143_
+ - SHORT SUSPECTED: net=_182_ pin _494_.A shares a component with net=_221_
+ - SHORT SUSPECTED: net=_244_ pin _316_.Y shares a component with net=_182_
+ - SHORT SUSPECTED: net=_060_ pin _367_.C shares a component with net=_244_
+ - SHORT SUSPECTED: net=_119_ pin _427_.C shares a component with net=_060_
+ - SHORT SUSPECTED: net=_027_ pin _329_.Y shares a component with net=_119_
+ - SHORT SUSPECTED: net=_109_ pin _418_.A shares a component with net=_027_
+ - SHORT SUSPECTED: net=_212_ pin _280_.Y shares a component with net=_109_
+ - SHORT SUSPECTED: net=_003_ pin _330_.Y shares a component with net=_025_
+ - SHORT SUSPECTED: net=v[4] pin _284_.A shares a component with net=_212_
+ - SHORT SUSPECTED: net=_225_ pin _293_.Y shares a component with net=v[4]
+ - SHORT SUSPECTED: net=_179_ pin _486_.Y shares a component with net=_225_
+ - SHORT SUSPECTED: net=h[3] pin _272_.A shares a component with net=_179_
+ - SHORT SUSPECTED: net=_138_ pin _448_.A shares a component with net=_104_
+ - SHORT SUSPECTED: net=_141_ pin _448_.C shares a component with net=h[3]
+ - SHORT SUSPECTED: net=_051_ pin _473_.B shares a component with net=_141_
+ - SHORT SUSPECTED: net=v[0] pin _293_.C shares a component with net=_270_
+ - SHORT SUSPECTED: net=_042_ pin _404_.A shares a component with net=_051_
+ - SHORT SUSPECTED: net=_048_ pin _401_.C shares a component with net=_082_
+ - SHORT SUSPECTED: net=_049_ pin _401_.D shares a component with net=_042_
+ - SHORT SUSPECTED: net=v[9] pin _486_.A shares a component with net=_049_
+ - SHORT SUSPECTED: net=h[1] pin _420_.B shares a component with net=v[9]
+ - SHORT SUSPECTED: net=_059_ pin _419_.B shares a component with net=h[1]
+ - SHORT SUSPECTED: net=_247_ pin _347_.B shares a component with net=_059_
+ - SHORT SUSPECTED: net=_171_ pin _479_.C shares a component with net=_247_
+ - SHORT SUSPECTED: net=h[0] pin _354_.A shares a component with net=_048_
+ - SHORT SUSPECTED: net=_103_ pin _410_.C shares a component with net=_171_
+ - SHORT SUSPECTED: net=_227_ pin _304_.A shares a component with net=_103_
+ - SHORT SUSPECTED: net=_058_ pin _393_.C shares a component with net=_227_
+ - SHORT SUSPECTED: net=_043_ pin _398_.A shares a component with net=_085_
+ - SHORT SUSPECTED: net=h[5] pin _397_.A shares a component with net=_058_
+ - SHORT SUSPECTED: net=_162_ pin _470_.B shares a component with net=h[5]
+ - SHORT SUSPECTED: net=h[7] pin _351_.A shares a component with net=h[0]
+ - SHORT SUSPECTED: net=_209_ pin _351_.B shares a component with net=_162_
+ - SHORT SUSPECTED: net=_139_ pin _448_.B shares a component with net=_138_
+ - SHORT SUSPECTED: net=_083_ pin _392_.A shares a component with net=_209_
+ - SHORT SUSPECTED: net=_213_ pin _518_.A shares a component with net=_083_
+ - SHORT SUSPECTED: net=_233_ pin _302_.B shares a component with net=_213_
+ - SHORT SUSPECTED: net=_144_ pin _451_.B shares a component with net=_233_
+ - SHORT SUSPECTED: net=_173_ pin _481_.B shares a component with net=_144_
+ - SHORT SUSPECTED: net=_148_ pin _484_.C shares a component with net=_173_
+ - SHORT SUSPECTED: net=_222_ pin _374_.B shares a component with net=_148_
+ - SHORT SUSPECTED: net=_068_ pin _374_.Y shares a component with net=_222_
+ - SHORT SUSPECTED: net=_073_ pin _380_.B shares a component with net=_068_
+ - SHORT SUSPECTED: net=_069_ pin _381_.B shares a component with net=_073_
+ - SHORT SUSPECTED: net=_108_ pin _430_.A shares a component with net=_069_
+ - SHORT SUSPECTED: net=_223_ pin _291_.Y shares a component with net=_108_
+ - SHORT SUSPECTED: net=_079_ pin _386_.B shares a component with net=_223_
+ - SHORT SUSPECTED: net=_240_ pin _449_.B shares a component with net=_079_
+ - SHORT SUSPECTED: net=_065_ pin _491_.C shares a component with net=_240_
+ - SHORT SUSPECTED: net=v[7] pin _376_.A shares a component with net=_065_
+ - SHORT SUSPECTED: net=_185_ pin _494_.C shares a component with net=v[7]
+ - SHORT SUSPECTED: net=_034_ pin _339_.B shares a component with net=_052_
+ - SHORT SUSPECTED: net=_194_ pin _507_.Y shares a component with net=_185_
+ - SHORT SUSPECTED: net=_038_ pin _342_.Y shares a component with net=_194_
+ - SHORT SUSPECTED: net=_246_ pin _320_.B shares a component with net=_038_
+ - SHORT SUSPECTED: net=h[4] pin _321_.A shares a component with net=_246_
+ - SHORT SUSPECTED: net=_033_ pin _345_.A shares a component with net=h[4]
+ - SHORT SUSPECTED: net=_040_ pin _345_.C shares a component with net=_033_
+ - SHORT SUSPECTED: net=v[2] pin _546_.Q shares a component with net=v[0]
+ - SHORT SUSPECTED: net=_000_[1] pin _460_.Y shares a component with net=_193_
+ - SHORT SUSPECTED: net=_031_ pin _432_.A shares a component with net=_040_
+ - SHORT SUSPECTED: net=_161_ pin _469_.B shares a component with net=_031_
+
+ELAPSED_SECONDS=8.0
+RETURN_CODE=0

@@ -1,0 +1,23 @@
+{
+  "scope": "exact A geometry, RGB111 black",
+  "statistics": {
+    "set_bits0": 10,
+    "clear_bits0": 11,
+    "set_bits1": 8,
+    "clear_bits1": 10,
+    "set_bits2": 11,
+    "clear_bits2": 9
+  },
+  "sha256": {
+    "scripts/half_a_bitmap_trial.py": "b430ff30570b191cbecf89b0d06c94e6f226f9673554ed34054e5e1fa0f8a8b8",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "experiments/a_half_a143_x/source_manifest.json": "be835c516911985e11e5f3ca863000dd87d4b79c3b6b87dc3815ff09bc86a513",
+    "experiments/a_half_a_bitmap_setclear/config.py": "017c1128a2ac0c3bedae8926bab99ff26ea0cafa0694e35fb24704456b8cd25f",
+    "experiments/a_half_a_bitmap_setclear/trial.json": "fa5eb5cf6cece22ff808d10dccc1fcf976fe4b94e9098bbacf2eb0cb1edfb5a0",
+    "experiments/a_half_a_bitmap_setclear/ishi_vga_core.v": "149571b7056bc480b6a9ce595ec301f40333cbb945139e558c8fdee6292774bf",
+    "experiments/a_half_a_bitmap_setclear/ishi_logo.v": "d5a021db84177c87321cb230d09dc7727ff0b0cb5fe5413510e8fb8a0669a6bb",
+    "experiments/a_half_a_bitmap_setclear/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9",
+    "experiments/a_half_a_bitmap_setclear/tests/tb_rtl.v": "dfe66e42ae300be6d1c8c1a3280b35807a85aa4cb40eee40d8594cb37757568d"
+  }
+}

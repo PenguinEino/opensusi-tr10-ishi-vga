@@ -1,0 +1,99 @@
+{
+  "top": "ishi_vga_core",
+  "bbox_um": [
+    -15.3,
+    0.0,
+    1777.5,
+    897.2
+  ],
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "clock_hz": 3150000,
+  "signal_ports": 6,
+  "including_vdd_excluding_vss": 7,
+  "package_pad_numbers": null,
+  "ports": [
+    {
+      "name": "hsync",
+      "direction": "output",
+      "layer": "M2",
+      "xy_um": [
+        261.9,
+        1.8
+      ],
+      "edge": "BOTTOM"
+    },
+    {
+      "name": "r",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        690.3
+      ],
+      "edge": "LEFT"
+    },
+    {
+      "name": "g",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        693.9
+      ],
+      "edge": "LEFT"
+    },
+    {
+      "name": "b",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        601.2
+      ],
+      "edge": "LEFT"
+    },
+    {
+      "name": "vsync",
+      "direction": "output",
+      "layer": "M2",
+      "xy_um": [
+        974.7,
+        895.5
+      ],
+      "edge": "TOP"
+    },
+    {
+      "name": "clk",
+      "direction": "input",
+      "layer": "M2",
+      "xy_um": [
+        844.2,
+        895.5
+      ],
+      "edge": "TOP"
+    },
+    {
+      "name": "vdd",
+      "direction": "power",
+      "layer": "M1",
+      "xy_um": [
+        2.7,
+        132.0
+      ],
+      "edge": "rail label"
+    },
+    {
+      "name": "vss",
+      "direction": "ground",
+      "layer": "M1",
+      "xy_um": [
+        2.7,
+        77.3
+      ],
+      "edge": "rail label"
+    }
+  ]
+}

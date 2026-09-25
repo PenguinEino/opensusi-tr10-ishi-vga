@@ -1,0 +1,83 @@
+{
+  "rtl_dir": "experiments/descending_h79_v500",
+  "netlist": "experiments/descending_h79_v500/out/ishi_vga_core_pnr.v",
+  "rows": 5,
+  "tracks": 328,
+  "seed": 4,
+  "restarts": 160,
+  "order_passes": 20,
+  "balance": 0.02,
+  "prl": 10,
+  "case": "J",
+  "source": "experiments/descending_h79_v500/out/ishi_vga_core_pnr.v",
+  "rtl_source": "experiments/descending_h79_v500",
+  "sha256": "9e2b7928ea22297300fe376483f21b778647caae48ffd51ac68c75186cec0592",
+  "design": "phys_desc5",
+  "fill": "alternate",
+  "pad_weight": 1.0,
+  "span_lane_pack": false,
+  "placement_cut": 245.0,
+  "channel_crossings": [
+    7,
+    61,
+    83,
+    68,
+    36,
+    3
+  ],
+  "placement_assignment_sha256": "51f195651dc1ea62adeb6a4eb89d3eb17bb014e406a9d5fbf5c921e402a0ff2b",
+  "row_occupied_um": [
+    1360.8,
+    1393.2,
+    1393.2,
+    1387.8,
+    1328.4
+  ],
+  "max_row_occupied_um": 1393.2,
+  "step6_connectivity_problem_reports": 65,
+  "step6_simple_drc_counts": [
+    "M1: width viol=0 space viol=0",
+    "M2: width viol=0 space viol=0",
+    "V1 space viol: 0",
+    "V1 enclosed by M1<1.0 viol: 0",
+    "V1 enclosed by M2<1.0 viol: 0",
+    "V1-GA space<1.2 viol: 0",
+    "V1 cut > 1.4 viol: 0"
+  ],
+  "step6_simple_drc_zero": true,
+  "step6_short_suspected_warnings": 65,
+  "bbox_um": [
+    -6.3,
+    0.0,
+    1777.5,
+    1750.8
+  ],
+  "bbox_width_um": 1783.8,
+  "bbox_height_um": 1750.8,
+  "step7": {
+    "return_code": 0,
+    "max_iters": 60,
+    "reached_max_iters": true,
+    "vertical_segments_fixed": 35,
+    "horizontal_segments_fixed": 10,
+    "raw_box_conflicts_remaining": 65,
+    "unresolved_net_pairs": 21,
+    "connectivity_problem_reports": 41,
+    "simple_drc_zero": true,
+    "log_capture": "partial; iterations 11-23 missing; see route_step7.log",
+    "elapsed_wall_time_approx_minutes": 20
+  },
+  "postrepair_bbox_um": [
+    -6.3,
+    0.0,
+    1777.5,
+    1756.2
+  ],
+  "postrepair_bbox_width_um": 1783.8,
+  "postrepair_bbox_height_um": 1756.2,
+  "postrepair_connectivity_problem_reports": 41,
+  "postrepair_simple_drc_zero": true,
+  "postrepair_gds_sha256": "7ca31f07ead9b36d20af43e1a732cbf51f22ebd1290e15bbb6346c6d124846ba",
+  "postrepair_pin_map_sha256": "7527d3299aa41d573e61c5e57e39ce0a99a7084b4e1451e5cabc41f1643ac253",
+  "postrepair_net_shapes_sha256": "0aa5cbdb489abfdef602492328e4fad7751b784d442050e8577470681db11b07"
+}

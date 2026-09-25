@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "reviewed_manifest_sha256": "17b42690c920d78d05ca5f0d2dff0d5cec01c7dd4cbe5521a0a3604907b61598",
+  "reviewed_payload_files": 113,
+  "reviewed_payload_unchanged": false,
+  "reviewed_circuit_and_test_payload_unchanged": true,
+  "protected_files_checked": 103,
+  "reviewed_files_changed_after_review": [
+    "README.md",
+    "REPRODUCE.md",
+    "SPEC.md",
+    "ishi_vga_blocks.svg",
+    "ishi_vga_pins.png",
+    "reproduce/package_submission.py"
+  ],
+  "reason": "User requested clearer block diagram and actual-metal pin overview with close-ups",
+  "post_review_changes": "Illustrations, renderer/packager source, related documentation and package metadata only",
+  "figure_verification": "figures.json",
+  "review_model_requested": "gpt-6-astra",
+  "review_reasoning_effort_requested": "xhigh",
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "new_astra_review_of_figures": false
+}

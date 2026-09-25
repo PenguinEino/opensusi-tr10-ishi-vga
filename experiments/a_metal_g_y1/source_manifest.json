@@ -1,0 +1,19 @@
+{
+  "scope": "unadopted B-plus-metal design proposal",
+  "sha256": {
+    "scripts/logo_metal_variants.py": "82f084ecb767459d09c22d3bd2e7981163a45a5eac3f3876b79baa062422541e",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "assets/ishi_logo_siliwiz_source.json": "7be47c6450a99e6b64feeddd733bf040c6697524631ef04d085ab22dfbd013f3",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_grid64_black/source_manifest.json": "bfdb219518a466976906f8388e83393b0330d606beac0374d0db48571de6a617",
+    "experiments/a_metal_g_y1/config.py": "7b2c79935c0c7fe649137a290ef056c922970af9d83478aa30733b9cadea5890",
+    "experiments/a_metal_g_y1/trial.json": "23cde836d709db4f4c9e1bd4ad1d0831a8e9963cef29abb4c3e8c4f6adb9830b",
+    "experiments/a_metal_g_y1/metal.json": "ff70fef89d4ef634ee98f83449042befdf3c034b40a72135400d109a2b43a53f",
+    "experiments/a_metal_g_y1/ishi_logo.v": "7cbf0c6e1529d296ac01b777d8d15f2e7b0dc31c44bac57fdcf99e889d171387",
+    "experiments/a_metal_g_y1/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "experiments/a_metal_g_y1/tests/expected_frame.hex": "dda965ff4d0bad0bca5724613b10d9a1bd49c14afb868780aed4e737d51d1b5c",
+    "experiments/a_metal_g_y1/tests/tb_rtl.v": "cb481332c3474d8acfde95dcf93b3c3a11f66721e07b1e0ef11162efebd7849b",
+    "experiments/a_half_grid64/glyphs.json": "c5f3b966b9ce9657e4986c1fc383b3285d75c75f6e7f54f8edefa1031ea4924c"
+  }
+}

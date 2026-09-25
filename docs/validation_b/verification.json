@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "model": "rtl",
+      "clock_mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "rtl",
+      "clock_mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "clock_mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "clock_mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    }
+  ],
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "tests/tb_vga.v": "3d644f58d34b3b46ff63dc04534c3959d6309f0d3dbaeef0c21148a970f702a6",
+    "out/ishi_vga_core_pnr.v": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb"
+  },
+  "limitations": "Gate simulation uses unit delays, not SDF or silicon timing.",
+  "variant": "B / 21 rectangles",
+  "approved_preview": "samples/reduced_rectangles/B_outline_bars.png",
+  "approved_preview_match": "PASS: all four rendered simulation frames match approved preview"
+}

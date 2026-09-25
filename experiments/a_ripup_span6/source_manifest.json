@@ -1,0 +1,10 @@
+{
+  "source": "experiments/a_anneal_span6",
+  "sha256": {
+    "experiments/a_anneal_span6/layout/step6/route_step_2_routed_raw.gds": "7b6d1dcf349cd6dfd5d0ac23180c8bd50068e558eb82ac72d3320610022e5567",
+    "experiments/a_anneal_span6/layout/pin_map.json": "8775866db5b56e99df1a3879a77a77283788230412966b8315a18f7713330477",
+    "experiments/a_anneal_span6/layout/net_shapes.json": "9ea3f6db950f827d8b5b93073282b16490628144b931d3f66f306540dc877533",
+    "experiments/a_anneal_span6/layout/placement.json": "162def9c345c0a1ff6e7e97dadaef05f7e6920de50323b0e3a7a60e7ff03512f",
+    "experiments/a_ripup_span6/config.py": "de206e81b1f4f4ef77e7181aa039036cec0fbfecd2c985ae9ba683ac520f12be"
+  }
+}

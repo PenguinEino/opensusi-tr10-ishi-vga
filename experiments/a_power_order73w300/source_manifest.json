@@ -1,0 +1,16 @@
+{
+  "source": "a_metal_g_power_anneal4",
+  "sha256": {
+    "scripts/power_layout_search.py": "ac432beac806a4ef0bb458d26926c116d42eba92ca4f8ccd98609a489ed0630f",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_metal_g_power_anneal4/config.py": "0f94397bf4ccd8d99cf5fc9312f7437937a5f981ed9bf8187b2aa6cdc06290ca",
+    "experiments/a_metal_g_power_anneal4/source_manifest.json": "c15ec4c24b68a0806aca39212b4a00529122290e89ddeacbf6e28213439b3bff",
+    "experiments/a_power_order73w300/config.py": "ede7235aea1c013580754683840ddc1ec1da4d4e882afb71c9bbd5a219ba6c46",
+    "experiments/a_power_order73w300/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "experiments/a_power_order73w300/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "experiments/a_power_order73w300/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_power_order73w300/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "experiments/a_power_order73w300/layout/row_assignment.json": "11e79b41846f69a78067821a63aded908ede815154cd33d84a4ce5362c03b9c9"
+  }
+}

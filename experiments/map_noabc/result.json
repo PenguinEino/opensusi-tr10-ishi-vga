@@ -1,0 +1,12 @@
+{
+  "mode": "noabc",
+  "test": "PASS 2 clocks \u00d7 315017 ticks",
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "experiments/map_noabc/config.py": "3a3b97a9d63f76b5c3351e0fef52c64e9d99f117ffbac6831361915e2927ace1",
+    "experiments/map_noabc/mapping.ys": "362644febda866f9ded57bab422291ec648bc978a151dc902fcae16d69295ca4",
+    "experiments/map_noabc/out/abc.constr": "b70f6921b68d747485a6872c68342bf39151d7bd48bbd732fe6ab3359717af37",
+    "experiments/map_noabc/out/ishi_vga_core_pnr.v": "8e03337c51ee99ab13b85f1b90d966a1e45119ced392435abdec20ffdff87eee"
+  }
+}

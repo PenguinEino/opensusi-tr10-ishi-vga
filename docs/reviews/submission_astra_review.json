@@ -1,0 +1,315 @@
+{
+  "schema": 1,
+  "review_date": "2026-09-25",
+  "review_round": 2,
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "xhigh",
+  "scope": "Independent review of unintegrated core submission; no design or submission mutations",
+  "status": "ACCEPTABLE_CORE_HANDOFF_ALL_NEW_FINDINGS_RESOLVED",
+  "manufacturing_approval": false,
+  "manifest_sha256_start": "7482f9fc90251299cb7884946e8cdfb97f19bf996dce4e7174f59c368bebe60c",
+  "manifest_sha256_end": "7482f9fc90251299cb7884946e8cdfb97f19bf996dce4e7174f59c368bebe60c",
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "core_handoff_sha256": "90d25224bc9f83ff6afc845da94019aa417df4a089e481b29d3a74c5e2dffded",
+  "findings": [
+    {
+      "id": "SUB-001",
+      "severity": "low",
+      "classification": "integration_documentation_improvement",
+      "status": "resolved_in_reviewed_candidate",
+      "title": "Explicitly require selecting only ishi_vga_core from the multi-root GDS",
+      "locations": [
+        {
+          "path": "submission/README.md",
+          "line": 10
+        },
+        {
+          "path": "submission/SPEC.md",
+          "line": 17
+        },
+        {
+          "path": "submission/SPEC.md",
+          "line": 114
+        }
+      ],
+      "evidence": "KLayout top_cells() returns ishi_vga_core and 11 unused library roots. REG8x16 and REG4x16 independent bboxes reach y=933 um. They are not referenced by ishi_vga_core.",
+      "impact": "An integrator importing all root cells could place unintended library geometry. The explicitly selected core dimensions and verification are unaffected.",
+      "recommendation": "Document selecting ishi_vga_core only and not placing all GDS top cells. Preserve the adopted GDS bytes.",
+      "reproduce": ".venv/bin/python -c \"import klayout.db as d; l=d.Layout(); l.read('submission/ishi_vga.gds'); print([(c.name,str(c.dbbox())) for c in l.top_cells()])\"",
+      "unused_roots": [
+        "FILL1",
+        "REG8x16",
+        "REG4x16",
+        "via_1",
+        "RSLATCH",
+        "MUXDFFRB",
+        "AND4_X1",
+        "DFFRB",
+        "DEL1",
+        "TAP3",
+        "DFFS"
+      ],
+      "resolution": {
+        "locations": [
+          {
+            "path": "build/submission_review_candidate/README.md",
+            "line": 22
+          },
+          {
+            "path": "build/submission_review_candidate/SPEC.md",
+            "line": 116
+          }
+        ],
+        "gds_unchanged": true,
+        "description": "README and SPEC explicitly warn to select ishi_vga_core only and not place all library roots."
+      }
+    }
+  ],
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1
+  },
+  "independent_checks": {
+    "toolchain": {
+      "status": "PASS",
+      "command": "python3 scripts/check_toolchain.py",
+      "aprtools_commit": "8f6962bf2df1618d633f8a81c230fec895fc83aa",
+      "pdk_commit": "f408d3b5c23a8ebe44f02b0482a9270601e2880f",
+      "stdcell": "v59_4",
+      "only_recorded_patch": true
+    },
+    "bundle": {
+      "status": "PASS",
+      "manifest_files": 103,
+      "provenance_source_comparisons": 97,
+      "missing_files": 0,
+      "extra_files": 0,
+      "broken_top_level_markdown_links": 0,
+      "archive_regular_files": 125,
+      "archive_directories": 33,
+      "archive_manifest_files": 123,
+      "archive_hash_mismatches": 0,
+      "archive_special_entries": 0
+    },
+    "gds": {
+      "status": "PASS_WITH_SUB_001",
+      "selected_top": "ishi_vga_core",
+      "dbu_um": 0.001,
+      "bbox_um": [
+        -15.3,
+        0,
+        1777.5,
+        897.2
+      ],
+      "size_um": [
+        1792.8,
+        897.2
+      ],
+      "top_root_count": 12,
+      "logical_cells": 209,
+      "logical_cell_area_um2": 301193.64,
+      "tap_cells": 20,
+      "fill_cells": 116,
+      "placement_cells": 345,
+      "routing_via_instances": 850,
+      "total_top_instances": 1195,
+      "matched_v59_4_cell_types": 23,
+      "cell_geometry_xor_differences": 0,
+      "electrical_ports": 8,
+      "ports_excluding_common_vss": 7,
+      "all_ports_have_expected_text_and_containing_metal": true,
+      "frame_integrated": false,
+      "ring_instantiated": false
+    },
+    "saved_physical_databases": {
+      "status": "PASS_WITH_KNOWN_MASK_WARNING",
+      "fresh_deck_execution": false,
+      "drawing_drc_items": 0,
+      "mdp_items": 1,
+      "mdp_rule": "WAR06: Floating SG Detected",
+      "matching_circuits": 23,
+      "matching_top_pins": 8,
+      "matching_top_nets": 234,
+      "matching_top_subcircuits": 325,
+      "nonmatching_pairs": 0
+    },
+    "raster": {
+      "status": "PASS",
+      "clock_hz": 3150000,
+      "line_ticks": 100,
+      "frame_lines": 525,
+      "hsync_low_half_open_x": [
+        82,
+        94
+      ],
+      "vsync_low_half_open_y": [
+        490,
+        492
+      ],
+      "rgb_blank_is_zero": true,
+      "rgb_codes": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "nonblack_bbox_half_open_pixels": [
+        64,
+        92,
+        576,
+        412
+      ],
+      "output_png_matches_expected_and_observed_frame": true
+    },
+    "binary_startup": {
+      "status": "PASS",
+      "method": "independent indegree peeling and reverse distance propagation",
+      "states": 131072,
+      "cycles_ticks": [
+        52500
+      ],
+      "maximum_ticks_into_cycle": 49928,
+      "maximum_ms_at_3150000_hz": 15.85015873015873,
+      "analog_guarantee": false
+    },
+    "spice_conversion": {
+      "status": "PASS",
+      "subcircuits": 23,
+      "hierarchical_devices": 1774,
+      "bijective_node_mappings_checked": 397,
+      "device_types_and_parameters_preserved": true,
+      "extracted_port_order": [
+        "hsync",
+        "vdd",
+        "b",
+        "g",
+        "r",
+        "clk",
+        "vsync",
+        "vss"
+      ],
+      "reference_port_order": [
+        "b",
+        "clk",
+        "g",
+        "hsync",
+        "r",
+        "vsync",
+        "vdd",
+        "vss"
+      ],
+      "all_stimuli_port_orders_correct": true,
+      "all_model_files_match_pinned_pdk": true,
+      "all_six_tb_hashes_match_original_runs": true
+    },
+    "saved_spice_recheck": {
+      "status": "PASS",
+      "command": "python3 submission/tools/run_tests.py saved-spice",
+      "cycles": {
+        "upper_init": 110,
+        "lower_init": 110,
+        "vsync_init": 210,
+        "frame_wrap_init": 110,
+        "powerup": 128,
+        "upper_reference": 110
+      },
+      "extracted_cycles": 668,
+      "reference_cycles": 110,
+      "state_bits_per_cycle": 17,
+      "output_bits_per_cycle": 5,
+      "sample_offset_ns": 150,
+      "low_below_v": 1.5,
+      "high_above_v": 3.5,
+      "gzip_expanded_hashes_match": true,
+      "voltage_v": 5,
+      "temperature_c": 27,
+      "clock_edges_ns": 2,
+      "output_load_pf": 1,
+      "maximum_step_ns": 1,
+      "wire_rc": false
+    },
+    "sta_evidence": {
+      "status": "CONSISTENT_SAVED_EVIDENCE",
+      "fresh_sta_execution": false,
+      "supply_v": 5,
+      "temperature_c": 25,
+      "period_ns": 317.460317,
+      "reg_to_reg_setup_slack_ns": 275.957,
+      "reg_to_reg_hold_slack_ns": 6.634,
+      "wire_rc": false,
+      "ideal_clock": true
+    }
+  },
+  "known_deferred_items_not_new_defects": [
+    "Organizer frame, package pin assignment and ESD integration explicitly paused",
+    "One CLK BUFTH Floating SG mask warning remains",
+    "Final integrated DRC, MDP and strict LVS not performed",
+    "No interconnect RC PEX, full-frame analog transient or PVT sweep",
+    "No real pad, board, cable or monitor validation",
+    "Binary startup graph and single zero-initialized power ramp are not arbitrary analog startup guarantees"
+  ],
+  "not_reexecuted_by_reviewer": [
+    "fresh RTL/gate runs",
+    "fresh complete SPICE test suite",
+    "synthesis or placement search",
+    "P&R or repair replay",
+    "official DRC/LVS deck execution",
+    "PEX or PVT sweep",
+    "hardware testing"
+  ],
+  "parent_reported_separate_validation": [
+    "Copied package outside original submission; fresh RTL and gate checks each passed 105000 ticks",
+    "Fresh portable ngspice upper_init passed 110 ticks using bundled models",
+    "Saved SPICE rechecks passed all six cases",
+    "One-bit altered expected-frame negative control was rejected",
+    "Layout, pin and output images were visually inspected; VSYNC leader overlap is being adjusted"
+  ],
+  "next_step": "Parent may move reviewed candidate into submission, add review records and reseal; preserve all verified circuit assets.",
+  "reviewed_candidate_manifest_sha256": "17b42690c920d78d05ca5f0d2dff0d5cec01c7dd4cbe5521a0a3604907b61598",
+  "reviewed_candidate_path": "build/submission_review_candidate",
+  "final_seal_note": "Final addition of this review and resealing is outside the candidate manifest; no self-referential final manifest hash is claimed.",
+  "open_severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "resolved_severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1
+  },
+  "candidate_delta_review": {
+    "status": "PASS",
+    "manifest_files": 113,
+    "provenance_source_comparisons": 107,
+    "changed_existing_files": [
+      "README.md",
+      "REPRODUCE.md",
+      "SPEC.md",
+      "ishi_vga_pins.png"
+    ],
+    "added_files": 10,
+    "removed_files": 0,
+    "unmanifested_files": 0,
+    "missing_files": 0,
+    "broken_top_level_markdown_links": 0,
+    "gds_rtl_netlists_models_testbenches_checkers_and_existing_evidence_byte_unchanged": true,
+    "pin_diagram_visual_check": "PASS: VSYNC leader no longer overlaps text; all 8 coordinates/layers unchanged",
+    "portable_evidence_source_hashes_verified": 15,
+    "portable_new_spice_wave_sha256": "c9807306f164b2dd4302457a4a914858c9a3d4d10d58eb00ed1104e305720acc",
+    "independent_new_spice_wave_recheck": {
+      "status": "PASS",
+      "cycles": 110,
+      "counter_bits": 17,
+      "output_bits": 5,
+      "new_simulator_run_performed_by": "parent agent",
+      "recheck_performed_by": "independent reviewer"
+    },
+    "new_findings": 0
+  }
+}

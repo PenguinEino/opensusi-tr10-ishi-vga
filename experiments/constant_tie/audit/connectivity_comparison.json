@@ -1,0 +1,15 @@
+{
+  "baseline_report": "experiments/routing_audit/metal_connectivity.json",
+  "baseline_report_sha256": "e828602d0f20a370619e2df4a63fddbf5bb1dbe2c9394a6921a0e4d488662125",
+  "candidate_report": "experiments/constant_tie/audit/metal_connectivity.json",
+  "candidate_report_sha256": "32057fbb9239cc85c96bf16b710c048446da7ad1dd7e9adab674d3a512486572",
+  "baseline_open_nets": 0,
+  "candidate_open_nets": 0,
+  "baseline_short_components": 14,
+  "candidate_short_components": 14,
+  "baseline_transitive_short_pairs": 153,
+  "candidate_transitive_short_pairs": 153,
+  "new_pairs": [],
+  "resolved_pairs": [],
+  "assertions": "PASS"
+}

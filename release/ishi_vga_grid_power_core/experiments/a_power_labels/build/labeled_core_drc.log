@@ -1,0 +1,14 @@
+DRC: build/labeled_core.gds  top=ishi_vga_core
+  KLayout 0.30.9 / デッキ /home/ishi-kai/ishi-vga/tools/TR-1um/libs.tech/klayout/tech/drc
+  レポート build/labeled_core_drawing.lyrdb
+
+  違反 0 件
+
+=== MDP: マスクを起こす -> build/labeled_core_mdp_output.gds
+  1912 KB
+=== MDP: マスクに run_IP62.drc を当てる
+  レポート build/labeled_core_mdp.lyrdb
+
+  違反 1 件
+         1  WAR06: Floating SG Detected
+      polygon: (847.3,822.2;847.3,832.2;843.4,832.2;843.4,834.8;847.3,834.8;847.3,850.1;848.3,850.1;848.3,834.8;851.3,834.8;85

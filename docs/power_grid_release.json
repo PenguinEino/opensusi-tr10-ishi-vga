@@ -1,0 +1,38 @@
+{
+  "directory": "release/ishi_vga_grid_power_core",
+  "archive": "release/ishi_vga_grid_power_core.tar.gz",
+  "archive_sha256": "90d25224bc9f83ff6afc845da94019aa417df4a089e481b29d3a74c5e2dffded",
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "file_count": 125,
+  "preserved": [
+    {
+      "snapshot": "docs/core_escape_snapshot.json",
+      "file_count": 14,
+      "unchanged": true
+    },
+    {
+      "snapshot": "docs/core_routing_snapshot.json",
+      "file_count": 24,
+      "unchanged": true
+    },
+    {
+      "snapshot": "docs/half_slot_results.json",
+      "file_count": 201,
+      "unchanged": true
+    },
+    {
+      "snapshot": "docs/half_a_results.json",
+      "file_count": 279,
+      "unchanged": true
+    },
+    {
+      "snapshot": "docs/metal_logo_results.json",
+      "file_count": 182,
+      "unchanged": true
+    }
+  ]
+}

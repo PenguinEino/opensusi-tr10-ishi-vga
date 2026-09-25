@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-25",
+  "state": "RTL verified; physical design DOES NOT FIT. No signoff GDS.",
+  "sha256": {
+    "config.py": "47704e3649b0481cd12e1891f3f4ef2624c261f6be613d710810f8f96607b678",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "rtl/ishi_logo.v": "bdc657fce3fcbdd9dab7ddef91d3c98bea2fdda1a01b208f7744c41e544e1b6f",
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "out/ishi_vga_core_pnr.v": "45997e49c48bb74a4602314227ab841c6930d704f05bcd7e98ee1816dd2fa44a",
+    "layout/step4/place_step4_fill.gds": "de074e8a11768393c72c40d8084eaf667d760849adb7e35b4aa6f25819e9bc19",
+    "layout/step6/route_step_2_routed_raw.gds": "0eac86b33d7fc35c95056d10bfe6d127046a7d57a716800dda06c71706c62a4f",
+    "build/diagnostic_compacted.gds": "694dd8657904e4813197f3a3840dc24fcfcdc8ba1f26dd103645282c15ab98a9"
+  },
+  "tool_versions": {
+    "yosys": "0.33-5build2",
+    "yosys-abc": "0.33-5build2",
+    "iverilog": "12.0-2build2",
+    "OpenSTA": "3.1.0",
+    "OpenSTA_commit": "396536743ff33852cd8af176988f077219bc8b8d",
+    "CUDD_commit": "f54f533303640afd5dbe47a05ebeabb3066f2a25",
+    "klayout_python": "0.30.6",
+    "gdstk": "0.9.62"
+  },
+  "route_experiment": {
+    "rows": 9,
+    "seed": 1,
+    "restarts": 80,
+    "order_passes": 20,
+    "compact_channels_um": [
+      86.4,
+      108.0,
+      108.0,
+      108.0,
+      108.0,
+      108.0,
+      108.0,
+      108.0,
+      108.0,
+      86.4
+    ],
+    "expanded_channels_um": [
+      140.4,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      162.0
+    ],
+    "raw_compacted_bbox_um": [
+      -6.3,
+      0,
+      1604.7,
+      5544.9
+    ],
+    "short_repair": "Interrupted after raw compaction proved this placement does not fit; no DRC/LVS pass claimed."
+  }
+}

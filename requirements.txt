@@ -1,0 +1,6 @@
+klayout==0.30.6
+numpy==2.5.3
+pillow==12.3.0
+PyYAML==6.0.3
+click==8.5.0
+gdstk==0.9.62

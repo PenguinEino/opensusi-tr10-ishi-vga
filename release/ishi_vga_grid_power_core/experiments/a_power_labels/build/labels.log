@@ -1,0 +1,7 @@
+{
+  "status": "ACCEPTED",
+  "candidate": "experiments/a_power_labels/build/labeled_core.gds",
+  "drawing_markers": 0,
+  "mdp_markers": 1,
+  "report": "experiments/a_power_labels/build/label_report.json"
+}

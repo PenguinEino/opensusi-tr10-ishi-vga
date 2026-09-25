@@ -1,0 +1,11 @@
+{
+  "source": "out/ishi_vga_core_pnr.v",
+  "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+  "rows": 6,
+  "tracks": 328,
+  "seed": 1,
+  "restarts": 40,
+  "pad_weight": 1,
+  "balance": 0.08,
+  "fill": "alternate"
+}

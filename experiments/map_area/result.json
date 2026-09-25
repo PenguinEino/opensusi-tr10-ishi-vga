@@ -1,0 +1,12 @@
+{
+  "mode": "area",
+  "test": "PASS 2 clocks \u00d7 315017 ticks",
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "experiments/map_area/config.py": "10dc8bab04b17d77852ce1120873ca5955f0419dd42813c00fa5e9ddd4a66091",
+    "experiments/map_area/mapping.ys": "e84c5d92ab3fd80618b925192afe41b520920a452ccc1e0183fdcfa96db6ae20",
+    "experiments/map_area/out/abc.constr": "b70f6921b68d747485a6872c68342bf39151d7bd48bbd732fe6ab3359717af37",
+    "experiments/map_area/out/ishi_vga_core_pnr.v": "0d939ab3dff4523bc392decab4c39255212d56efec05f8e913146f38b248a51e"
+  }
+}

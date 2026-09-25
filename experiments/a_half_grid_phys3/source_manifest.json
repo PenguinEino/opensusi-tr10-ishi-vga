@@ -1,0 +1,21 @@
+{
+  "source": "a_half_grid64",
+  "physical": {
+    "source": "a_half_grid64",
+    "name": "a_half_grid_phys3",
+    "rows": 3,
+    "seed": 7,
+    "restarts": 160,
+    "prl": 20,
+    "pad_weight": 0.0
+  },
+  "sha256": {
+    "scripts/a_physical_trial.py": "9db28f6444e0beabc2fd3fe458e871950eec6141fb31ba1664dffb9afeba11cf",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_grid64/source_manifest.json": "8c759737b44480329032df80cbd9fabf165f0ff7ef8b2feca0d7da520f2ab7ad",
+    "experiments/a_half_grid64/out/ishi_vga_core_pnr.v": "76b2f8e2d7d9f0b7706d57c1c99608bbcdc500aa4765d3e6e50e0b3fcfe3efd5",
+    "experiments/a_half_grid_phys3/config.py": "f877968f64a2d106b40ee03b2da014bc3ef8d2fb2abcae47568a9aeb53dfa4bc",
+    "experiments/a_half_grid_phys3/ishi_logo.v": "6ad0a2276449f48c7c0964e51f97ebdc3bdac2658e26af0ae2afba1e9caa9bfe",
+    "experiments/a_half_grid_phys3/ishi_vga_core.v": "02c02379bda3130281029eca143f4d9077366d672e53dc3421ffec1e896e0fdf"
+  }
+}

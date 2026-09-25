@@ -1,0 +1,9 @@
+{
+  "source": "experiments/a_group_y",
+  "sha256": {
+    "experiments/a_group_y/out/ishi_vga_core_pnr.v": "9c0829792fedb98e3211581489bc6521ddaa67e27a2e2fe44e9c94a2f5536e6d",
+    "experiments/a_phys6/config.py": "2bfe32bdd2e782f0e5da44fa2c88e28f38f88a7bc7a5b40f8170fc9ca0a82299",
+    "experiments/a_phys6/ishi_logo.v": "c1a5445d352f417f10ae551016013307e21091ae66a23008f2a4974179227119",
+    "experiments/a_phys6/ishi_vga_core.v": "5390b401ce1077a0d1f907735b23662534cdb513f8785178bd68fb90b466ad25"
+  }
+}

@@ -1,0 +1,780 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * ishi core frame_wrap_init; no wire rc
+
+binary raw file "wave.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+No. of Data Columns : 24  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          5
+clk                                          0
+xdut.n901                                    5
+xdut.n821                                    5
+xdut.n692                          2.05775e-08
+xdut.x_13.n6                       6.26479e-09
+xdut.n815                                    5
+xdut.n1000                                   5
+xdut.n229                                    0
+xdut.x_14.n6                       6.26479e-09
+xdut.x_15.n3                                 5
+xdut.n656                          8.23099e-08
+xdut.x_15.n9                                 5
+xdut.n880                          2.05775e-08
+xdut.n373                                    5
+xdut.x_15.n5                        4.1155e-08
+xdut.x_15.n6                       6.26479e-09
+xdut.n647                                    5
+xdut.x_16.n1                       2.05775e-08
+xdut.n597                          8.22975e-08
+xdut.x_17.n6                       4.11487e-08
+xdut.n583                                    5
+xdut.n540                                    5
+xdut.n836                          1.65851e-08
+xdut.x_19.n8                         0.0175683
+xdut.x_19.n7                         0.0508865
+xdut.x_20.n8                           4.98443
+xdut.n383                                    5
+xdut.x_20.n7                            4.9553
+xdut.n365                                    5
+xdut.n900                          4.82942e-09
+xdut.n687                                    5
+xdut.x_21.n6                       6.26479e-09
+xdut.x_22.n6                           4.96988
+xdut.n676                          7.88485e-09
+xdut.n359                                    5
+xdut.n680                                    5
+xdut.n39                           8.22975e-08
+xdut.n883                                    5
+xdut.n685                          8.22975e-08
+xdut.x_23.n6                         0.0320912
+xdut.x_23.n8                         0.0320912
+xdut.x_23.n7                         0.0320912
+xdut.n832                                    5
+xdut.n364                          2.05775e-08
+xdut.n826                                    5
+xdut.x_25.n6                           4.14375
+xdut.x_26.n6                           4.96988
+xdut.n529                                    5
+xdut.n695                          7.88485e-09
+xdut.n991                                    5
+xdut.x_28.n10                          4.98965
+xdut.n984                                    5
+xdut.x_28.n9                           4.97478
+xdut.n990                                    5
+xdut.x_28.n8                           4.94657
+xdut.n704                          3.48086e-09
+xdut.n682                                    5
+xdut.n795                                    5
+xdut.x_29.n8                        2.9454e-09
+xdut.x_29.n7                         0.0348173
+xdut.x_30.n3                       8.23099e-08
+xdut.n701                                    5
+xdut.x_30.n9                                 5
+xdut.x_30.n5                        3.1324e-09
+xdut.x_30.n6                        4.1155e-08
+xdut.x_31.n6                                 5
+xdut.n363                                    5
+xdut.x_32.n6                       4.11487e-08
+xdut.x_33.n6                           4.14375
+xdut.x_34.n9                            4.9553
+xdut.x_34.n2                       4.82942e-09
+xdut.x_34.n8                           4.98443
+xdut.x_35.n6                           4.96988
+xdut.n796                          7.88485e-09
+xdut.x_36.n6                                 5
+xdut.n674                                    5
+xdut.x_37.n8                                 5
+xdut.x_37.n7                                 5
+xdut.n534                          2.05775e-08
+xdut.n891                                    5
+xdut.x_38.n8                           4.97062
+xdut.x_38.n7                           4.97062
+xdut.n818                                    0
+xdut.n752                          7.92437e-09
+xdut.n547                                    5
+xdut.n675                          2.05775e-08
+xdut.n178                          2.05775e-08
+xdut.x_39.n8                       2.94541e-09
+xdut.x_39.n7                         0.0348173
+xdut.x_40.n10                          4.97131
+xdut.x_40.n9                           4.97131
+xdut.x_40.n8                           4.97131
+xdut.n533                          7.96197e-09
+xdut.n179                                    5
+xdut.x_41.n3                                 5
+xdut.n673                                    5
+xdut.n749                          2.05775e-08
+xdut.n811                          2.05775e-08
+xdut.x_41.n7                       6.26479e-09
+xdut.n551                          8.22975e-08
+xdut.n782                                    5
+xdut.x_42.n6                       4.11488e-08
+xdut.x_43.n3                                 5
+xdut.n536                          1.85179e-07
+xdut.n566                          2.05775e-08
+xdut.x_43.n7                       6.26481e-09
+xdut.x_44.n9                           1.26038
+xdut.n671                           7.1595e-08
+xdut.x_44.n2                       1.66209e-08
+xdut.x_44.n11                          4.97213
+xdut.x_44.n10                          4.97213
+xdut.n670                                    5
+xdut.n538                                    5
+xdut.x_45.n6                            4.0396
+xdut.x_45.n8                           4.04907
+xdut.x_45.n7                           4.07278
+xdut.x_46.n8                       6.17262e-08
+xdut.x_46.n7                       1.23452e-07
+xdut.x_47.n9                                 5
+xdut.x_47.n2                                 5
+xdut.x_47.n8                                 5
+xdut.n176                          1.85179e-07
+xdut.x_48.n6                         0.0348172
+xdut.n677                          8.22975e-08
+xdut.x_52.n6                       4.11487e-08
+xdut.x_53.n8                       2.94541e-09
+xdut.x_53.n7                         0.0348173
+xdut.x_54.n6                                 5
+xdut.n994                          8.22975e-08
+xdut.x_55.n6                       4.11487e-08
+xdut.x_57.n8                                 5
+xdut.x_57.n7                           1.26842
+xdut.n745                          3.74461e-08
+xdut.n1080                         8.22975e-08
+xdut.ni1426                                  0
+xdut.x_114.qs                                5
+xdut.x_114.n14                         1.34473
+xdut.n1072                                   5
+xdut.x_114.n6                      8.60208e-08
+xdut.x_114.ckp                     2.08524e-08
+xdut.x_114.n7                      2.60748e-08
+xdut.x_114.ckb                               5
+xdut.x_114.qm                                5
+xdut.x_114.n9                                5
+xdut.n25                           2.05775e-08
+xdut.x_114.n13                     4.30104e-08
+xdut.x_115.n6                                5
+xdut.n843                          3.74462e-08
+xdut.n838                                    5
+xdut.n1021                         2.05775e-08
+xdut.x_116.n3                                5
+xdut.n1071                         8.23099e-08
+xdut.x_116.n9                                5
+xdut.x_116.n5                      4.11549e-08
+xdut.x_116.n6                      6.26479e-09
+xdut.n765                                    5
+xdut.x_120.n6                      6.26479e-09
+xdut.x_120.n8                      1.25296e-08
+xdut.x_120.n7                      1.87944e-08
+xdut.x_121.n8                          4.98443
+xdut.n779                                    5
+xdut.x_121.n7                           4.9553
+xdut.n767                                    5
+xdut.n995                          4.82942e-09
+vsync                                        5
+xdut.ni1415                        2.08524e-08
+xdut.x_131.qs                                5
+xdut.x_131.n14                         1.34473
+xdut.x_131.n6                      8.60208e-08
+xdut.x_131.ckp                     2.08524e-08
+xdut.x_131.n7                      2.60748e-08
+xdut.x_131.ckb                               5
+xdut.x_131.qm                                5
+xdut.x_131.n9                                5
+xdut.x_131.n13                     4.30104e-08
+xdut.ni1421                                  0
+xdut.x_132.qs                                5
+xdut.x_132.n14                         1.34473
+xdut.x_132.n6                      8.60208e-08
+xdut.x_132.ckp                     2.08524e-08
+xdut.x_132.n7                      2.60748e-08
+xdut.x_132.ckb                               5
+xdut.x_132.qm                                5
+xdut.x_132.n9                                5
+xdut.x_132.n13                     4.30104e-08
+xdut.x_151.n6                                5
+xdut.n878                                    5
+xdut.x_152.n6                          1.26842
+xdut.n1074                         2.05775e-08
+xdut.x_153.n6                      4.11487e-08
+r                                            5
+xdut.ni1428                        2.08524e-08
+xdut.x_314.qs                                5
+xdut.x_314.n14                               5
+xdut.x_314.n6                                5
+xdut.x_314.ckp                     2.08524e-08
+xdut.x_314.n7                                5
+xdut.x_314.ckb                               5
+xdut.x_314.qm                      3.49785e-08
+xdut.x_314.n9                                5
+xdut.x_314.n13                         4.14375
+b                                      4.62409
+xdut.ni1427                            2.18798
+xdut.x_315.qs                          2.65358
+xdut.x_315.n14                               5
+xdut.x_315.n6                                5
+xdut.x_315.ckp                     2.08524e-08
+xdut.x_315.n7                                5
+xdut.x_315.ckb                               5
+xdut.x_315.qm                      3.13164e-08
+xdut.x_315.n9                          2.65358
+xdut.x_315.n13                         4.14375
+xdut.n528                                    5
+xdut.ni1424                                  0
+xdut.x_316.qs                                5
+xdut.x_316.n14                         1.34473
+xdut.n711                                    5
+xdut.x_316.n6                      8.60208e-08
+xdut.x_316.ckp                     2.08524e-08
+xdut.x_316.n7                      2.60748e-08
+xdut.x_316.ckb                               5
+xdut.x_316.qm                                5
+xdut.x_316.n9                                5
+xdut.x_316.n13                     4.30104e-08
+xdut.x_317.qs                                5
+xdut.x_317.n14                         1.34473
+xdut.x_317.n6                      8.60208e-08
+xdut.x_317.ckp                     2.08524e-08
+xdut.x_317.n7                      2.60748e-08
+xdut.x_317.ckb                               5
+xdut.x_317.qm                                5
+xdut.x_317.n9                                5
+xdut.x_317.n13                     4.30104e-08
+xdut.x_318.n6                      6.26479e-09
+xdut.x_319.n3                      8.22975e-08
+xdut.x_319.n7                      4.11487e-08
+xdut.n620                          8.22975e-08
+xdut.x_320.n6                      4.11487e-08
+xdut.x_321.n6                      6.26479e-09
+xdut.x_322.n8                          4.97143
+xdut.x_322.n7                          1.26023
+xdut.x_323.n8                          4.98443
+xdut.x_323.n7                           4.9553
+xdut.n706                          4.82942e-09
+xdut.n690                                    0
+xdut.x_328.qs                                5
+xdut.x_328.n14                         1.34473
+xdut.n546                                    5
+xdut.x_328.n6                      8.60208e-08
+xdut.x_328.ckp                     2.08524e-08
+xdut.x_328.n7                      2.60748e-08
+xdut.x_328.ckb                               5
+xdut.x_328.qm                                5
+xdut.x_328.n9                                5
+xdut.x_328.n13                     4.30104e-08
+xdut.x_329.n7                                5
+xdut.x_329.n3                      2.05775e-08
+xdut.n24                           2.05775e-08
+xdut.n527                                    5
+xdut.ni1417                                  0
+xdut.x_330.qs                                5
+xdut.x_330.n14                         1.34473
+xdut.n694                                    5
+xdut.x_330.n6                      8.60208e-08
+xdut.x_330.ckp                     2.08524e-08
+xdut.x_330.n7                      2.60748e-08
+xdut.x_330.ckb                               5
+xdut.x_330.qm                                5
+xdut.x_330.n9                                5
+xdut.x_330.n13                     4.30104e-08
+g                                            5
+xdut.ni1416                        2.08524e-08
+xdut.x_332.qs                                5
+xdut.x_332.n14                               5
+xdut.x_332.n6                                5
+xdut.x_332.ckp                     2.08524e-08
+xdut.x_332.n7                                5
+xdut.x_332.ckb                               5
+xdut.x_332.qm                      3.49785e-08
+xdut.x_332.n9                                5
+xdut.x_332.n13                         4.14375
+xdut.n582                                    5
+xdut.x_333.n6                       6.2648e-09
+xdut.n590                                    5
+xdut.x_334.n8                        0.0175683
+xdut.x_334.n7                        0.0508864
+xdut.n535                                    5
+xdut.n543                          2.05775e-08
+xdut.x_338.n6                        0.0348173
+xdut.x_339.n3                                5
+xdut.x_339.n5                      9.07538e-08
+xdut.x_339.n4                      5.84143e-08
+xdut.x_339.n6                                5
+xdut.n549                          2.05775e-08
+xdut.x_341.n6                          4.14375
+xdut.x_342.n3                                5
+xdut.x_342.n7                          4.14375
+xdut.x_343.n6                       6.2648e-09
+xdut.ni1431                                  0
+xdut.x_358.qs                                5
+xdut.x_358.n14                         1.34473
+xdut.n820                                    5
+xdut.x_358.n6                      8.60208e-08
+xdut.x_358.ckp                     2.08524e-08
+xdut.x_358.n7                      2.60748e-08
+xdut.x_358.ckb                               5
+xdut.x_358.qm                                5
+xdut.x_358.n9                                5
+xdut.x_358.n13                     4.30104e-08
+xdut.ni1432                                  0
+xdut.x_359.qs                                5
+xdut.x_359.n14                         1.34473
+xdut.n823                                    5
+xdut.x_359.n6                      8.60208e-08
+xdut.x_359.ckp                     2.08524e-08
+xdut.x_359.n7                      2.60748e-08
+xdut.x_359.ckb                               5
+xdut.x_359.qm                                5
+xdut.x_359.n9                                5
+xdut.x_359.n13                     4.30104e-08
+xdut.x_360.n7                                5
+xdut.x_360.n5                                5
+xdut.x_360.n3                           4.1532
+xdut.n761                          1.16047e-07
+xdut.x_406.n6                       6.2648e-09
+xdut.x_438.n3                                5
+xdut.x_438.n9                          1.26842
+xdut.n780                          2.05775e-08
+xdut.x_438.n5                      5.80236e-08
+xdut.x_438.n6                          4.14375
+xdut.x_439.n3                                5
+xdut.x_439.n5                      9.07538e-08
+xdut.x_439.n4                      5.84143e-08
+xdut.x_439.n6                                5
+xdut.n776                          1.08506e-07
+xdut.x_440.n6                       6.2648e-09
+xdut.x_441.n8                      6.26479e-09
+xdut.x_441.n7                      1.25296e-08
+xdut.x_442.n6                                5
+xdut.x_443.n8                          1.29106
+xdut.x_443.n3                      7.88485e-09
+xdut.x_443.n9                          4.96988
+xdut.x_443.n5                      5.42529e-08
+xdut.x_568.n8                          4.97143
+xdut.x_568.n7                          1.26023
+xdut.n577                                    5
+xdut.n230                          1.65851e-08
+xdut.n366                                    0
+xdut.x_569.n8                          4.98443
+xdut.n171                                    5
+xdut.x_569.n7                           4.9553
+xdut.n326                          4.82942e-09
+xdut.x_586.n6                                5
+xdut.n596                                    5
+xdut.n342                          3.74462e-08
+xdut.x_593.qs                                5
+xdut.x_593.n14                         1.34473
+xdut.n553                                    5
+xdut.x_593.n6                      8.60208e-08
+xdut.x_593.ckp                     2.08524e-08
+xdut.x_593.n7                      2.60748e-08
+xdut.x_593.ckb                               5
+xdut.x_593.qm                                5
+xdut.x_593.n9                                5
+xdut.x_593.n13                     4.30104e-08
+xdut.x_594.n3                                5
+xdut.n335                          1.16047e-07
+xdut.n578                          7.88485e-09
+xdut.n338                          2.05775e-08
+xdut.x_594.n7                        0.0348172
+xdut.n172                                    5
+xdut.n298                                    0
+xdut.x_595.qs                                5
+xdut.x_595.n14                         1.34473
+xdut.n68                                     5
+xdut.x_595.n6                      8.60208e-08
+xdut.x_595.ckp                     2.08524e-08
+xdut.x_595.n7                      2.60748e-08
+xdut.x_595.ckb                               5
+xdut.x_595.qm                                5
+xdut.x_595.n9                                5
+xdut.x_595.n13                     4.30104e-08
+xdut.x_596.n3                                5
+xdut.n228                          1.16047e-07
+xdut.x_596.n9                          1.26842
+xdut.n252                          2.05775e-08
+xdut.x_596.n5                      5.80236e-08
+xdut.x_596.n6                          4.14375
+xdut.x_597.n6                          4.96988
+xdut.n557                          7.88485e-09
+xdut.n346                                    5
+xdut.x_598.n6                          4.96988
+xdut.n69                                     5
+xdut.n202                          7.88485e-09
+xdut.n575                                    5
+xdut.x_599.n7                          4.96988
+xdut.x_599.n3                      7.88485e-09
+xdut.n281                                    5
+xdut.x_600.n3                      8.22975e-08
+xdut.x_600.n7                      4.11487e-08
+xdut.x_601.n7                                5
+xdut.x_601.n3                                5
+xdut.n173                          2.05775e-08
+xdut.n201                                    5
+xdut.x_603.n6                       6.2648e-09
+xdut.x_604.n3                                5
+xdut.n194                          1.16047e-07
+xdut.x_604.n9                          1.26842
+xdut.n66                                     5
+xdut.n65                                     0
+xdut.x_604.n5                      5.80236e-08
+xdut.x_604.n6                          4.14375
+xdut.x_605.n6                                5
+xdut.n296                          2.05775e-08
+xdut.n200                                    5
+xdut.x_606.n3                                5
+xdut.n333                          2.19645e-08
+xdut.x_606.n5                                5
+xdut.x_606.n4                                5
+xdut.x_606.n6                      3.49785e-08
+xdut.x_608.n6                                5
+xdut.n564                          5.46059e-08
+xdut.n560                          3.74462e-08
+xdut.x_609.n6                          1.26842
+xdut.x_610.n6                                5
+xdut.x_611.n6                          1.26842
+xdut.n558                          3.74462e-08
+xdut.n559                          2.05775e-08
+xdut.x_612.n6                                5
+xdut.n244                                    0
+xdut.x_614.qs                                5
+xdut.x_614.n14                         1.34473
+xdut.x_614.n6                      8.60208e-08
+xdut.x_614.ckp                     2.08524e-08
+xdut.x_614.n7                      2.60748e-08
+xdut.x_614.ckb                               5
+xdut.x_614.qm                                5
+xdut.x_614.n9                                5
+xdut.x_614.n13                     4.30104e-08
+xdut.x_615.n6                          4.96988
+xdut.n265                                    5
+xdut.x_664.qs                      7.29463e-08
+xdut.x_664.n14                               5
+xdut.x_664.n6                                5
+xdut.x_664.ckp                     2.08524e-08
+xdut.x_664.n7                                5
+xdut.x_664.ckb                               5
+xdut.x_664.qm                      2.60748e-08
+xdut.x_664.n9                      4.95105e-08
+xdut.x_664.n13                         4.14375
+xdut.n283                                    5
+xdut.n315                          8.22975e-08
+xdut.x_665.n8                       6.2648e-09
+xdut.x_665.n7                      1.25296e-08
+xdut.x_680.n7                          1.26842
+xdut.x_680.n3                      3.74462e-08
+xdut.n8                                      5
+xdut.n2                                      5
+xdut.x_681.n7                                5
+xdut.n23                                     0
+xdut.x_681.n3                                5
+xdut.n10                           2.05775e-08
+xdut.x_682.n6                                5
+xdut.n22                                     5
+xdut.n19                           8.23099e-08
+xdut.x_687.n6                                5
+xdut.n57                           2.05775e-08
+xdut.x_689.n3                                5
+xdut.n59                                     5
+xdut.n56                           2.05775e-08
+xdut.x_689.n7                          4.14375
+xdut.x_690.n7                          4.96988
+xdut.x_690.n3                      7.88485e-09
+xdut.n36                                     5
+hsync                                        5
+xdut.ni1435                        2.08524e-08
+xdut.x_706.qs                                5
+xdut.x_706.n14                         1.34473
+xdut.n38                                     5
+xdut.x_706.n6                      8.60208e-08
+xdut.x_706.ckp                     2.08524e-08
+xdut.x_706.n7                      2.60748e-08
+xdut.x_706.ckb                               5
+xdut.x_706.qm                                5
+xdut.x_706.n9                                5
+xdut.x_706.n13                     4.30104e-08
+xdut.n20                                     5
+xdut.x_721.qs                                5
+xdut.x_721.n14                               5
+xdut.x_721.n6                                5
+xdut.x_721.ckp                     2.08524e-08
+xdut.x_721.n7                                5
+xdut.x_721.ckb                               5
+xdut.x_721.qm                      3.49785e-08
+xdut.x_721.n9                                5
+xdut.x_721.n13                         4.14375
+xdut.x_723.n8                                5
+xdut.n17                           1.85179e-07
+xdut.x_723.n7                                5
+xdut.n207                          8.22975e-08
+xdut.n211                          2.05775e-08
+xdut.x_728.n3                      8.23099e-08
+xdut.x_728.n9                                5
+xdut.x_728.n5                       3.1324e-09
+xdut.x_728.n6                       4.1155e-08
+xdut.n7                                      5
+xdut.x_730.n2                      2.05775e-08
+xdut.x_732.n8                                5
+xdut.x_732.n7                                5
+xdut.n210                                    0
+xdut.n197                          2.05775e-08
+xdut.ni1422                                  5
+xdut.x_735.qs                      7.29463e-08
+xdut.x_735.n14                               5
+xdut.n6                            8.23099e-08
+xdut.x_735.n6                                5
+xdut.x_735.ckp                     2.08524e-08
+xdut.x_735.n7                                5
+xdut.x_735.ckb                               5
+xdut.x_735.qm                      2.60748e-08
+xdut.x_735.n9                      4.95105e-08
+xdut.x_735.n13                         4.14375
+xdut.n18                                     5
+xdut.ni1429                                  0
+xdut.x_753.qs                                5
+xdut.x_753.n14                         1.34473
+xdut.x_753.n6                      8.60208e-08
+xdut.x_753.ckp                     2.08524e-08
+xdut.x_753.n7                      2.60748e-08
+xdut.x_753.ckb                               5
+xdut.x_753.qm                                5
+xdut.x_753.n9                                5
+xdut.x_753.n13                     4.30104e-08
+xdut.x_754.n10                         4.98484
+xdut.x_754.n9                           4.9572
+xdut.x_754.n8                           4.9572
+xdut.n220                          4.87635e-09
+xdut.n222                                    5
+xdut.x_770.n7                          4.96988
+xdut.x_770.n3                      7.88485e-09
+xdut.n213                                    5
+xdut.n218                          8.22975e-08
+xdut.x_771.n8                       6.2648e-09
+xdut.x_771.n7                      1.25296e-08
+xdut.x_772.n6                      4.11487e-08
+xdut.n198                                    5
+xdut.x_773.qs                                5
+xdut.x_773.n14                         1.34473
+xdut.n3                                      5
+xdut.x_773.n6                      8.60208e-08
+xdut.x_773.ckp                     2.08524e-08
+xdut.x_773.n7                      2.60748e-08
+xdut.x_773.ckb                               5
+xdut.x_773.qm                                5
+xdut.x_773.n9                                5
+xdut.x_773.n13                     4.30104e-08
+xdut.n242                          2.05775e-08
+xdut.n323                                    0
+xdut.x_776.qs                                5
+xdut.x_776.n14                         1.34473
+xdut.x_776.n6                      8.60208e-08
+xdut.x_776.ckp                     2.08524e-08
+xdut.x_776.n7                      2.60748e-08
+xdut.x_776.ckb                               5
+xdut.x_776.qm                                5
+xdut.x_776.n9                                5
+xdut.x_776.n13                     4.30104e-08
+xdut.x_793.n6                          4.96988
+xdut.n308                                    5
+xdut.n377                          7.88485e-09
+xdut.n287                                    5
+xdut.x_794.n6                                5
+xdut.n291                                    5
+xdut.n542                          2.05775e-08
+xdut.x_799.n10                         1.33931
+xdut.n550                                    5
+xdut.x_799.n9                          1.32985
+xdut.x_799.n8                          1.30646
+xdut.n187                          7.92437e-09
+xdut.n392                          2.05775e-08
+xdut.x_800.n3                                5
+xdut.n71                                     5
+xdut.n188                          1.65851e-08
+xdut.n189                          2.05775e-08
+xdut.x_800.n7                      6.26479e-09
+xdut.x_801.n8                          1.31158
+xdut.x_801.n7                          1.29144
+xdut.n181                          5.46059e-08
+xdut.n539                          7.88485e-09
+xdut.x_802.n6                                5
+xdut.n72                           2.05775e-08
+xdut.n532                          2.05775e-08
+xdut.n185                                    5
+xdut.x_803.n8                          4.97062
+xdut.x_803.n7                          4.97062
+xdut.n184                          3.74461e-08
+xdut.n288                                    5
+xdut.x_804.n6                                5
+xdut.n183                          2.05775e-08
+xdut.x_807.n6                                5
+xdut.n376                          7.92437e-09
+xdut.n284                                    5
+xdut.n303                          2.05775e-08
+xdut.x_808.n6                                5
+xdut.n301                          2.05775e-08
+xdut.n305                          3.74462e-08
+xdut.x_809.n8                                5
+xdut.x_809.n7                                5
+xdut.n371                                    5
+xdut.x_810.n6                      4.11487e-08
+xdut.x_811.n7                          4.96988
+xdut.x_811.n3                      7.88485e-09
+xdut.x_813.n6                                5
+xdut.n374                                    5
+xdut.x_820.n6                          4.96988
+xdut.n593                          7.88485e-09
+xdut.n74                                     5
+xdut.x_821.n2                      2.05775e-08
+xdut.x_829.n8                                5
+xdut.x_829.n7                          1.26842
+xdut.x_832.n6                                5
+xdut.x_835.n6                                5
+xdut.x_836.n6                                5
+xdut.n586                                    5
+xdut.n313                          2.05775e-08
+xdut.x_895.n8                          4.97143
+xdut.x_895.n7                          1.26023
+xdut.n649                          1.65851e-08
+xdut.n70                           8.22975e-08
+xdut.x_896.n6                                5
+xdut.n336                                    5
+xdut.x_905.n6                                5
+xdut.n322                                    5
+xdut.x_906.n8                                5
+xdut.x_906.n7                                5
+xdut.n637                                    5
+xdut.x_909.n6                                5
+xdut.x_910.n6                                5
+xdut.x_911.n8                          4.97062
+xdut.x_911.n7                          4.97062
+xdut.n77                                     5
+xdut.x_913.n6                                5
+xdut.x_917.n6                                5
+xdut.x_920.n8                                5
+xdut.x_920.n7                                5
+xdut.x_921.n6                                5
+xdut.x_923.n8                          1.31158
+xdut.x_923.n7                          1.29144
+xdut.x_926.n6                          1.26842
+xdut.x_931.n7                          1.26842
+xdut.x_931.n3                      3.74462e-08
+xdut.x_937.n3                                5
+xdut.x_937.n7                      6.26479e-09
+xdut.x_942.n8                          4.97143
+xdut.x_942.n7                          1.26023
+xdut.x_944.n6                          4.96988
+xdut.x_947.n2                      2.05775e-08
+xdut.x_994.n3                                5
+xdut.x_994.n9                                5
+xdut.x_994.n5                      4.11549e-08
+xdut.x_994.n6                      6.26479e-09
+xdut.x_995.n6                                5
+xdut.n16                           2.05775e-08
+xdut.n54                                     5
+xdut.x_1004.n8                               5
+xdut.x_1004.n7                         1.26842
+xdut.n47                           3.74461e-08
+xdut.n50                                     5
+xdut.x_1008.n6                     4.11487e-08
+xdut.x_1009.n8                     6.17262e-08
+xdut.x_1009.n7                     1.23452e-07
+xdut.x_1011.n6                         4.14375
+xdut.x_1019.n6                         4.14375
+xdut.x_1023.n6                         1.26842
+xdut.x_1030.n6                     6.26479e-09
+xdut.n51                                     5
+xdut.x_1032.n6                         4.14375
+xdut.x_1036.n6                     4.11487e-08
+xdut.x_1040.n6                       0.0348173
+xdut.x_1044.n3                               5
+xdut.n15                                     5
+xdut.x_1044.n5                     7.29463e-08
+xdut.x_1044.n4                     4.95105e-08
+xdut.x_1044.n6                     2.60747e-08
+xdut.x_1053.n3                               5
+xdut.x_1053.n9                               5
+xdut.x_1053.n5                      4.1155e-08
+xdut.x_1053.n6                     6.26479e-09
+xdut.x_1054.n6                               5
+xdut.n5                                      5
+xdut.x_1061.n7                               5
+xdut.x_1061.n3                     2.05775e-08
+xdut.n49                           3.74462e-08
+xdut.x_1064.n3                               5
+xdut.x_1064.n9                         1.26842
+xdut.x_1064.n5                     5.80236e-08
+xdut.x_1064.n6                         4.14375
+xdut.x_1069.n8                               5
+xdut.x_1069.n7                               5
+xdut.n4                                      5
+xdut.x_1070.n2                     1.85179e-07
+xdut.x_1070.n4                     6.17262e-08
+xdut.x_1070.n5                     1.23452e-07
+xdut.x_1071.n6                         4.96988
+xdut.n205                          7.88485e-09
+xdut.x_1075.n6                       0.0348173
+xdut.n11                                     5
+xdut.n14                           2.05775e-08
+xdut.x_1079.n6                       0.0171313
+xdut.x_1079.n8                       0.0486804
+xdut.x_1079.n7                         4.15573
+xdut.n44                                     5
+xdut.n12                                     5
+xdut.x_1105.n8                     6.17262e-08
+xdut.x_1105.n7                     1.23452e-07
+xdut.n13                                     5
+xdut.x_1108.n8                       0.0333738
+xdut.x_1108.n7                       0.0333738
+xdut.x_1124.n9                         4.95563
+xdut.x_1124.n2                      4.8375e-09
+xdut.x_1124.n11                        4.98479
+xdut.x_1124.n10                        4.98479
+xdut.x_1131.n6                     4.11487e-08
+xdut.x_1141.n6                         1.26842
+xdut.n48                           2.05775e-08
+xdut.x_1144.n6                     6.26479e-09
+xdut.x_1149.n3                               5
+xdut.n46                           2.05775e-08
+xdut.x_1149.n7                       0.0348173
+xdut.x_1151.n6                               5
+xdut.x_1152.n3                               5
+xdut.x_1152.n9                               5
+xdut.x_1152.n5                         4.10687
+xdut.x_1152.n6                       0.0348173
+xdut.x_1153.n9                         4.97131
+xdut.x_1153.n2                     7.96197e-09
+xdut.x_1153.n11                        4.97131
+xdut.x_1153.n10                        4.97131
+xdut.x_1154.n9                          4.9572
+xdut.x_1154.n2                     4.87635e-09
+xdut.x_1154.n11                         4.9572
+xdut.x_1154.n10                        4.98484
+vclk#branch                                  0
+vdd#branch                          -0.0003919
+
+ Reference value :  1.26973e-07 Reference value :  3.06973e-07 Reference value :  4.86973e-07 Reference value :  6.64973e-07 Reference value :  7.79973e-07 Reference value :  9.32973e-07 Reference value :  1.01965e-06 Reference value :  1.15875e-06 Reference value :  1.26453e-06 Reference value :  1.34251e-06 Reference value :  1.48576e-06 Reference value :  1.61556e-06 Reference value :  1.66746e-06 Reference value :  1.77099e-06 Reference value :  1.88431e-06 Reference value :  1.97245e-06 Reference value :  2.06106e-06 Reference value :  2.17992e-06 Reference value :  2.28926e-06 Reference value :  2.43051e-06 Reference value :  2.56043e-06 Reference value :  2.64348e-06 Reference value :  2.76926e-06 Reference value :  2.91890e-06 Reference value :  3.01260e-06 Reference value :  3.13032e-06 Reference value :  3.24223e-06 Reference value :  3.36544e-06 Reference value :  3.48519e-06 Reference value :  3.56277e-06 Reference value :  3.70768e-06 Reference value :  3.85126e-06 Reference value :  3.93499e-06 Reference value :  4.06598e-06 Reference value :  4.19236e-06 Reference value :  4.27064e-06 Reference value :  4.38939e-06 Reference value :  4.51137e-06 Reference value :  4.61390e-06 Reference value :  4.72577e-06 Reference value :  4.82978e-06 Reference value :  4.97781e-06 Reference value :  5.11479e-06 Reference value :  5.18609e-06 Reference value :  5.30795e-06 Reference value :  5.45774e-06 Reference value :  5.55611e-06 Reference value :  5.66976e-06 Reference value :  5.78244e-06 Reference value :  5.91776e-06 Reference value :  6.04863e-06 Reference value :  6.10588e-06 Reference value :  6.24356e-06 Reference value :  6.33994e-06 Reference value :  6.42286e-06 Reference value :  6.55307e-06 Reference value :  6.62778e-06 Reference value :  6.73038e-06 Reference value :  6.81635e-06 Reference value :  6.92668e-06 Reference value :  7.04923e-06 Reference value :  7.16762e-06 Reference value :  7.29652e-06 Reference value :  7.38340e-06 Reference value :  7.52563e-06 Reference value :  7.66804e-06 Reference value :  7.75112e-06 Reference value :  7.87225e-06 Reference value :  8.00164e-06 Reference value :  8.12639e-06 Reference value :  8.24266e-06 Reference value :  8.32557e-06 Reference value :  8.46238e-06 Reference value :  8.60513e-06 Reference value :  8.69061e-06 Reference value :  8.80361e-06 Reference value :  8.95100e-06 Reference value :  9.05893e-06 Reference value :  9.18245e-06 Reference value :  9.27619e-06 Reference value :  9.39542e-06 Reference value :  9.48153e-06 Reference value :  9.58670e-06 Reference value :  9.65318e-06 Reference value :  9.77502e-06 Reference value :  9.90592e-06 Reference value :  1.00446e-05 Reference value :  1.01387e-05 Reference value :  1.02275e-05 Reference value :  1.03660e-05 Reference value :  1.04783e-05 Reference value :  1.05476e-05 Reference value :  1.06847e-05 Reference value :  1.08164e-05 Reference value :  1.08711e-05 Reference value :  1.10184e-05 Reference value :  1.11619e-05 Reference value :  1.12631e-05 Reference value :  1.13833e-05 Reference value :  1.14969e-05 Reference value :  1.16369e-05 Reference value :  1.17672e-05 Reference value :  1.18257e-05 Reference value :  1.19701e-05 Reference value :  1.21125e-05 Reference value :  1.21389e-05 Reference value :  1.22736e-05 Reference value :  1.24171e-05 Reference value :  1.25064e-05 Reference value :  1.26251e-05 Reference value :  1.27634e-05 Reference value :  1.28804e-05 Reference value :  1.30030e-05 Reference value :  1.30869e-05 Reference value :  1.32243e-05 Reference value :  1.33451e-05 Reference value :  1.34078e-05 Reference value :  1.35415e-05 Reference value :  1.36788e-05 Reference value :  1.37633e-05 Reference value :  1.38790e-05 Reference value :  1.40282e-05 Reference value :  1.41398e-05 Reference value :  1.42604e-05 Reference value :  1.43556e-05 Reference value :  1.44672e-05 Reference value :  1.45769e-05 Reference value :  1.46707e-05 Reference value :  1.47854e-05 Reference value :  1.48837e-05 Reference value :  1.49860e-05 Reference value :  1.51270e-05 Reference value :  1.52268e-05 Reference value :  1.53045e-05 Reference value :  1.54122e-05 Reference value :  1.54913e-05 Reference value :  1.56185e-05 Reference value :  1.57148e-05 Reference value :  1.58120e-05 Reference value :  1.59387e-05 Reference value :  1.60572e-05 Reference value :  1.61742e-05 Reference value :  1.62616e-05 Reference value :  1.64055e-05 Reference value :  1.65416e-05 Reference value :  1.66144e-05 Reference value :  1.67352e-05 Reference value :  1.68823e-05 Reference value :  1.69600e-05 Reference value :  1.70778e-05 Reference value :  1.72078e-05 Reference value :  1.73017e-05 Reference value :  1.74204e-05 Reference value :  1.75271e-05 Reference value :  1.76413e-05 Reference value :  1.77215e-05 Reference value :  1.78428e-05 Reference value :  1.79636e-05 Reference value :  1.80834e-05 Reference value :  1.81669e-05 Reference value :  1.83039e-05 Reference value :  1.83974e-05 Reference value :  1.84812e-05 Reference value :  1.85981e-05 Reference value :  1.87030e-05 Reference value :  1.87993e-05 Reference value :  1.89417e-05 Reference value :  1.90773e-05 Reference value :  1.91622e-05 Reference value :  1.92848e-05 Reference value :  1.94272e-05 Reference value :  1.95131e-05 Reference value :  1.96143e-05 Reference value :  1.97464e-05 Reference value :  1.98455e-05 Reference value :  1.99651e-05 Reference value :  2.00673e-05 Reference value :  2.02089e-05 Reference value :  2.03332e-05 Reference value :  2.04080e-05 Reference value :  2.05435e-05 Reference value :  2.06877e-05 Reference value :  2.07731e-05 Reference value :  2.08873e-05 Reference value :  2.10174e-05 Reference value :  2.11116e-05 Reference value :  2.12285e-05 Reference value :  2.13364e-05 Reference value :  2.14780e-05 Reference value :  2.16030e-05 Reference value :  2.16820e-05 Reference value :  2.18109e-05 Reference value :  2.19538e-05 Reference value :  2.20134e-05 Reference value :  2.21317e-05 Reference value :  2.22762e-05 Reference value :  2.23429e-05 Reference value :  2.24491e-05 Reference value :  2.25946e-05 Reference value :  2.27031e-05 Reference value :  2.28149e-05 Reference value :  2.29252e-05 Reference value :  2.30648e-05 Reference value :  2.31577e-05 Reference value :  2.32449e-05 Reference value :  2.33821e-05 Reference value :  2.34988e-05 Reference value :  2.35640e-05 Reference value :  2.36876e-05 Reference value :  2.37905e-05 Reference value :  2.38793e-05 Reference value :  2.40147e-05 Reference value :  2.41157e-05 Reference value :  2.41984e-05 Reference value :  2.43421e-05 Reference value :  2.44396e-05 Reference value :  2.45143e-05 Reference value :  2.45947e-05 Reference value :  2.47031e-05 Reference value :  2.48228e-05 Reference value :  2.48446e-05 Reference value :  2.49778e-05 Reference value :  2.51115e-05 Reference value :  2.51930e-05 Reference value :  2.53069e-05 Reference value :  2.54495e-05 Reference value :  2.55354e-05 Reference value :  2.56475e-05 Reference value :  2.57764e-05 Reference value :  2.58619e-05 Reference value :  2.59633e-05 Reference value :  2.60864e-05 Reference value :  2.61594e-05 Reference value :  2.62588e-05 Reference value :  2.63969e-05 Reference value :  2.64747e-05 Reference value :  2.65814e-05 Reference value :  2.67202e-05 Reference value :  2.67786e-05 Reference value :  2.68937e-05 Reference value :  2.70318e-05 Reference value :  2.70707e-05 Reference value :  2.72087e-05 Reference value :  2.73493e-05 Reference value :  2.74053e-05 Reference value :  2.75287e-05 Reference value :  2.76750e-05 Reference value :  2.77777e-05 Reference value :  2.78869e-05 Reference value :  2.80032e-05 Reference value :  2.81211e-05 Reference value :  2.82361e-05 Reference value :  2.83219e-05 Reference value :  2.84514e-05 Reference value :  2.85421e-05 Reference value :  2.86410e-05 Reference value :  2.87717e-05 Reference value :  2.88840e-05 Reference value :  2.89715e-05 Reference value :  2.91129e-05 Reference value :  2.92540e-05 Reference value :  2.93296e-05 Reference value :  2.94439e-05 Reference value :  2.95864e-05 Reference value :  2.96650e-05 Reference value :  2.97740e-05 Reference value :  2.99049e-05 Reference value :  2.99525e-05 Reference value :  3.00715e-05 Reference value :  3.02197e-05 Reference value :  3.03344e-05 Reference value :  3.04436e-05 Reference value :  3.05443e-05 Reference value :  3.06826e-05 Reference value :  3.07866e-05 Reference value :  3.08647e-05 Reference value :  3.10024e-05 Reference value :  3.11341e-05 Reference value :  3.11864e-05 Reference value :  3.13270e-05 Reference value :  3.14608e-05 Reference value :  3.15297e-05 Reference value :  3.16539e-05 Reference value :  3.17981e-05 Reference value :  3.18778e-05 Reference value :  3.19869e-05 Reference value :  3.21255e-05 Reference value :  3.22091e-05 Reference value :  3.23269e-05 Reference value :  3.24474e-05 Reference value :  3.25428e-05 Reference value :  3.26635e-05 Reference value :  3.27660e-05 Reference value :  3.29008e-05 Reference value :  3.30156e-05 Reference value :  3.30899e-05 Reference value :  3.32242e-05 Reference value :  3.33554e-05 Reference value :  3.34136e-05 Reference value :  3.35426e-05 Reference value :  3.36755e-05 Reference value :  3.37235e-05 Reference value :  3.38573e-05 Reference value :  3.39784e-05 Reference value :  3.40550e-05 Reference value :  3.41927e-05 Reference value :  3.43342e-05 Reference value :  3.44111e-05 Reference value :  3.45338e-05 Reference value :  3.46664e-05 Reference value :  3.47628e-05 Reference value :  3.48712e-05 Reference value :  3.49869e-05 Reference value :  3.51056e-05 Reference value :  3.52242e-05 Reference value :  3.53133e-05 Reference value :  3.54519e-05 Reference value :  3.55833e-05 Reference value :  3.56586e-05 Reference value :  3.57821e-05 Reference value :  3.59251e-05 Reference value :  3.59539e-05 Reference value :  3.60928e-05
+No. of Data Rows : 42765
+
+Total analysis time (seconds) = 73.105
+
+Total elapsed time (seconds) = 73.155 
+
+Total DRAM available = 23968.098 MB.
+DRAM currently available = 3369.379 MB.
+Maximum ngspice program size =   91.730 MB.
+Current ngspice program size =   24.691 MB.
+
+Shared ngspice pages =   10.230 MB.
+Text (code) pages =    5.523 MB.
+Stack = 0 bytes.
+Library pages =   70.762 MB.
+

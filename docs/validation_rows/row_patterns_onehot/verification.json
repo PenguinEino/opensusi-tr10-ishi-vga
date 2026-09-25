@@ -1,0 +1,39 @@
+{
+  "variant": "row_patterns_onehot",
+  "whole_logo_equivalence_combinations": 65536,
+  "checks": [
+    {
+      "model": "rtl",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "rtl",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    }
+  ],
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "experiments/row_patterns_onehot/ishi_logo.v": "5c3daf4ebc4ebb15d0cd364b21aa713d5573eb3098b131a8f389cdf69dea6367",
+    "experiments/row_patterns_onehot/out/ishi_vga_core_pnr.v": "f8aa24540e3247b7e1db2a9c91ed79a2df7354219c359497b1c0cb9b0f8ff38d",
+    "experiments/row_patterns_onehot/config.py": "139b2e7a1fb8886befd3de470b4dd190fff27b6d9ef525847c667bd92e645e35",
+    "config.py": "460498f3d5658cb2c388b799920e1559786e721f83e1facafdc387c1c0cd77aa"
+  },
+  "limitations": "Unit-delay gate simulation; no parasitic extraction or routed timing."
+}

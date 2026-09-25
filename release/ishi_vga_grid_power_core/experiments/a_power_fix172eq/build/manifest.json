@@ -1,0 +1,101 @@
+{
+  "source_gds": "experiments/a_power_fix066/build/candidate.gds",
+  "source_sha256": "87f1a1292334fe8abde48d42fd059e8a30e60e3fc286a92acf2c9e1e4ab0779e",
+  "candidate_sha256": "ae88a6cf4a9e0242afa88a12882a5c372ca9492b0e6a3eb15598ab9d2fa606ae",
+  "config_sha256": "cfe62a263f8e72f570dbd0d75090f173ca1b71f574e37f371c6ede8e8f5e98e5",
+  "generator_sha256": "cef5b7dcb1f5eb1b1f2ec691f5f40a8f2f3dab970ac3e22b7862f16824ca2371",
+  "solver_sha256": "139fc9eeffcd383ac5067c1350233939a86f64c64ff998582ef849f96a146dc9",
+  "input_hashes": {
+    "experiments/a_power_flex4/build/diagnostic_shapes.json": "7b356a44323e3d8db736a3a51673754fd13cafa598b7a2fc9957c0add7ce6824",
+    "experiments/a_power_flex4/build/audit/actual_pin_map.json": "c02093a4666091ed3c00c61878f8508f2efc7cda27dd7fe304c932074d6929f3",
+    "experiments/a_power_flex4/layout/placement.json": "9bb14d39620bfcf46904af14cafc9b22ff23da51b21e8e6e4734b5b092847f0f",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/rules.py": "d57257f684236eaeed8c1a258a3b6d014fff157a7723d7546fcf86914b81be88",
+    "tools/TR-1um/libs.tech/klayout/tech/drc/run.drc": "8ffc43f3ea42fedf8f6f39facfada8309cd16d089a3af1b26016526e215f56ca",
+    "tools/TR-1um/libs.tech/klayout/tech/drc/02_Device.drc": "f2a79da0cfe7f1bca89b2b00bd7576393eb302a20b8568f16f6214f4bf2729bc"
+  },
+  "grid_sha256": "16c48e86a5b7c12d6b1f56878d15a99ce0682b682633ffa8adb86df4f506a604",
+  "path_sha256": "cd0576336c5d26b266f2fbc7845458ed767d9f87901d9664a03c2e9114d34c53",
+  "removed_boxes": [
+    [
+      "M2",
+      1178.2,
+      398.1999999999997,
+      1181.6000000000001,
+      416.4
+    ],
+    [
+      "M1",
+      1179.9,
+      415.4999999999999,
+      1185.3000000000002,
+      417.30000000000007
+    ],
+    [
+      "M2",
+      1183.6000000000001,
+      416.4,
+      1187.0000000000002,
+      432.60000000000025
+    ]
+  ],
+  "removed_vias": [
+    {
+      "cell": "via_1$2",
+      "trans": "r0 1179900,416400",
+      "xy_um": [
+        1179.9,
+        416.4
+      ]
+    },
+    {
+      "cell": "via_1$2",
+      "trans": "r0 1185300,416400",
+      "xy_um": [
+        1185.3,
+        416.4
+      ]
+    },
+    {
+      "cell": "via_1$2",
+      "trans": "r0 1185300,432600",
+      "xy_um": [
+        1185.3,
+        432.6
+      ]
+    }
+  ],
+  "added_boxes": {
+    "M1": [],
+    "M2": [
+      [
+        1178.2,
+        361.0,
+        1181.6,
+        368.9
+      ],
+      [
+        1178.2,
+        361.0,
+        1208.6,
+        364.4
+      ],
+      [
+        1205.2,
+        361.0,
+        1208.6,
+        368.9
+      ]
+    ],
+    "V1": []
+  },
+  "path_nodes": 41,
+  "vias": 0,
+  "bbox_um": [
+    -6.3,
+    0.0,
+    1777.5,
+    892.9
+  ],
+  "status": "TRIAL ONLY; full actual-pin connectivity and official DRC not yet run"
+}

@@ -1,0 +1,21 @@
+r[1] BOTTOM expanded=24203 found=1
+path_nodes=138 cost=137
+r[0] BOTTOM expanded=22381 found=1
+path_nodes=138 cost=137
+g[0] BOTTOM expanded=26760 found=1
+path_nodes=138 cost=137
+b[0] BOTTOM expanded=28621 found=1
+path_nodes=138 cost=137
+vsync RIGHT expanded=259815 found=1
+path_nodes=450 cost=460
+g[1] RIGHT expanded=185731 found=1
+path_nodes=383 cost=393
+hsync RIGHT expanded=51099 found=1
+path_nodes=227 cost=237
+b[1] RIGHT expanded=6749 found=1
+path_nodes=79 cost=89
+reset_n TOP expanded=22722 found=1
+path_nodes=134 cost=133
+clk TOP expanded=21547 found=1
+path_nodes=134 cost=133
+/home/ishi-kai/ishi-vga/experiments/core_escape_v4/build/candidate.gds [1797.3000000000002, 1763.9]

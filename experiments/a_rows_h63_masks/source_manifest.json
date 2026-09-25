@@ -1,0 +1,21 @@
+{
+  "h_start": 63,
+  "mode": "masks",
+  "patterns": {
+    "4": 1,
+    "5": 1,
+    "1": 11,
+    "2": 4,
+    "3": 1
+  },
+  "sha256": {
+    "scripts/a_row_trial.py": "c6d9aa54d639c2dee7a995f7329610ea300633e54c7e1b630949c5d860af1745",
+    "scripts/a_logo_trial.py": "cd7f4ac6b56b9ac441b1b01ba1483c62709e517101bc8cbc9beab8cbff73d85b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_rows_h63_masks/config.py": "93a0e516e85df7513f610831efb33f79f9b92348d30184935951bd5f21c9fa47",
+    "experiments/a_rows_h63_masks/ishi_vga_core.v": "1f1ff8030fec621f5137c15881320f41d675d23caeebfe92a15c30b3e2e20e98",
+    "experiments/a_rows_h63_masks/ishi_logo.v": "ae599f9b3665d13d760882a68af84e98c38b1169f410b4f6aaffe38dd4e1679d",
+    "experiments/a_rows_h63_masks/tests/expected_frame.hex": "b6b3f4cb54d37ef2820a1a9a4d7942eb8906ff0a2b8c0d9365bd0c0402ab57ce"
+  }
+}

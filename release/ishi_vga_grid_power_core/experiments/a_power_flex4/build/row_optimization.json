@@ -1,0 +1,27 @@
+{
+  "baseline_span_sum": 56,
+  "optimized_span_sum": 50,
+  "score": 50,
+  "restart": 0,
+  "cell_row_widths_um": [
+    1447.2,
+    1420.2000000000007,
+    1517.4000000000003,
+    685.7999999999998
+  ],
+  "channel_crossings": [
+    1,
+    21,
+    18,
+    14,
+    5
+  ],
+  "packing": "unmodified pinned APRtools place.pack_row/dump",
+  "sha256": {
+    "experiments/a_power_flex4/build/row_graph.txt": "1db89aba848d34ba1befa5fa6d5ae78c16b4ec9dc6e77aa17de006fc45c02329",
+    "experiments/a_power_flex4/build/row_anneal": "2affebc82c2aa8bdb4931d01e51c59fd4e434a9d8f08fd80ea2cd1c1c594ea0a",
+    "experiments/a_power_flex4/build/assignment.txt": "ecac9eba17abc1f05cb38a8e45ca56adc219ad89cf47a83d9f926ebc78cecc48",
+    "experiments/a_power_flex4/layout/step4/place_step4_fill.json": "e343dc2ec09df16033ac5d569033562357f008a16a41be37296efccee2b9a7d1",
+    "experiments/a_power_flex4/layout/step4/place_step4_fill.gds": "8a3af22e9da4ac0eec76c2b6c763f42e52eff523df3cc92418f4e6ad00e411ca"
+  }
+}

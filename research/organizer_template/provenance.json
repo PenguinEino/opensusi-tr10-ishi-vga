@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/OpenSUSI/TR-1um_MPW_template",
+  "commit": "f09b35f66d71f979bfad0d50c863bb0b3e066e9a",
+  "retrieved": "2026-09-25",
+  "scope": "read-only organizer template comparison, not a replacement runtime dependency",
+  "files": {
+    "info.yaml": "0bf68372c5899b2125cff19983fce6b28e725fbd2534e0314e6b117cee2bdac6",
+    "tr_1um_username.gds": "d3421bbe84e937b17152bb3e6b2e030cf6f747162601d921a2d63e3b667a9e79"
+  }
+}

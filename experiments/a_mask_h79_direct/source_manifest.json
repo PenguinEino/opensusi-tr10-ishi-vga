@@ -1,0 +1,93 @@
+{
+  "h_start": 79,
+  "mode": "direct",
+  "reachable_color_masks": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "sha256": {
+    "scripts/a_mask_trial.py": "95cd884bcc2f787b82079867ec325b70ae4d024f2ce4f225bf4abf83d1106cbf",
+    "scripts/a_logo_trial.py": "cd7f4ac6b56b9ac441b1b01ba1483c62709e517101bc8cbc9beab8cbff73d85b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_mask_h79_direct/config.py": "93a0e516e85df7513f610831efb33f79f9b92348d30184935951bd5f21c9fa47",
+    "experiments/a_mask_h79_direct/ishi_vga_core.v": "d1d38078e517bed98c553001c6ee44c243d5acc70b968653d67c635af6c545fa",
+    "experiments/a_mask_h79_direct/ishi_logo.v": "084fc3ba46f482d5c08a4ba0e8956d8c8361eea101e6df2c5ebf6a78446ac2ba",
+    "experiments/a_mask_h79_direct/tests/expected_frame.hex": "b6b3f4cb54d37ef2820a1a9a4d7942eb8906ff0a2b8c0d9365bd0c0402ab57ce"
+  }
+}

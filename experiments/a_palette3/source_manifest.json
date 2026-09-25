@@ -1,0 +1,15 @@
+{
+  "scope": "unadopted 3-bit external palette interface",
+  "sha256": {
+    "scripts/a_palette_trial.py": "235745cec1f63d294f325c616d03eda54618f94aff32ca08e500388e9e39387a",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tests/tb_vga.v": "3d644f58d34b3b46ff63dc04534c3959d6309f0d3dbaeef0c21148a970f702a6",
+    "experiments/a_h63_v500_x/ishi_vga_core.v": "1f1ff8030fec621f5137c15881320f41d675d23caeebfe92a15c30b3e2e20e98",
+    "experiments/a_h63_v500_x/ishi_logo.v": "925e22863d459aa84f38c4bdd969aadd24a2c85ed62eaff0ffa03af5ccff873c",
+    "experiments/a_palette3/config.py": "2ccf11f0bf8b1b761de5e8994c87abd838d591f115c3bcde460559d266b9a48c",
+    "experiments/a_palette3/ishi_vga_core.v": "a32e4fd3dae58c2bb54cf6045128701d1bc077c4306790a5c146bdbd4b11ded1",
+    "experiments/a_palette3/ishi_logo.v": "925e22863d459aa84f38c4bdd969aadd24a2c85ed62eaff0ffa03af5ccff873c",
+    "experiments/a_palette3/tests/tb_palette.v": "a1b1cf51d66fbc16d9c50dca5636a0b587d1b1b31e71f4045e43f24ac1f937fc",
+    "experiments/a_palette3/tests/expected_frame.hex": "b6b3f4cb54d37ef2820a1a9a4d7942eb8906ff0a2b8c0d9365bd0c0402ab57ce"
+  }
+}

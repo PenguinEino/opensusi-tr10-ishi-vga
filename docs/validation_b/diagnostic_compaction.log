@@ -1,0 +1,13 @@
+channel0: budget=40 keeping=27 removing=13 tracks (70.2 um)
+channel1: budget=166 keeping=71 removing=95 tracks (513.0 um)
+channel2: budget=166 keeping=68 removing=98 tracks (529.2 um)
+channel3: budget=166 keeping=78 removing=88 tracks (475.2 um)
+channel4: budget=166 keeping=77 removing=89 tracks (480.6 um)
+channel5: budget=166 keeping=72 removing=94 tracks (507.6 um)
+channel6: budget=166 keeping=54 removing=112 tracks (604.8 um)
+channel7: budget=40 keeping=15 removing=25 tracks (135.0 um)
+コア高 予算 6247.8 um -> 計算 2905.0 um (-3342.8 um, -53.5%)
+wrote build/diagnostic_b_compacted.gds
+コア高 実測 2905.000 um  （bbox -6.300,0.000 - 1604.700,2905.000）
+wrote build/diagnostic_b_pins.json
+wrote build/diagnostic_b_shapes.json

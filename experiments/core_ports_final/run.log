@@ -1,0 +1,7 @@
+{
+  "status": "ACCEPTED",
+  "candidate": "experiments/core_ports_final/build/labeled_core.gds",
+  "drawing_markers": 0,
+  "mdp_markers": 2,
+  "report": "experiments/core_ports_final/build/label_report.json"
+}

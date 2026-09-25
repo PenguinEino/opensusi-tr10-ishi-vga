@@ -1,0 +1,572 @@
+[
+  {
+    "name": "place_b08_prl10",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 4,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 71,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2316.4,
+    "routing_knobs": {
+      "source_placement": "experiments/place_r7_s4_b08",
+      "knobs": {
+        "PRL_MIN_PINS": 10,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b08_prl20",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 4,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 123,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2586.4,
+    "routing_knobs": {
+      "source_placement": "experiments/place_r7_s4_b08",
+      "knobs": {
+        "PRL_MIN_PINS": 20,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b08_prl8",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 4,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 84,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2516.2,
+    "routing_knobs": {
+      "source_placement": "experiments/place_r7_s4_b08",
+      "knobs": {
+        "PRL_MIN_PINS": 8,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b08_span",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 4,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 51,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2570.2,
+    "routing_knobs": {
+      "source_placement": "experiments/place_r7_s4_b08",
+      "knobs": {
+        "PRL_MIN_PINS": 5,
+        "SPAN_LANE_PACK": true
+      }
+    }
+  },
+  {
+    "name": "place_b12_prl10",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.12,
+    "fill": "alternate",
+    "route_step6_return": null,
+    "connectivity_problems": null,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "routing_knobs": {
+      "source_placement": "experiments/place_r7_s1_b12",
+      "knobs": {
+        "PRL_MIN_PINS": 10,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b_prl10",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 80,
+    "pad_weight": 1.0,
+    "balance": 0.02,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 165,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2829.4,
+    "routing_knobs": {
+      "source_placement": ".",
+      "knobs": {
+        "PRL_MIN_PINS": 10,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b_prl999",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 80,
+    "pad_weight": 1.0,
+    "balance": 0.02,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 184,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2942.8,
+    "routing_knobs": {
+      "source_placement": ".",
+      "knobs": {
+        "PRL_MIN_PINS": 999,
+        "SPAN_LANE_PACK": false
+      }
+    }
+  },
+  {
+    "name": "place_b_spanpack",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 80,
+    "pad_weight": 1.0,
+    "balance": 0.02,
+    "fill": "alternate",
+    "route_step6_return": 0,
+    "connectivity_problems": 84,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2786.2,
+    "routing_knobs": {
+      "source_placement": ".",
+      "knobs": {
+        "PRL_MIN_PINS": 5,
+        "SPAN_LANE_PACK": true
+      }
+    }
+  },
+  {
+    "name": "place_r6_w328_s1",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 6,
+    "tracks": 328,
+    "seed": 1,
+    "restarts": 40,
+    "pad_weight": 1,
+    "balance": 0.03,
+    "fill": "alternate",
+    "cut": 470.0,
+    "crossings": [
+      6,
+      84,
+      108,
+      120,
+      97,
+      56,
+      4
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0,
+    "route_step6_return": 0,
+    "connectivity_problems": 138,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1783.8,
+    "height_um": 3105.5
+  },
+  {
+    "name": "place_r6_w328_s1_b08",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 6,
+    "tracks": 328,
+    "seed": 1,
+    "restarts": 40,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "cut": 407.0,
+    "crossings": [
+      6,
+      86,
+      124,
+      107,
+      67,
+      24,
+      4
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0
+  },
+  {
+    "name": "place_r7_s1_b12",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.12,
+    "fill": "alternate",
+    "cut": 410.0,
+    "crossings": [
+      7,
+      58,
+      75,
+      84,
+      84,
+      78,
+      34,
+      3
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0
+  },
+  {
+    "name": "place_r7_s1_b20",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 40,
+    "pad_weight": 1,
+    "balance": 0.2,
+    "fill": "alternate",
+    "cut": 288.0,
+    "crossings": [
+      8,
+      42,
+      75,
+      45,
+      53,
+      55,
+      19,
+      2
+    ],
+    "place_return": 1,
+    "route_step6_return": 1,
+    "connectivity_problems": null,
+    "drc_diagnostic": []
+  },
+  {
+    "name": "place_r7_s2_p0",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 2,
+    "restarts": 80,
+    "pad_weight": 0.0,
+    "balance": 0.02,
+    "fill": "alternate",
+    "cut": 450,
+    "crossings": [
+      8,
+      62,
+      86,
+      93,
+      91,
+      81,
+      54,
+      2
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0
+  },
+  {
+    "name": "place_r7_s3",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 3,
+    "restarts": 20,
+    "pad_weight": 1,
+    "balance": 0.02,
+    "fill": "alternate",
+    "cut": 618.0,
+    "crossings": [
+      5,
+      74,
+      110,
+      120,
+      115,
+      109,
+      73,
+      5
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0
+  },
+  {
+    "name": "place_r7_s4_b08",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 296,
+    "seed": 4,
+    "restarts": 80,
+    "pad_weight": 1,
+    "balance": 0.08,
+    "fill": "alternate",
+    "cut": 338.0,
+    "crossings": [
+      8,
+      57,
+      71,
+      65,
+      50,
+      58,
+      38,
+      2
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0,
+    "route_step6_return": 0,
+    "connectivity_problems": 44,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 2624.2
+  },
+  {
+    "name": "place_r7_w328_s1",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 7,
+    "tracks": 328,
+    "seed": 1,
+    "restarts": 20,
+    "pad_weight": 1,
+    "balance": 0.02,
+    "fill": "alternate",
+    "cut": 457.0,
+    "crossings": [
+      8,
+      64,
+      92,
+      95,
+      80,
+      70,
+      57,
+      2
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0,
+    "route_step6_return": 0,
+    "connectivity_problems": 67,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1783.8,
+    "height_um": 3045.4
+  },
+  {
+    "name": "place_r8_s1",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 8,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 20,
+    "pad_weight": 1,
+    "balance": 0.02,
+    "fill": "alternate",
+    "cut": 625.0,
+    "crossings": [
+      6,
+      46,
+      106,
+      120,
+      120,
+      107,
+      77,
+      46,
+      4
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0,
+    "route_step6_return": 0,
+    "connectivity_problems": 146,
+    "drc_diagnostic": [
+      "M1: width viol=0 space viol=0",
+      "M2: width viol=0 space viol=0",
+      "V1 space viol: 0",
+      "V1 enclosed by M1<1.0 viol: 0",
+      "V1 enclosed by M2<1.0 viol: 0",
+      "V1-GA space<1.2 viol: 0",
+      "V1 cut > 1.4 viol: 0"
+    ],
+    "diagnostic_compaction_return": 0,
+    "width_um": 1611.0,
+    "height_um": 3687.3
+  },
+  {
+    "name": "place_r9_s1",
+    "source": "out/ishi_vga_core_pnr.v",
+    "sha256": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "rows": 9,
+    "tracks": 296,
+    "seed": 1,
+    "restarts": 20,
+    "pad_weight": 1,
+    "balance": 0.02,
+    "fill": "alternate",
+    "cut": 638.0,
+    "crossings": [
+      9,
+      65,
+      88,
+      94,
+      93,
+      89,
+      69,
+      67,
+      70,
+      1
+    ],
+    "place_return": 0,
+    "verify_placement_return": 0
+  }
+]

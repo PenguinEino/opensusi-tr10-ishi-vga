@@ -1,0 +1,79 @@
+[
+  {
+    "name": "a_half_a128_5col",
+    "all_horizontal_binary_states": 256,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 200,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 56,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 100057,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_a64_5col",
+    "all_horizontal_binary_states": 128,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 100,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 28,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 50029,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_b128_5col",
+    "all_horizontal_binary_states": 256,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 200,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 56,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 100057,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_b128_black",
+    "all_horizontal_binary_states": 256,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 200,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 56,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 100057,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_b64_5col",
+    "all_horizontal_binary_states": 128,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 100,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 28,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 50029,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_grid64",
+    "all_horizontal_binary_states": 128,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 100,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 28,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 50029,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  },
+  {
+    "name": "a_half_grid64_black",
+    "all_horizontal_binary_states": 128,
+    "all_vertical_binary_states": 1024,
+    "h_cycle": 100,
+    "v_cycle": 525,
+    "max_h_steps_into_cycle": 28,
+    "max_v_line_steps_into_cycle": 499,
+    "safe_acquisition_bound_ticks": 50029,
+    "scope": "counter transition model only; not a formal proof of RTL or analog startup"
+  }
+]

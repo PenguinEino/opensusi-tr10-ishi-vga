@@ -1,0 +1,12 @@
+{
+  "mode": "fast",
+  "test": "PASS 2 clocks \u00d7 315017 ticks",
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "experiments/map_fast/config.py": "154565799aa8fc7fb7a032af476925278281002efb33482a5b59914fb90d72f1",
+    "experiments/map_fast/mapping.ys": "43fbebd427a18d5612da3425940f5b81f8fc618033e776d6a21081501c5c5982",
+    "experiments/map_fast/out/abc.constr": "b70f6921b68d747485a6872c68342bf39151d7bd48bbd732fe6ab3359717af37",
+    "experiments/map_fast/out/ishi_vga_core_pnr.v": "d210a3b3e107eed64d49d4edc6e71cd7b28b05326e5490b41032d47d793e83e2"
+  }
+}

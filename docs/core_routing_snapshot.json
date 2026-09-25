@@ -1,0 +1,179 @@
+{
+  "date": "2026-09-25",
+  "scope": "routed core; not full-chip or post-route timing signoff",
+  "latest_gds": "experiments/core_ports_final/build/labeled_core.gds",
+  "alias": "build/ishi_vga_core_routed.gds",
+  "bbox_um": [
+    -16.2,
+    0,
+    1777.5,
+    1760.3
+  ],
+  "size_um": [
+    1793.7,
+    1760.3
+  ],
+  "actual_signal_pins": 987,
+  "short_pairs": 0,
+  "open_nets": 0,
+  "drawing_drc": 0,
+  "mask_drc_warnings": 2,
+  "official_strict_core_lvs": "PASS",
+  "matched_ports": 12,
+  "routing_uses_new_poly": false,
+  "files": {
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/core_ports_final/build/labeled_core.gds": "3948145e00ad30fde2b0843e99b57dc275473ea02cc3441e15a5c27802a1b84c",
+    "experiments/core_route_audit/config.py": "6e2479bc931073fd780651703d24cc55acdce8a83e7b6466a3b8ba632600966b",
+    "experiments/core_route_audit/build/candidate.gds": "bf999c94134037f42314edbcf5c9ad539207f2d77609c742f61617809aad8215",
+    "experiments/core_route_audit/build/verification.json": "c7ac83c6be620c49e6e4edb139584e2ca375a42a1d7eb1beac33bb3d6b214335",
+    "experiments/core_ports_final/config.py": "8aa554ed8c2bbacfb5e47bf3e24b9bea069a77f3b5a8deb15098856719ae125f",
+    "experiments/core_ports_final/build/label_report.json": "44d7644f976282d068e3a4793e0a6b03e7aba2074bb0c05218adfaaaf5f6c211",
+    "experiments/core_ports_final/build/labeled_core_drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "experiments/core_ports_final/build/labeled_core_mdp.lyrdb": "90fb794111f5bf9cc36d628428166f09d9bedcbdfe25666707ee91f86c5e93c6",
+    "experiments/core_lvs_fixed/config.py": "0af75be428803760e35d25d15c796ab66c0b07b42e857066c0d093452c5a5929",
+    "experiments/core_lvs_fixed/build/ishi_vga_core.spice": "fcecae367fec09a6497ae8313a392a4e40961afae9a983dff9a76648339a189e",
+    "experiments/core_lvs_fixed/build/reference_manifest.json": "1d627faf723707940be44d9a5af53177db3ed15e7242eb3a090575d91f64140e",
+    "experiments/core_lvs_fixed/build/core_lvs.log": "e931353b46f1ebf2ef3a13911c84a00ad5e6c54dbc62aeb57ab5bfea48193f8a",
+    "experiments/core_lvs_fixed/build/core.lvsdb": "2b8420aeb2b2fcec066c880422e4319880a320180debdeb0dc2132baf08aaba8",
+    "experiments/core_lvs_fixed/build/lvs_verification.json": "2f9c9ada56b24dc694b6cb72aa8855d3866d9a7c1af9ce9f1c0b8c33334f49e5",
+    "experiments/core_lvs/build/core_lvs.log": "fde43964e3608307389d545a37ae8382dbcc248b1b0a35c9d2d6dfda5efcd46b",
+    "experiments/core_lvs/build/core.lvsdb": "9fed74f8601a9bde0f8539a55e5067ab2f3512bfc8e43dcfc4ed1627d54c66a0",
+    "experiments/phys_desc5/out/ishi_vga_core_pnr.v": "9e2b7928ea22297300fe376483f21b778647caae48ffd51ac68c75186cec0592",
+    "experiments/phys_desc5/layout/placement.json": "fa842099d39d350e9264f1f150d22dabf717923c1dc54bddae28a005ee71e0eb",
+    "scripts/prepare_core_lvs_reference.py": "e2cd7c87bcaad0fbfa699dabe85e0b9fcd144e3c83e9e796c4a5c2290989784e",
+    "scripts/report_core_lvs.py": "54de174b9ff1b1af0675707cd2da64014a60721128b6ec9be31f53f0621dced5",
+    "scripts/label_core_ports.py": "a625c8467710670315997456fc31fc25b4308939b2df4b73290c3656ac27a5ef",
+    "scripts/maze_route_multicomponent.py": "61ef1960977546a8c16be08d31b98ee96780e794ea4f0d903e34f705d666615d",
+    "scripts/validate_route_candidate.py": "8e033c8f6287a9c47050bdfd519c37176933fb1687ac89408f1b3c996b09648e"
+  },
+  "route_chain_after_via_pruning": [
+    {
+      "experiment": "maze_040",
+      "candidate_sha256": "14c35652d06558e3526dd8df401fd7d364b5721f6e0c5d46b4f24846ca4a5023",
+      "config_sha256": "04951b15baa19c21e4ebc6f0d0424cfdc66ab297b9becfc5e627ed2498a0efca",
+      "manifest_sha256": "ac5c2b8a590f1a8c531b2b9dcc94ada31d7b3b7af3b5257a701cb20f37ab221f",
+      "verification_status": "ACCEPTED",
+      "pair_count": 44,
+      "verification_sha256": "7838c9c0a30fb1f3c33e708e6364b986bd638bd8df9e28b78d854673b14fe53f"
+    },
+    {
+      "experiment": "maze_227",
+      "candidate_sha256": "221095ad81f2bfb4a11cef4fec005c5c69c2f8ac40ae6079ac08fdc08482aba6",
+      "config_sha256": "fb72ffb4653724d46881221c3729ddbe5e0debd195435672f7c97a239c67478a",
+      "manifest_sha256": "4d9b26fc4c6b464cc330c1a6030dadd067393481fb96bf0bbd660108cfa9442e"
+    },
+    {
+      "experiment": "maze_v2",
+      "candidate_sha256": "a425b11ba383e7ea64dd6f86b33063e7ae69535cdd6ba6082a808895781a5e60",
+      "config_sha256": "aea9aa60fc71627490d41263769a3988bf21399e10d8a72a195c77b8c6e4e61b",
+      "manifest_sha256": "ee9616e0533c05987069d7084e4e2ae74abe52084ebdea97008a75f4d1321fa7"
+    },
+    {
+      "experiment": "maze_148",
+      "candidate_sha256": "7c1d80aaae49ce7981eb2cafd03dc6778276be741f0182ec3817b05d232c49f9",
+      "config_sha256": "ac4448772c254b99e320ce7e37042c7b5be24ed1f8d7d3c63c555305d78ae903",
+      "manifest_sha256": "e52f6043bf528146911b1dc36d65e20b7660b3c452c729517df475acf4e1e23b"
+    },
+    {
+      "experiment": "maze_073",
+      "candidate_sha256": "d695d2cd225ba3f2db0970f8451708a4f855979d6de2760005122af562c5355b",
+      "config_sha256": "2058bfeb1acab2c9d8a408c89054bd1f4d10c323c4450642574fda2d9d759c52",
+      "manifest_sha256": "a603bc7ca7b0dd491e761864071c6ea9933be56a387c7446a2a36895722fcc3f"
+    },
+    {
+      "experiment": "maze_103",
+      "candidate_sha256": "92b71523754407747e04592f6932c8cbfe7837e48273a7d7f4f2732983c30a0e",
+      "config_sha256": "1a06d5a7a86f9ab2bbb76b713611d0a2d95f840b5a4aa7a2429116c52406ef82",
+      "manifest_sha256": "24039a3b7e65e520dd39f63681341c43352a13ff97334013cccdf0445103e8fe"
+    },
+    {
+      "experiment": "maze_059_fix",
+      "candidate_sha256": "9bde25ccf75379b7be5eff6dc53dbb1a0fc5ef582241e62a72f955d774426619",
+      "config_sha256": "ac28d528269835da4e29221cf5dcc775595f744aa85e8eccee37773a14f8441c",
+      "manifest_sha256": "96aa23977bd014b77c31e224579f1f249a2f6ccdd7d8361b837b87484c1c6c16"
+    },
+    {
+      "experiment": "maze_209_fix",
+      "candidate_sha256": "723bf30d9cf8d92e0804b818176cb39b58dda27f153160dc8cd293e610b8446e",
+      "config_sha256": "ee70451a03e82fc9827891b43c2d03b74d4f9c30425ff931852c55f20677735f",
+      "manifest_sha256": "94c754b2289ea9f38e2cf123741c2ba27a2a2137cbf89fe23130af1531c79385",
+      "verification_status": "ACCEPTED",
+      "pair_count": 21,
+      "verification_sha256": "04ba8135d125ddd49d8a29417c83b1e8aa101651690067c6043a3cc6adac1932"
+    },
+    {
+      "experiment": "maze_194",
+      "candidate_sha256": "08f63ce0f800564c3d7c1b90ff1f9a39a9ac20de5da23b276b93863fbdbc132a",
+      "config_sha256": "29e20725c8c16374f7dbe5f5bac627f9571e94d219c36ec7baddeed62a8aed8d",
+      "manifest_sha256": "d5d90cd67b740dab904c9fcbb858305db05993740d0047ffad6ff97c502911f4",
+      "verification_status": "ACCEPTED",
+      "pair_count": 17,
+      "verification_sha256": "286abab777c8c08016e0765dbe923efee237feaa6d9c34adf5ee833cffcef29d"
+    },
+    {
+      "experiment": "maze_seq00",
+      "candidate_sha256": "ddedcb9c8b9729407531ad0d15b875d4e3453096d85f6c23a9216d59ef1066c7",
+      "config_sha256": "cf93f866094cd8d2795f69bf51fc09cc8e49a8df7f8745c59d17c2248e695673",
+      "manifest_sha256": "1cc2cda0f81830db0144e74b929276d868db1fdb733bbebcd87bfecbdbb16646",
+      "verification_status": "ACCEPTED",
+      "pair_count": 15,
+      "verification_sha256": "df782288261a9c2213c695000d5435822920a014092a5ff742f0b1d95dc8f754"
+    },
+    {
+      "experiment": "maze_seq01",
+      "candidate_sha256": "c7072d9da9b51bbf106fa7af7a25b66bb6b4ae97d858fc45efb2d72f9ec246ce",
+      "config_sha256": "99a3c6756ac8488a1195f1bedc26b5e2b774fa5b4f4dbe49a337d3f4069d1854",
+      "manifest_sha256": "e54c2d09fe1e1e16c60967d39aede169c2c621124dfd2d5f11e86ce915c98e09",
+      "verification_status": "ACCEPTED",
+      "pair_count": 12,
+      "verification_sha256": "5a0e20981bec6325c59a6bff447f6b5ea8e66ec7b84aed32b2b0ba226e888c32"
+    },
+    {
+      "experiment": "maze_seq02",
+      "candidate_sha256": "4b378b730022f1c04dbb23ebb6e6b3314d54e7bcc7f0ff20edb0f8c20784dfc3",
+      "config_sha256": "ff48fac1a8d9033f1f5531220b43e58011fd09aae5aaed73de64dc4db03ab5e8",
+      "manifest_sha256": "e603c0e1efe290699b2b749578bcd32af253280b2c0fd0703515074f79f0339d",
+      "verification_status": "ACCEPTED",
+      "pair_count": 9,
+      "verification_sha256": "3d89a231e2bfe4b051d66466c84c6b257f92404edf819ead6e1f4bea5590b1fd"
+    },
+    {
+      "experiment": "maze_seq03",
+      "candidate_sha256": "2befcb5f6a2c2923d7d691db287636646ba5af2c31e13e1b2db2389916652900",
+      "config_sha256": "a0013fb13998896e862ab0b52c4402ce9db75c00ac647f43ee05da779e995bea",
+      "manifest_sha256": "1649307ad98fbfe874d621fdf45114a3540ddff611dfb1f1e4a9902e068eea3a",
+      "verification_status": "ACCEPTED",
+      "pair_count": 8,
+      "verification_sha256": "f7fccf9ff3706daaf05888de2d47c0d7c03050db65115561a0f498ed4ee5dd54"
+    },
+    {
+      "experiment": "maze_seq04",
+      "candidate_sha256": "3c831672669d10d01c57b957bbde96e9be1ce1fb7e3f8e71989950669184ac33",
+      "config_sha256": "0d39633190544773bec055bb15dfd66f910136a1a963cb4a4e8bbe7ade8c495c",
+      "manifest_sha256": "e46cca58f0b2465bbf0f3552c9c21df1e3eaeb99564d4cb7c32fbbf1a0848923",
+      "verification_status": "ACCEPTED",
+      "pair_count": 7,
+      "verification_sha256": "913ffd449720e4cdf5881030399d5fa24938c09590d01bfdff6b3733f0b7d5e7"
+    },
+    {
+      "experiment": "maze_seq05",
+      "candidate_sha256": "6c746d7371f78b0b5b0287054d23e3f53a8b094353499077e9eacaa34b4d47a4",
+      "config_sha256": "3aee9f679c4b5d108ee713332c3c3cd7e3b548473d3bf01a2a4d30565d04f17f",
+      "manifest_sha256": "386a39d78dcda036f17cb56f4056b1e39aa861f1066396b4b3e2329c1e9636dc",
+      "verification_status": "ACCEPTED",
+      "pair_count": 6,
+      "verification_sha256": "09b95ed756da110d616323d59e783083cf0c2c8d63b4e5590c311a0c95be60c7"
+    },
+    {
+      "experiment": "maze_seq06_fixed",
+      "candidate_sha256": "bf999c94134037f42314edbcf5c9ad539207f2d77609c742f61617809aad8215",
+      "config_sha256": "800f35c9f94e9299661a30b828d71fa962b86fa51a5368ad6a23c024ae265d5f",
+      "manifest_sha256": "366661936f2842daf4a541d9b932cf4d0783fef9310d6bf46a17fbd49b0cfd75",
+      "verification_status": "ACCEPTED",
+      "pair_count": 0,
+      "verification_sha256": "c47cfb3fe02c3654d23fad5b09b0e76ef97ee69bd70dfe7bc4ad70c1c1d4f117"
+    }
+  ],
+  "historical_snapshot": "docs/routing_snapshot.json"
+}

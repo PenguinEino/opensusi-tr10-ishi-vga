@@ -1,0 +1,6 @@
+[submodule "tools/APRtools"]
+	path = tools/APRtools
+	url = https://github.com/jun1okamura/TR-1um_APRtools.git
+[submodule "tools/TR-1um"]
+	path = tools/TR-1um
+	url = https://github.com/OpenSUSI/TR-1um.git

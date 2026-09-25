@@ -1,0 +1,14 @@
+{
+  "source": "experiments/a_half_a_direct4_phys5",
+  "scope": "placement seed only; 330 sites, tight balance; five rows",
+  "sha256": {
+    "scripts/half_a_tight_rows.py": "a99d2551dafc020da81fdb91ae0c4061ea770c1a61b842190af755a1a429038e",
+    "experiments/a_half_a_direct4_phys5/source_manifest.json": "30ca50043f0a2b4622e2cb24245a3c57545d78df8a47d0ee346b25435b130473",
+    "experiments/a_half_a_direct4_phys5/config.py": "0c8d25066197f69d299d02626bdac6e92f26fc33c91c15e9c0e759774ecd0137",
+    "experiments/a_half_a_direct4_tight5/config.py": "29b013545dda7e43ec9fcb0a7ce4f80f559e805daeb18e99f47343bce3f80d97",
+    "experiments/a_half_a_direct4_tight5/ishi_vga_core.v": "7a52f3568eef5d63197efe6c13229c5b64feeeff2c58d4818126249460944b2c",
+    "experiments/a_half_a_direct4_tight5/ishi_logo.v": "79f13840939c42369de4c9a733ee794b0b3e2498a9b9d784717628fe16f4292e",
+    "experiments/a_half_a_direct4_tight5/out/ishi_vga_core_pnr.v": "f9dfccee5c10d8e2a52aa9c54ac05ab2bb3aec68ad3fd8f4b1812ad0660a2a18",
+    "experiments/a_half_a_direct4_tight5/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9"
+  }
+}

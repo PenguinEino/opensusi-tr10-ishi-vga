@@ -1,0 +1,21 @@
+{
+  "status": "ACCEPTED",
+  "checks": {
+    "actual_pin_audit_counts": true,
+    "short_pairs_strict_subset": true,
+    "flat_pairset_strict_subset": true,
+    "flat_no_opens_or_missing": true,
+    "power_topology_unchanged": true,
+    "audit_and_flat_pairsets_agree": true,
+    "bbox_within_explicit_size_budget": true,
+    "stdcell_hierarchy_unchanged": true,
+    "non_top_cell_inventory_unchanged": true,
+    "only_top_routing_layers_changed": true,
+    "drawing_marker_subset": true,
+    "mask_marker_subset": true,
+    "all_bound_inputs_unchanged": true
+  },
+  "source_pairs": 143,
+  "candidate_pairs": 0,
+  "report": "experiments/core_route_audit/build/verification.json"
+}

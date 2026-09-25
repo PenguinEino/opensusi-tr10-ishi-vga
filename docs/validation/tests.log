@@ -1,0 +1,10 @@
+Generated 37 rectangles in 5 parallel masks, 6 palette colors.
+Reference: 105000 ticks, 480 active lines, HS=24 ticks, VS=2 lines.
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns
+tests/tb_vga.v:60: $finish called at 50004032615 (1ps)
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=77.519380 ns
+tests/tb_vga.v:60: $finish called at 48840958469 (1ps)
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns
+tests/tb_vga.v:60: $finish called at 50004032615 (1ps)
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=77.519380 ns
+tests/tb_vga.v:60: $finish called at 48840958469 (1ps)

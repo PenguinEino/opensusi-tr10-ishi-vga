@@ -1,0 +1,15 @@
+{
+  "scope": "unadopted black background alternative",
+  "sha256": {
+    "scripts/half_slot_black_trial.py": "5e3890adcca898f02cdefe5343d2478214d207d485e13266d9070374c6cb5c54",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "experiments/a_half_a128_5col/source_manifest.json": "16598d6692d6ca4753ad14d8cf5e622cdb8bae16e3e7d84d9dd1a36bd1a25aa1",
+    "experiments/a_half_a128_5col/tests/expected_frame.hex": "bff8c7898a27d9b67d2288161fbd42b9eb84720dda6afb2d762124a1b7b4e177",
+    "experiments/a_half_a128_black/config.py": "1f7a887e4b875e6db691b65a8b39a0652cd7c1475b116f6fecc82b5fdd96c85e",
+    "experiments/a_half_a128_black/trial.json": "65ec9a4121924ed244642727885b383d939ce64ce697c85b5953c8b28a20eb30",
+    "experiments/a_half_a128_black/ishi_vga_core.v": "7a52f3568eef5d63197efe6c13229c5b64feeeff2c58d4818126249460944b2c",
+    "experiments/a_half_a128_black/ishi_logo.v": "d288246c4f24b9998c8c72d9ff2e2f8a4e48d719ef512c6baf7830e7c136c167",
+    "experiments/a_half_a128_black/tests/tb_rtl.v": "dfe66e42ae300be6d1c8c1a3280b35807a85aa4cb40eee40d8594cb37757568d",
+    "experiments/a_half_a128_black/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9"
+  }
+}

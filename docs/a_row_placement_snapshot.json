@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-25",
+  "selected": "a_anneal_span6",
+  "exact_A_rtl_and_final_netlist_preserved": true,
+  "results": [
+    {
+      "name": "a_anneal_span6",
+      "status": "DIAGNOSTIC_ONLY",
+      "bbox_um": [
+        -6.3,
+        0.0,
+        1777.5,
+        1744.7
+      ],
+      "width_um": 1783.8,
+      "height_um": 1744.7,
+      "pins": 1301,
+      "missing_pins": 0,
+      "open_nets": {},
+      "short_components": 10,
+      "short_pairs": 75,
+      "official_drc": {
+        "drawing": {
+          "count": 3,
+          "categories": {
+            "'GC.ANT:GC must electrically connect to Substrate (or text if not chip level)'": 3
+          }
+        },
+        "mdp": {
+          "count": 3,
+          "categories": {
+            "'WAR06: Floating SG Detected'": 3
+          }
+        }
+      },
+      "lvs": "NOT_RUN"
+    },
+    {
+      "name": "a_ripup_span6",
+      "status": "REJECTED_NEW_OPENS",
+      "bbox_um": [
+        -6.3,
+        0.0,
+        1777.5,
+        1760.9
+      ],
+      "width_um": 1783.8,
+      "height_um": 1760.9,
+      "pins": 1301,
+      "missing_pins": 0,
+      "open_nets": {
+        "h[2]": [
+          "('CO', 9804)",
+          "('CO', 11522)"
+        ],
+        "v[2]": [
+          "('CO', 6368)",
+          "('CO', 5569)"
+        ]
+      },
+      "short_components": 9,
+      "short_pairs": 20,
+      "official_drc": {
+        "drawing": {
+          "count": 5,
+          "categories": {
+            "'GC.ANT:GC must electrically connect to Substrate (or text if not chip level)'": 5
+          }
+        },
+        "mdp": {
+          "count": 5,
+          "categories": {
+            "'WAR06: Floating SG Detected'": 5
+          }
+        }
+      },
+      "lvs": "NOT_RUN"
+    }
+  ],
+  "repaired_new_short_pairs": [],
+  "b_artifacts_unchanged": [
+    {
+      "snapshot": "core_escape_snapshot.json",
+      "files": 14,
+      "unchanged": true
+    },
+    {
+      "snapshot": "core_routing_snapshot.json",
+      "files": 24,
+      "unchanged": true
+    }
+  ],
+  "files": {
+    "experiments/a_anneal_span6/config.py": "7d91c735640b03b365479162f6cace259d9ee80813f8240ce8ff821c907074ac",
+    "experiments/a_anneal_span6/out/ishi_vga_core_pnr.v": "94bf32d8ea11bad8491d634ce16b27ae2f888248c6e1262bfd1d8d278411fa3f",
+    "experiments/a_anneal_span6/ishi_vga_core.v": "1f1ff8030fec621f5137c15881320f41d675d23caeebfe92a15c30b3e2e20e98",
+    "experiments/a_anneal_span6/ishi_logo.v": "925e22863d459aa84f38c4bdd969aadd24a2c85ed62eaff0ffa03af5ccff873c",
+    "experiments/a_anneal_span6/layout/placement.json": "162def9c345c0a1ff6e7e97dadaef05f7e6920de50323b0e3a7a60e7ff03512f",
+    "experiments/a_anneal_span6/build/diagnostic_compacted.gds": "44679ad20e2347c81d67ea85e79f51fa1516ddd64d633a104f7c71bf46e38309",
+    "experiments/a_anneal_span6/build/diagnostic_pins.json": "5942e503a93fbf71821e0c82f2ca3d6cfa40000f799c9e957b2f5530aaf739f1",
+    "experiments/a_anneal_span6/build/diagnostic_shapes.json": "4317c109ad45be58f8d60d1e0a7c2a94824ae6e50c069c0b89e1ab791600be3e",
+    "experiments/a_anneal_span6/build/audit/metal_connectivity.json": "b21009574a157386fa6757f028831301abe24dc7314e2726b424c7993cfc7754",
+    "experiments/a_anneal_span6/build/drawing.lyrdb": "069433b2021bf7a85422b887742a83eccb930b87018eb887a786df362c5c39ae",
+    "experiments/a_anneal_span6/build/diagnostic_compacted_mdp.lyrdb": "71dbd16715dd9de6983e5d469621781d465fb9242f6c37537f7ad0184af49ec2",
+    "experiments/a_anneal_span6/build/drc.log": "67c361fc46d6e5ab5250acb38f3ad84362642dd34c7a969f022fd796692da0f7",
+    "experiments/a_anneal_span6/source_manifest.json": "ef6b8acf59a5165759ad5f46e4838b7ff3d3d8548b58e890e2bce34ff2b7ac3c",
+    "experiments/a_anneal_span6/build/row_optimization.json": "f4dcbe9abb37cb3ae750b449e5e3062178c77fadacf36cb545c104b44a129990",
+    "experiments/a_anneal_span6/build/solve.log": "04407bf28371123fa7dd082bd5a49e185cad76eb4024c4358c1b90207dabc121",
+    "experiments/a_anneal_span6/build/route_step6.log": "9d6f5dab0057e8ca8c355b492874cc9e9fd240d6138306052e45a976cfc57c16",
+    "experiments/a_ripup_span6/config.py": "de206e81b1f4f4ef77e7181aa039036cec0fbfecd2c985ae9ba683ac520f12be",
+    "experiments/a_ripup_span6/out/ishi_vga_core_pnr.v": "94bf32d8ea11bad8491d634ce16b27ae2f888248c6e1262bfd1d8d278411fa3f",
+    "experiments/a_ripup_span6/ishi_vga_core.v": "1f1ff8030fec621f5137c15881320f41d675d23caeebfe92a15c30b3e2e20e98",
+    "experiments/a_ripup_span6/ishi_logo.v": "925e22863d459aa84f38c4bdd969aadd24a2c85ed62eaff0ffa03af5ccff873c",
+    "experiments/a_ripup_span6/layout/placement.json": "162def9c345c0a1ff6e7e97dadaef05f7e6920de50323b0e3a7a60e7ff03512f",
+    "experiments/a_ripup_span6/build/diagnostic_compacted.gds": "6caf71ecfc181cb8307ccd5bcbbe3420743644a7545ad6ed22d6f710dfc91bf1",
+    "experiments/a_ripup_span6/build/diagnostic_pins.json": "d32ba42bbf5d85ba9f8bcb5d2c7fb8c19243762a42d023350e2ae1c46109c93f",
+    "experiments/a_ripup_span6/build/diagnostic_shapes.json": "61e6b07f6d4b832195207c74ff2b0e9d823ebe2aa8e801cd949a90f6ef370334",
+    "experiments/a_ripup_span6/build/audit/metal_connectivity.json": "15883ca199925ba9ba886c7d01ff619bd63d59fb782d7f942feac9c761518605",
+    "experiments/a_ripup_span6/build/drawing.lyrdb": "273f11e47aae2c83d362be75fc1d920c556e3331cfa1d3fb3f28cbfb364458ec",
+    "experiments/a_ripup_span6/build/diagnostic_compacted_mdp.lyrdb": "9e81e948edcb962ea95c15085d41929e9fd259f1b81c983e9c5268c2202b33e0",
+    "experiments/a_ripup_span6/build/drc.log": "ef52acf5ff9487d43879eb337d09a659d1545595844bac4c129df51f2adf60a5",
+    "experiments/a_ripup_span6/source_manifest.json": "e49de3ec4715d9c88e14709e9aa1460f1abd1963ff89ce1d321e56ddef6ae707",
+    "experiments/a_ripup_span6/build/ripup.log": "3157ad25098c5d36b163887d3eb5635907f02c03e1b1aa60e6ca2e7db93ef1c5",
+    "experiments/a_ripup_span6/build/squeeze.log": "4ca60625d87c5d0694a207e9c0324aced5839e8f0d0e635b77eb53a1803765a5",
+    "scripts/row_anneal.cpp": "2c43e48c1f6e00340fd33b496091137e615acf2d1c980910e4ae032d3f63915e",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "scripts/routing_diagnostics.py": "13c9196c97721386e9175d785bd59b145a1e2e6b1c0d5f5f5b81f99c4a45ef05",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f"
+  },
+  "limitations": "A has shorts and no final constant tie, port escapes, frame integration, LVS or routed timing; repaired trial adds opens and is rejected."
+}

@@ -1,0 +1,7 @@
+M1: width viol=0 space viol=0
+M2: width viol=0 space viol=0
+V1 space viol: 0
+V1 enclosed by M1<1.0 viol: 0
+V1 enclosed by M2<1.0 viol: 0
+V1-GA space<1.2 viol: 0
+V1 cut > 1.4 viol: 0

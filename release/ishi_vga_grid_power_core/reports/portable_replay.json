@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "frozen APR checkpoint through local repair, labels, escapes, fresh DRC/LVS",
+  "stages": [
+    {
+      "stage": "a_power_fix066",
+      "gds_sha256": "87f1a1292334fe8abde48d42fd059e8a30e60e3fc286a92acf2c9e1e4ab0779e",
+      "identical": true
+    },
+    {
+      "stage": "a_power_fix172eq",
+      "gds_sha256": "ae88a6cf4a9e0242afa88a12882a5c372ca9492b0e6a3eb15598ab9d2fa606ae",
+      "identical": true
+    },
+    {
+      "stage": "a_power_labels",
+      "gds_sha256": "5a464e53d90307e510aeb3e8113941caa135f34427a8500f672f9f0746913c80",
+      "identical": true
+    },
+    {
+      "stage": "a_power_escape",
+      "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+      "identical": true
+    }
+  ],
+  "verification": "build/portable_replay/a_power_escape/build/verification.json",
+  "final_gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "script_sha256": "4a4c4db9695af6a2852b7e9c89755533c9641bccad8b49ab6a18e3081bdb0823"
+}

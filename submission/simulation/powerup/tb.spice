@@ -1,0 +1,16 @@
+* ISHI core powerup; no wire RC
+.include '../models.spice'
+.include '../core_sim.spice'
+.temp 27
+.options method=trap
+VDD vdd 0 PWL(0 0 100n 0 1100n 5)
+VCLK clk 0 PULSE(0 5 2000n 2n 2n 156.730158730159n 317.460317460317n)
+XDUT hsync vdd b g r clk vsync 0 ishi_vga_core
+C_r r 0 1.0p
+C_g g 0 1.0p
+C_b b 0 1.0p
+C_hsync hsync 0 1.0p
+C_vsync vsync 0 1.0p
+.save v(clk) v(r) v(g) v(b) v(hsync) v(vsync) v(xdut.n20) v(xdut.n172) v(xdut.n7) v(xdut.n65) v(xdut.n210) v(xdut.n18) v(xdut.n198) v(xdut.n984) v(xdut.n990) v(xdut.n767) v(xdut.n779) v(xdut.n795) v(xdut.n528) v(xdut.n577) v(xdut.n529) v(xdut.n647) v(xdut.n1000)
+.tran 1n 52993.650793650799n 0 1n uic
+.end

@@ -1,0 +1,320 @@
+{
+  "status": "PARTIAL, not DRC/LVS validated",
+  "routes": [
+    {
+      "net": "hsync",
+      "edge": "BOTTOM",
+      "xy_um": [
+        261.9,
+        1.8
+      ],
+      "layer": "M2",
+      "path_nodes": 114,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 261900,104500"
+        ]
+      ],
+      "grid_sha256": "fb8e05985c4e07cdadb1b208ff0d4973b989f4c0d9726a883fdaf2a99d0834a7",
+      "path_sha256": "6f0257c8477e784a87be62a9ef61e3e9099192fbab5343864efe7fb3bbad5ce1",
+      "checkpoint_sha256": "b9d23146e8131fa054891ea33ad91ad5e0a053591b190b5cefdd3f8c75bf85f6"
+    },
+    {
+      "net": "r",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        690.3
+      ],
+      "layer": "M1",
+      "path_nodes": 684,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 558900,648500"
+        ]
+      ],
+      "grid_sha256": "255c6cc03bbe89485c1e7e097556457371f831d9bace8809156fbd947ef70f61",
+      "path_sha256": "6eda9cf1847696f88f568dbdde26b3d4b9d4016a87a913ce7a897ca228dbca49",
+      "checkpoint_sha256": "3d9ceb1e775e5450ae007e02b43d117bbd59798258c5ac0d2d67435396137c5f"
+    },
+    {
+      "net": "g",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        693.9
+      ],
+      "layer": "M1",
+      "path_nodes": 460,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 353700,648500"
+        ]
+      ],
+      "grid_sha256": "17b6138ead7c4b99ac84ab0ada2b8db781da7944a2f9aad4dfc549a7d95637c6",
+      "path_sha256": "a710adfad8cfc64d413ceac3d5393df76ff75adfc73389612e80136a3223c853",
+      "checkpoint_sha256": "ba654d40ca5bcffc2d593170aae4f1ca3bde545c8888c7b32306f22f4054789f"
+    },
+    {
+      "net": "b",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        601.2
+      ],
+      "layer": "M1",
+      "path_nodes": 762,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 623700,648500"
+        ]
+      ],
+      "grid_sha256": "af6a663f71ff3af96a374c060fb350a3e03560f0cab9d793ea1bde5051c62cd7",
+      "path_sha256": "03d5d8b75cbaea49eeb4507bcba2a0cbe0932f0459045b983adda62dcfe505da",
+      "checkpoint_sha256": "51fd688288e83561205788b9c9da8b4027c77d96c3d69e35a502285e1bd5823c"
+    },
+    {
+      "net": "vsync",
+      "edge": "TOP",
+      "xy_um": [
+        974.7,
+        895.5
+      ],
+      "layer": "M2",
+      "path_nodes": 65,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 974700,836800"
+        ]
+      ],
+      "grid_sha256": "6ce5a9bd95ca198c5928c287fd76e12b5644d2ab864b67063ff63610c6cc2271",
+      "path_sha256": "7ebcf059c577af3f38151896bb5cce32bad2976855660d925b3e0923032c54e7",
+      "checkpoint_sha256": "e2d4f20e24351fdad061e841f23abec852a4b44bdf33d44497170d1b8049ad27"
+    },
+    {
+      "net": "clk",
+      "edge": "TOP",
+      "xy_um": [
+        844.2,
+        895.5
+      ],
+      "layer": "M2",
+      "path_nodes": 65,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 845100,836900"
+        ]
+      ],
+      "grid_sha256": "6e65b9435656d7e8f0b5ef28ffdd4f25d5e83f0ba90c53df43f1314d6fd57926",
+      "path_sha256": "d5602ecedf2bc996362376c89e8b94b2076a356c5c02a91f51df783a8bd2246d",
+      "checkpoint_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e"
+    }
+  ],
+  "added_boxes": {
+    "M1": [
+      [
+        454.6,
+        678.7,
+        458.0,
+        682.1
+      ],
+      [
+        222.3,
+        679.5,
+        457.2,
+        681.3
+      ],
+      [
+        222.3,
+        679.5,
+        224.1,
+        691.2
+      ],
+      [
+        -15.3,
+        689.4,
+        224.1,
+        691.2
+      ],
+      [
+        330.4,
+        683.2,
+        333.8,
+        686.6
+      ],
+      [
+        225.9,
+        684.0,
+        333.0,
+        685.8
+      ],
+      [
+        225.9,
+        684.0,
+        227.7,
+        694.8
+      ],
+      [
+        -15.3,
+        693.0,
+        227.7,
+        694.8
+      ],
+      [
+        573.4,
+        599.5,
+        576.8,
+        602.9
+      ],
+      [
+        -15.3,
+        600.3,
+        576.0,
+        602.1
+      ]
+    ],
+    "M2": [
+      [
+        260.2,
+        0.1,
+        263.6,
+        105.2
+      ],
+      [
+        557.2,
+        648.1,
+        560.6,
+        656.0
+      ],
+      [
+        508.6,
+        652.6,
+        560.6,
+        656.0
+      ],
+      [
+        508.6,
+        652.6,
+        512.0,
+        679.4
+      ],
+      [
+        454.6,
+        676.0,
+        512.0,
+        679.4
+      ],
+      [
+        454.6,
+        676.0,
+        458.0,
+        682.1
+      ],
+      [
+        454.6,
+        678.7,
+        458.0,
+        682.1
+      ],
+      [
+        352.0,
+        648.1,
+        355.4,
+        656.0
+      ],
+      [
+        330.4,
+        652.6,
+        355.4,
+        656.0
+      ],
+      [
+        330.4,
+        652.6,
+        333.8,
+        686.6
+      ],
+      [
+        330.4,
+        683.2,
+        333.8,
+        686.6
+      ],
+      [
+        622.0,
+        599.5,
+        625.4,
+        648.8
+      ],
+      [
+        573.4,
+        599.5,
+        625.4,
+        602.9
+      ],
+      [
+        573.4,
+        599.5,
+        576.8,
+        602.9
+      ],
+      [
+        973.0,
+        836.2,
+        976.4,
+        897.2
+      ],
+      [
+        842.5,
+        836.2,
+        845.9,
+        897.2
+      ]
+    ],
+    "V1": [
+      [
+        455.6,
+        679.7,
+        457.0,
+        681.1
+      ],
+      [
+        331.4,
+        684.2,
+        332.8,
+        685.6
+      ],
+      [
+        574.4,
+        600.5,
+        575.8,
+        601.9
+      ]
+    ]
+  },
+  "input_hashes": {
+    "experiments/a_power_labels/build/labeled_core.gds": "5a464e53d90307e510aeb3e8113941caa135f34427a8500f672f9f0746913c80",
+    "experiments/a_power_escape/config.py": "54bcb9eb67d1d7d6723bd1959fea72fb36057514f46fc3fdfd715bb3440deccf",
+    "scripts/route_core_escape.py": "cc64acd4fef9567505381e40aa0c6ffa009fac48c8a09a3da81296c68bccd43e",
+    "scripts/maze_grid.cpp": "139fc9eeffcd383ac5067c1350233939a86f64c64ff998582ef849f96a146dc9",
+    "experiments/a_power_flex4/build/audit/actual_pin_map.json": "c02093a4666091ed3c00c61878f8508f2efc7cda27dd7fe304c932074d6929f3",
+    "experiments/a_power_flex4/layout/placement.json": "9bb14d39620bfcf46904af14cafc9b22ff23da51b21e8e6e4734b5b092847f0f",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/rules.py": "d57257f684236eaeed8c1a258a3b6d014fff157a7723d7546fcf86914b81be88",
+    "scripts/prune_route_vias.py": "139ec42f849b7038c25024161bcea170432128a8a605cb59e489db1c1f9b5a59",
+    "tools/TR-1um/libs.tech/klayout/tech/drc/run.drc": "8ffc43f3ea42fedf8f6f39facfada8309cd16d089a3af1b26016526e215f56ca",
+    "tools/TR-1um/libs.tech/klayout/tech/drc/02_Device.drc": "f2a79da0cfe7f1bca89b2b00bd7576393eb302a20b8568f16f6214f4bf2729bc"
+  }
+}

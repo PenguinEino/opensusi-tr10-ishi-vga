@@ -1,0 +1,29 @@
+{
+  "scope": "unintegrated core",
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "drawing_drc": 0,
+  "mask_warnings": [
+    {
+      "rule": "WAR06 Floating SG",
+      "count": 1,
+      "node": "CLK BUFTH input"
+    }
+  ],
+  "strict_lvs": "PASS: 8 ports",
+  "short_pairs": 0,
+  "open_nets": 0,
+  "rtl_and_gate_frames": 2,
+  "ticks_per_functional_test": 105000,
+  "transistor_extracted_cycles": 668,
+  "transistor_reference_cycles": 110,
+  "interconnect_rc": false,
+  "full_frame_analog": false,
+  "pvt_sweep": false,
+  "frame_integrated": false,
+  "hardware_test": false,
+  "evidence": [
+    "physical/verification.json",
+    "functional/functional_verification.json",
+    "original/power_grid_spice.json"
+  ]
+}

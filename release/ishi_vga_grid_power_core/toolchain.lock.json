@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "adopted": "2026-09-25",
+  "stdcell": "v59_4",
+  "repositories": {
+    "aprtools": {
+      "path": "tools/APRtools",
+      "url": "https://github.com/jun1okamura/TR-1um_APRtools.git",
+      "commit": "8f6962bf2df1618d633f8a81c230fec895fc83aa"
+    },
+    "pdk": {
+      "path": "tools/TR-1um",
+      "url": "https://github.com/OpenSUSI/TR-1um.git",
+      "commit": "f408d3b5c23a8ebe44f02b0482a9270601e2880f"
+    }
+  },
+  "assets": {
+    "cell_gds": {
+      "path": "tools/APRtools/stdcell/v59_4/TR-1um_STDCELL.gds",
+      "sha256": "ec71c93a25529f0e937b57b2ca81dc3636e8e57c581dfc5b7b1ba97061b3f7da"
+    },
+    "cell_lef": {
+      "path": "tools/APRtools/stdcell/v59_4/TR-1um_cells.lef",
+      "sha256": "d765cbf0edd79f9f022df00b1bfc54160fd76631685ce217c02474a2c475ebcc"
+    },
+    "tech_lef": {
+      "path": "tools/APRtools/stdcell/v59_4/TR-1um_tech.lef",
+      "sha256": "6a4dd6f83186ed1524805308efbced4225941c305d30b32944f8d85e4816f6e2"
+    },
+    "liberty": {
+      "path": "tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib",
+      "sha256": "6d50bc1bed2d69afec703f2bd1ff13c8d7a300e5fca8dbbc0142c5cffa2da481"
+    },
+    "cell_info": {
+      "path": "tools/APRtools/stdcell/v59_4/cell_info.json",
+      "sha256": "fdeee1cc76300f6661350946cfdae4ba563c5dfb75d00677212b27ff8b3ffb15"
+    },
+    "frame_gds": {
+      "path": "tools/APRtools/pdk/pending-upstream/TR-1um_frame_25x25_GIO.gds",
+      "sha256": "466810604986b207de4d281092dcf7017bb59af8f071efbbde02645f5878d660"
+    },
+    "frame_lvs": {
+      "path": "tools/APRtools/pdk/frame/OSS_FRAME_GIO_nocombine.spice",
+      "sha256": "73fcd3f7aa47813b4ef70a9e789b8a4705d5f5c52eaa50886c484da64e481b71"
+    },
+    "frame_sim": {
+      "path": "tools/APRtools/pdk/frame/OSS_FRAME_GIO.spice",
+      "sha256": "4bfc5b0a82da0a7460bb2c484c2303428023d75685d42eb0363df1108935c8ea"
+    },
+    "ring_gds": {
+      "path": "tools/APRtools/macro/ringosc/RING_OSC.gds",
+      "sha256": "6180463878c39b52b3ac8eadbd3cf60f630433b8b87669c4c5abb8e56ce1b372"
+    },
+    "ring_lef": {
+      "path": "tools/APRtools/macro/ringosc/RING_OSC.lef",
+      "sha256": "56e4234319c51d1965acbd68fb0c6b57173994b97a937407af6e9d8d51ab2ed2"
+    }
+  },
+  "patches": [
+    {
+      "repository": "aprtools",
+      "path": "patches/aprtools-pcell-technology.patch",
+      "sha256": "36877d694b7c2cf28311a555ebf15115a770868832e0c4227db2b48c373de134",
+      "files": {
+        "apr/route_channels.py": "cc1532dc71480dd284fbf03a2ec0ed0bcf764494757c8ce2201271117a7448b0",
+        "apr/route_top_pins.py": "f0d987c11d8106277170c613ba21f6e21d522bc39e195dcb3baff99f0244a648",
+        "apr/connect_macro_power.py": "3b141eb32e89b65df5500e0ce63904ac5ac428807a6a6d373b565a475abda6af",
+        "apr/route_chip.py": "d03207c81fa42c0aa2343f07b9fa7d64da0d3e33c657a45bb508e82ee7508b93",
+        "apr/ripup_reroute_shorts.py": "fd75b84e2e4eb899bf1e3cf7392f543ae229137f5c4f70fba6abd6c13a2e53af"
+      }
+    }
+  ]
+}

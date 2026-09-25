@@ -1,0 +1,20 @@
+{
+  "rtl_dir": "experiments/arch_offset_h80",
+  "netlist": "experiments/arch_offset_h80/out/ishi_vga_core_pnr.v",
+  "rows": 5,
+  "tracks": 328,
+  "seed": 4,
+  "restarts": 800,
+  "order_passes": 40,
+  "balance": 0.02,
+  "prl": 10,
+  "compare": "E",
+  "case": "H",
+  "source": "experiments/arch_offset_h80/out/ishi_vga_core_pnr.v",
+  "rtl_source": "experiments/arch_offset_h80",
+  "sha256": "51a1f54fe3187ca32cb8664a61ea13a8a539305c943e0003f3440bbfc2e09632",
+  "design": "phys_h",
+  "fill": "alternate",
+  "pad_weight": 1.0,
+  "span_lane_pack": false
+}

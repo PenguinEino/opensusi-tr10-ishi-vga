@@ -1,0 +1,9 @@
+DRC: build/postrepair_compacted.gds  top=ishi_vga_core
+  KLayout 0.30.9 / デッキ /home/ishi-kai/ishi-vga/tools/TR-1um/libs.tech/klayout/tech/drc
+  レポート /home/ishi-kai/ishi-vga/experiments/routing_audit/postrepair_baseline.lyrdb
+
+  違反 3 件
+         3  GC.ANT:GC must electrically connect to Substrate (or text if not chip level)
+      polygon: (1009.3,1626.1;1009.3,1636.1;1005.4,1636.1;1005.4,1638.7;1009.3,1638.7;1009.3,1654;1010.3,1654;1010.3,1638.7;10
+      polygon: (1592.5,1626.1;1592.5,1636.1;1588.6,1636.1;1588.6,1638.7;1592.5,1638.7;1592.5,1654;1593.5,1654;1593.5,1638.7;15
+      polygon: (1630.1,1626.1;1630.1,1636.2;1627.2,1636.2;1627.2,1638.8;1630.1,1638.8;1630.1,1654.1;1631.1,1654.1;1631.1,1626.

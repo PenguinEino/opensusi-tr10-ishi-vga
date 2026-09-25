@@ -1,0 +1,9 @@
+######## ishi_vga_core   out/ishi_vga_core_pnr.v   period = 155.0 ns
+  reg->reg    slack   107.591 ns   _788_/Q -> _765_/D
+  in->reg     (パスなし)
+  reg->out    slack   118.194 ns   _766_/Q -> b[0]
+  hold r->r   slack     5.235 ns   _778_/Q -> _779_/D
+  => reg->reg が要求する最小周期 47.409 ns  (21.09 MHz)
+     周期係数 a = 1.00 -> 全周期パス（同じ縁どうし）。経路の実遅延は 47.409 ns
+  (電源ピン VDD/GND の Warning 201 を 2 行たたみました。.lib に
+   電源ピンが無いだけで、タイミングには影響しません)

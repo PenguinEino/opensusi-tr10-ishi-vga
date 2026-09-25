@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A",
+    "name": "元の37矩形版",
+    "rectangles": 37,
+    "description": "元の37矩形。比較の基準。",
+    "image": "A_original.png"
+  },
+  {
+    "id": "B",
+    "name": "採用B：上下の横線だけ",
+    "rectangles": 21,
+    "description": "水色の細い配線を省略。外側の横線は残す。",
+    "image": "B_outline_bars.png"
+  },
+  {
+    "id": "C",
+    "name": "水色の輪郭をすべて省略",
+    "rectangles": 19,
+    "description": "赤文字・青と紫の帯・シアンの横線を残す。",
+    "image": "C_no_outline.png"
+  },
+  {
+    "id": "D",
+    "name": "赤文字＋青・紫の帯",
+    "rectangles": 17,
+    "description": "シアンの横線も省略。背景の帯は残す。",
+    "image": "D_letters_and_bands.png"
+  },
+  {
+    "id": "E",
+    "name": "赤文字＋シアンの横線",
+    "rectangles": 16,
+    "description": "背景の帯を省略。文字を上下の線で挟む。",
+    "image": "E_letters_and_cyan.png"
+  },
+  {
+    "id": "F",
+    "name": "赤文字のみ",
+    "rectangles": 14,
+    "description": "既存の文字形状を保つ、最も簡単な案。",
+    "image": "F_letters_only.png"
+  }
+]

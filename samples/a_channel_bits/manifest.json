@@ -1,0 +1,230 @@
+{
+  "scope": "Unadopted direct-channel color alternatives; design references only",
+  "variants": [
+    {
+      "name": "RGB222",
+      "channel_bits": [
+        2,
+        2,
+        2
+      ],
+      "rgb_8bit": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          85,
+          170,
+          255
+        ],
+        [
+          255,
+          85,
+          85
+        ],
+        [
+          85,
+          255,
+          255
+        ],
+        [
+          85,
+          85,
+          255
+        ],
+        [
+          170,
+          170,
+          255
+        ]
+      ],
+      "distinct_logo_colors": 6,
+      "manual_red_green_zero": false,
+      "signal_count_without_reset": 9
+    },
+    {
+      "name": "RGB221",
+      "channel_bits": [
+        2,
+        2,
+        1
+      ],
+      "rgb_8bit": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          85,
+          170,
+          255
+        ],
+        [
+          255,
+          85,
+          0
+        ],
+        [
+          85,
+          255,
+          255
+        ],
+        [
+          85,
+          85,
+          255
+        ],
+        [
+          170,
+          170,
+          255
+        ]
+      ],
+      "distinct_logo_colors": 6,
+      "manual_red_green_zero": false,
+      "signal_count_without_reset": 8
+    },
+    {
+      "name": "RGB121",
+      "channel_bits": [
+        1,
+        2,
+        1
+      ],
+      "rgb_8bit": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          0,
+          170,
+          255
+        ],
+        [
+          255,
+          85,
+          0
+        ],
+        [
+          0,
+          255,
+          255
+        ],
+        [
+          0,
+          85,
+          255
+        ],
+        [
+          255,
+          170,
+          255
+        ]
+      ],
+      "distinct_logo_colors": 6,
+      "manual_red_green_zero": false,
+      "signal_count_without_reset": 7
+    },
+    {
+      "name": "RGB121_red",
+      "channel_bits": [
+        1,
+        2,
+        1
+      ],
+      "rgb_8bit": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          0,
+          170,
+          255
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          255
+        ],
+        [
+          0,
+          85,
+          255
+        ],
+        [
+          255,
+          170,
+          255
+        ]
+      ],
+      "distinct_logo_colors": 6,
+      "manual_red_green_zero": true,
+      "signal_count_without_reset": 7
+    },
+    {
+      "name": "RGB111",
+      "channel_bits": [
+        1,
+        1,
+        1
+      ],
+      "rgb_8bit": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          0,
+          255,
+          255
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          0,
+          255,
+          255
+        ],
+        [
+          0,
+          0,
+          255
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "distinct_logo_colors": 4,
+      "manual_red_green_zero": false,
+      "signal_count_without_reset": 6
+    }
+  ],
+  "sha256": {
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "scripts/preview_a_channel_bits.py": "cabf39f7efedd9a16509ccf5cbf43491da415746495f61a1c77c59f32a67a91f",
+    "samples/a_channel_bits/RGB111.png": "cbbd5a8c0d9cce5cb247ca50b0149fe5734dce68f9f1b3ff4d2509aa66c98564",
+    "samples/a_channel_bits/RGB121.png": "8bc3e201ad96fadef54817ffac1d20973bb93619def432176f7c2261914b48ba",
+    "samples/a_channel_bits/RGB121_red.png": "9ff1b88fff60cd4d74509102d0815c2fde9cc1eb58cc801826235937889e60e3",
+    "samples/a_channel_bits/RGB221.png": "6db67e11a114a90ffbee457699c70961fee122708e2519aba2fb184f45435744",
+    "samples/a_channel_bits/RGB222.png": "2da6353941947b77f676bd7faa67943bcccc5a6b7db1ad5058a909dd6142ee25",
+    "samples/a_channel_bits/comparison.png": "70f00b04c3e2e36f10e656efca95e47272dd49c946801b7d83e5b52ce106f3b8"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "art": "B",
+  "scale": 8,
+  "h_start": 31,
+  "h_end": 60,
+  "h_bits": 7,
+  "v_start": 488,
+  "v_last": 1012,
+  "horizontal_total": 100,
+  "palette_rgb111": [
+    7,
+    3,
+    4,
+    3,
+    1,
+    5
+  ],
+  "signals": 6,
+  "including_vdd_excluding_common_vss": 7,
+  "target_bbox_um": [
+    1800,
+    900
+  ],
+  "adopted": false,
+  "reset": false
+}

@@ -1,0 +1,71 @@
+routing channel budget: [86.4, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 86.4]  (placement estimate was [86.4, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 86.4])
+
+============================================================
+=== step5 ===
+============================================================
+wrote layout/placement.json
+  行 [81, 89, 87, 81, 77, 86, 91, 85, 82]   行幅 1598.4   コア 1598.4 x 1571.4
+  ch_heights [86.4, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 108.0, 86.4]
+  優先コリドー 54 本 / ネットの付いた信号ピン 1630 本
+wrote /home/ishi-kai/ishi-vga/layout/step5/route_step_1_placement.gds
+core bbox: (0,0)-(1598.4,1571.4)
+  bottom margin    0.0 - 86.4
+  row0             86.4 - 145.8
+  channel 1        145.8 - 253.8
+  row1             253.8 - 313.2
+  channel 2        313.2 - 421.2
+  row2             421.2 - 480.6
+  channel 3        480.6 - 588.6
+  row3             588.6 - 648.0
+  channel 4        648.0 - 756.0
+  row4             756.0 - 815.4
+  channel 5        815.4 - 923.4
+  row5             923.4 - 982.8
+  channel 6        982.8 - 1090.8
+  row6             1090.8 - 1150.2
+  channel 7        1150.2 - 1258.2
+  row7             1258.2 - 1317.6
+  channel 8        1317.6 - 1425.6
+  row8             1425.6 - 1485.0
+  top margin       1485.0 - 1571.4
+instances per row: [81, 89, 87, 81, 77, 86, 91, 85, 82]
+
+============================================================
+=== step6 ===
+============================================================
+priority M2 corridors: 18 track(s) at x=[13.5, 18.9, 24.3, 521.1, 526.5, 531.9, 548.1, 553.5, 558.9, 1055.7, 1061.1, 1066.5, 1082.7, 1088.1, 1093.5, 1574.1, 1579.5, 1584.9]
+forced overlap zone(s): {1: (29.7, 1466.1), 2: (29.7, 1482.3), 3: (29.7, 1482.3), 4: (29.7, 1482.3), 5: (29.7, 1482.3), 6: (29.7, 1487.7), 7: (29.7, 1487.7), 8: (29.7, 1444.5)}
+per-row local trunk nets: 86 (['_009_', '_020_', '_022_', '_027_', '_028_', '_029_', '_030_', '_034_', '_037_', '_038_', '_044_', '_045_', '_047_', '_049_', '_050_', '_053_', '_054_', '_062_', '_063_', '_068_', '_069_', '_070_', '_080_', '_086_', '_089_', '_090_', '_096_', '_097_', '_106_', '_122_', '_127_', '_144_', '_145_', '_146_', '_147_', '_167_', '_174_', '_182_', '_194_', '_205_', '_248_', '_378_', '_381_', '_398_', '_408_', '_410_', '_411_', '_412_', '_413_', '_414_', '_415_', '_416_', '_417_', '_418_', '_420_', '_421_', '_422_', '_423_', '_429_', '_430_', '_431_', '_432_', '_433_', '_436_', '_437_', '_440_', '_441_', '_445_', '_446_', '_447_', '_452_', '_453_', 'active', 'clk_buf', 'h[0]', 'h[1]', 'h[4]', 'h[7]', 'reset_pipe[1]', 'v[0]', 'v[1]', 'v[2]', 'v[3]', 'v[4]', 'v[7]', 'v[9]']), 346 row-local segment(s) total, dedicated guarded tracks nearest each row, routed first
+channel primary track usage: [38, 74, 90, 91, 87, 93, 85, 75, 63, 22]
+per-row-local reserved track indices (off-limits to every other net's fallback/allow_claimed search): {0: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], 1: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73], 2: [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89], 3: [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90], 4: [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86], 5: [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92], 6: [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84], 7: [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74], 8: [31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62]}
+case-1 collisions resolved by moving 17 net(s) to a spare track
+TAP power mesh: 4 column(s) x 10 channel(s) x 2 nets (VDD/GND)
+  checkpoint: wrote /home/ishi-kai/ishi-vga/layout/step6/route_step_2_1_tap_power_mesh.gds (192 track(s) with real idle capacity, 0.5524 mm^2 total, highlighted on layer (258,1); 18 priority M2 corridor(s) highlighted on layer (259, 0))
+  WARNING: [_038_] draw_jog could not find a track near y=1425.6 in channel 8 with a clear departure leg at x=699.3, and a direct bridge to clear_x=683.0999999999999 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=553.5 (net='_068_') -- falling back to nearest extra_ok-only track at x=553.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1547.1 (net='_069_') -- falling back to nearest extra_ok-only track at x=1563.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=467.1 (net='_069_') -- falling back to nearest extra_ok-only track at x=494.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 5 near x=13.5 (net='_069_') -- falling back to nearest extra_ok-only track at x=13.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=18.9 (net='_070_') -- falling back to nearest extra_ok-only track at x=531.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=1120.5 (net='_070_') -- falling back to nearest extra_ok-only track at x=1082.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=591.3 (net='_080_') -- falling back to nearest extra_ok-only track at x=548.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=13.5 (net='_086_') -- falling back to nearest extra_ok-only track at x=720.9000000000001 (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=418.5 (y 909.1999999999998-1195.3999999999999, net='_089_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found in overlap zone near x=418.5 (y 898.3999999999999-1195.3999999999999, net='_089_') -- falling back to start_x itself, ignoring all clearance checks (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=1250.1000000000001 (net='_089_') -- falling back to nearest extra_ok-only track at x=1244.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=1244.7 (net='_089_') -- falling back to nearest extra_ok-only track at x=1206.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=1206.9 (net='_089_') -- falling back to nearest extra_ok-only track at x=1066.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 5 near x=418.5 (net='_089_') -- falling back to nearest extra_ok-only track at x=477.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=585.9 (net='_090_') -- falling back to nearest extra_ok-only track at x=656.1 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=1131.3000000000002 (net='_090_') -- falling back to nearest extra_ok-only track at x=1169.1000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 1 near x=13.5 (net='_097_') -- falling back to nearest extra_ok-only track at x=526.5 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=477.90000000000003 (net='_097_') -- falling back to nearest extra_ok-only track at x=488.70000000000005 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=1314.9 (net='_097_') -- falling back to nearest extra_ok-only track at x=1190.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 5 near x=1190.7 (net='_097_') -- falling back to nearest extra_ok-only track at x=1239.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 6 near x=326.7 (net='_097_') -- falling back to nearest extra_ok-only track at x=369.9 (may leave a short to investigate)
+  WARNING: no clear X found for row 2 near x=931.5 (net='_106_') -- falling back to nearest extra_ok-only track at x=1023.3 (may leave a short to investigate)
+  WARNING: no clear X found for row 3 near x=661.5 (net='_106_') -- falling back to nearest extra_ok-only track at x=677.7 (may leave a short to investigate)
+  WARNING: no clear X found for row 4 near x=677.7 (net='_106_') -- falling back to nearest extra_ok-only track at x=639.9000000000001 (may leave a short to investigate)
+  WARNING: no clear X found for row 5 near x=726.3 (net='_106_') -- falling back to nearest extra_ok-only track at x=607.5 (may leave a short to investigate)
+  WARNING: [_122_] draw_jog could not find a track near y=421.2 in channel 2 with a clear departure leg at x=747.9000000000001, and a direct bridge to clear_x=553.5000000000001 wasn't safe either -- falling back to nearest free track (may leave a short to investigate)
+claim_track_near: no free track near idx=20 in channel 2 satisfying all checks

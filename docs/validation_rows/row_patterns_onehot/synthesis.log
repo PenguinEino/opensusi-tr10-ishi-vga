@@ -1,0 +1,115 @@
+設計 : ishi_vga_core   (/home/ishi-kai/ishi-vga/experiments/row_patterns_onehot)
+Yosys: yosys  (Yosys 0.33 (git sha1 2584903a060))
+Liberty: /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib
+ABC 制約: set_driving_cell BUF_X2 set_load 45.923    （/home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/abc.constr / set_load は /home/ishi-kai/ishi-vga/tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib の OSS_ESD_5V_DIO / OUT から引いた値。U99）
+
+##################### 0. セルの Verilog モデルを生成
+wrote build/tr1um_cells.v  (26 cells)
+
+##################### 1. RTL の機能検証
+  [ ok ] tb_vga  PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns 
+
+##################### 2. 合成 → 実セルへマッピング
+Warning: Found unsupported expression 'A*!S+B*S' in pin attribute of cell 'MUXDFFRB' - skipping.
+  ishi_vga_core    388 セル (FF 28 / 組合せ 360)     512,574 um2 = 0.513 mm2
+    ** 定数に繋がったセル入力ピンが 1 個ある（TIEHI/TIELO が要る）
+
+##################### 3. 重複ゲートの整理（dedup_gates.py）
+found 0 duplicate group(s), 0 redundant instance(s) to remove
+wrote /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_dedup.v
+
+##################### 4. MUXDFFRB / RSLATCH への畳み込み
+parsed 388 instances from /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_dedup.v
+found 1 MUX2->DFFRB.D pairs -> MUXDFFRB, 0 cross-coupled NOR2 pairs -> RSLATCH
+wrote /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_merged.v
+  MUXDFFRB instances created: 1
+  RSLATCH instances created:  0
+
+post-merge instance count: 387
+  AND2_X1      15
+  AND3_X1      7
+  AND4_X1      1
+  BUF_X2       7
+  DFFRB        25
+  DFFS         2
+  INV_X1       18
+  INV_X2       2
+  MUX2         1
+  MUXDFFRB     1
+  NAND2        85
+  NAND3        23
+  NAND4        12
+  NOR2         102
+  NOR3         36
+  NOR4         9
+  OR2          21
+  OR3          7
+  OR4          2
+  XNOR2        9
+  XOR2         2
+
+##################### 5. ゲートレベル TB（畳み込み後）
+  [ ok ] tb_vga  PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns 
+
+##################### 6. BUFTH で外部入力を受ける
+入力ポート 2 本、対象 2 本
+  BUFTH on clk → clk_buf
+  BUFTH on reset_n → reset_n_buf
+wrote /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_pnr.v
+  BUFTH 2 個を挿入（64.8 um / 3,849 um2）
+  ishi_vga_core    389 セル (FF 28 / 組合せ 361)     516,423 um2 = 0.516 mm2
+
+##################### 7. 面積と使用率
+--- ishi_vga_core: マッピング後の実セル（/home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_pnr.v）---
+  NOR2        102  x    962.3 =     98,155 um2
+  DFFRB        25  x   3849.1 =     96,228 um2
+  NAND2        85  x    962.3 =     81,796 um2
+  NOR3         36  x   1283.0 =     46,188 um2
+  NAND3        23  x   1283.0 =     29,509 um2
+  OR2          21  x   1283.0 =     26,943 um2
+  NAND4        12  x   1603.8 =     19,246 um2
+  AND2_X1      15  x   1283.0 =     19,245 um2
+  NOR4          9  x   1603.8 =     14,434 um2
+  XNOR2         9  x   1603.8 =     14,434 um2
+  INV_X1       18  x    641.5 =     11,547 um2
+  OR3           7  x   1603.8 =     11,227 um2
+  AND3_X1       7  x   1603.8 =     11,227 um2
+  DFFS          2  x   3849.1 =      7,698 um2
+  BUF_X2        7  x    962.3 =      6,736 um2
+  MUXDFFRB      1  x   5773.7 =      5,774 um2
+  OR4           2  x   1924.6 =      3,849 um2
+  BUFTH         2  x   1924.6 =      3,849 um2
+  XOR2          2  x   1603.8 =      3,208 um2
+  MUX2          1  x   1924.6 =      1,925 um2
+  AND4_X1       1  x   1924.6 =      1,925 um2
+  INV_X2        2  x    641.5 =      1,283 um2
+  合計          389                     516,423 um2 = 0.516 mm2
+FF 28 / 組合せ 361 / NAND2 換算 537 ゲート
+セル幅の総和 8,694 um  (行高 59.4 um → 1 行 1840um なら 4.7 行ぶん)
+コア 1840 x 1840 um から四隅を欠いて 3.328 mm2
+  util 50%:  1.033 mm2  OK
+  util 60%:  0.861 mm2  OK
+  util 70%:  0.738 mm2  OK
+  util 80%:  0.646 mm2  OK
+
+★ セル面積は **実測**（GDS の (235,0) abutment box）。
+  行数・util・所要面積は **見積り**（配置も配線も済んでいない）。
+  成果物の寸法は配置配線のあと GDS を測ること。
+
+##################### 8. 既提出ネットリストとの突き合わせ
+  飛ばす（SYN_REF_NETLIST 未設定）
+
+##################### 9. STA
+  セル 22 種 / モジュール 1 個
+######## ishi_vga_core   /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/ishi_vga_core_pnr.v   period = 155.0 ns
+  reg->reg    slack   112.501 ns   _749_/Q -> _741_/D
+  in->reg     (パスなし)
+  reg->out    slack   118.194 ns   _742_/Q -> b[0]
+  hold r->r   slack     5.235 ns   _754_/Q -> _755_/D
+  => reg->reg が要求する最小周期 42.499 ns  (23.53 MHz)
+     周期係数 a = 1.00 -> 全周期パス（同じ縁どうし）。経路の実遅延は 42.499 ns
+  (電源ピン VDD/GND の Warning 201 を 2 行たたみました。.lib に
+   電源ピンが無いだけで、タイミングには影響しません)
+  -> /home/ishi-kai/ishi-vga/experiments/row_patterns_onehot/out/STA_ishi_vga_core.txt
+
+完了

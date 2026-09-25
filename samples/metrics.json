@@ -1,0 +1,56 @@
+[
+  {
+    "width": 32,
+    "height": 27,
+    "raw_index_bits": 2592,
+    "rectangles": 112,
+    "unique_rows": 21,
+    "x_boundaries": 28,
+    "y_boundaries": 22
+  },
+  {
+    "width": 48,
+    "height": 41,
+    "raw_index_bits": 5904,
+    "rectangles": 158,
+    "unique_rows": 26,
+    "x_boundaries": 40,
+    "y_boundaries": 29
+  },
+  {
+    "width": 64,
+    "height": 54,
+    "raw_index_bits": 10368,
+    "rectangles": 180,
+    "unique_rows": 32,
+    "x_boundaries": 47,
+    "y_boundaries": 36
+  },
+  {
+    "width": 96,
+    "height": 81,
+    "raw_index_bits": 23328,
+    "rectangles": 171,
+    "unique_rows": 33,
+    "x_boundaries": 49,
+    "y_boundaries": 38
+  },
+  {
+    "width": 128,
+    "height": 108,
+    "raw_index_bits": 41472,
+    "rectangles": 198,
+    "unique_rows": 36,
+    "x_boundaries": 55,
+    "y_boundaries": 39
+  },
+  {
+    "width": 160,
+    "height": 136,
+    "raw_index_bits": 65280,
+    "rectangles": 220,
+    "unique_rows": 37,
+    "x_boundaries": 54,
+    "y_boundaries": 40
+  }
+]

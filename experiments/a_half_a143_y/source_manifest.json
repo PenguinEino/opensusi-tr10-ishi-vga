@@ -1,0 +1,16 @@
+{
+  "scope": "exact corrected A geometry with RGB111/black background; seven terminals excluding VSS",
+  "sha256": {
+    "scripts/half_a_coordinate_trial.py": "5c8c0924be665840ea10751854c133b648bdbe0371c7e16bf641bba7ffdb8aee",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "experiments/a_half_a128_black/source_manifest.json": "bbbe0fb5731cc7db45923f1716afc5caf931d1094e20241da831f478debce6d2",
+    "experiments/a_half_a128_black/ishi_vga_core.v": "7a52f3568eef5d63197efe6c13229c5b64feeeff2c58d4818126249460944b2c",
+    "experiments/a_half_a143_y/config.py": "88f16dde7780b801038b23f41ced768437375fe86d585a886e4a56e7191bce06",
+    "experiments/a_half_a143_y/trial.json": "1407daff9257c06f377aa60696d61464d7e43337d9da12e2917b706505a37db8",
+    "experiments/a_half_a143_y/ishi_vga_core.v": "90d3058216aed5f63291dbf214d79e247a9abd96c7da68c291ad02ce5e57975e",
+    "experiments/a_half_a143_y/ishi_logo.v": "7b8688f19425615d375e73f393155bd5f40f1877000d26555218c71ebadbd02d",
+    "experiments/a_half_a143_y/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9",
+    "experiments/a_half_a143_y/tests/tb_rtl.v": "dfe66e42ae300be6d1c8c1a3280b35807a85aa4cb40eee40d8594cb37757568d"
+  }
+}

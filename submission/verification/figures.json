@@ -1,0 +1,100 @@
+{
+  "pins_checked_on_metal_and_labels": {
+    "hsync": {
+      "name": "hsync",
+      "direction": "output",
+      "layer": "M2",
+      "xy_um": [
+        261.9,
+        1.8
+      ],
+      "edge": "BOTTOM"
+    },
+    "r": {
+      "name": "r",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        690.3
+      ],
+      "edge": "LEFT"
+    },
+    "g": {
+      "name": "g",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        693.9
+      ],
+      "edge": "LEFT"
+    },
+    "b": {
+      "name": "b",
+      "direction": "output",
+      "layer": "M1",
+      "xy_um": [
+        -14.4,
+        601.2
+      ],
+      "edge": "LEFT"
+    },
+    "vsync": {
+      "name": "vsync",
+      "direction": "output",
+      "layer": "M2",
+      "xy_um": [
+        974.7,
+        895.5
+      ],
+      "edge": "TOP"
+    },
+    "clk": {
+      "name": "clk",
+      "direction": "input",
+      "layer": "M2",
+      "xy_um": [
+        844.2,
+        895.5
+      ],
+      "edge": "TOP"
+    },
+    "vdd": {
+      "name": "vdd",
+      "direction": "power",
+      "layer": "M1",
+      "xy_um": [
+        2.7,
+        132.0
+      ],
+      "edge": "rail label"
+    },
+    "vss": {
+      "name": "vss",
+      "direction": "ground",
+      "layer": "M1",
+      "xy_um": [
+        2.7,
+        77.3
+      ],
+      "edge": "rail label"
+    }
+  },
+  "zoom_window_um": [
+    24,
+    24
+  ],
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "ports_sha256": "10420df273b260d0f90e29265c513637175072bd507137a0607a1840d0efebd3",
+  "circuit_modified": false,
+  "script_sha256": "7250e49b512fbd5990a36996f42999504b64f426f6572b92502b904eb184a8ba",
+  "image_role": "GDS pin-location illustration and explanatory RTL block diagram",
+  "matplotlib_version": "3.10.8",
+  "klayout_version": "0.30.6",
+  "images": {
+    "ishi_vga_pins.png": "b1ad3d240a54db112df8503ad32f9b7695620871978d99325c6c36dae26103e4",
+    "ishi_vga_blocks.svg": "2cb3993f80ec49ed267a0c11a14a9b087929fdab60ed5befaf5c44da2dbe384e",
+    "ishi_vga_blocks.png": "ea26b3e207cf4c48ecd61ed6adc2a27f66d6d9e9bcb3a169103c1f0654df77ee"
+  }
+}

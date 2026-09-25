@@ -1,0 +1,166 @@
+COMMAND: python3 scripts/run_apr.py --design-root experiments/phys_desc5 apr/route.py --from 7 --to 7
+WARNING: partial interactive capture, not a complete upstream log; iterations 11-23 are missing and some initial lines below are summarized.
+STEP7 uses pinned route.py stage7 max_iters=60; output captured from exec session.
+initial route diagnostics: 42 multi-segment/high-fanout nets are vertically guarded; horizontal trunk conflicts are handled by try_fix_horizontal.
+iteration 1: _211_ <-> _246_ on M2, moving _246_; recovered by detouring _211_ around the overlap
+iteration 2: _214_ <-> _031_ on M2, moving _031_; recovered by detouring _214_ around the overlap
+iteration 3: _143_ <-> v[9] on M2, moving _143_; recovered by detouring _143_ around the overlap
+iteration 4: _221_ <-> _173_ on M2, moving _173_; _173_'s side could not be fixed, trying _221_ instead
+iteration 5: _182_ <-> _213_ on M2, moving _182_
+iteration 6: _082_ <-> h[0] on M2, moving _082_; recovered by detouring _082_ around the overlap
+iteration 7: _082_ <-> h[7] on M2, moving _082_
+iteration 8: _244_ <-> h[5] on M2, moving _244_; recovered by detouring _244_ around the overlap
+iteration 9: _060_ <-> _059_ on M2, moving _060_
+iteration 10: _119_ <-> _185_ on M2, moving _119_; _119_'s side could not be fixed, trying _185_ instead; recovered by detouring _119_ around the overlap
+iteration 11: _052_ <-> _034_ on M2, moving _052_; _052_'s side could not be fixed, trying _034_ instead
+  recovered by detouring h[3] around the overlap
+iteration 24: _104_ <-> _139_ on M2, moving _104_ (vertical box (951.4, 374.6, 954.8, 1203.4))
+  _104_'s side could not be fixed -- trying _139_ instead
+  recovered by detouring _104_ around the overlap
+iteration 25: _085_ <-> _043_ on M2, moving _085_ (vertical box (811.0, 277.4, 814.4, 380.0))
+iteration 26: _138_ <-> _139_ on M2, moving _138_ (vertical box (951.4, 293.6, 954.8, 358.4))
+iteration 27: _141_ <-> _083_ on M2, moving _141_ (vertical box (983.8, 293.6, 987.2, 358.4))
+iteration 28: _051_ <-> v[9] on M2, moving _051_ (vertical box (746.2, 1296.2, 749.6, 2162.8))
+  recovered by detouring _051_ around the overlap
+iteration 29: v[0] <-> v[2] on M2, moving v[0] (vertical box (919.0, 3220.4, 922.4, 4081.6))
+  recovered by detouring v[0] around the overlap
+iteration 30: _042_ <-> _173_ on M1, moving _173_ (horizontal box (56.7, 389.9, 207.9, 391.7))
+iteration 31: _048_ <-> h[0] on M2 -- both sides complex, detoured _048_ around the overlap
+iteration 32: _049_ <-> _185_ on M2, moving _185_ (vertical box (686.8, 1350.2, 690.2, 1506.8))
+  recovered by detouring _049_ around the overlap
+iteration 33: v[9] <-> _222_ on M1, moving v[9] (horizontal box (294.3, 1338.5, 1352.7, 1340.3))
+iteration 34: h[1] <-> _058_ on M1, moving _058_ (horizontal box (623.7, 422.3, 920.7, 424.1))
+iteration 35: h[1] <-> h[5] on M1, moving h[5] (horizontal box (440.1, 1370.9, 1460.7, 1372.7))
+iteration 36: h[1] <-> _068_ on M2 -- BOTH sides are a complex net's vertical (single M2 segment) box and neither passes the guarded move's safety conditions -- unresolved
+iteration 37: h[1] <-> _185_ on M1, moving _185_ (horizontal box (688.5, 1349.3, 990.9, 1351.1))
+iteration 38: _059_ <-> _083_ on M2, moving _059_ (vertical box (1145.8, 1234.8, 1149.2, 2095.4))
+  could not fix _059_<->_083_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 39: _059_ <-> _038_ on M2, moving _059_ (vertical box (1162.0, 417.8, 1165.4, 1157.6))
+iteration 40: _247_ <-> h[4] on M2, moving h[4] (vertical box (1108.0, 1206.8, 1111.4, 1528.4))
+  recovered by detouring _247_ around the overlap
+iteration 41: _171_ <-> _108_ on M1, moving _108_ (horizontal box (218.7, 1354.7, 872.1, 1356.5))
+iteration 42: _103_ <-> _209_ on M2, moving _103_ (vertical box (1124.2, 1175.4, 1127.6, 1234.8))
+  could not fix _103_<->_209_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 43: _227_ <-> _213_ on M2 -- BOTH sides are a complex net's vertical (single M2 segment) box and neither passes the guarded move's safety conditions -- unresolved
+iteration 44: _227_ <-> _246_ on M2, moving _246_ (vertical box (1064.8, 1206.8, 1068.2, 1523.0))
+  recovered by detouring _227_ around the overlap
+iteration 45: _058_ <-> _040_ on M2, moving _040_ (vertical box (973.0, 2134.8, 976.4, 2194.2))
+  could not fix _058_<->_040_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 46: _162_ <-> v[7] on M1, moving _162_ (horizontal box (920.7, 411.5, 1239.3, 413.3))
+  _162_'s side could not be fixed -- trying v[7] instead
+iteration 47: _162_ <-> _038_ on M2, moving _162_ (vertical box (1237.6, 412.4, 1241.0, 1175.4))
+  could not fix _162_<->_038_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 48: _209_ <-> _083_ on M2 -- BOTH sides are a complex net's vertical (single M2 segment) box and neither passes the guarded move's safety conditions -- unresolved
+iteration 49: _233_ <-> _222_ on M2 -- BOTH sides are a complex net's vertical (single M2 segment) box and neither passes the guarded move's safety conditions -- unresolved
+iteration 50: _233_ <-> _031_ on M1, moving _031_ (horizontal box (116.1, 2281.7, 531.9, 2283.5))
+iteration 51: _144_ <-> _068_ on M1, moving _144_ (horizontal box (110.7, 2287.1, 1266.3, 2288.9))
+iteration 52: _173_ <-> _108_ on M2, moving _108_ (vertical box (238.6, 2041.4, 242.0, 2162.8))
+  _108_'s side could not be fixed -- trying _173_ instead
+  could not fix _173_<->_108_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 53: _148_ <-> _222_ on M2, moving _148_ (vertical box (119.8, 1236.8, 123.2, 2134.8))
+  recovered by detouring _148_ around the overlap
+iteration 54: _148_ <-> _069_ on M2, moving _148_ (vertical box (157.6, 2196.2, 161.0, 3094.2))
+  could not fix _148_<->_069_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 55: _148_ <-> _031_ on M2, moving _031_ (vertical box (119.8, 2166.2, 123.2, 2417.6))
+  _031_'s side could not be fixed -- trying _148_ instead
+  could not fix _148_<->_031_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 56: _222_ <-> _223_ on M2, moving _223_ (vertical box (238.6, 1206.8, 242.0, 1490.6))
+  recovered by detouring _222_ around the overlap
+iteration 57: _222_ <-> v[7] on M2 -- both sides complex, detoured _222_ around the overlap
+iteration 58: _073_ <-> _240_ on M2, moving _073_ (vertical box (179.2, 2134.8, 182.6, 2194.2))
+  could not fix _073_<->_240_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+iteration 59: _069_ <-> _240_ on M2 -- BOTH sides are a complex net's vertical (single M2 segment) box and neither passes the guarded move's safety conditions -- unresolved
+iteration 60: _069_ <-> _065_ on M2, moving _065_ (vertical box (341.2, 1206.8, 344.6, 1501.4))
+  could not fix _069_<->_065_ without touching a multi-segment/high-fanout net -- giving up on this pair, will still report as unresolved
+reached max_iters=60 without full convergence
+
+fixed 35 vertical + 10 horizontal segment(s), 65 raw box conflict(s) remain
+unresolved net pairs: {('_073_', '_240_'), ('_038_', '_033_'), ('_148_', '_069_'), ('h[1]', '_068_'), ('_227_', '_213_'), ('_194_', '_038_'), ('_058_', '_040_'), ('_148_', '_031_'), ('_233_', '_222_'), ('_069_', '_065_'), ('_173_', '_108_'), ('_270_', 'v[2]'), ('_069_', '_240_'), ('_069_', '_161_'), ('_193_', '_000_[1]'), ('_185_', 'h[4]'), ('_209_', '_083_'), ('_059_', '_083_'), ('_103_', '_209_'), ('_079_', '_246_'), ('_162_', '_038_')}
+  component check: _027_ <-> _211_ share a component but no box pair could be identified -- reporting only
+  component check: _027_ <-> _227_ share a component but no box pair could be identified -- reporting only
+  component check: _031_ <-> _161_ share a component but no box pair could be identified -- reporting only
+  component check: _031_ <-> v[7] share a component but no box pair could be identified -- reporting only
+  component check: _033_ <-> _246_ share a component but no box pair could be identified -- reporting only
+  component check: _038_ <-> _246_ share a component but no box pair could be identified -- reporting only
+  component check: _048_ <-> _082_ share a component but no box pair could be identified -- reporting only
+  component check: _051_ <-> _143_ share a component but no box pair could be identified -- reporting only
+  component check: _059_ <-> _103_ share a component but no box pair could be identified -- reporting only
+  component check: _065_ <-> _240_ share a component but no box pair could be identified -- reporting only
+  component check: _065_ <-> v[7] share a component but no box pair could be identified -- reporting only
+  component check: _069_ <-> _073_ share a component but no box pair could be identified -- reporting only
+  component check: _069_ <-> _223_ share a component but no box pair could be identified -- reporting only
+  component check: _073_ <-> _222_ share a component but no box pair could be identified -- reporting only
+  component check: _079_ <-> _194_ share a component but no box pair could be identified -- reporting only
+  component check: _119_ <-> _247_ share a component but no box pair could be identified -- reporting only
+  component check: _148_ <-> _233_ share a component but no box pair could be identified -- reporting only
+  component check: _162_ <-> _213_ share a component but no box pair could be identified -- reporting only
+  component check: _162_ <-> _227_ share a component but no box pair could be identified -- reporting only
+  component check: _185_ <-> _247_ share a component but no box pair could be identified -- reporting only
+  component check: _214_ <-> _233_ share a component but no box pair could be identified -- reporting only
+  component check: _223_ <-> _240_ share a component but no box pair could be identified -- reporting only
+  component check: _244_ <-> h[3] share a component but no box pair could be identified -- reporting only
+  component check: _270_ <-> v[0] share a component but no box pair could be identified -- reporting only
+component-level check: 41 shorted net pair(s) remain: [('_000_[1]', '_193_'), ('_027_', '_211_'), ('_027_', '_227_'), ('_031_', '_161_'), ('_031_', 'v[7]'), ('_033_', '_246_'), ('_038_', '_194_'), ('_038_', '_246_'), ('_040_', '_058_'), ('_048_', '_082_'), ('_048_', 'h[0]'), ('_051_', '_143_'), ('_051_', 'v[9]'), ('_052_', '_034_'), ('_059_', '_103_'), ('_065_', '_240_'), ('_065_', 'v[7]'), ('_068_', 'h[1]'), ('_069_', '_073_'), ('_069_', '_223_'), ('_073_', '_222_'), ('_079_', '_194_'), ('_079_', '_213_'), ('_083_', '_209_'), ('_103_', '_209_'), ('_104_', '_139_'), ('_108_', '_173_'), ('_119_', '_247_'), ('_148_', '_222_'), ('_148_', '_233_'), ('_162_', '_213_'), ('_162_', '_227_'), ('_179_', 'h[1]'), ('_185_', '_247_'), ('_185_', 'h[4]'), ('_214_', '_233_'), ('_223_', '_240_'), ('_244_', 'h[3]'), ('_270_', 'v[0]'), ('h[3]', 'h[5]'), ('v[0]', 'v[2]')]
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/step7/route_step_3_ripup_reroute.gds
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/pin_map_rr.json
+wrote /home/ishi-kai/ishi-vga/experiments/phys_desc5/layout/net_shapes_rr.json
+
+=== DRC ===
+M1: width viol=0 space viol=0
+M2: width viol=0 space viol=0
+V1 space viol: 0
+V1 enclosed by M1<1.0 viol: 0
+V1 enclosed by M2<1.0 viol: 0
+V1-GA space<1.2 viol: 0
+V1 cut > 1.4 viol: 0
+
+=== connectivity (M1-then-M2 pin search) ===
+1939 M1 components, 1267 M2 components, 2699 V1 vias (in scan area)
+
+Checked 302 nets, 1017 pins total.
+
+41 PROBLEM(S) FOUND:
+ - SHORT SUSPECTED: net=_027_ pin _329_.Y shares a component with net=_211_
+ - SHORT SUSPECTED: net=h[3] pin _272_.A shares a component with net=_244_
+ - SHORT SUSPECTED: net=_051_ pin _473_.B shares a component with net=_143_
+ - SHORT SUSPECTED: net=v[0] pin _293_.C shares a component with net=_270_
+ - SHORT SUSPECTED: net=_048_ pin _401_.C shares a component with net=_082_
+ - SHORT SUSPECTED: net=v[9] pin _486_.A shares a component with net=_051_
+ - SHORT SUSPECTED: net=h[1] pin _420_.B shares a component with net=_179_
+ - SHORT SUSPECTED: net=_247_ pin _347_.B shares a component with net=_119_
+ - SHORT SUSPECTED: net=h[0] pin _354_.A shares a component with net=_048_
+ - SHORT SUSPECTED: net=_103_ pin _410_.C shares a component with net=_059_
+ - SHORT SUSPECTED: net=_227_ pin _304_.A shares a component with net=_027_
+ - SHORT SUSPECTED: net=h[5] pin _397_.A shares a component with net=h[3]
+ - SHORT SUSPECTED: net=_162_ pin _470_.B shares a component with net=_227_
+ - SHORT SUSPECTED: net=_209_ pin _351_.B shares a component with net=_103_
+ - SHORT SUSPECTED: net=_139_ pin _448_.B shares a component with net=_104_
+ - SHORT SUSPECTED: net=_083_ pin _392_.A shares a component with net=_209_
+ - SHORT SUSPECTED: net=_213_ pin _518_.A shares a component with net=_162_
+ - SHORT SUSPECTED: net=_233_ pin _302_.B shares a component with net=_214_
+ - SHORT SUSPECTED: net=_148_ pin _484_.C shares a component with net=_233_
+ - SHORT SUSPECTED: net=_222_ pin _374_.B shares a component with net=_148_
+ - SHORT SUSPECTED: net=_068_ pin _374_.Y shares a component with net=h[1]
+ - SHORT SUSPECTED: net=_073_ pin _380_.B shares a component with net=_222_
+ - SHORT SUSPECTED: net=_069_ pin _381_.B shares a component with net=_073_
+ - SHORT SUSPECTED: net=_108_ pin _430_.A shares a component with net=_173_
+ - SHORT SUSPECTED: net=_223_ pin _291_.Y shares a component with net=_069_
+ - SHORT SUSPECTED: net=_079_ pin _386_.B shares a component with net=_213_
+ - SHORT SUSPECTED: net=_240_ pin _449_.B shares a component with net=_223_
+ - SHORT SUSPECTED: net=_065_ pin _491_.C shares a component with net=_240_
+ - SHORT SUSPECTED: net=v[7] pin _376_.A shares a component with net=_065_
+ - SHORT SUSPECTED: net=_185_ pin _494_.C shares a component with net=_247_
+ - SHORT SUSPECTED: net=_034_ pin _339_.B shares a component with net=_052_
+ - SHORT SUSPECTED: net=_194_ pin _507_.Y shares a component with net=_079_
+ - SHORT SUSPECTED: net=_038_ pin _342_.Y shares a component with net=_194_
+ - SHORT SUSPECTED: net=_246_ pin _320_.B shares a component with net=_038_
+ - SHORT SUSPECTED: net=h[4] pin _321_.A shares a component with net=_185_
+ - SHORT SUSPECTED: net=_033_ pin _345_.A shares a component with net=_246_
+ - SHORT SUSPECTED: net=_040_ pin _345_.C shares a component with net=_058_
+ - SHORT SUSPECTED: net=v[2] pin _546_.Q shares a component with net=v[0]
+ - SHORT SUSPECTED: net=_000_[1] pin _460_.Y shares a component with net=_193_
+ - SHORT SUSPECTED: net=_031_ pin _432_.A shares a component with net=v[7]
+ - SHORT SUSPECTED: net=_161_ pin _469_.B shares a component with net=_031_
+
+ROUTE_ENTRY_RETURN_CODE=0
+ELAPSED_WALL_TIME_APPROX=20 minutes (estimated; original interactive session had no timer)

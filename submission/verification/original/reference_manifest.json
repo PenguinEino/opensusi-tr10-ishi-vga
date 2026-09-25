@@ -1,0 +1,16 @@
+{
+  "source": "experiments/a_power_flex4/build/ishi_vga_core.spice",
+  "source_sha256": "075c085c4149a66e548237f5b19f2d0a0eafa1736cd508ea1ec3cf0c9c1881da",
+  "simulation_sha256": "068bb90ae4fc0e1887a0c66d39dd09bfbac847802cd3fad2187019efa9db14b1",
+  "conversion": "pinned apr/spi2ngspice.py; M to XM, bracket removal",
+  "top_ports": [
+    "b",
+    "clk",
+    "g",
+    "hsync",
+    "r",
+    "vsync",
+    "vdd",
+    "vss"
+  ]
+}

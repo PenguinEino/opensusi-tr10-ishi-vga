@@ -1,0 +1,38 @@
+{
+  "variant": "descending_h79_v500",
+  "checks": [
+    {
+      "model": "rtl",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "rtl",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    }
+  ],
+  "sha256": {
+    "experiments/descending_h79_v500/ishi_vga_core.v": "5390b401ce1077a0d1f907735b23662534cdb513f8785178bd68fb90b466ad25",
+    "experiments/descending_h79_v500/ishi_logo.v": "24c30d92efedbef84a5047516491ee2fa5c714e4c4e3b1e01b15c21a4c300874",
+    "experiments/descending_h79_v500/config.py": "be36117f3a957d14d1d873c69d9b679ed518bb5b01b799a993aca1c944e6be5e",
+    "experiments/descending_h79_v500/out/ishi_vga_core_pnr.v": "9e2b7928ea22297300fe376483f21b778647caae48ffd51ac68c75186cec0592",
+    "experiments/descending_h79_v500/build/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "tests/expected_frame.hex": "7058120c578c4ee5c68436f2a06eecf600cbf034ea9b06bfaba87aa99e9f1117"
+  },
+  "limitations": "Unit-delay gate simulation; no parasitic extraction or routed timing."
+}

@@ -1,0 +1,14 @@
+r[1] BOTTOM expanded=22227 found=1
+path_nodes=138 cost=137
+r[0] BOTTOM expanded=20332 found=1
+path_nodes=138 cost=137
+g[0] BOTTOM expanded=24827 found=1
+path_nodes=138 cost=137
+Traceback (most recent call last):
+  File "/home/ishi-kai/ishi-vga/scripts/route_core_escape.py", line 183, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ishi-kai/ishi-vga/scripts/route_core_escape.py", line 124, in main
+    assert start.any() and goal.any(), ('no start/goal',name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('no start/goal', 'b[0]')

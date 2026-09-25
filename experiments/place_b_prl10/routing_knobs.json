@@ -1,0 +1,7 @@
+{
+  "source_placement": ".",
+  "knobs": {
+    "PRL_MIN_PINS": 10,
+    "SPAN_LANE_PACK": false
+  }
+}

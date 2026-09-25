@@ -1,0 +1,20 @@
+{
+  "scope": "exact A geometry, RGB111 black",
+  "statistics": {
+    "toggle_bits0": 16,
+    "toggle_bits1": 15,
+    "toggle_bits2": 15
+  },
+  "sha256": {
+    "scripts/half_a_bitmap_trial.py": "b430ff30570b191cbecf89b0d06c94e6f226f9673554ed34054e5e1fa0f8a8b8",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "experiments/a_half_a143_x/source_manifest.json": "be835c516911985e11e5f3ca863000dd87d4b79c3b6b87dc3815ff09bc86a513",
+    "experiments/a_half_a_bitmap_toggle/config.py": "41eaeb4a5cb3675f521ff3e1684f194c4c2141e9d924dd6ae68d55e63b681425",
+    "experiments/a_half_a_bitmap_toggle/trial.json": "58f3f564e82520d099ba551404817d1d3177df9c9a2a8d25306f334d24495152",
+    "experiments/a_half_a_bitmap_toggle/ishi_vga_core.v": "247c5c2141fe4c23e4db9697bf1a098b87584f5509e943e42bf05b81cf6fdc47",
+    "experiments/a_half_a_bitmap_toggle/ishi_logo.v": "6bb364b2ef83cc739f84bac99b8d73289be26a971bfe6cc9d35dd050b1db213e",
+    "experiments/a_half_a_bitmap_toggle/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9",
+    "experiments/a_half_a_bitmap_toggle/tests/tb_rtl.v": "dfe66e42ae300be6d1c8c1a3280b35807a85aa4cb40eee40d8594cb37757568d"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variant": "row_patterns",
+  "whole_logo_equivalence_combinations": 65536,
+  "checks": [
+    {
+      "model": "rtl",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "rtl",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.3,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    },
+    {
+      "model": "gates",
+      "mhz": 6.45,
+      "ticks_checked": 315017,
+      "result": "PASS"
+    }
+  ],
+  "sha256": {
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "experiments/row_patterns/ishi_logo.v": "fed9a738297294ea3d7e94d79afb7da6d8221e77bd3663c2ea2ec063cdbc3dc6",
+    "experiments/row_patterns/out/ishi_vga_core_pnr.v": "e5f1488903db76727fa9e57d2d0070824adcc017dcff5917213ca70e28f96223",
+    "experiments/row_patterns/config.py": "3f7bd5498102d52fcc4ac8f59063e2b03c4962f7fe670cdb3895dc05c369e796",
+    "config.py": "460498f3d5658cb2c388b799920e1559786e721f83e1facafdc387c1c0cd77aa"
+  },
+  "limitations": "Unit-delay gate simulation; no parasitic extraction or routed timing."
+}

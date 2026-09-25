@@ -1,0 +1,17 @@
+{
+  "source": "a_half_a_direct4_anneal5",
+  "sha256": {
+    "scripts/half_a_repack.py": "f728244af40dfcf0bcf36f4c284b8e1a9b8462bb1c13eae318384ade87ef46f2",
+    "experiments/a_half_a_direct4_anneal5/source_manifest.json": "825a5ddf39c0993aa4c04c6215971e0956143c4b02f5e208d7ae989c02296fba",
+    "experiments/a_half_a_direct4_anneal5/config.py": "218deb111c4813295bb07d06affe3106e7a878e0399ed83b00cebe5b8d774b03",
+    "experiments/a_half_a_direct4_anneal5/build/assignment.txt": "cd30902d2d621ad1711cd7944e00646a0f48d8d5e8b5fe0f2f236ffb3e106cd6",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "tools/APRtools/apr/place.py": "e40d1da3ac5da8d422209f315d04a3be7dbddb0141eb78207c4fcf4c5df8b045",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_a_direct4_repack5/config.py": "7e543d9e32aeff209ef1bf5e429fd24fb7b96abb005301397e5ab0228aefc0fa",
+    "experiments/a_half_a_direct4_repack5/ishi_vga_core.v": "7a52f3568eef5d63197efe6c13229c5b64feeeff2c58d4818126249460944b2c",
+    "experiments/a_half_a_direct4_repack5/ishi_logo.v": "79f13840939c42369de4c9a733ee794b0b3e2498a9b9d784717628fe16f4292e",
+    "experiments/a_half_a_direct4_repack5/out/ishi_vga_core_pnr.v": "f9dfccee5c10d8e2a52aa9c54ac05ab2bb3aec68ad3fd8f4b1812ad0660a2a18",
+    "experiments/a_half_a_direct4_repack5/tests/expected_frame.hex": "2cf5551fd2ac3dc71ba89f31f48d564aa53e4f90b157384fec4c83059c49b6a9"
+  }
+}

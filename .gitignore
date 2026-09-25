@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.venv/
+.tools/
+tests/expected_frame.hex
+build/
+out/
+layout/
+reports/
+experiments/*/build/
+experiments/*/out/
+experiments/*/layout/
+experiments/*/tests
+
+# Publish the complete frozen handoff, including its verification/checkpoint
+# files. Global build/out/layout ignores above are for local trial runs only.
+!release/ishi_vga_grid_power_core/**/
+!release/ishi_vga_grid_power_core/**
+
+# Current adopted logical design and its recorded two-frame verification.
+!designs/grid_power/out/
+!designs/grid_power/out/ishi_vga_core_pnr.v
+!designs/grid_power/build/
+designs/grid_power/build/*
+!designs/grid_power/build/tr1um_cells.v
+!designs/grid_power/build/reference.png
+!designs/grid_power/build/functional_verification.json
+!designs/grid_power/build/observed.hex
+!designs/grid_power/build/rtl.log
+!designs/grid_power/build/gates.log

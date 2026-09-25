@@ -1,0 +1,9 @@
+iteration=1 components=3 startpins=1 goalcomponents=2 expanded=599194 found=0
+Traceback (most recent call last):
+  File "/home/ishi-kai/ishi-vga/scripts/maze_route_multicomponent.py", line 194, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ishi-kai/ishi-vga/scripts/maze_route_multicomponent.py", line 154, in main
+    if run.returncode: raise RuntimeError(f'iteration {iteration}: no path; see {sd}/search.log')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: iteration 1: no path; see /home/ishi-kai/ishi-vga/experiments/maze_seq06_both/build/step_01/search.log

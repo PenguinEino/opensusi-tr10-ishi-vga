@@ -1,0 +1,9 @@
+PASS: pinned repositories, exact recorded patches, asset SHA256, environment
+  aprtools: 8f6962bf2df1618d633f8a81c230fec895fc83aa
+  pdk: f408d3b5c23a8ebe44f02b0482a9270601e2880f
+  cell_gds: tools/APRtools/stdcell/v59_4/TR-1um_STDCELL.gds
+  cell_lef: tools/APRtools/stdcell/v59_4/TR-1um_cells.lef
+  liberty: tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib
+  frame_gds: tools/APRtools/pdk/pending-upstream/TR-1um_frame_25x25_GIO.gds
+  frame_lvs: tools/APRtools/pdk/frame/OSS_FRAME_GIO_nocombine.spice
+This is provenance verification only; synthesis/DRC/LVS/STA have not been certified.

@@ -1,0 +1,14 @@
+PASS: all 65536 h/y combinations equivalent
+/home/ishi-kai/ishi-vga/tests/tb_logo_equivalence.v:17: $finish called at 65536000 (1ps)
+rtl / 6.3 MHz
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns
+/home/ishi-kai/ishi-vga/tests/tb_vga.v:60: $finish called at 50004032615 (1ps)
+rtl / 6.45 MHz
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=77.519380 ns
+/home/ishi-kai/ishi-vga/tests/tb_vga.v:60: $finish called at 48840958469 (1ps)
+gates / 6.3 MHz
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=79.365079 ns
+/home/ishi-kai/ishi-vga/tests/tb_vga.v:60: $finish called at 50004032615 (1ps)
+gates / 6.45 MHz
+PASS: 315017 pixel ticks, frame wrap, stopped-clock reset, release; half=77.519380 ns
+/home/ishi-kai/ishi-vga/tests/tb_vga.v:60: $finish called at 48840958469 (1ps)

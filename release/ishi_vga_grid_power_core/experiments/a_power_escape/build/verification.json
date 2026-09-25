@@ -1,0 +1,370 @@
+{
+  "status": "ACCEPTED",
+  "scope": "six core signal escapes, not pad/frame integration",
+  "source_sha256": "5a464e53d90307e510aeb3e8113941caa135f34427a8500f672f9f0746913c80",
+  "candidate_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "signal_pins": 696,
+  "short_pairs": 0,
+  "open_nets": 0,
+  "power": {
+    "power_component_counts": {
+      "vss": 1,
+      "vdd": 1
+    },
+    "rail_signal_nets": {
+      "vss": [],
+      "vdd": []
+    }
+  },
+  "geometry_layers_changed": [
+    [
+      13,
+      0
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ]
+  ],
+  "stdcell_shapes_and_placement_unchanged": true,
+  "all_escape_labels_and_markers_connected": true,
+  "bbox_um": [
+    -15.3,
+    0.0,
+    1777.5,
+    897.2
+  ],
+  "size_um": [
+    1792.8,
+    897.2
+  ],
+  "drawing_drc": 0,
+  "mask_warnings": 1,
+  "strict_lvs": "PASS",
+  "lvs_circuits": [
+    [
+      "AND2_X1",
+      "AND2_X1",
+      "Match"
+    ],
+    [
+      "AND3_X1",
+      "AND3_X1",
+      "Match"
+    ],
+    [
+      "BUFTH",
+      "BUFTH",
+      "Match"
+    ],
+    [
+      "BUF_X1",
+      "BUF_X1",
+      "Match"
+    ],
+    [
+      "BUF_X2",
+      "BUF_X2",
+      "Match"
+    ],
+    [
+      "DFF",
+      "DFF",
+      "Match"
+    ],
+    [
+      "FILL2",
+      "FILL2",
+      "Match"
+    ],
+    [
+      "FILL3",
+      "FILL3",
+      "Match"
+    ],
+    [
+      "INV_X1",
+      "INV_X1",
+      "Match"
+    ],
+    [
+      "INV_X2",
+      "INV_X2",
+      "Match"
+    ],
+    [
+      "MUX2",
+      "MUX2",
+      "Match"
+    ],
+    [
+      "NAND2",
+      "NAND2",
+      "Match"
+    ],
+    [
+      "NAND3",
+      "NAND3",
+      "Match"
+    ],
+    [
+      "NAND4",
+      "NAND4",
+      "Match"
+    ],
+    [
+      "NOR2",
+      "NOR2",
+      "Match"
+    ],
+    [
+      "NOR3",
+      "NOR3",
+      "Match"
+    ],
+    [
+      "NOR4",
+      "NOR4",
+      "Match"
+    ],
+    [
+      "OR2",
+      "OR2",
+      "Match"
+    ],
+    [
+      "OR3",
+      "OR3",
+      "Match"
+    ],
+    [
+      "OR4",
+      "OR4",
+      "Match"
+    ],
+    [
+      "XNOR2",
+      "XNOR2",
+      "Match"
+    ],
+    [
+      "XOR2",
+      "XOR2",
+      "Match"
+    ],
+    [
+      "ishi_vga_core",
+      "ISHI_VGA_CORE",
+      "Match"
+    ]
+  ],
+  "lvs_ports": [
+    "b",
+    "clk",
+    "g",
+    "hsync",
+    "r",
+    "vdd",
+    "vss",
+    "vsync"
+  ],
+  "ports": [
+    {
+      "net": "hsync",
+      "edge": "BOTTOM",
+      "xy_um": [
+        261.9,
+        1.8
+      ],
+      "layer": "M2",
+      "path_nodes": 114,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 261900,104500"
+        ]
+      ],
+      "grid_sha256": "fb8e05985c4e07cdadb1b208ff0d4973b989f4c0d9726a883fdaf2a99d0834a7",
+      "path_sha256": "6f0257c8477e784a87be62a9ef61e3e9099192fbab5343864efe7fb3bbad5ce1",
+      "checkpoint_sha256": "b9d23146e8131fa054891ea33ad91ad5e0a053591b190b5cefdd3f8c75bf85f6"
+    },
+    {
+      "net": "r",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        690.3
+      ],
+      "layer": "M1",
+      "path_nodes": 684,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 558900,648500"
+        ]
+      ],
+      "grid_sha256": "255c6cc03bbe89485c1e7e097556457371f831d9bace8809156fbd947ef70f61",
+      "path_sha256": "6eda9cf1847696f88f568dbdde26b3d4b9d4016a87a913ce7a897ca228dbca49",
+      "checkpoint_sha256": "3d9ceb1e775e5450ae007e02b43d117bbd59798258c5ac0d2d67435396137c5f"
+    },
+    {
+      "net": "g",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        693.9
+      ],
+      "layer": "M1",
+      "path_nodes": 460,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 353700,648500"
+        ]
+      ],
+      "grid_sha256": "17b6138ead7c4b99ac84ab0ada2b8db781da7944a2f9aad4dfc549a7d95637c6",
+      "path_sha256": "a710adfad8cfc64d413ceac3d5393df76ff75adfc73389612e80136a3223c853",
+      "checkpoint_sha256": "ba654d40ca5bcffc2d593170aae4f1ca3bde545c8888c7b32306f22f4054789f"
+    },
+    {
+      "net": "b",
+      "edge": "LEFT",
+      "xy_um": [
+        -14.4,
+        601.2
+      ],
+      "layer": "M1",
+      "path_nodes": 762,
+      "vias": 1,
+      "old_label": [
+        [
+          "M2",
+          "r0 623700,648500"
+        ]
+      ],
+      "grid_sha256": "af6a663f71ff3af96a374c060fb350a3e03560f0cab9d793ea1bde5051c62cd7",
+      "path_sha256": "03d5d8b75cbaea49eeb4507bcba2a0cbe0932f0459045b983adda62dcfe505da",
+      "checkpoint_sha256": "51fd688288e83561205788b9c9da8b4027c77d96c3d69e35a502285e1bd5823c"
+    },
+    {
+      "net": "vsync",
+      "edge": "TOP",
+      "xy_um": [
+        974.7,
+        895.5
+      ],
+      "layer": "M2",
+      "path_nodes": 65,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 974700,836800"
+        ]
+      ],
+      "grid_sha256": "6ce5a9bd95ca198c5928c287fd76e12b5644d2ab864b67063ff63610c6cc2271",
+      "path_sha256": "7ebcf059c577af3f38151896bb5cce32bad2976855660d925b3e0923032c54e7",
+      "checkpoint_sha256": "e2d4f20e24351fdad061e841f23abec852a4b44bdf33d44497170d1b8049ad27"
+    },
+    {
+      "net": "clk",
+      "edge": "TOP",
+      "xy_um": [
+        844.2,
+        895.5
+      ],
+      "layer": "M2",
+      "path_nodes": 65,
+      "vias": 0,
+      "old_label": [
+        [
+          "M2",
+          "r0 845100,836900"
+        ]
+      ],
+      "grid_sha256": "6e65b9435656d7e8f0b5ef28ffdd4f25d5e83f0ba90c53df43f1314d6fd57926",
+      "path_sha256": "d5602ecedf2bc996362376c89e8b94b2076a356c5c02a91f51df783a8bd2246d",
+      "checkpoint_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e"
+    }
+  ],
+  "hashes": {
+    "experiments/a_power_labels/build/labeled_core.gds": "5a464e53d90307e510aeb3e8113941caa135f34427a8500f672f9f0746913c80",
+    "experiments/a_power_escape/build/candidate.gds": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+    "experiments/a_power_escape/build/manifest.json": "0819892b04eb8e9f8b23148c60443a983ad9a306858269252ab138e43d9a46f8",
+    "experiments/a_power_escape/config.py": "54bcb9eb67d1d7d6723bd1959fea72fb36057514f46fc3fdfd715bb3440deccf",
+    "experiments/a_power_escape/build/audit/metal_connectivity.json": "13933dc1746ccfdf459cead525643d3882ba4ed0e9c824f18aa718e961f9d515",
+    "experiments/a_power_escape/build/drawing.lyrdb": "f243be450602b1357f529dc2c89804023575be28527c25892b131b83ab8caa0a",
+    "experiments/a_power_escape/build/candidate_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "experiments/a_power_labels/build/labeled_core_mdp.lyrdb": "6fa04ef6d400e7c248d941e880a6ca30fd985567b230bbb7d46fd7fc652c5c1c",
+    "experiments/a_power_escape/build/core.lvsdb": "f9f105cf57254a5c3815b8096eed044e58192eef23ad4b669d753ad531ce7aef",
+    "experiments/a_power_escape/build/lvs.log": "1798ddd8ba11449e3ee506ac8387a6854c51c537f206f645cd207aa2cdd32f95",
+    "experiments/a_power_escape/build/drc.log": "5ab1cbbdc8eea88a5064ea9340b71413701c90696935df168c76fa285c2105b5",
+    "experiments/a_power_flex4/build/ishi_vga_core.spice": "075c085c4149a66e548237f5b19f2d0a0eafa1736cd508ea1ec3cf0c9c1881da",
+    "scripts/verify_power_core.py": "8c0816273f7c448d48194b0dbb7147ad7828ce1c8f10e6ac2dbc15b8aae1b49a",
+    "tools/APRtools/apr/lvs_pdk.py": "27e5c37e45da3b4880101e2b90a8bc493db6b2aa45bbee61a6bb07738cb36111",
+    "tools/APRtools/apr/drc_pdk.py": "b74840f2e88b796ec4f4506cf50b29afc94acdbf1b5956b7d2e5ea1916b83c96",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_power_flex4/build/diagnostic_compacted.gds": "0dc097168da4584103e2f87489804ae83febd0e98616140e31ed5507a688a687",
+    "experiments/a_power_flex4/layout/placement.json": "9bb14d39620bfcf46904af14cafc9b22ff23da51b21e8e6e4734b5b092847f0f",
+    "experiments/a_power_flex4/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_power_flex4/build/reference.log": "d56e0b7d9d35a4e47be7478c29867a8b8a389729e970501b84839a24e8021669",
+    "experiments/a_power_flex4/build/sta.log": "e84b30be518c9f450c3ae42b24a6578034be8786f92e341f5e4734d76e15c008",
+    "experiments/a_metal_g_power/build/verification.json": "e3e310590234c72d3fcf9670280f1aa02aaf188bdec4feb086cdf07eed4ebab1",
+    "experiments/a_power_flex4/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "experiments/a_power_flex4/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "experiments/a_power_flex4/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "experiments/a_power_fix066/build/manifest.json": "8f44d7a6cf92e55c2eeb75bb0e2d676a123b296ed277248a2fc3a73a90a816a1",
+    "experiments/a_power_fix172eq/build/manifest.json": "0790605dae3bb90fb66c9e7f193a03302af1e83a39ce59eb23182232a639ba89",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/01_Extract.lvs": "2206d70e86e72b0397a25811c5680715cd63d37ae42fd30e8185e7fdec0e21a6",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/02_Extract.lvs": "91d26f9d2150cedea78ef2591971bf5159b8c6c7bae0f89d9117837dbb716762",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/03_Combiner.lvs": "38f081645ca9396735b685ea0acbfb36796b14df252b7c292c371dd911be6388",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/04_Custom.lvs": "bb9339879006ed5eaf3c635ad3d5d1bf3a2d732e4d2e0e74482685945b3d8cbe",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/05_Compare.lvs": "ba20494aa1483f3f42f9d7668d704c1773ac0b7953482d47476875b25d40c18d",
+    "tools/TR-1um/libs.tech/klayout/tech/lvs/run.lvs": "bc765ce4cb5a23c15866ed1727b83484965394da2f557ac508431c7c58addec3"
+  },
+  "ancestor_short_pairs": 2,
+  "ancestor_to_final_only_routing_changed": true,
+  "adopted_artwork_and_netlist_unchanged": true,
+  "ancestor_to_final_changed_layers": [
+    [
+      13,
+      0
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      48,
+      1
+    ],
+    [
+      49,
+      1
+    ]
+  ],
+  "limitations": [
+    "core only; organizer frame/pads/ESD not integrated",
+    "one CLK BUFTH Floating SG mask warning remains",
+    "STA uses cell delays and ideal clock, no PEX/PVT or hardware validation"
+  ]
+}

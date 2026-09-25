@@ -1,0 +1,34 @@
+{
+  "gds_sha256": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+  "raw_sha256": "ebf79c59fa408fb2fa61e9caa093490649816339abe6abff8053c6e8e6e2b784",
+  "simulation_sha256": "322cae9352a18a7b149d782da96b42f31c812210a5fc926ff8e259354f20a0dc",
+  "top_ports": [
+    "hsync",
+    "vdd",
+    "b",
+    "g",
+    "r",
+    "clk",
+    "vsync",
+    "vss"
+  ],
+  "hierarchical_device_count": 1774,
+  "no_combine": true,
+  "connection_and_device_parameter_tokens_preserved": true,
+  "identifier_collisions": 0,
+  "interconnect_rc": false,
+  "hashes": {
+    "release/ishi_vga_grid_power_core/src/ishi_vga_grid_power.gds": "3bcfd73d98e2adca5b78eb20978a6145960e8023e60527ec7e960979cb86617e",
+    "experiments/a_power_spice/build/core.extracted": "ebf79c59fa408fb2fa61e9caa093490649816339abe6abff8053c6e8e6e2b784",
+    "experiments/a_power_spice/config.py": "6cf109e51b25eeea90dbc8ba7ecfbecbd64e3afbb90158cc323fc1d5ccfe4cf5",
+    "scripts/power_spice_check.py": "e1dc7fce6d414d7bdc28e81f4e511f928a61e56134c80fc9d786ac3ae8abf13f",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/klayout_extract.py": "46a41a245588b33219784bb2f963b4d62ffe39b3c5077347df1fae16513410a0",
+    "tools/APRtools/apr/gen_chip_sim_ready.py": "b9cb9581303523ceffa3591c29e7e49e4fd697eb1fbf7efaf7d0b4c714cfd95b",
+    "tools/TR-1um/libs.tech/spice/models/ip62_models": "219ca479adc7d6d960f83e18e0081da153a479f34615333d74c946869bc4c6ec",
+    "tools/TR-1um/libs.tech/spice/models/models_IP62_cap_v5p1.lib": "265c1e2b5228381633ec936f208101b64a0538905c41bdf53e760df10f347bed",
+    "tools/TR-1um/libs.tech/spice/models/models_IP62_diode_v2.lib": "37c19bd4f6d631a5862f2b6aeda62e5eb73ed15fe0de9932296a81a144f1550f",
+    "tools/TR-1um/libs.tech/spice/models/models_IP62_mos_v2.lib": "251864d489d0e15a3081871763af29e1bbc8654ae55662bede40e0a7bbac1400",
+    "tools/TR-1um/libs.tech/spice/models/models_IP62_res_v5.lib": "0d6e2e4b7739fd68946c746830ed8896f4ec5ee98e984fdb5c8dd1116ad78311"
+  }
+}

@@ -1,0 +1,5 @@
+Grid 1976 678 free 863197 vias 95165 terminalnodes [545, 11325]
+expanded=17864 found=1
+path_nodes=44 cost=54
+
+Candidate /home/ishi-kai/ishi-vga/experiments/maze_h1/build/candidate.gds vias 1

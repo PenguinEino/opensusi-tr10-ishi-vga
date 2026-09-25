@@ -1,0 +1,14 @@
+{
+  "source": "a_half_grid_black_phys3",
+  "sha256": {
+    "experiments/a_half_grid_black_phys3/source_manifest.json": "490d57cc39bac976114d83e6dda12031e1e13fbb121782b58e72cf1954839aed",
+    "experiments/a_half_grid_black_phys3/layout/placement.json": "bf82c9db319958be8bf823cc8e257048db35039ebc99bafec43d143b5db16a43",
+    "experiments/a_half_grid_black_phys3/layout/row_assignment.json": "5149dad53e9ac69cc7f4dff358d511484cef8d3505aae949fe4f22053abf568b",
+    "experiments/a_half_grid_black_phys3/out/ishi_vga_core_pnr.v": "d14fbc97b73bf8746cd2c4b9340cb834987f73e0d247468f913f80a807a9dde8",
+    "experiments/a_half_grid_black_anneal3/config.py": "9a87ca3dcebd59abd9dc37d1ab189367ec8c02f3774cca4be7bb1ea737ffb4c5",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "scripts/row_anneal.cpp": "2c43e48c1f6e00340fd33b496091137e615acf2d1c980910e4ae032d3f63915e",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/place.py": "e40d1da3ac5da8d422209f315d04a3be7dbddb0141eb78207c4fcf4c5df8b045"
+  }
+}

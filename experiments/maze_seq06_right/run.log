@@ -1,0 +1,5 @@
+iteration=1 components=3 startpins=1 goalcomponents=2 expanded=2154615 found=1
+path_nodes=4060 cost=4081
+iteration=2 components=2 startpins=1 goalcomponents=1 expanded=2178546 found=1
+path_nodes=4038 cost=4059
+Candidate /home/ishi-kai/ishi-vga/experiments/maze_seq06_right/build/candidate.gds steps 2 additions 8098

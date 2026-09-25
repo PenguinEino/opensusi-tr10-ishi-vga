@@ -1,0 +1,2 @@
+PASS: 105000 pixel ticks, reset-free acquisition and two exact frames
+/home/ishi-kai/ishi-vga/build/submission_portability01/gates/tests/tb_gates.v:62: $finish called at 82231540070 (1ps)

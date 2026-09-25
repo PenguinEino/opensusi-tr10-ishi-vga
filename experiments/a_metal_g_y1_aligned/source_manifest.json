@@ -1,0 +1,25 @@
+{
+  "scope": "unadopted B-plus-metal design proposal",
+  "sha256": {
+    "scripts/logo_metal_variants.py": "82f084ecb767459d09c22d3bd2e7981163a45a5eac3f3876b79baa062422541e",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "assets/ishi_logo_siliwiz_source.json": "7be47c6450a99e6b64feeddd733bf040c6697524631ef04d085ab22dfbd013f3",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_grid64_black/source_manifest.json": "bfdb219518a466976906f8388e83393b0330d606beac0374d0db48571de6a617",
+    "experiments/a_metal_g_y1_aligned/config.py": "043fc46b99b3a4136c29d31cd9c1339151aa989e4e9a30d67761cd7b064831e9",
+    "experiments/a_metal_g_y1_aligned/trial.json": "b751fd1c256453e60c3c36d53e829c5fbe9ec3f95a5ec46cc5581d8c2ea9557d",
+    "experiments/a_metal_g_y1_aligned/metal.json": "420776a315f208ba76c2fa30814295fad1bb31b9002218e211928eed3b5ef0b0",
+    "experiments/a_metal_g_y1_aligned/ishi_logo.v": "df03f981106d7fa38653fd14526e92973561e44d69fe9664ade917e1ae7514e1",
+    "experiments/a_metal_g_y1_aligned/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "experiments/a_metal_g_y1_aligned/tests/expected_frame.hex": "cff5241a6ba9f6a1ece2b1795c71c1ed5a6e7245baf0d2f0a3bc47104b0244b3",
+    "experiments/a_metal_g_y1_aligned/tests/tb_rtl.v": "cb481332c3474d8acfde95dcf93b3c3a11f66721e07b1e0ef11162efebd7849b",
+    "experiments/a_half_grid64/glyphs.json": "c5f3b966b9ce9657e4986c1fc383b3285d75c75f6e7f54f8edefa1031ea4924c",
+    "scripts/logo_metal_aligned.py": "43b218870adaa44e6053d5853297e40225a85a94201c599be60f18844618edc7"
+  },
+  "parameter_override": {
+    "Y1_width_screen_pixels": 16,
+    "endpoint_policy": "diffusion band edges",
+    "power_columns_shared": true
+  }
+}

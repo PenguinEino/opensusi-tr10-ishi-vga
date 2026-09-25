@@ -1,0 +1,28 @@
+{
+  "art": "A",
+  "scale": 4,
+  "h_start": 63,
+  "h_end": 120,
+  "h_bits": 8,
+  "v_start": 500,
+  "v_last": 0,
+  "horizontal_total": 200,
+  "palette_rgb111": [
+    7,
+    3,
+    4,
+    3,
+    1,
+    5
+  ],
+  "signals": 6,
+  "including_vdd_excluding_common_vss": 7,
+  "target_bbox_um": [
+    1800,
+    900
+  ],
+  "adopted": false,
+  "reset": false,
+  "background": "black",
+  "source": "a_half_a128_5col"
+}

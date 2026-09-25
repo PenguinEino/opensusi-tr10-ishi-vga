@@ -1,0 +1,16 @@
+{
+  "name": "a_h127_v500_y",
+  "h_start": 127,
+  "v_start": 500,
+  "group_axis": "y",
+  "sha256": {
+    "scripts/a_counter_trial.py": "f4dda0c192b62c894187bc6549dc3c45733df177d509834b1748c0ac7cbe01cf",
+    "scripts/a_logo_trial.py": "cd7f4ac6b56b9ac441b1b01ba1483c62709e517101bc8cbc9beab8cbff73d85b",
+    "assets/logo_rectangles_a_corrected.json": "c9971bb0a1d0e64650dc89ef6bdbb8daecf536a9e1c5bf562f54d018f00790a9",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_h127_v500_y/ishi_vga_core.v": "3a1c9e43d674d37f46f2b6f6712451fe79ef156576f29f20fd106fcf652aeedb",
+    "experiments/a_h127_v500_y/ishi_logo.v": "a10698654129eb093fc93a7c9720f62eaff2fa6ae4e9e77f35dce110653f69ef",
+    "experiments/a_h127_v500_y/config.py": "93a0e516e85df7513f610831efb33f79f9b92348d30184935951bd5f21c9fa47",
+    "experiments/a_h127_v500_y/tests/expected_frame.hex": "b6b3f4cb54d37ef2820a1a9a4d7942eb8906ff0a2b8c0d9365bd0c0402ab57ce"
+  }
+}

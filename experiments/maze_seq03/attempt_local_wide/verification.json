@@ -1,0 +1,262 @@
+{
+  "checks": {
+    "actual_pin_audit_counts": true,
+    "short_pairs_strict_subset": true,
+    "flat_pairset_strict_subset": true,
+    "flat_no_opens_or_missing": true,
+    "power_topology_unchanged": true,
+    "audit_and_flat_pairsets_agree": true,
+    "bbox_within_explicit_size_budget": true,
+    "stdcell_hierarchy_unchanged": true,
+    "non_top_cell_inventory_unchanged": true,
+    "only_top_routing_layers_changed": true,
+    "drawing_marker_subset": false,
+    "mask_marker_subset": false,
+    "all_bound_inputs_unchanged": true
+  },
+  "errors": [
+    "candidate drawing DRC introduces new marker(s)",
+    "candidate mask DRC introduces new marker(s)"
+  ],
+  "status": "REJECTED",
+  "source_gds": "experiments/maze_seq02/build/candidate.gds",
+  "source_sha256": "4b378b730022f1c04dbb23ebb6e6b3314d54e7bcc7f0ff20edb0f8c20784dfc3",
+  "candidate_gds": "experiments/maze_seq03/build/candidate.gds",
+  "candidate_sha256": "4bb809c38b7f08eb820a347c41220700e855996a4e5e25349ab1ac8acaf90588",
+  "source_pair_count": 9,
+  "candidate_pair_count": 8,
+  "source_pairs": [
+    [
+      "_065_",
+      "_069_"
+    ],
+    [
+      "_065_",
+      "_161_"
+    ],
+    [
+      "_065_",
+      "_240_"
+    ],
+    [
+      "_069_",
+      "_161_"
+    ],
+    [
+      "_069_",
+      "_240_"
+    ],
+    [
+      "_108_",
+      "_173_"
+    ],
+    [
+      "_161_",
+      "_240_"
+    ],
+    [
+      "_185_",
+      "h[4]"
+    ],
+    [
+      "_222_",
+      "_233_"
+    ]
+  ],
+  "candidate_pairs": [
+    [
+      "_065_",
+      "_069_"
+    ],
+    [
+      "_065_",
+      "_161_"
+    ],
+    [
+      "_065_",
+      "_240_"
+    ],
+    [
+      "_069_",
+      "_161_"
+    ],
+    [
+      "_069_",
+      "_240_"
+    ],
+    [
+      "_108_",
+      "_173_"
+    ],
+    [
+      "_161_",
+      "_240_"
+    ],
+    [
+      "_222_",
+      "_233_"
+    ]
+  ],
+  "removed_pairs": [
+    [
+      "_185_",
+      "h[4]"
+    ]
+  ],
+  "new_pairs": [],
+  "pin_audit": {
+    "source": {
+      "placement_instances_matched_to_actual_gds": 421,
+      "actual_pin_shapes_labeled": 987,
+      "placement_signal_pin_count": 987,
+      "missing_actual_pin_count": 0,
+      "open_net_count": 0,
+      "placement_instances_missing_from_gds": []
+    },
+    "candidate": {
+      "placement_instances_matched_to_actual_gds": 421,
+      "actual_pin_shapes_labeled": 987,
+      "placement_signal_pin_count": 987,
+      "missing_actual_pin_count": 0,
+      "open_net_count": 0,
+      "placement_instances_missing_from_gds": []
+    }
+  },
+  "flat_connectivity": {
+    "source_pair_count": 9,
+    "candidate_pair_count": 8,
+    "source_opens": [],
+    "candidate_opens": [],
+    "source_missing": [],
+    "candidate_missing": [],
+    "source_power_component_counts": {
+      "vss": 1,
+      "vdd": 1
+    },
+    "candidate_power_component_counts": {
+      "vss": 1,
+      "vdd": 1
+    },
+    "source_rail_signal_nets": {
+      "vss": [],
+      "vdd": [
+        "1'h1"
+      ]
+    },
+    "candidate_rail_signal_nets": {
+      "vss": [],
+      "vdd": [
+        "1'h1"
+      ]
+    }
+  },
+  "geometry": {
+    "bbox_validation_mode": "size_budget",
+    "bbox_before_um": [
+      -9.0,
+      0.0,
+      1777.5,
+      1760.3
+    ],
+    "bbox_after_um": [
+      -11.6,
+      0.0,
+      1777.5,
+      1760.3
+    ],
+    "bbox_growth_um_by_edge": [
+      -2.6,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bbox_size_um": [
+      1789.1,
+      1760.3
+    ],
+    "max_core_size_um": [
+      1800.0,
+      1800.0
+    ],
+    "bbox_unchanged": false,
+    "stdcell_hierarchy_unchanged": true,
+    "changed_layers": [
+      [
+        13,
+        0
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        20,
+        0
+      ]
+    ],
+    "unexpected_changed_layers": []
+  },
+  "drc": {
+    "drawing": {
+      "source_report": "experiments/maze_seq02/build/validation_candidate_drawing.lyrdb",
+      "source_report_sha256": "0101693701de4cd947b0b086d91c942e8501e8ccd884acbe17d53961543a3052",
+      "source_log": null,
+      "source_marker_count": 2,
+      "candidate_report": "experiments/maze_seq03/build/validation_candidate_drawing.lyrdb",
+      "candidate_report_sha256": "be99eb1469a4b15f5b6d4f4d78162d73d01df42ee9698758c2320f45d48c847b",
+      "candidate_log": "experiments/maze_seq03/build/validation_candidate_drawing.log",
+      "candidate_marker_count": 4,
+      "candidate_marker_subset": false
+    },
+    "mask": {
+      "source_report": "experiments/maze_seq02/build/validation_candidate_mdp.lyrdb",
+      "source_report_sha256": "90fb794111f5bf9cc36d628428166f09d9bedcbdfe25666707ee91f86c5e93c6",
+      "source_log": null,
+      "source_marker_count": 2,
+      "candidate_report": "experiments/maze_seq03/build/validation_candidate_mdp.lyrdb",
+      "candidate_report_sha256": "57a155541c20ddba4006e66e05d041ac4855ce60f056b9ebc5005e1e1b5c4700",
+      "candidate_log": "experiments/maze_seq03/build/validation_candidate_drawing.log",
+      "candidate_marker_count": 4,
+      "candidate_marker_subset": false
+    }
+  },
+  "hashes": {
+    "source_gds": "4b378b730022f1c04dbb23ebb6e6b3314d54e7bcc7f0ff20edb0f8c20784dfc3",
+    "actual_pins": "833890d78b6ec6b848ca60b5982893b8b056ab875188fd16c916138223e69a98",
+    "placement": "fa842099d39d350e9264f1f150d22dabf717923c1dc54bddae28a005ee71e0eb",
+    "shapes": "bd687a0b9f8ec5f574c7ffe1f5a0c8538894e3c783a775cd465f830216693f6c",
+    "config": "80757e1b1690de51213aecd8ca70cd9227e23a16b3b8bc1596264ef2c92e8c55",
+    "validator": "8e033c8f6287a9c47050bdfd519c37176933fb1687ac89408f1b3c996b09648e",
+    "routing_diagnostics": "13c9196c97721386e9175d785bd59b145a1e2e6b1c0d5f5f5b81f99c4a45ef05",
+    "via_connectivity_helper": "139ec42f849b7038c25024161bcea170432128a8a605cb59e489db1c1f9b5a59",
+    "toolchain_lock": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "toolchain_check": "95cbe980c707a0a18e3cf2325da6a2311a142f1afef25195d75c91ba3ad26aaf",
+    "apr_wrapper": "844361da667c026efb59613d2129b2903bd53d12b48f5e29f4a40739938891b2",
+    "pinned_rules": "d57257f684236eaeed8c1a258a3b6d014fff157a7723d7546fcf86914b81be88",
+    "pinned_cell_lef": "d765cbf0edd79f9f022df00b1bfc54160fd76631685ce217c02474a2c475ebcc",
+    "pinned_drc_script": "b74840f2e88b796ec4f4506cf50b29afc94acdbf1b5956b7d2e5ea1916b83c96",
+    "pdk_drawing_deck": "8ffc43f3ea42fedf8f6f39facfada8309cd16d089a3af1b26016526e215f56ca",
+    "pdk_mdp_deck": "828f54f161f47efb4c1b9721577ec018649d367438bdc6c9ef50123c4a30bd4c",
+    "pdk_mask_deck": "07f9811a87a562ac4e0e4a13b70c5f60dd9d3ca962a8b034acb224877a3c5ebe",
+    "candidate_manifest": "7c5073e4b7d9260771d9da61f6ec0eda57454201f6fdf547f93e9165fa5d486e",
+    "candidate_gds": "4bb809c38b7f08eb820a347c41220700e855996a4e5e25349ab1ac8acaf90588",
+    "drawing_source_report": "0101693701de4cd947b0b086d91c942e8501e8ccd884acbe17d53961543a3052",
+    "drawing_candidate_report": "be99eb1469a4b15f5b6d4f4d78162d73d01df42ee9698758c2320f45d48c847b",
+    "mask_source_report": "90fb794111f5bf9cc36d628428166f09d9bedcbdfe25666707ee91f86c5e93c6",
+    "mask_candidate_report": "57a155541c20ddba4006e66e05d041ac4855ce60f056b9ebc5005e1e1b5c4700",
+    "candidate_drc_log": "9f98d6d34b52102a5306dd9bffc7ba1daa4f5968faaa247a3ff83b65faf20eef",
+    "candidate_mask_gds": "494e9df1bd89dcab6770709f8a3c143c0ec02194c235ea1f25e68274d5263d50",
+    "validation_candidate_copy": "4bb809c38b7f08eb820a347c41220700e855996a4e5e25349ab1ac8acaf90588",
+    "candidate_mdp_report": "57a155541c20ddba4006e66e05d041ac4855ce60f056b9ebc5005e1e1b5c4700",
+    "source_mdp_report": "90fb794111f5bf9cc36d628428166f09d9bedcbdfe25666707ee91f86c5e93c6",
+    "source_audit/metal_connectivity.json": "8fc13995ac14fa4d3317e1c424a58b06464c1a2a2233d13e43c83e99b8918740",
+    "source_audit/actual_pin_map.json": "833890d78b6ec6b848ca60b5982893b8b056ab875188fd16c916138223e69a98",
+    "source_audit/metal_connectivity.md": "d8bda304798f4d49937ae274187eeaf606bca3494533b3a074150479c6d2b79a",
+    "source_audit/console.log": "0d99cb7fb84544790ec7d4c64ca32cdb92077f2e0eb566250e369bcbba6a69ca",
+    "audit/metal_connectivity.json": "6a806b82e71793cd43f11f58a06753a7694ad5a8c47945ee580f0a5eeb7d5896",
+    "audit/actual_pin_map.json": "833890d78b6ec6b848ca60b5982893b8b056ab875188fd16c916138223e69a98",
+    "audit/metal_connectivity.md": "0c6fa2e28cc3da26b94b1cabac377540791a366bd8c32ddea0ad41a5e90c1fa4",
+    "audit/console.log": "e7116467c4daa82524d4eeabf6d66e1fa4e80f663a43b2e16638d169cee55196"
+  },
+  "verification_payload_sha256": "bf3215148545d5034d7b5de4cc7885b73f55069903e62ae8d7e6e9c5fc7c532c"
+}

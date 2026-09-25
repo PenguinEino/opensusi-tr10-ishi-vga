@@ -1,0 +1,65 @@
+diff --git a/apr/connect_macro_power.py b/apr/connect_macro_power.py
+index fbc9c3d..14ebff7 100644
+--- a/apr/connect_macro_power.py
++++ b/apr/connect_macro_power.py
+@@ -124,7 +124,7 @@ class Drawer:
+         self.m1 = self.ly.layer(*M1_LAYER)
+         self.m2 = self.ly.layer(*M2_LAYER)
+         tr_1um("TR-1um")
+-        self.via_lib = pya.Library.library_by_name("TR-1um", "*")
++        self.via_lib = pya.Library.library_by_name("TR-1um", "TR-1um")
+         self.via_decl = self.via_lib.layout().pcell_declaration("via_1")
+ 
+     def um(self, v):
+diff --git a/apr/ripup_reroute_shorts.py b/apr/ripup_reroute_shorts.py
+index d23dc5a..d1210f3 100644
+--- a/apr/ripup_reroute_shorts.py
++++ b/apr/ripup_reroute_shorts.py
+@@ -355,7 +355,7 @@ class Fixer:
+         self.m1_idx = self.layout.layer(*M1_LAYER)
+         self.m2_idx = self.layout.layer(*M2_LAYER)
+         tr_1um("TR-1um")
+-        via_lib = pya.Library.library_by_name("TR-1um", "*")
++        via_lib = pya.Library.library_by_name("TR-1um", "TR-1um")
+         self.via_lib = via_lib
+         self.via_decl = via_lib.layout().pcell_declaration("via_1")
+         self.pin_map = pin_map
+diff --git a/apr/route_channels.py b/apr/route_channels.py
+index 2031f29..1fa5548 100644
+--- a/apr/route_channels.py
++++ b/apr/route_channels.py
+@@ -1158,7 +1158,7 @@ def main(placement_json=PLACEMENT_JSON, in_gds=IN_GDS, out_gds=OUT_GDS,
+     m2_idx = layout.layer(*M2_LAYER)
+ 
+     tr_1um("TR-1um")
+-    via_lib = pya.Library.library_by_name("TR-1um", "*")
++    via_lib = pya.Library.library_by_name("TR-1um", "TR-1um")
+     via_decl = via_lib.layout().pcell_declaration("via_1")
+ 
+     _ckpt_n = [0]
+diff --git a/apr/route_chip.py b/apr/route_chip.py
+index 6ba4d21..f01551f 100644
+--- a/apr/route_chip.py
++++ b/apr/route_chip.py
+@@ -535,7 +535,7 @@ class Drawer:
+         self.idx = {"M1": layout.layer(*M1_LAYER), "M2": layout.layer(*M2_LAYER)}
+         self.w = {"M1": M1_WIRE_W, "M2": M2_WIRE_W}
+         tr_1um("TR-1um")
+-        self.via_lib = pya.Library.library_by_name("TR-1um", "*")
++        self.via_lib = pya.Library.library_by_name("TR-1um", "TR-1um")
+         self.via_decl = self.via_lib.layout().pcell_declaration("via_1")
+         self.shapes = defaultdict(list)
+         self.net = None
+diff --git a/apr/route_top_pins.py b/apr/route_top_pins.py
+index 8b59522..06e9c42 100644
+--- a/apr/route_top_pins.py
++++ b/apr/route_top_pins.py
+@@ -301,7 +301,7 @@ def main(placement_json=PLACEMENT_JSON, in_gds=IN_GDS, out_gds=OUT_GDS, ch_heigh
+     txm2_idx = layout.layer(*TXM2_LAYER)
+ 
+     tr_1um("TR-1um")
+-    via_lib = pya.Library.library_by_name("TR-1um", "*")
++    via_lib = pya.Library.library_by_name("TR-1um", "TR-1um")
+     via_decl = via_lib.layout().pcell_declaration("via_1")
+ 
+     def um(v):

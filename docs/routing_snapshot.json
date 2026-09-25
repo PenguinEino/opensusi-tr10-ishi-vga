@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-25",
+  "scope": "Routing repair and GC trials; not a tapeout completion record",
+  "files": {
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/phys_desc5/build/postrepair_compacted.gds": "7ca31f07ead9b36d20af43e1a732cbf51f22ebd1290e15bbb6346c6d124846ba",
+    "experiments/routed_checkpoint/build/routed_checkpoint.gds": "9653d8a5b6a9aba7d696e9b881a98042cc749457260c531f3f7ea33b08da7634",
+    "experiments/routed_checkpoint/build/verification.json": "ac0cea59bc14f90091367f9d727e195f8bebc8bca3667599ddefa94f802bef61",
+    "experiments/routed_checkpoint/build/manifest.json": "e7f31febfd1417ad5b21123e031aff63a7da1c2c2e02e7d860aedab21344bd9e",
+    "experiments/poly_core/build/poly_core_trial.gds": "72e9a49c268f9097a2fa13bcd299f4d062f0b5ec23840d7c0479b52ad660cbf2",
+    "experiments/poly_core/build/verification.json": "aa46e53c5bb66808ef367a3577f38f016e7a4d845dae1cc64614daee82d73981",
+    "experiments/poly_probe/poly_probe_device_array.gds": "3574b2910041741d0f769ca1a25128cc8ef5f08f50eaa9d946c6e8b00f28a413",
+    "experiments/poly_probe/build/results.json": "dec571626168f88f5e0ed38f71505d5c6e4b81ddaa5fc2329d7db16e17ba23ed"
+  }
+}

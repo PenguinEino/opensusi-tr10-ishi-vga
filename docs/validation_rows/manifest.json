@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-25",
+  "conclusion": "No improvement; keep rectangle-based B as active design. No signoff GDS.",
+  "sha256": {
+    "config.py": "460498f3d5658cb2c388b799920e1559786e721f83e1facafdc387c1c0cd77aa",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "scripts/generate_row_pattern_rtl.py": "24dd8d2b90bd73a4e729a5467e1727b8532683b4ed04aceeb93c27abf8a4a9c2",
+    "scripts/test_row_patterns.py": "61511d5f218f9776674d9ff77f555d647e81adf485186bcb6dd6f114ae022371",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "experiments/row_patterns/config.py": "3f7bd5498102d52fcc4ac8f59063e2b03c4962f7fe670cdb3895dc05c369e796",
+    "experiments/row_patterns/ishi_logo.v": "fed9a738297294ea3d7e94d79afb7da6d8221e77bd3663c2ea2ec063cdbc3dc6",
+    "experiments/row_patterns/out/ishi_vga_core_pnr.v": "e5f1488903db76727fa9e57d2d0070824adcc017dcff5917213ca70e28f96223",
+    "experiments/row_patterns_onehot/config.py": "139b2e7a1fb8886befd3de470b4dd190fff27b6d9ef525847c667bd92e645e35",
+    "experiments/row_patterns_onehot/ishi_logo.v": "5c3daf4ebc4ebb15d0cd364b21aa713d5573eb3098b131a8f389cdf69dea6367",
+    "experiments/row_patterns_onehot/out/ishi_vga_core_pnr.v": "f8aa24540e3247b7e1db2a9c91ed79a2df7354219c359497b1c0cb9b0f8ff38d",
+    "experiments/row_patterns_onehot/build/diagnostic_compacted.gds": "0f29619bd0ca8da6944eec56eac23403ec0eed300360e61c7343792ccf637cd6"
+  },
+  "tool_versions": {
+    "yosys": "0.33-5build2",
+    "yosys-abc": "0.33-5build2",
+    "iverilog": "12.0-2build2",
+    "OpenSTA": "3.1.0",
+    "OpenSTA_commit": "396536743ff33852cd8af176988f077219bc8b8d",
+    "CUDD_commit": "f54f533303640afd5dbe47a05ebeabb3066f2a25",
+    "klayout_python": "0.30.6",
+    "gdstk": "0.9.62"
+  },
+  "results": {
+    "baseline_b": {
+      "cells": 375,
+      "area_um2": 495252,
+      "pre_route_slack_ns": 111.806,
+      "raw_compacted_height_um": 2905.0
+    },
+    "binary_row_id": {
+      "cells": 401,
+      "area_um2": 530215,
+      "pre_route_slack_ns": 107.591,
+      "physical_run": false
+    },
+    "onehot_rows": {
+      "cells": 389,
+      "area_um2": 516423,
+      "pre_route_slack_ns": 112.501,
+      "raw_compacted_height_um": 3520.6,
+      "short_suspected_reports": 166
+    }
+  },
+  "placement": {
+    "rows": 7,
+    "width_um": 1598.4,
+    "seed": 1,
+    "restarts": 80,
+    "order_passes": 20,
+    "pad_weight": 1.0,
+    "routing_channel_heights_um": [
+      216,
+      900,
+      900,
+      900,
+      900,
+      900,
+      900,
+      216
+    ]
+  }
+}

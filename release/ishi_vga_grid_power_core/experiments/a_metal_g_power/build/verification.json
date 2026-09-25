@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "scope": "final BUFTH-inserted gate model, all FF initialized to 0 by test fixture; acquisition + 2 frames",
+  "limitations": "unit-delay model, no analog startup, DRC, LVS or routed timing; not exhaustive initial-state simulation",
+  "sha256": {
+    "experiments/a_metal_g_power/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_metal_g_power/tests/tb_gates.v": "8ef7bdcff958ed736e1de9a19d5c83cc2ec79050852bc20c2bd0d259d702b844",
+    "experiments/a_metal_g_power/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "experiments/a_metal_g_power/build/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33"
+  }
+}

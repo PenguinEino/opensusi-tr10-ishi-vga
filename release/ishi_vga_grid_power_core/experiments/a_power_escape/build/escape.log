@@ -1,0 +1,13 @@
+hsync BOTTOM expanded=14561 found=1
+path_nodes=114 cost=113
+r LEFT expanded=776278 found=1
+path_nodes=684 cost=694
+g LEFT expanded=404481 found=1
+path_nodes=460 cost=470
+b LEFT expanded=873887 found=1
+path_nodes=762 cost=772
+vsync TOP expanded=5926 found=1
+path_nodes=65 cost=64
+clk TOP expanded=6861 found=1
+path_nodes=65 cost=64
+/home/ishi-kai/ishi-vga/experiments/a_power_escape/build/candidate.gds [1792.8, 897.2]

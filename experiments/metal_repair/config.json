@@ -1,0 +1,91 @@
+{
+  "title": "Controlled metal-only route repair",
+  "settings_source": "config.py:METAL_REPAIR_SETTINGS; config.json is report/provenance only",
+  "source_design": "experiments/phys_desc5",
+  "source_gds": "build/postrepair_compacted.gds",
+  "source_gds_sha256": "7ca31f07ead9b36d20af43e1a732cbf51f22ebd1290e15bbb6346c6d124846ba",
+  "source_route_pin_map_sha256": "7527d3299aa41d573e61c5e57e39ce0a99a7084b4e1451e5cabc41f1643ac253",
+  "reconstructed_actual_pin_map": "build/actual_pin_map.json",
+  "reconstructed_actual_pin_map_sha256": "833890d78b6ec6b848ca60b5982893b8b056ab875188fd16c916138223e69a98",
+  "source_net_shapes_sha256": "0aa5cbdb489abfdef602492328e4fad7751b784d442050e8577470681db11b07",
+  "baseline_bbox_um": [
+    -6.3,
+    0.0,
+    1777.5,
+    1756.2
+  ],
+  "accepted_checkpoint": {
+    "path": "build/junction_y7296/candidate.gds",
+    "sha256": "6f611af77ff390a34d08b3d437b32d06895eae671a9a7bea708d7bc64fef352b",
+    "edit": "Move only _246_ internal M1 branch junction and two via_1 instances from y=708.0 to y=729.6 um; shorten the two associated _246_ M2 branch starts. No real cell pin moved.",
+    "bbox_um": [
+      -6.3,
+      0.0,
+      1777.5,
+      1756.2
+    ],
+    "actual_connectivity": {
+      "mixed_components": 14,
+      "transitive_net_pairs": 143,
+      "opens": 0,
+      "missing_actual_pins": 0,
+      "baseline_pairs": 153
+    },
+    "simple_drc_violations": 0,
+    "official_pdk_drc": {
+      "total": 3,
+      "same_as_baseline": true,
+      "added": 0,
+      "categories": {
+        "GC.ANT": 3
+      }
+    }
+  },
+  "bounded_repair_trials": [
+    {
+      "name": "_040_ row-2 detour",
+      "source": "build/junction_y7296/candidate.gds",
+      "fill_cell": "FILLPRI_r2_17",
+      "fill_x_um": [
+        426.6,
+        442.8
+      ],
+      "alternate_m2_center_x_um": 437.4,
+      "low_y_um": 910.8,
+      "high_y_um": 1028.6,
+      "result": "strict short-pair subset (143 to 142), no open/missing pins, but reject: official DRC added M1.S1=20 and ER0045=6; same 3 baseline GC.ANT, no M2/V1 violations"
+    },
+    {
+      "name": "_040_ y-high sensitivity",
+      "source": "build/junction_y7296/candidate.gds",
+      "alternate_m2_center_x_um": 437.4,
+      "low_y_um": 912.6,
+      "high_y_results": {
+        "1040.0": "simple M1 space=9; M2/V1=0",
+        "1044.8": "simple M1 space=12; M2/V1=0",
+        "1050.2": "simple M1 space=12; M2/V1=0",
+        "1054.7": "actual 14 components/143 pairs but introduces _040_/v[5]; official DRC M1.S1=6, ER0045=6, baseline GC.ANT=3; no M2/V1 violations",
+        "1061.0": "simple M1 space=12; M2/V1=0"
+      },
+      "result": "all rejected; no tested high track is DRC-clean"
+    },
+    {
+      "name": "_173_ branch detour",
+      "source": "build/junction_y7296/candidate.gds",
+      "alternate_m2_center_x_um": 418.5,
+      "filler_cell": "FILL2_r1_22",
+      "filler_x_um": [
+        415.8,
+        426.6
+      ],
+      "low_y_um": 498.9,
+      "high_y_um": 836.7,
+      "result": "reject: 14 components/143 pairs (no improvement); second _108_/_173_ overlap remains at x=238.6..242.0,y=961.8..992.5; official DRC 4 M2.W1, 2 M2.S1, 2 ER0047 and same 3 GC.ANT"
+    }
+  ],
+  "process_layer_source": "tools/APRtools/apr/rules.py via scripts/metal_repair.py import; no process constants copied",
+  "implementation_hashes": {
+    "design_config_py_sha256": "3ce773cef0f2dfeaa7bdafb1834dcbb5b010cbb761efa1ae1b1427d061c83d33",
+    "repair_script_sha256": "8c48b2849d2986dbffc53085a4844ec49b8e84537276fff8ff9e37150fd3b5fe"
+  }
+}

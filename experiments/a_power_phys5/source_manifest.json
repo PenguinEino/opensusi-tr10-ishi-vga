@@ -1,0 +1,21 @@
+{
+  "source": "a_metal_g_power",
+  "physical": {
+    "source": "a_metal_g_power",
+    "name": "a_power_phys5",
+    "rows": 5,
+    "seed": 19,
+    "restarts": 60,
+    "prl": 10,
+    "pad_weight": 0.0
+  },
+  "sha256": {
+    "scripts/a_physical_trial.py": "9db28f6444e0beabc2fd3fe458e871950eec6141fb31ba1664dffb9afeba11cf",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_metal_g_power/source_manifest.json": "0f8913eb0865e387aea0295969f0165c824be1aa4908cdf39a85b40681bde633",
+    "experiments/a_metal_g_power/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_power_phys5/config.py": "50ddf656bdcab0af795b208968b634ef7506a1fc15e11fb90718b6e19fce4bc5",
+    "experiments/a_power_phys5/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "experiments/a_power_phys5/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260"
+  }
+}

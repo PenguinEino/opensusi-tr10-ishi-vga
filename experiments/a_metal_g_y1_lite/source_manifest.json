@@ -1,0 +1,24 @@
+{
+  "scope": "unadopted B-plus-metal design proposal",
+  "sha256": {
+    "scripts/logo_metal_variants.py": "82f084ecb767459d09c22d3bd2e7981163a45a5eac3f3876b79baa062422541e",
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "assets/ishi_logo_siliwiz_source.json": "7be47c6450a99e6b64feeddd733bf040c6697524631ef04d085ab22dfbd013f3",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_grid64_black/source_manifest.json": "bfdb219518a466976906f8388e83393b0330d606beac0374d0db48571de6a617",
+    "experiments/a_metal_g_y1_lite/config.py": "f7914046fe40221a0d07504ef0c738eced8d23ea55b64aff166254a666ff7ba6",
+    "experiments/a_metal_g_y1_lite/trial.json": "5da46fd2dc14be3d6ea95ad7ee2e0d8b747c03ddec868eca0e4437826cfe586e",
+    "experiments/a_metal_g_y1_lite/metal.json": "ff70fef89d4ef634ee98f83449042befdf3c034b40a72135400d109a2b43a53f",
+    "experiments/a_metal_g_y1_lite/ishi_logo.v": "955eecb1c16c9140d20196fc5b0ef64986afb7020b3460ecfb6098862cd1cd3f",
+    "experiments/a_metal_g_y1_lite/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "experiments/a_metal_g_y1_lite/tests/expected_frame.hex": "1c36c01871f34160efd43ef3b47fd6d86f63ff02569eb79cfc10501db6d2aef8",
+    "experiments/a_metal_g_y1_lite/tests/tb_rtl.v": "cb481332c3474d8acfde95dcf93b3c3a11f66721e07b1e0ef11162efebd7849b",
+    "experiments/a_half_grid64/glyphs.json": "c5f3b966b9ce9657e4986c1fc383b3285d75c75f6e7f54f8edefa1031ea4924c",
+    "scripts/logo_metal_lite.py": "45900726cc31d8db59cd8424f806ef369ae70f4793b26186e6249fea2853d18b"
+  },
+  "parameter_override": {
+    "grid_n_diff_split": false,
+    "meaning": "INV output only; not complete CMOS extraction"
+  }
+}

@@ -1,0 +1,5 @@
+# Sequential route checkpoint 02
+
+Reruns the `_038_` maze on validated seq01, source SHA256 `c7072d9da9b51bbf106fa7af7a25b66bb6b4ae97d858fc45efb2d72f9ec246ce`, using the exact prior cut/via list and local-wide M1 spacing mode. The candidate SHA256 is `4b378b730022f1c04dbb23ebb6e6b3314d54e7bcc7f0ff20edb0f8c20784dfc3` (4,117 path nodes, 4 vias). Pair count falls 12→9, resolving `_033_`–`_038_`, `_033_`–`hsync`, and `_038_`–`hsync`, with no new pairs. The resulting bbox is `[-9.0,0.0,1777.5,1760.3]` µm (1786.5×1760.3), inside 1800×1800; growth is 2.7 µm on the left. The common validator reports ACCEPTED with all 987 actual pins, zero opens/missing pins, unchanged VDD/VSS, and drawing/MDP marker subsets. The two inherited BUFTH markers remain, so this is not DRC-clean. Full results and hashes are in `build/verification.json` and `build/manifest.json`.
+
+Reproduce with `python3 scripts/check_toolchain.py`, `python3 scripts/maze_route.py --design-root experiments/maze_seq02`, then `.venv/bin/python scripts/validate_route_candidate.py --design-root experiments/maze_seq02`.

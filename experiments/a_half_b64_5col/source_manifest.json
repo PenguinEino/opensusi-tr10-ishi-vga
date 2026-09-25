@@ -1,0 +1,15 @@
+{
+  "scope": "unadopted seven-pad half-slot trial",
+  "sha256": {
+    "scripts/half_slot_trial.py": "8f7087fbd5663c8a061ea9fc40ee80adf14ce35c043a5fcd44905f4c032ebf6b",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_half_b64_5col/config.py": "bf25dc29a6916f77c9c5e0bb79fbdfd8cdc2f134c926f4ae73a72b95a9bf216e",
+    "experiments/a_half_b64_5col/trial.json": "cd6c80003e1322c6909d91f887b5967df70754e122de9974168349bec650a3ba",
+    "experiments/a_half_b64_5col/rectangles.json": "4a8a593fa39f33afb27c15f3d56e4ac709216c9c05643b6f1d4d5399631f87e8",
+    "experiments/a_half_b64_5col/ishi_vga_core.v": "0a1616568cbf78bc81ee9edf71dbaa9144c1a6f621a934cdbb913a91720d2f0c",
+    "experiments/a_half_b64_5col/ishi_logo.v": "e30e72df4a7cf2b716e3858670c96f1df4d150c712cc682a1cb7f5ee77ba259e",
+    "experiments/a_half_b64_5col/tests/expected_frame.hex": "bba0ee95497de2dc2c7ecca086136e87fac6cbf4e3fbfaa8c09d408aee8dbfda",
+    "experiments/a_half_b64_5col/tests/tb_rtl.v": "cb481332c3474d8acfde95dcf93b3c3a11f66721e07b1e0ef11162efebd7849b"
+  }
+}

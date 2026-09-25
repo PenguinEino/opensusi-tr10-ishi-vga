@@ -1,0 +1,18 @@
+{
+  "scope": "upstream path-resolution probe, NOT a design configuration",
+  "aprtools_commit": "8f6962bf2df1618d633f8a81c230fec895fc83aa",
+  "resolved": {
+    "LIB_GDS": "tools/APRtools/stdcell/v59_4/TR-1um_STDCELL.gds",
+    "CELL_GDS": "tools/APRtools/stdcell/v59_4/TR-1um_STDCELL.gds",
+    "LIB_LEF": "tools/APRtools/stdcell/v59_4/TR-1um_cells.lef",
+    "LEF_PATH": "tools/APRtools/stdcell/v59_4/TR-1um_cells.lef",
+    "LIBERTY": "tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib",
+    "SYN_LIB": "tools/APRtools/stdcell/v59_4/tr1um_typ_5v0_25c.lib",
+    "CELL_INFO": "tools/APRtools/stdcell/v59_4/cell_info.json",
+    "FRAME_GDS": "tools/APRtools/pdk/pending-upstream/TR-1um_frame_25x25_GIO.gds",
+    "RING_OSC_GDS": "tools/APRtools/macro/ringosc/RING_OSC.gds",
+    "RING_OSC_LEF": "tools/APRtools/macro/ringosc/RING_OSC.lef",
+    "FRAME_LVS_SPICE_default": null,
+    "FRAME_LVS_SPICE_required": "tools/APRtools/pdk/frame/OSS_FRAME_GIO_nocombine.spice"
+  }
+}

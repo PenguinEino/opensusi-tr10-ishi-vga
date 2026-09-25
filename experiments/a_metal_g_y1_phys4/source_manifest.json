@@ -1,0 +1,21 @@
+{
+  "source": "a_metal_g_y1",
+  "physical": {
+    "source": "a_metal_g_y1",
+    "name": "a_metal_g_y1_phys4",
+    "rows": 4,
+    "seed": 7,
+    "restarts": 40,
+    "prl": 20,
+    "pad_weight": 0.0
+  },
+  "sha256": {
+    "scripts/a_physical_trial.py": "9db28f6444e0beabc2fd3fe458e871950eec6141fb31ba1664dffb9afeba11cf",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "experiments/a_metal_g_y1/source_manifest.json": "edcc8cf2a1fdbe8de8635e802f01aeae1e357ac43eadd4d24eb4724fa2be8a70",
+    "experiments/a_metal_g_y1/out/ishi_vga_core_pnr.v": "07b46b56b61d98e09536bf745649afbca408b39176c7b5e0a8fbcf7eaa64f16e",
+    "experiments/a_metal_g_y1_phys4/config.py": "06cb8e34eeab84403f835766211607a9f0beff63d287b244378e6cd7fe707240",
+    "experiments/a_metal_g_y1_phys4/ishi_logo.v": "7cbf0c6e1529d296ac01b777d8d15f2e7b0dc31c44bac57fdcf99e889d171387",
+    "experiments/a_metal_g_y1_phys4/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260"
+  }
+}

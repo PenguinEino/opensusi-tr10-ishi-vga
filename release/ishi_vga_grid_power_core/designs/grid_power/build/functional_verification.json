@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "adopted_artwork_and_netlist_byte_identical": true,
+  "frame_tests": {
+    "rtl": "PASS: 105000 pixel ticks, reset-free acquisition and two exact frames\n/home/ishi-kai/ishi-vga/designs/grid_power/tests/tb_rtl.v:41: $finish called at 82231540070 (1ps)",
+    "gates": "PASS: 105000 pixel ticks, reset-free acquisition and two exact frames\n/home/ishi-kai/ishi-vga/designs/grid_power/tests/tb_gates.v:62: $finish called at 82231540070 (1ps)"
+  },
+  "startup_model": {
+    "binary_counter_states": 131072,
+    "cycles_ticks": [
+      52500
+    ],
+    "max_ticks_into_cycle": 49928,
+    "clock_hz": 3150000
+  },
+  "limitations": "Frame tests initialize FFs in fixture only; unit-delay gates; startup graph is a two-state model, not analog or RTL formal proof.",
+  "hashes": {
+    "designs/grid_power/ishi_logo.v": "578510f61fadff02eabaa842ac714151f791880dbdb920c16e8e7300275765cb",
+    "designs/grid_power/ishi_vga_core.v": "f5c25b65b6b4b1db7ca453ff932bc59c97e0464a92ba83324db7595484c9d260",
+    "designs/grid_power/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "designs/grid_power/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "designs/grid_power/tests/tb_rtl.v": "cb481332c3474d8acfde95dcf93b3c3a11f66721e07b1e0ef11162efebd7849b",
+    "designs/grid_power/tests/tb_gates.v": "8ef7bdcff958ed736e1de9a19d5c83cc2ec79050852bc20c2bd0d259d702b844",
+    "designs/grid_power/build/tr1um_cells.v": "8018b255837f3a370a5030ea361cc94d6fdeef31f5a23c5071bf57ad8e0d4a33",
+    "scripts/test_power_core.py": "7d5fe7f0f27ad2324289fdb944bfa32cbc85d2a81adcf648c274ca412e3b3ff1"
+  }
+}

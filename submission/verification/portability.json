@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "tested_manifest_sha256": "7482f9fc90251299cb7884946e8cdfb97f19bf996dce4e7174f59c368bebe60c",
+  "scope": "separate directory, same installed Python/EDA binaries; no APRtools or external PDK needed for these simulation runs",
+  "rtl": {
+    "status": "PASS",
+    "mode": "rtl",
+    "checked_ticks": 105000,
+    "recorded_frame_ticks": 52500,
+    "initial_state": "zero, test fixture only"
+  },
+  "gates": {
+    "status": "PASS",
+    "mode": "gates",
+    "checked_ticks": 105000,
+    "recorded_frame_ticks": 52500,
+    "initial_state": "zero, test fixture only"
+  },
+  "new_spice": {
+    "upper_init": {
+      "status": "PASS",
+      "cycles_checked": 110,
+      "counter_bits": 17,
+      "output_bits": 5,
+      "scope": "selected transient window; no wire RC",
+      "sample_offset_ns": 150
+    }
+  },
+  "saved_spice_cases_checked": 6,
+  "negative_expected_bit_test": {
+    "status": "REJECTED_AS_EXPECTED",
+    "detail": "('output', 0, np.int64(24), np.int64(25))"
+  },
+  "local_entrypoint_markdown_links": "PASS",
+  "unmanifested_files": 0,
+  "hashes": {
+    "build/submission_portability01/package/manifest.json": "7482f9fc90251299cb7884946e8cdfb97f19bf996dce4e7174f59c368bebe60c",
+    "build/submission_portability01/package/simulation/models.spice": "75442c7f026dc9f1cae621c3a27c3685e82a6eeb054f4cfd65e38487989d56cc",
+    "build/submission_portability01/package/simulation/core_sim.spice": "322cae9352a18a7b149d782da96b42f31c812210a5fc926ff8e259354f20a0dc",
+    "build/submission_portability01/package/tests/expected_frame.hex": "39935521ab023c07c6132a1911e68e1b2992abf64ebba5f5372226b1c93924d9",
+    "build/submission_portability01/rtl/result.json": "5acc0f39ed1d82c980a86707d3d8853357e2c78ad686e0cc31f418f5068e2324",
+    "build/submission_portability01/rtl/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/submission_portability01/rtl/simulation.log": "a8d76724e87089986b7c1ca09496460fa6693a874a75dbd73a445a1fcb93d409",
+    "build/submission_portability01/rtl/build/observed.hex": "f0ff46349936d350610348ef23880c2931b10a9483bf4921723daeeef902d9ae",
+    "build/submission_portability01/gates/result.json": "9b0540b4dd320df003b2633262ba9fd74cfe8a1df5d431e7094353a6f122096a",
+    "build/submission_portability01/gates/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build/submission_portability01/gates/simulation.log": "efb3283cf8f372842343d786db6e4714868882cfd65797c077c6016e681a6f52",
+    "build/submission_portability01/gates/build/observed.hex": "f0ff46349936d350610348ef23880c2931b10a9483bf4921723daeeef902d9ae",
+    "build/submission_portability01/spice_upper/result.json": "28eb3adcf79b1b3fa30c6d1d821876f5fb5748c5bee2885a7c7e38177e007d47",
+    "build/submission_portability01/spice_upper/simulation/upper_init/ngspice.log": "bbf902540efc8082b277441acba031ef718b19ef6777319b0244c3be82cb966e",
+    "build/submission_portability01/spice_upper/simulation/upper_init/wave.raw": "c9807306f164b2dd4302457a4a914858c9a3d4d10d58eb00ed1104e305720acc"
+  }
+}

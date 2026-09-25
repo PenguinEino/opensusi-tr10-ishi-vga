@@ -1,0 +1,18 @@
+{
+  "source": "a_metal_g_power_anneal4",
+  "knobs": {
+    "PRL_MIN_PINS": 10,
+    "SPAN_LANE_PACK": false
+  },
+  "sha256": {
+    "scripts/metal_route_knobs.py": "6cfc4cc9ef729eb3b6f1bb16c230498d31aa00a1468c7ae342f53d7e66aa7e0b",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "experiments/a_metal_g_power_anneal4/source_manifest.json": "c15ec4c24b68a0806aca39212b4a00529122290e89ddeacbf6e28213439b3bff",
+    "experiments/a_metal_g_power_anneal4/layout/placement.json": "4e17d09f580451a472f7a4e7998937a0c911620d65d44e383e2a6228352e91c3",
+    "experiments/a_metal_g_power_route_p10/config.py": "f8b729ccd0dcef50947f4840a5eafb6cbc9cffb6b30a6427d87cc7b77839e26d",
+    "experiments/a_metal_g_power_route_p10/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_metal_g_power_route_p10/layout/row_assignment.json": "11e79b41846f69a78067821a63aded908ede815154cd33d84a4ce5362c03b9c9",
+    "experiments/a_metal_g_power_route_p10/layout/step4/place_step4_fill.gds": "87600802142cfaf443a4fe6fa5ab7a3ef1a3ab30dcd7618a7fda68a24846132e",
+    "experiments/a_metal_g_power_route_p10/layout/step4/place_step4_fill.json": "044205abf69f167e66cfcd40c913f50bc967269d3b14dc7480685fc22c59cb7b"
+  }
+}

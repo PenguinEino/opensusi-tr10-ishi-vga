@@ -1,0 +1,7 @@
+{
+  "source_placement": "experiments/place_r6_w328_s1_b08",
+  "knobs": {
+    "PRL_MIN_PINS": 10,
+    "SPAN_LANE_PACK": false
+  }
+}

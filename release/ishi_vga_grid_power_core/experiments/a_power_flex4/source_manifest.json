@@ -1,0 +1,17 @@
+{
+  "source": "a_metal_g_power_anneal4",
+  "sha256": {
+    "experiments/a_metal_g_power_anneal4/source_manifest.json": "c15ec4c24b68a0806aca39212b4a00529122290e89ddeacbf6e28213439b3bff",
+    "experiments/a_metal_g_power_anneal4/layout/placement.json": "4e17d09f580451a472f7a4e7998937a0c911620d65d44e383e2a6228352e91c3",
+    "experiments/a_metal_g_power_anneal4/layout/row_assignment.json": "11e79b41846f69a78067821a63aded908ede815154cd33d84a4ce5362c03b9c9",
+    "experiments/a_metal_g_power_anneal4/out/ishi_vga_core_pnr.v": "1df7856e3cd84544875ad8579abc31054a42958cbe7f17ed5c04290d4afcf04f",
+    "experiments/a_power_flex4/config.py": "b97664d4b2ec4730402413e2dba1484f2d552e118d4b890e5a43943c847bcf56",
+    "scripts/a_row_placement.py": "b8b9b213e8413cd88a54140f35d43f3fdf6eff4f4eb112663dda5f92c62fd00c",
+    "scripts/row_anneal.cpp": "2c43e48c1f6e00340fd33b496091137e615acf2d1c980910e4ae032d3f63915e",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "tools/APRtools/apr/place.py": "e40d1da3ac5da8d422209f315d04a3be7dbddb0141eb78207c4fcf4c5df8b045"
+  },
+  "design_override": {
+    "max_width_average_factor": 1.2
+  }
+}

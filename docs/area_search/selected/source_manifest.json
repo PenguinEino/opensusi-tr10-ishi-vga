@@ -1,0 +1,19 @@
+{
+  "rtl_dir": "experiments/descending_h79_v500",
+  "netlist": "experiments/descending_h79_v500/out/ishi_vga_core_pnr.v",
+  "rows": 5,
+  "tracks": 328,
+  "seed": 4,
+  "restarts": 160,
+  "order_passes": 20,
+  "balance": 0.02,
+  "prl": 10,
+  "case": "J",
+  "source": "experiments/descending_h79_v500/out/ishi_vga_core_pnr.v",
+  "rtl_source": "experiments/descending_h79_v500",
+  "sha256": "9e2b7928ea22297300fe376483f21b778647caae48ffd51ac68c75186cec0592",
+  "design": "phys_desc5",
+  "fill": "alternate",
+  "pad_weight": 1.0,
+  "span_lane_pack": false
+}

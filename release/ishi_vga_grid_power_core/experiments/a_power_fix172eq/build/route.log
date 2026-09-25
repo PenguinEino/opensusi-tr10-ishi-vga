@@ -1,0 +1,5 @@
+Grid 669 250 free 111135 vias 14373 terminalnodes [62, 3972]
+expanded=1253 found=1
+path_nodes=41 cost=40
+
+Candidate /home/ishi-kai/ishi-vga/experiments/a_power_fix172eq/build/candidate.gds vias 0

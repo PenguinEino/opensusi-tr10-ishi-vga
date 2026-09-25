@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-25",
+  "variant": "B / 21 rectangles",
+  "state": "RTL and synthesis verified; physical design DOES NOT FIT and connectivity check fails. No signoff GDS.",
+  "sha256": {
+    "config.py": "460498f3d5658cb2c388b799920e1559786e721f83e1facafdc387c1c0cd77aa",
+    "toolchain.lock.json": "31f6f929b6be02cb5809d1c0d4d077f7fb7ca0eeb6c0b92d5885eeef2a4ebc5f",
+    "assets/logo_rectangles.json": "2459ed47385ff82acee9bf83007f016c8467637f3e2af215e2517bee211b523c",
+    "rtl/ishi_logo.v": "c996b14d126a506c072d6713d0d649131c6d4659ada507a273ec80e6cf3e3cfd",
+    "rtl/ishi_vga_core.v": "7d0f7e0c52d04dc09b7b1df4dec25dd2a9f6f5138ebe0cda42c48c03effc7cf1",
+    "out/ishi_vga_core_pnr.v": "523752e751b79ad402ef3e42491118d8436de362efa700baf47cc991be6dfeeb",
+    "layout/step4/place_step4_fill.gds": "fb65be81ff43c302476b7b4f65966a84e570d94e3737debc20e92cae1d0e15ce",
+    "layout/step6/route_step_2_routed_raw.gds": "1487e33cb5cc83e68449a21359f057cefef747f781eca22187e0eb31a68c40fe",
+    "build/diagnostic_b_compacted.gds": "2e853b3eba974a70d9400d1175399e618258d2a9188c6a08275bc10148e6a229"
+  },
+  "tool_versions": {
+    "yosys": "0.33-5build2",
+    "yosys-abc": "0.33-5build2",
+    "iverilog": "12.0-2build2",
+    "OpenSTA": "3.1.0",
+    "OpenSTA_commit": "396536743ff33852cd8af176988f077219bc8b8d",
+    "CUDD_commit": "f54f533303640afd5dbe47a05ebeabb3066f2a25",
+    "klayout_python": "0.30.6",
+    "gdstk": "0.9.62"
+  },
+  "synthesis": {
+    "cells": 375,
+    "ff": 28,
+    "area_um2": 495252,
+    "total_cell_width_um": 8337.6
+  },
+  "route_experiment": {
+    "rows": 7,
+    "seed": 1,
+    "restarts": 80,
+    "order_passes": 20,
+    "placement_channels_um": [
+      140.4,
+      151.2,
+      151.2,
+      151.2,
+      151.2,
+      151.2,
+      151.2,
+      162.0
+    ],
+    "routing_channels_um": [
+      216.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      216.0
+    ],
+    "raw_compacted_bbox_um": [
+      -6.3,
+      0,
+      1604.7,
+      2905.0
+    ],
+    "step6_short_suspected_reports": 75,
+    "short_repair": "Not run; initial routed core exceeds slot even after diagnostic compaction."
+  }
+}

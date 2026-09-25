@@ -1,0 +1,5 @@
+Grid 1976 1952 free 2584273 vias 327508 terminalnodes [923, 2978]
+expanded=1193836 found=1
+path_nodes=3098 cost=3130
+
+Candidate /home/ishi-kai/ishi-vga/experiments/maze_seq01/build/candidate.gds vias 3
