@@ -16,4 +16,6 @@ ISHI会ロゴをVGAに出力する固定映像回路です。
 
 フレーム未統合のコアです。検証結果と残件は仕様書に記載しています。
 
-![表示画像（ゲートシミュレーション）](submission/ishi_vga_output.png)
+Tang Primer 20K＋抵抗DACでのVGA実機表示（2026-09-25）。[ゲートシミュレーションの表示画像](submission/ishi_vga_output.png)
+
+<img src="docs/images/fpga-vga-monitor-20260925.png" alt="Tang Primer 20KからVGAモニタへ出力したISHI会ロゴの実機写真" width="480">
